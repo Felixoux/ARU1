@@ -93,12 +93,6 @@ html{
 	box-sizing: border-box;
 }
 
-.logo-header {
-	width: 197px;
-	height: 200px;
-
-	background-image: url(img/LOGO-blanc.png);
-}
 
 body{
 	background-color:#016573;
@@ -111,7 +105,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
+	flex-flow: row nowrap;
 }
 
 .header{
@@ -130,14 +124,15 @@ body{
 	cursor: pointer;
 }
 
+
 .navbar{
 	height: 2em;
-	width: calc(95% - 192px);
+	width: calc(95% - 196.5px);
 
 	border-radius: 5px;
 	
 	background-color:#ffffff;
-	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
 
 	font-size: 50px;
 	text-transform: uppercase;
@@ -157,34 +152,48 @@ body{
 
 
 .main{
-	justify-content: space-around;
-}
+	justify-content: space-between;
+	height: 550px;
+	width: 100%;
 
-.main h3 {
-	padding: 25px 0px 18.5px;
-
-	font-size: 30px;
-	text-align: center;
-
-	transition: ease 0.3s 0s;
-}
-
-.main a {
-	background: linear-gradient(to top, #ffffff 0%,  #ffffff 5%, transparent 5.01%);
-	background-size: 0% 100%;
+	background-image: url(img/595349517_2000px-600px.png);
+	background-position: center;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
+	position: relative;
+	background-size: contain;
+}
+
+.petite-ecole,.ecole-secondaire,.ecole-internat {
+	height: 100%;
+	width: 100%;
+}
+
+.main button {
+	position: fixed;
+	top: 50%;
+	padding: 9px 25px;
+
+	border: none;
+	border-radius: 50px;
+
+	background-color: rgb(255, 255, 255);
 	
+    transition: all 0.3s ease 0s;
+	cursor:pointer;
+	box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.20)
+}
+
+.main button:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main button a {	
 	font-size: 27.5px;
-	color: #ffffff;
+	color: black;
 	font-weight: 600;
-	
-	transition: background-size ease 0.3s;
 }
 
-
-.main a:hover{
-	background-size: 100% 100%;
-}
 
 
  /* ======== TELEPHONE DESACTIVE ============== */ 
@@ -206,6 +215,7 @@ body{
 
 
 .footer{
+	clear: both;
 	justify-content: space-between;
 	margin: 40px 3.75%;
 	
