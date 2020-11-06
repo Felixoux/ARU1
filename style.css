@@ -188,10 +188,9 @@ body{
 
 	border-radius: 5px;
 
-	background-size: 100%;
-	background-position: 0 -70px;
-	background-repeat: repeat-x;
-	background-size: cover;
+	background-position: center center;  /* centre l'image */
+	background-size: cover;  /* sois le plus large possible = cover */
+	background-repeat: no-repeat;  /* ne repete pas l'image */
 
 	transition: 0.3s ease 0s;
 	cursor: pointer;
