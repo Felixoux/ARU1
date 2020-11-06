@@ -153,7 +153,7 @@ body{
 
 .main{
 	justify-content: space-between;
-	height: 550px;
+	height: 600px;
 	width: 100%;
 
 	background-image: url(img/595349517_2000px-600px.png);
@@ -171,7 +171,7 @@ body{
 
 .main button {
 	position: fixed;
-	top: 50%;
+	top: calc(600/2 px);
 	padding: 9px 25px;
 
 	border: none;
