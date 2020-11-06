@@ -11,19 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <div class="header flex">
         <div class="logo-image">
         </div>
-            <nav class="nav">
-            <h1 class="nav-h1">athenee royal d'uccle&nbsp;<span>I</span></h1>
-            </nav>
-    </header>
-        <main class="main">              
-            <div class="main-fondamental">
-                <h3><a href="#">Ecole Fondamentale</a></h3>
-                <div class="main-fondamental image"></div>
+            <div class="navbar flex">
+            <h1 class="navbar-h1">athenee royal d'uccle&nbsp;<span>I</span></h1>
             </div>
-                <div class="footer-fondamentale display-none">
+    </div>
+        <div class="main flex">  
+            <!--/IMAGE\-->            
+            <div class="petite-ecole">
+                <h3><a href="#">Ecole Fondamentale</a></h3>
+                <div class="petite-ecole  main-image"></div>
+            </div>
+            <!--/CONTACT TELEPHONE\-->
+                <div class="petite-ecole-contact display-none">
                 <h3>Section fondamentale</h3>
                     <p>
                         La Petite Ecole dans la prairie EFA ARU1 <br>
@@ -35,11 +37,13 @@
                         Fax: 02/ 374.56.20
                     </p>
                 </div>
-            <div class="main-secondaire">
+                <!--/IMAGE\-->
+            <div class="ecole-secondaire">
                 <h3><a href="#">Ecole Secondaire</a></h3>
-                <div class="main-secondaire image"></div>
+                <div class="main-secondaire main-image"></div>
             </div>
-                <div class="footer-secondaire display-none">
+            <!--/CONTACT TELEPHONE\-->
+                <div class="ecole-secondaire-contact display-none">
                 <h3>Section Secondaire</h3>
                     <p>
                         Athénée royal Uccle 1 <br>
@@ -52,11 +56,13 @@
                         <a href="mailto:secretariat@aru1.be">secretariat@aru1.be</a>
                     </p>
                 </div>
-            <div class="main-internat">
+                <!--/IMAGE\-->
+            <div class="ecole-internat">
                 <h3><a href="#">L'internat</a></h3>
-                <div class="main-internat image"></div>
+                <div class="main-internat main-image"></div>
             </div>
-                <div class="footer-internat display-none">
+            <!--/CONTACT TELEPHONE\-->
+                <div class="ecole-internat-contact display-none">
                 <h3>Internat</h3>
                     <p>
                         Internat annexé pour jeunes filles <br>
@@ -68,50 +74,47 @@
                         Fax : 02/ 372 38 42
                     </p>
                 </div>
-        </main>
-            <footer class="footer">
-        <div class="footer-fondamentale">
-            <h3>Section fondamentale</h3>
-                <p>
-                    La Petite Ecole dans la prairie EFA ARU1 <br>
-                    72, avenue Paul Stroobant <br>
-                    1180 - Uccle
-                </p>
-                <p>
-                    Téléphone: 02/ 374.95.52 <br>
-                    Fax: 02/ 374.56.20
-                </p>
         </div>
-        <div class="footer-secondaire">
-            <h3>Section Secondaire</h3>
-                <p>
-                    Athénée royal Uccle 1 <br>
-                    87, avenue Houzeau <br>
-                    1180 Bruxelles    
-                </p>
-                <p>
-                    Téléphone : 02/ 374 05 84 <br>
-                    Fax : 02/ 375 28 91 <br>
+            <footer class="footer flex">
+                <div class="petite-ecole-contact">
+                    <h3>Section fondamentale</h3>
+                        <p>
+                            La Petite Ecole dans la prairie EFA ARU1 <br>
+                            72, avenue Paul Stroobant <br>
+                            1180 - Uccle
+                        </p>
+                        <p>
+                            Téléphone: 02/ 374.95.52 <br>
+                            Fax: 02/ 374.56.20
+                        </p>
+                </div>
+                <div class="ecole-secondaire-contact">
+                        <h3>Section Secondaire</h3>
+                    <p>
+                        Athénée royal Uccle 1 <br>
+                        87, avenue Houzeau <br>
+                        1180 Bruxelles    
+                    </p>
+                    <p>
+                        Téléphone : 02/ 374 05 84 <br>
+                        Fax : 02/ 375 28 91 <br>  
                     <a href="mailto:secretariat@aru1.be">secretariat@aru1.be</a>
-                </p>
-        </div>
-        <div class="footer-internat">
-            <h3>Internat</h3>
-                <p>
-                    Internat annexé pour jeunes filles <br>
-                    66, Avenue du Vert Chasseur <br>
-                    1180 Uccle
-                </p>
-                <p>
-                    Téléphone : 02/ 374 51 07 <br>
-                    Fax : 02/ 372 38 42
-                </p>
-        </div>
-
-    
-
-
-
+                    </p>
+                    
+                    
+                </div>
+                <div class="ecole-internat-contact">
+                        <h3>Internat</h3>
+                    <p>
+                        Internat annexé pour jeunes filles <br>
+                        66, Avenue du Vert Chasseur <br>
+                        1180 Uccle
+                    </p>
+                    <p>
+                        Téléphone : 02/ 374 51 07 <br>
+                        Fax : 02/ 372 38 42
+                    </p>
+                </div>
             </footer>
 </body>
 </html>

@@ -1,19 +1,18 @@
 /* organisation css:{
 
-position de la boite/du modele (largeur, hauteur positionnement etc...)
+	POSITION + MARGIN, PADDING
 
-Les bordures...
+	BORDERS
 
-barckground...
+	BACKGROUND
 
-text (font size...)
+	TEXT
 
-autre (animation, transformatioons...)
+	AUTRES
 
-}
+} */
 
-*/
-
+/* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,7 +33,6 @@ time, mark, audio, video{
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -64,7 +62,7 @@ a {
 }
 
 
-/* ==========================================================  FONTS ========= */
+/* ======================================  FONTS ================================== */
 
 h1, h2{
 	font-family: 'Montserrat', sans-serif;
@@ -79,60 +77,49 @@ a {
 }
 
 
-/* =======================================================   VARIABLES  =========*/
+/* =============================================   VARIABLES  =========================*/
 
 :root{
 	--clic: rgb(245, 35, 52);
 }
 
-/* ========================================================  PAGE D'ACCEUIL ======= */
+/* ======================================  PAGE D'ACCEUIL ========================= */
 
 
 
-/* ===========================================================  header ============  */
+/* ====================================== header ================================= */
 
 html{
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body{
 	background-color:#235283; 
 }
 
-.header{
-display: flex;
-flex-flow: row nowrap;
-align-items: center;
-justify-content: space-between;
-margin: 0 3.75%;
-
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
-
-h1 span{
-	font-size: 55px ;	
+.header{
+	justify-content: space-between;
+	margin: 0 3.75%;
 }
 
 .logo-image{
 	display: block;
 	width: 196px;
 	height:200px;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 40px 0;
 
 	background-image: url("img/LOGO-blanc.png");
 
 	cursor: pointer;
 }
 
-.nav-h1 {
-	color: rgb(255, 255, 255);
-	text-transform: uppercase;
-}
-
-.nav{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.navbar{
 	height: 2em;
 	width: calc(95% - 192px);
 
@@ -145,19 +132,23 @@ h1 span{
 	text-transform: uppercase;
 }
 
+.navbar-h1 {
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+}
 
-/* ==========================================================   main  ======  */
+.nav-bar-h1 span{
+	font-size: 55px ;	
+}
+
+
+/* ============================================   main  ======================== */
 
 
 .main{
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	margin: 0 3.75%;
-
-	border-radius: 5px;
+	justify-content: space-between;
+	margin: 0 4%;
 }
-
 
 .main h3 {
 	padding: 25px 10px 18.5px;
@@ -185,109 +176,65 @@ h1 span{
 }
 
 .main > div {
-	width: 27.5%;
+	width: 30%;
 	height: auto;
 
 }
+
+.main-image {
+	/* le padding donne la hauteur et garde le meme ratio */
+	padding-bottom: 62.5%;
+	margin-top: 11.5px;
+
+	border-radius: 5px;
+
+	background-size: 100%;
+	background-position: 0 -70px;
+	background-repeat: repeat-x;
+	background-size: cover;
+
+	transition: 0.3s ease 0s;
+	cursor: pointer;
+}
+
+.main-image:hover{
+	transform: scale(1.09, 1.09);
+}
+
+.petite-ecole,.ecole-secondaire,.ecole-internat h3 {
+	text-align: center;
+}
+
+.petite-ecole .main-image {
+	background-image: url(img/Fondamental-menu.jpg);
+}
+
+.ecole-secondaire .main-image {
+	background-image:url(img/Secondaire-menu.jpg);
+}
+
+.ecole-internat .main-image {
+	background-image: url(img/Internat-menu.jpg);
+}
+
+/* ======== TELEPHONE DESACTIVE============== */
 
 .display-none {
 	display: none;
 }
 
-/* ================== */
 
-.main-fondamental .image{
-	background-image: url(img/Fondamental-menu.jpg);
-	background-position: 0 -70px;
-	background-size: 100%;
-	width: 100%;
-	/* le padding donne la hauteur et garde le meme ratio */
-	padding-bottom: 62.5%;
-	margin-top: 11.5px;
+/* ====================================   footer  ================================  */
 
-	border-radius: 5px;
+/* Dégradé:
 
-	background-repeat: repeat-x;
-	background-size: cover;
+	background: linear-gradient(90deg, rgb(62, 62, 122) 0%,
+	rgba(76, 148, 142, 0.45) 50%, 
+	rgba(2,0,36,1) 100%);
 
-	transition: 0.3s ease 0s;
-
-	cursor: pointer;
-}
-
-.main-fondamental .image:hover{
-	transform: scale(1.09, 1.09);
-}
-
-.main-fondamental h3 {
-	text-align: center;
-}
-
-/* ====================== */
-
-.main-secondaire .image{
-	background-image: url("img/Secondaire-menu.jpg");
-	background-position: 0 -70px;
-	background-size: 100%;
-	width: 100%;
-	/* le padding donne la hauteur et garde le meme ratio */
-	padding-bottom: 62.5%;
-	margin-top: 11.5px;
-
-	border-radius: 5px;
-
-	background-repeat: repeat-x;
-	background-size: cover;
-
-	transition: 0.3s ease 0s;
-
-	cursor: pointer;
-}
-.main-secondaire .image:hover{
-	transform: scale(1.09, 1.09);
-}
-
-.main-secondaire h3 {
-	text-align: center;
-}
-
-/* ==================== */
-
-.main-internat .image{
-	background-image: url("img/Internat-menu.jpg");
-	background-position: 0 -70px;
-	background-size: 100%;
-	width: 100%;
-	/* le padding donne la hauteur et garde le meme ratio */
-	padding-bottom: 62.5%;
-	margin-top: 11.5px;
-
-	border-radius: 5px;
-
-	background-repeat: repeat-x;
-	background-size: cover;
-
-	transition: 0.3s ease 0s;
-
-	cursor: pointer;
-}
-.main-internat .image:hover{
-	transform: scale(1.09, 1.09);
-}
-
-.main-internat h3 {
-	text-align: center;
-}
-
-
-/* ================================================================   footer  ===================  */
-
-/* dégradé
-	background: linear-gradient(90deg, rgb(62, 62, 122) 0%, rgba(76, 148, 142, 0.45) 50%, rgba(2,0,36,1) 100%);*/
+*/
 
 .footer{
-	display: flex;
-	flex-flow: row nowrap;
 	justify-content: space-between;
 	margin: 40px 3.75%;
 	
@@ -297,7 +244,7 @@ h1 span{
 	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-footer div {
+footer > div {
 	width: 33%;
 }
 
@@ -316,47 +263,35 @@ footer h3 {
 	font-family: 'Roboto Slab', serif;
 }
 
-.footer-fondamentale {
+.petite-ecole-contact {
 	margin-left: 4.5%;
-	text-align: left;
 }
 
-
-.footer-fondamentale :nth-child(2) {
-	margin: 0 0 20px;
+.petite-ecole-contact :last-child {
+	margin: 20px 0;
 }
 
-.footer-fondamentale :nth-child(3) {
-	margin: 0 0 20px;
-}
-
-.footer-secondaire {
+.ecole-secondaire-contact {
 	text-align: center;
 }
 
-.footer-secondaire :nth-child(2) {
-	margin: 0 0 15px;
+.ecole-secondaire-contact :last-child {
+	margin: 15px 0 15px;
 }
 
-.footer-secondaire :nth-child(3) {
-	margin: 0 0 20px;
-}
-
-
-.footer-internat  {
-    margin-right: 4.5%;
+.ecole-internat-contact {
+	margin-right: 4.5%;
 	text-align: right;
 }
 
-.footer-internat :nth-child(2) {
-	margin-bottom: 20px;
+.ecole-internat-contact :last-child {
+	margin: 20px 0;
 }
 
-.footer-internat :nth-child(3) {
-	margin: 0 0 20px;
-}
 
-.footer-secondaire a {
+/* mailto lien */
+
+.ecole-secondaire-contact a {
 	background: linear-gradient(to top, rgba(245, 35, 52, 1) 0%,  rgba(245, 35, 52, 1) 5%, transparent 5.01%);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
@@ -367,14 +302,14 @@ footer h3 {
 	transition: background-size ease 0.3s;
 }
 
-.footer-secondaire a:hover{
+.ecole-secondaire-contact a:hover{
 	background-size: 100% 100%;
 }
 
 
 
 
-/* =========================================  Téléphone  ========================  */
+/* =============================  Téléphone  ==============================  */
 
 
 
@@ -389,43 +324,41 @@ footer h3 {
 		align-items: center;
 	}	
 	
-	.nav {
+	.navbar {
 		width: 100%;
-		
 	}
 
-    .nav-h1 {
+    .navbar-h1 {
 		font-size:30px;
 	}
 
-	.nav-h1 span {
+	.navbar-h1 span {
 		font-size: 30px;
 	}
 
 	/* ===================  main ================*/
 	
     .main {
-		flex-flow: column nowrap;
+		flex-flow: column;
+		justify-content: center;
 		align-items: center;
 	}
 
 	.main > div {
 		width: 65%;
-		background-position: 0px 200px;
 	}
 
-
-    .main-fondamental .image {
+    .petite-ecole .image {
 		background-position: 0px -175px;
 		
 	}
 
-	.main-secondaire .image {
+	.ecole-secondaire .image {
 		background-position: 0px -120px;
 		
 	}
 
-	.main-internat .image {
+	.ecole-internat .image {
 		background-position: 0px -200px;
 		
 	}
@@ -440,27 +373,8 @@ footer h3 {
 		
 		text-align: center;
 	}
-
-	.display-none a {
-		font-weight: 400;
-	}
-
-	.footer-fondamentale {
-		margin: 0;
-	}
-
-	.footer-internat {
-		margin: 0 0 20px;
-	}
-
-	.main h3 {
-		padding: 25px 0 18.5px;
-	}
-
 	
-
-
-    .display-none::after {
+	.display-none::after {
 		content: "";
 		position: absolute;
 		top: 100%;
@@ -471,6 +385,24 @@ footer h3 {
 		background-color: black;
 	}
 
+	.display-none a {
+		font-weight: 400;
+	}
+
+	.petite-ecole-contact {
+		text-align: center;
+		margin: 0;
+	}
+
+	.ecole-internat-contact {
+		text-align: center;
+		margin: 0 0 20px;
+	}
+
+	.main h3 {
+		text-align: center;
+		padding: 25px 0 18.5px;
+	}
 	
 
 
