@@ -243,10 +243,16 @@ footer h3 {
 
 	/* ===================  main ================ */
 	
+	.main .display-none {
+		display: block;
+		color: #fefff6;
+	}
+
 	.main{
 		min-height: calc(100% - 380px);
 		flex-flow: column;
 		justify-content: space-between;
+
 		background: none;
 	}
 
@@ -266,41 +272,17 @@ footer h3 {
 
 	.main p {
 		font-size: 27.5px;
-	}
-
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	.main .display-none {
-		display: block;
-		color: #fefff6;
+		line-height: 1.3em;
 	}
 
 	.main .btn {
 	font-size: 40px;
 	}
 
-	.display-none h3 {
-		font-size: 32.5px;
-	}
-
-	.display-none p {
-		font-size: 25.5px;
+	.ecole-secondaire-contact a {
+		font-size: 27.5px;
 	}
 	
-	
-	
-
    	/* ===== FOOTER ====== */
 
 	.footer {
