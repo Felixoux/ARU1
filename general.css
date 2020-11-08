@@ -61,7 +61,7 @@ a {
 	font-family: 'PT Sans', sans-serif;
 }
 
-boutton {
+button {
 	font-family: 'Yantramanav', sans-serif;
 }
 
@@ -69,7 +69,7 @@ boutton {
 /* =============================================   VARIABLES  =========================*/
 
 :root{
-	--clic: rgb(245, 35, 52);
+	--clic: rgb(255, 78, 78);
 }
 
 
