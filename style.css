@@ -79,16 +79,19 @@ body{
 
 
 .main{
+	position: relative;
 	justify-content: space-between;
 	height: 50%;
 	width: 100%;
-
-	background-image: url(img/595349517_2000px-600px.png);
+	
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)) , url(img/595349517_2000px-600px.png);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover ;
+	
 }
+
 
 .petite-ecole,.ecole-secondaire,.ecole-internat{
 	width:100%;
