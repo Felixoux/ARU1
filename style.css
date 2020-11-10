@@ -86,7 +86,6 @@ body{
 	
 	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)) , url(img/595349517_2000px-600px.png);
 	background-position: center center;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover ;
 	
