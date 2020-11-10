@@ -54,30 +54,20 @@ body{
 }
 
 
-.navbar{
-	height: 2em;
+.navbar{	
 	width: calc(95% - 196.5px);
+	height: 2em;
 
 	border-radius: 5px;
-	
-	background-color:#fefff6;
+
+	background-color: white;
 
 	font-size: 50px;
 	text-transform: uppercase;
-	
-	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5)
 
 }
-
-.navbar-h1 {
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-}
-
-.nav-bar-h1 span{
-	font-size: 55px ;	
-}
-
 
  /* ============================================   main  ======================== */ 
 
@@ -105,7 +95,7 @@ body{
 
 	background-color:rgba(212, 59, 87, 1);
 
-	font-size: 27.5px;
+	font-size: 30px;
 	color: white;
 	font-weight: 400;
 	text-align: center;
@@ -149,7 +139,7 @@ body{
 footer h3 {
 	padding: 0 0 25px;
 
-	font-size: 27.5px;
+	font-size: 30px;
 	color: #fefff6;
 }
 
@@ -160,7 +150,7 @@ footer h3 {
 }
 
 .footer p {
-	font-size: 16.5px;
+	font-size: 17.5px;
 	font-weight: 300;
 	line-height: 1.4em;
 	color: #fefff6;
