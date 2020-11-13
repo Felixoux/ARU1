@@ -24,7 +24,7 @@ html{
 
 
 body{
-	background-color:#07707e;
+	background-color:#181E29;
 	width: 100%;
 	height: 100vh;
 }
@@ -60,13 +60,17 @@ body{
 
 	border-radius: 5px;
 
-	background-color: white;
+	background-color: #46649B;
 
 	font-size: 50px;
 	text-transform: uppercase;
 
 	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5)
 
+}
+
+.navbar-h1 {
+	color: #fefff6;
 }
 
 
@@ -80,7 +84,7 @@ body{
 	height: 50%;
 	width: 100%;
 	
-	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)) , url(img/595349517_2000px-600px.png);
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)) , url(img/595349517_2000px-600px.png);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
