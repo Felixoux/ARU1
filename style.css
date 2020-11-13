@@ -111,6 +111,11 @@ body{
 	box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
+.main .btn:active {
+	transition: all 0.1s ease 0s;
+	background-color: rgb(173, 49, 71);
+}
+
 .main a:hover {
 	transform: scale(1.2, 1.2);
 	box-shadow: none; 
