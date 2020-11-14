@@ -59,7 +59,7 @@ body{
 	height: 2em;
 
 	border-radius: 15px;
-	border-bottom: 0.5px solid #fd971a ;
+	border-bottom: 0.5px solid #ED7F10 ;
 
 	background-color: #2d303500;
 
@@ -99,7 +99,7 @@ body{
 
 	border-radius: 50px;
 
-	background-color:#FF8C00;
+	background-color:#ED7F10;
 
 	font-size: 30px;
 	color: white;
@@ -114,7 +114,7 @@ body{
 
 .main .btn:active {
 	transition: all 0.1s ease 0s;
-	background-color: rgb(144, 30, 236);
+	background-color: rgb(196, 106, 16);
 }
 
 .main a:hover {
@@ -202,12 +202,12 @@ footer h3 {
 /* mailto lien */
 
 .ecole-secondaire-contact a {
-	background: linear-gradient(to top,rgb(190, 32, 238) 0%,  rgb(190, 32, 238) 5%, transparent 5.01%);
+	background: linear-gradient(to top,rgb(237, 127, 16) 0%,  rgb(237, 127, 16) 5%, transparent 5.01%);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
 
 	font-size: 19.5px;
-	color: #FF8C00;
+	color: rgb(237, 127, 16);
 
 	transition: background-size ease 0.3s;
 }
