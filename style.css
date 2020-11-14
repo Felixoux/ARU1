@@ -58,19 +58,17 @@ body{
 	width: calc(95% - 196.5px);
 	height: 2em;
 
-	border-radius: 5px;
+	border-radius: 15px;
+	border-bottom: 0.5px solid #c430ff ;
 
-	background-color: #46649B;
+	background-color: #2B3F63;
 
 	font-size: 50px;
 	text-transform: uppercase;
-
-	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5)
-
 }
 
 .navbar-h1 {
-	color: #fefff6;
+	color: #ffffff;
 }
 
 
@@ -81,15 +79,14 @@ body{
 .main{
 	position: relative;
 	justify-content: space-between;
-	height: 50%;
+	height: 45%;
 	width: 100%;
 	
-	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)) , url(img/595349517_2000px-600px.png);
-	background-position: center center;
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)) , url(img/book.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover ;
-	
+	background-position: center center;
 }
 
 
@@ -102,7 +99,7 @@ body{
 
 	border-radius: 50px;
 
-	background-color:rgba(212, 59, 87, 1);
+	background-color:rgb(190, 32, 238);
 
 	font-size: 30px;
 	color: white;
@@ -117,7 +114,7 @@ body{
 
 .main .btn:active {
 	transition: all 0.1s ease 0s;
-	background-color: rgb(173, 49, 71);
+	background-color: rgb(144, 30, 236);
 }
 
 .main a:hover {
@@ -167,7 +164,7 @@ footer h3 {
 	font-size: 17.5px;
 	font-weight: 300;
 	line-height: 1.4em;
-	color: #fefff6;
+	color: #E8E8E8;
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -205,12 +202,12 @@ footer h3 {
 /* mailto lien */
 
 .ecole-secondaire-contact a {
-	background: linear-gradient(to top, rgba(255, 78, 78, 1) 0%,  rgba(255, 78, 78, 1) 5%, transparent 5.01%);
+	background: linear-gradient(to top,rgb(190, 32, 238) 0%,  rgb(190, 32, 238) 5%, transparent 5.01%);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
 
 	font-size: 19.5px;
-	color: var(--clic);
+	color: rgb(190, 32, 238);
 
 	transition: background-size ease 0.3s;
 }
