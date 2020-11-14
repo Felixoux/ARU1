@@ -28,14 +28,14 @@ _________________________NNN___________NN
 _______________________NNN____________NN
 ______________________________________NN
 -->
-<html lang="fr">
+<html lang="fr" data-theme="ligth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, height=device-height"/>
     <title>ARU1</title>
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="darkMode.css">
+    <link rel="stylesheet" href="/darMode.css">
     <link rel="shortcut icon" href="img/LOGO.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
@@ -151,5 +151,33 @@ ______________________________________NN
                     </p>
                 </div>
             </footer>
+                    <div class="container">
+                        <div class="toggle-container">
+                            <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+                        </div>
+                    </div>
+                    <script>
+                        // DarkMode Switch
+                        var checkbox = document.querySelector('input[name=theme]');
+
+                        checkbox.addEventListener('change', function(){
+                            if(this.checked){
+                                trans()
+                                document.documentElement.setAttribute('data-theme', 'dark')
+                            } else {
+                                trans()
+                                document.documentElement.setAttribute('data-theme', 'light')
+                            }
+                        })
+
+                        let trans = () => {
+                            document.documentElement.classList.add('transition');
+                            window.setTimeout(() => {
+                                document.documentElement.classList.remove('transition')
+                            }, 1000)
+                        }
+                        
+
+                    </script>
 </body>
 </html>
