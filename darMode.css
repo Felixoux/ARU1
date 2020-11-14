@@ -4,7 +4,6 @@ html {
   --bg-button:#1481EE;
   --color-text:black;
   --color-headings: #c46a10;
-  --logo-light: url(img/LOGO.png);
 }
 
 html[data-theme="dark"] {
@@ -13,7 +12,6 @@ html[data-theme="dark"] {
   --bg-button:#c46a10;
   --color-text:#FFFFFF;
   --color-headings: #c46a10;
-  --logo-dark: url(img/LOGO-blanc.png);
 }
 
 .logo-image[data-theme='dark'] {
@@ -39,15 +37,10 @@ body {
 
 .container {
   position: fixed;
-  bottom: 5px;
-  left: 0;
+  bottom: 10px;
+  left: 5px;
   background-color: var(--switch-to-dark);
-  padding: 0.35em;
   border-radius: 50px;
-}
-
-.logo-image {
-  background-image: var(--logo-light);
 }
 
 .navbar {
