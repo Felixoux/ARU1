@@ -113,7 +113,7 @@ footer h3 {	padding: 0 0 25px; font-size: 30px; color:var(--color-text);
 
 /* mailto lien */
 
-.ecole-secondaire-contact a {background: linear-gradient(to top,rgb(237, 127, 16) 0%,  rgb(237, 127, 16) 5%, transparent 5.01%); background-size: 0% 100%; background-repeat: no-repeat; font-size: 19.5px;	color: rgb(237, 127, 16); transition: background-size ease 0.3s;
+.ecole-secondaire-contact a {background: linear-gradient(to top,var(--bg-button) 0%,  var(--bg-button) 5%, transparent 5.01%); background-size: 0% 100%; background-repeat: no-repeat; font-size: 19.5px;	color: var(--bg-button); transition: background-size ease 0.3s;
 }
 
 .ecole-secondaire-contact a:hover{
@@ -195,7 +195,6 @@ label:active:after {width: 45px;
 	}
 
 	.main p[data-theme="dark"]{color: var(--color-text);
-
 	}
 
 	.petite-ecole-contact :last-child { padding: 5px 0 0 ;
