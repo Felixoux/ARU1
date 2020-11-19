@@ -60,7 +60,9 @@ body{
 .main .btn[data-theme="dark"] { background-color: var(--bg-button);
 }
 
-.main .btn:active {	transition: all 0.1s ease 0s; background-color: #c46a10;
+.main .btn:active {	transition: all 0.1s ease 0s; background-color: #1973ce;
+}
+.main .btn:active [data-theme="dark"]{	transition: all 0.1s ease 0s; background-color: #c46a10;
 }
 
 .main a:hover {	transform: scale(1.2, 1.2);	box-shadow: none; 
