@@ -165,7 +165,7 @@ label:active:after {width: 45px;
 
 	/* ===================  mainMobile ================ */
 	
-	.main .display-none { display: block; color: black;
+	.main .display-none { display: block; color: var(--color-text);
 	}
 
 	.main{	min-height: calc(100% - 380px); flex-flow: column; justify-content: space-between; background: none;
