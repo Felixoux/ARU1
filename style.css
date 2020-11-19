@@ -10,331 +10,214 @@
 
 	AUTRES
 
-} */
+} 
 
+======================================  PAGE D'ACCEUIL ========================= 
 
-/* ======================================  PAGE D'ACCEUIL ========================= */
-
-
-/* ====================================== header ================================= */
+====================================== header ================================== */
 
 html{
-	box-sizing: border-box;
+	box-sizing:border-box; --bg: #FCFCFC; --bg-navbar:#1481EE; --bg-button:#1481EE;	--color-text:black;	--color-headings: #c46a10;
 }
 
+html[data-theme="dark"]{--bg: #3A3E43; --bg-navbar:#3A3E43; --bg-button:#c46a10; --color-text:#FFFFFF; --color-headings: #c46a10;
+}
 
 body{
-	background-color:#3A3E43;
-	width: 100%;
-	height: 100vh;
+	background-color:var(--bg); width: 100%; height: 100vh;	position: relative;
 }
 
-
-.flex {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-flow: row nowrap;
+.flex {	display: flex;	align-items: center;	justify-content: center;	flex-flow: row nowrap;
 }
 
-.header{
-	justify-content: space-between;
-	margin: 0 3.75%;
+.header{	justify-content: space-between;	margin: 0 3.75%;
 }
 
-.logo-image{
-	display: block;
-	width: 196.5px;
-	height:200px;
-	margin: 40px 0;
-
-	background-image: url("img/LOGO.png");
-
-	cursor: pointer;
+.logo-image{display: block;	width: 196.5px;	height:200px; margin: 40px 0; background-image: url("img/LOGO.png"); cursor: pointer;
 }
 
-
-.navbar{	
-	width: calc(95% - 196.5px);
-	height: 2em;
-
-	border-radius: 15px;
-	border-bottom: 0.5px solid #ED7F10 ;
-
-	background-color: #2d303500;
-
-	font-size: 50px;
-	text-transform: uppercase;
+.navbar{width: calc(95% - 196.5px);	height: 2em; border-radius: 15px; border-bottom: 0.5px solid var(--bg-button) ; background-color: var(--bg-navbar);	font-size: 50px; text-transform: uppercase;
 }
 
-.navbar-h1 {
-	color: #ffffff;
+.navbar-h1 {color:var(--color-text);
 }
 
+.navbar[data-theme="dark"] { border-bottom: 0.5px solid var(--bg-button);
+}
 
-
+.navbar h1 [data-theme="dark"] { color: var(--color-text);
+}
  /* ============================================   main  ======================== */ 
 
+.main{position: relative; justify-content: space-between; height: 45%;	width: 100%; background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)) , url(img/book.jpg);	background-attachment: fixed; background-repeat: no-repeat;	background-size: cover ; background-position: center center;}
 
-.main{
-	position: relative;
-	justify-content: space-between;
-	height: 45%;
-	width: 100%;
-	
-	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)) , url(img/book.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover ;
-	background-position: center center;
+.petite-ecole,.ecole-secondaire,.ecole-internat{width:100%;
 }
 
-
-.petite-ecole,.ecole-secondaire,.ecole-internat{
-	width:100%;
+.main .btn { padding: 11px 25px; border-radius: 50px; background-color:var(--bg-button); font-size: 30px; color: var(--color-text); font-weight: 400; text-align: center; font-family: 'Yantramanav', sans-serif; transition: all 0.3s ease 0s; cursor:pointer; box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
-.main .btn {
-	padding: 11px 25px;
-
-	border-radius: 50px;
-
-	background-color:#ED7F10;
-
-	font-size: 30px;
-	color: white;
-	font-weight: 400;
-	text-align: center;
-	font-family: 'Yantramanav', sans-serif;
-	
-    transition: all 0.3s ease 0s;
-	cursor:pointer;
-	box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3); 
+.main .btn[data-theme="dark"] { background-color: var(--bg-button);
 }
 
-.main .btn:active {
-	transition: all 0.1s ease 0s;
-	background-color: #c46a10;
+.main .btn:active {	transition: all 0.1s ease 0s; background-color: #c46a10;
 }
 
-.main a:hover {
-	transform: scale(1.2, 1.2);
-	box-shadow: none; 
+.main a:hover {	transform: scale(1.2, 1.2);	box-shadow: none; 
 }
-
 
  /* ======== TELEPHONE DESACTIVE ============== */ 
 
-.display-none {
-	display: none;
+.display-none {	display: none;
 }
-
 
 /* ====================================   footer  ================================ */ 
 
 /* Dégradé:
-
 	background: linear-gradient(90deg, rgb(62, 62, 122) 0%,
 	rgba(76, 148, 142, 0.45) 50%, 
 	rgba(2,0,36,1) 100%);
 	*/
-
-
-
-.footer{
-	display: flex;
-	justify-content: space-between;
-	margin: 40px 0;
+.footer{ display: flex;	justify-content: space-between;	margin: 40px 0;
 }
 
-footer h3 {
-	padding: 0 0 25px;
-
-	font-size: 30px;
-	color: #fefff6;
+footer h3 {	padding: 0 0 25px; font-size: 30px; color:var(--color-text);
 }
 
-
-.footer div {
-	height: 200px;
-	text-align: center;
+.footer div { height: 200px; text-align: center;
 }
 
-.footer p {
-	font-size: 17.5px;
-	font-weight: 300;
-	line-height: 1.4em;
-	color: #E8E8E8;
-	font-family: 'Roboto Slab', serif;
+.footer p {	font-size: 17.5px; font-weight: 300; line-height: 1.4em; color: var(--color-text); font-family: 'Roboto Slab', serif;
 }
 
-.petite-ecole-contact, .ecole-secondaire-contact, .ecole-internat-contact {
-	width: 100%;
+.petite-ecole-contact, .ecole-secondaire-contact, .ecole-internat-contact {	width: 100%;
 }
 
-.petite-ecole-contact {
-	padding-left: 0%;
+.petite-ecole-contact {	padding-left: 0%;
 }
 
-.petite-ecole-contact :last-child {
-	padding: 20px 0;
+.petite-ecole-contact :last-child {	padding: 20px 0;
 }
 
-.ecole-secondaire-contact :last-child {
-	padding: 20px 0;
+.ecole-secondaire-contact :last-child {	padding: 20px 0;
 }
 
-.ecole-secondaire-contact :last-child a {
-	padding: 0;
+.ecole-secondaire-contact :last-child a {	padding: 0;
 }
 
-.ecole-internat-contact {
-	padding-right: 0%;
+.ecole-internat-contact {	padding-right: 0%;
 }
 
-.ecole-internat-contact :last-child {
-	padding: 20px 0;
+.ecole-internat-contact :last-child {	padding: 20px 0;
 }
-
-
-
 
 /* mailto lien */
 
-.ecole-secondaire-contact a {
-	background: linear-gradient(to top,rgb(237, 127, 16) 0%,  rgb(237, 127, 16) 5%, transparent 5.01%);
-	background-size: 0% 100%;
-	background-repeat: no-repeat;
-
-	font-size: 19.5px;
-	color: rgb(237, 127, 16);
-
-	transition: background-size ease 0.3s;
+.ecole-secondaire-contact a {background: linear-gradient(to top,rgb(237, 127, 16) 0%,  rgb(237, 127, 16) 5%, transparent 5.01%); background-size: 0% 100%; background-repeat: no-repeat; font-size: 19.5px;	color: rgb(237, 127, 16); transition: background-size ease 0.3s;
 }
 
 .ecole-secondaire-contact a:hover{
 	background-size: 100% 100%;
 }
 
+/* ==== switchDarkMode === */
 
+.container { position: fixed; bottom: 10px;	left: 5px; border-radius: 50px;
+}
 
+input[type=checkbox] { height: 0; width: 0; visibility: hidden;
+}
 
+label {	cursor: pointer; text-indent: -9999px; width: 50px;	height: 25px; background: grey;	float: right; border-radius: 100px;	position: relative;
+}
 
+label:after { content: ''; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; background: #fff; border-radius: 90px; -webkit-transition: 0.3s; transition: 0.3s;
+}
 
+input:checked + label { background: var(--color-headings);
+}
 
+input:checked + label:after { left: calc(100% - 5px); -webkit-transform: translateX(-100%); transform: translateX(-100%);
+}
 
+label:active:after {width: 45px;
+}
 
+  html.transition, html.transition *, html.transition *:before, html.transition *:after {-webkit-transition: all 750ms !important; transition: all 750ms !important; -webkit-transition-delay: 0 !important; transition-delay: 0 !important;
+}
 
-
-/* ======================================  MOBILE ET TABLETTE  ============================== */ 
+/* ====================================== MOBILE ============================== */ 
 
 @media screen and (max-width: 1150px) {
 
-/*	===============  header ================ */
-	.header{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-flow: column nowrap;
+/*	===============  headerMobile ================ */
+	.header{ display: flex;	align-items: center; justify-content: center; flex-flow: column nowrap;
 	}
 	
-	.logo-image {
-		width: 98.25px;
-		height:100px ;
-		background-size: contain;
-		margin: 10px 0;
+	.logo-image {width: 98.25px; height:100px ; background-size: contain;	margin: 10px 0;
 	}
 	
-	.navbar {
-	width: 100%;
-	height: 1em;
+	.navbar { width: 100%; height: 1em;
 	}
 
-    .navbar-h1 {
-		font-size:20px;
-		white-space: nowrap;
+    .navbar-h1 { font-size:20px; white-space: nowrap;
 	}
 
+	/* ===================  mainMobile ================ */
 	
-
-	/* ===================  main ================ */
-	
-	.main .display-none {
-		display: block;
-		color: black;
+	.main .display-none { display: block; color: black;
 	}
 
-	.main{
-		min-height: calc(100% - 380px);
-		flex-flow: column;
-		justify-content: space-between;
-
-		background: none;
+	.main{	min-height: calc(100% - 380px); flex-flow: column; justify-content: space-between; background: none;
 	}
 
-	.main > div {
-		display: flex;
-		flex-flow: column;
-		flex-basis: 33.33%;
-		text-align: center;
-		margin: 20px 0 5px;
+	.main > div { display: flex; flex-flow: column; flex-basis: 33.33%; text-align: center; margin: 20px 0 5px;
 	}
 
-	.main:first-child {
-		margin: 0px 0 20px;
+	.main:first-child { margin: 0px 0 20px;
 	}
 
-	.main:nth-child(2) {
-		margin: 20px 0;
+	.main:nth-child(2) { margin: 20px 0;
 	}
 	
-	.main:last-child {
-		margin: 20px 0;
+	.main:last-child { margin: 20px 0;
 	}
 
-
-	.main .btn {
-		font-size: 18px;
+	.main .btn {font-size: 18px;
 		}
 	
-	.main h3 {
-		padding: 15px 0 10px;
-		font-size: 17.5px;
+	.main h3 { padding: 15px 0 10px; font-size: 17.5px;
 	}
 
-
-	.main p {
-		font-size: 15px;
-		line-height: 1.3em;
-		padding: 0;
+	.main h3[data-theme="dark"]{color: var(--color-text);
+	}
+	.main p { font-size: 15px; line-height: 1.3em; padding: 0;
 	}
 
-	
+	.main p[data-theme="dark"]{color: var(--color-text);
 
-	.petite-ecole-contact :last-child {
-		padding: 5px 0 0 ;
 	}
 
-	.ecole-secondaire-contact :last-child {
-		padding: 5px 0 0;
+	.petite-ecole-contact :last-child { padding: 5px 0 0 ;
 	}
 
-	.ecole-internat-contact :last-child {
-		padding: 5px 0 0;
+	.ecole-secondaire-contact :last-child {	padding: 5px 0 0;
 	}
 
-	.ecole-secondaire-contact a {
-		font-size: 16px;
+	.ecole-internat-contact :last-child { padding: 5px 0 0;
 	}
 
-	.ecole-internat {
-		margin: 0 0 20px;
+	.ecole-secondaire-contact a { font-size: 16px;
+	}
+
+	.ecole-internat { margin: 0 0 20px;
 	}
 	
-   	/* ===== FOOTER ====== */
+   	/* ===== footerMobile ====== */
 
-	.footer {
-	display: none;
+	.footer { display: none;
 	}
 }
+
+
 
