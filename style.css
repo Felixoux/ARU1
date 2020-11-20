@@ -9,7 +9,8 @@
 	TEXT
 
 	AUTRES
-
+	
+	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
 } 
 
 ======================================  PAGE D'ACCEUIL ========================= 
@@ -66,7 +67,7 @@ body{
 .main .btn { padding: 11px 25px; border-radius: 50px; background-color:var(--bg-button); font-size: 30px; color: var(--color-text); font-weight: 400; text-align: center; font-family: 'Yantramanav', sans-serif; transition: all 0.3s ease 0s; cursor:pointer; box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
-.main .btn:focus {outline: none; transform: scale(1.15, 1.15); box-shadow: none;
+.main .btn:focus {outline: none; transform: scale(1.15, 1.15); box-shadow: none; background-color: #1481EE; color: black;
 } 
 
 .main .btn[data-theme="dark"] { background-color: var(--bg-button);
@@ -132,7 +133,7 @@ footer h3 {	padding: 0 0 25px; font-size: 30px; color:var(--color-text);
 
 .ecole-secondaire-contact a:hover{background-size: 100% 100%; 
 }
-.ecole-secondaire-contact a:focus{outline: none; background-size: 100% 100%; 
+.ecole-secondaire-contact a:focus{outline: none ; background-size: 100% 100%; 
 }
 
 /* ==== switchDarkMode === */
@@ -231,7 +232,8 @@ label:active:after {width: 45px;
 
 	.footer { display: none;
 	}
-}
+} 
+
 
 
 
