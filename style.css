@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* RESET */
 * {
   box-sizing: border-box;
@@ -93,6 +92,13 @@ button {
 
 	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
 } */
+html.transition, html.transition *, html.transition *:before, html.transition *:after {
+  -webkit-transition: all 750ms !important;
+  transition: all 750ms !important;
+  -webkit-transition-delay: 0 !important;
+  transition-delay: 0 !important;
+}
+
 html {
   box-sizing: border-box;
   --bg: #FCFCFC;
@@ -110,14 +116,6 @@ html[data-theme=dark] {
   --color-headings: #c46a10;
 }
 
-body {
-  background-color: var(--bg);
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-/* === scrollBar === */
 ::-webkit-scrollbar {
   background-color: #b1b1b1;
   border-radius: 50px;
@@ -146,19 +144,11 @@ body {
   flex-flow: row nowrap;
 }
 
-/* ============================================================================================ main_index =============================================== */
-#main_index {
-  /* ============================================   main  ======================== */
-  /* ======== TELEPHONE DESACTIVE ============== */
-  /* ====================================   footer  ================================ */
-  /* Dégradé:
-  	background: linear-gradient(90deg, rgb(62, 62, 122) 0%,
-  	rgba(76, 148, 142, 0.45) 50%, 
-  	rgba(2,0,36,1) 100%);
-  	*/
-  /* mailto lien */
-  /* ==== switchDarkMode === */
-  /* ====================================== MOBILE ============================== */
+#main_index body {
+  background-color: var(--bg);
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 #main_index .header {
   justify-content: space-between;
@@ -187,7 +177,7 @@ body {
 #main_index .navbar[data-theme=dark] {
   border: 0.5px solid var(--bg-button);
 }
-#main_index .navbar h1 [data-theme=dark] {
+#main_index .navbar[data-theme=dark] h1 {
   color: var(--color-text);
 }
 #main_index .main {
@@ -200,9 +190,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-#main_index .petite-ecole, #main_index .ecole-secondaire, #main_index .ecole-internat {
-  width: 100%;
 }
 #main_index .main .btn {
   padding: 11px 25px;
@@ -224,20 +211,23 @@ body {
   background-color: #1481EE;
   color: black;
 }
-#main_index .main .btn[data-theme=dark] {
-  background-color: var(--bg-button);
-}
 #main_index .main .btn:active {
   transition: all 0.1s ease 0s;
   background-color: #1973ce;
 }
-#main_index .main .btn:active [data-theme=dark] {
-  transition: all 0.1s ease 0s;
-  background-color: #c46a10;
-}
 #main_index .main a:hover {
   transform: scale(1.15, 1.15);
   box-shadow: none;
+}
+#main_index .main[data-theme=dark] .btn {
+  background-color: var(--bg-button);
+}
+#main_index .main[data-theme=dark] .btn:active [data-theme=dark] {
+  transition: all 0.1s ease 0s;
+  background-color: #c46a10;
+}
+#main_index .petite-ecole, #main_index .ecole-secondaire, #main_index .ecole-internat {
+  width: 100%;
 }
 #main_index .display-none {
   display: none;
@@ -247,7 +237,7 @@ body {
   justify-content: space-between;
   margin: 40px 0;
 }
-#main_index footer h3 {
+#main_index .footer h3 {
   padding: 0 0 25px;
   font-size: 30px;
   color: var(--color-text);
@@ -351,11 +341,6 @@ body {
   transition-delay: 0 !important;
 }
 @media screen and (max-width: 1150px) {
-  #main_index {
-    /*	===============  headerMobile ================ */
-    /* ===================  mainMobile ================ */
-    /* ===== footerMobile ====== */
-  }
   #main_index .header {
     display: flex;
     align-items: center;
@@ -440,11 +425,8 @@ body {
   }
 }
 
-html.transition, html.transition *, html.transition *:before, html.transition *:after {
-  -webkit-transition: all 750ms !important;
-  transition: all 750ms !important;
-  -webkit-transition-delay: 0 !important;
-  transition-delay: 0 !important;
+#index_secondaire {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
