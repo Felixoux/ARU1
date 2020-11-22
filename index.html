@@ -33,7 +33,6 @@ ______________________________________NN
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, height=device-height"/>
     <title>ARU1</title>
-    <link rel="stylesheet" href="resetNormalize.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
@@ -42,7 +41,7 @@ ______________________________________NN
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Oxygen&family=Space+Grotesk&family=Yantramanav&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="main_index">
     <div class="header flex">
         <div class="logo-image">
         </div>
@@ -158,26 +157,25 @@ ______________________________________NN
                         // DarkMode Switch
                         var checkbox = document.querySelector('input[name=theme]');
                         let logo = document.querySelector('.header .logo-image')
-                        let hidden = document.querySelectorAll(".display-none");
 
                         checkbox.addEventListener('change', function(){
                             if(this.checked){
                                 trans()
                                 document.documentElement.setAttribute('data-theme', 'dark')      
                                 logo.style.backgroundImage = "url(img/LOGO-blanc.png)";       
-                                hidden.document.style.color="#FFFFFF";                                     
+                                document.querySelectorAll(".display-none")[0].style.color == "#FFFFFF";                                     
                             } else {
                                 trans()
                                 document.documentElement.setAttribute('data-theme', 'light') 
                                 logo.style.backgroundImage = "url(img/LOGO.png)"; 
-                                hidden.document.style.color="#000000";                            
+                                document.querySelectorAll(".display-none")[0].style.color == "#000000";                            
                             }
                         })
 
                         let trans = () => {
                             document.documentElement.classList.add('transition');
                             window.setTimeout(() => {
-                                document.documentElement.classList.remove('transition')
+                            document.documentElement.classList.remove('transition')
                             }, 700)
                         }
                         

@@ -1,3 +1,84 @@
+@charset "UTF-8";
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ======================================  FONTS ================================== */
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  font-family: "PT Sans", sans-serif;
+}
+
+button {
+  font-family: "Yantramanav", sans-serif;
+}
+
+/* =============================================   VARIABLES  =========================*/
+:root {
+  --clic: rgb(255, 78, 78);
+}
+
 /* organisation css:{
 
 	POSITION + MARGIN, PADDING
@@ -9,231 +90,361 @@
 	TEXT
 
 	AUTRES
-	
+
 	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
-} 
-
-======================================  PAGE D'ACCEUIL ========================= 
-
-====================================== header ================================== */
-
-html{
-	box-sizing:border-box; --bg: #FCFCFC; --bg-navbar:#1481EE; --bg-button:#1481EE;	--color-text:black;	--color-headings: #c46a10;
+} */
+html {
+  box-sizing: border-box;
+  --bg: #FCFCFC;
+  --bg-navbar:#1481EE;
+  --bg-button:#1481EE;
+  --color-text:black;
+  --color-headings: #c46a10;
 }
 
-html[data-theme="dark"]{--bg: #3A3E43; --bg-navbar:#3A3E43; --bg-button:#c46a10; --color-text:#FFFFFF; --color-headings: #c46a10;
+html[data-theme=dark] {
+  --bg: #3A3E43;
+  --bg-navbar:#3A3E43;
+  --bg-button:#c46a10;
+  --color-text:#FFFFFF;
+  --color-headings: #c46a10;
 }
 
-body{
-	background-color:var(--bg); width: 100%; height: 100vh;	position: relative;
+body {
+  background-color: var(--bg);
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
+
 /* === scrollBar === */
-::-webkit-scrollbar{background-color: rgb(177, 177, 177);border-radius: 50px; width: 11.5px;
-}
-::-webkit-scrollbar-thumb{ background-color: rgb(119, 119, 119);border-radius: 500px;
-}
-::-webkit-scrollbar-thumb:hover{background-color: rgb(98, 102, 105);border-radius: 500px;
-}
-::-webkit-scrollbar-thumb:active{background-color:rgb(97, 99, 102);	border-radius: 500px;
+::-webkit-scrollbar {
+  background-color: #b1b1b1;
+  border-radius: 50px;
+  width: 11.5px;
 }
 
-.flex {	display: flex;	align-items: center;	justify-content: center;	flex-flow: row nowrap;
+::-webkit-scrollbar-thumb {
+  background-color: #777777;
+  border-radius: 500px;
 }
 
-.header{	justify-content: space-between;	margin: 0 3.75%;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #626669;
+  border-radius: 500px;
 }
 
-.logo-image{display: block;	width: 196.5px;	height:200px; margin: 40px 0; background-image: url("img/LOGO.png"); cursor: pointer;
+::-webkit-scrollbar-thumb:active {
+  background-color: #616366;
+  border-radius: 500px;
 }
 
-.navbar{width: calc(95% - 196.5px);	height: 2em; border-radius: 15px; border-bottom: 0.5px solid var(--bg-button) ; background-color: var(--bg-navbar);	font-size: 50px; text-transform: uppercase;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
 }
 
-.navbar-h1 {color:var(--color-text);
+/* ============================================================================================ main_index =============================================== */
+#main_index {
+  /* ============================================   main  ======================== */
+  /* ======== TELEPHONE DESACTIVE ============== */
+  /* ====================================   footer  ================================ */
+  /* Dégradé:
+  	background: linear-gradient(90deg, rgb(62, 62, 122) 0%,
+  	rgba(76, 148, 142, 0.45) 50%, 
+  	rgba(2,0,36,1) 100%);
+  	*/
+  /* mailto lien */
+  /* ==== switchDarkMode === */
+  /* ====================================== MOBILE ============================== */
 }
-
-.navbar[data-theme="dark"] { border-bottom: 0.5px solid var(--bg-button);
+#main_index .header {
+  justify-content: space-between;
+  margin: 0 3.75%;
 }
-
-.navbar h1 [data-theme="dark"] { color: var(--color-text);
+#main_index .logo-image {
+  display: block;
+  width: 196.5px;
+  height: 200px;
+  margin: 40px 0;
+  background-image: url("img/LOGO.png");
+  cursor: pointer;
 }
- /* ============================================   main  ======================== */ 
-
-.main{position: relative; justify-content: space-between; height: 45%;	width: 100%; background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)) , url(img/book.jpg);	background-attachment: fixed; background-repeat: no-repeat;	background-size: cover ; background-position: center center;}
-
-.petite-ecole,.ecole-secondaire,.ecole-internat{width:100%;
+#main_index .navbar {
+  width: calc(95% - 196.5px);
+  height: 2em;
+  border-radius: 15px;
+  border-bottom: 0.5px solid var(--bg-button);
+  background-color: var(--bg-navbar);
+  font-size: 50px;
+  text-transform: uppercase;
 }
-
-.main .btn { padding: 11px 25px; border-radius: 50px; background-color:var(--bg-button); font-size: 30px; color: var(--color-text); font-weight: 400; text-align: center; font-family: 'Yantramanav', sans-serif; transition: all 0.3s ease 0s; cursor:pointer; box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3); 
+#main_index .navbar h1 {
+  color: var(--color-text);
 }
-
-.main .btn:focus {outline: none; transform: scale(1.15, 1.15); box-shadow: none; background-color: #1481EE; color: black;
-} 
-
-.main .btn[data-theme="dark"] { background-color: var(--bg-button);
+#main_index .navbar[data-theme=dark] {
+  border: 0.5px solid var(--bg-button);
 }
-
-.main .btn:active {	transition: all 0.1s ease 0s; background-color: #1973ce;
+#main_index .navbar h1 [data-theme=dark] {
+  color: var(--color-text);
 }
-.main .btn:active [data-theme="dark"]{	transition: all 0.1s ease 0s; background-color: #c46a10;
+#main_index .main {
+  position: relative;
+  justify-content: space-between;
+  height: 45%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(img/book.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
-.main a:hover {	transform: scale(1.15, 1.15); box-shadow: none; 
+#main_index .petite-ecole, #main_index .ecole-secondaire, #main_index .ecole-internat {
+  width: 100%;
 }
-
- /* ======== TELEPHONE DESACTIVE ============== */ 
-
-.display-none {	display: none;
+#main_index .main .btn {
+  padding: 11px 25px;
+  border-radius: 50px;
+  background-color: var(--bg-button);
+  font-size: 30px;
+  color: var(--color-text);
+  font-weight: 400;
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3);
 }
-
-/* ====================================   footer  ================================ */ 
-
-/* Dégradé:
-	background: linear-gradient(90deg, rgb(62, 62, 122) 0%,
-	rgba(76, 148, 142, 0.45) 50%, 
-	rgba(2,0,36,1) 100%);
-	*/
-.footer{ display: flex;	justify-content: space-between;	margin: 40px 0;
+#main_index .main .btn:focus {
+  outline: none;
+  transform: scale(1.15, 1.15);
+  box-shadow: none;
+  background-color: #1481EE;
+  color: black;
 }
-
-footer h3 {	padding: 0 0 25px; font-size: 30px; color:var(--color-text);
+#main_index .main .btn[data-theme=dark] {
+  background-color: var(--bg-button);
 }
-
-.footer div { height: 200px; text-align: center;
+#main_index .main .btn:active {
+  transition: all 0.1s ease 0s;
+  background-color: #1973ce;
 }
-
-.footer p {	font-size: 17.5px; font-weight: 300; line-height: 1.4em; color: var(--color-text); font-family: 'Roboto Slab', serif;
+#main_index .main .btn:active [data-theme=dark] {
+  transition: all 0.1s ease 0s;
+  background-color: #c46a10;
 }
-
-.petite-ecole-contact, .ecole-secondaire-contact, .ecole-internat-contact {	width: 100%;
+#main_index .main a:hover {
+  transform: scale(1.15, 1.15);
+  box-shadow: none;
 }
-
-.petite-ecole-contact {	padding-left: 0%;
+#main_index .display-none {
+  display: none;
 }
-
-.petite-ecole-contact :last-child {	padding: 20px 0;
+#main_index .footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
 }
-
-.ecole-secondaire-contact :last-child {	padding: 20px 0;
+#main_index footer h3 {
+  padding: 0 0 25px;
+  font-size: 30px;
+  color: var(--color-text);
 }
-
-.ecole-secondaire-contact :last-child a { padding: 0;
+#main_index .footer div {
+  height: 200px;
+  text-align: center;
 }
-
-.ecole-internat-contact { padding-right: 0%;
+#main_index .footer p {
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: var(--color-text);
+  font-family: "Roboto Slab", serif;
 }
-
-.ecole-internat-contact :last-child {	padding: 20px 0;
+#main_index .petite-ecole-contact, #main_index .ecole-secondaire-contact, #main_index .ecole-internat-contact {
+  width: 100%;
 }
-
-/* mailto lien */
-
-.ecole-secondaire-contact a {background: linear-gradient(to top,var(--bg-button) 0%,  var(--bg-button) 5%, transparent 5.01%); background-size: 0% 100%; background-repeat: no-repeat; font-size: 19.5px;	color: var(--bg-button); transition: background-size ease 0.3s;
+#main_index .petite-ecole-contact {
+  padding-left: 0%;
 }
-
-.ecole-secondaire-contact a:hover{background-size: 100% 100%; 
+#main_index .petite-ecole-contact :last-child {
+  padding: 20px 0;
 }
-.ecole-secondaire-contact a:focus{outline: none ; background-size: 100% 100%; 
+#main_index .ecole-secondaire-contact :last-child {
+  padding: 20px 0;
 }
-
-/* ==== switchDarkMode === */
-
-.container { position: fixed; bottom: 10px;	left: 5px; border-radius: 50px; margin: 0 0 5px 5px;
+#main_index .ecole-secondaire-contact :last-child a {
+  padding: 0;
 }
-
-input[type=checkbox] { height: 0; width: 0; visibility: hidden;
+#main_index .ecole-internat-contact {
+  padding-right: 0%;
 }
-
-label {	cursor: pointer; text-indent: -9999px; width: 50px;	height: 25px; background: grey;	float: right; border-radius: 100px;	position: relative;
+#main_index .ecole-internat-contact :last-child {
+  padding: 20px 0;
 }
-
-label:after { content: ''; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; background: #fff; border-radius: 90px; -webkit-transition: 0.3s; transition: 0.3s;
+#main_index .ecole-secondaire-contact a {
+  background: linear-gradient(to top, var(--bg-button) 0%, var(--bg-button) 5%, transparent 5.01%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  font-size: 19.5px;
+  color: var(--bg-button);
+  transition: background-size ease 0.3s;
 }
-
-input:checked + label { background: var(--color-headings);
+#main_index .ecole-secondaire-contact a:hover {
+  background-size: 100% 100%;
 }
-
-input:checked + label:after { left: calc(100% - 5px); -webkit-transform: translateX(-100%); transform: translateX(-100%);
+#main_index .ecole-secondaire-contact a:focus {
+  outline: none;
+  background-size: 100% 100%;
 }
-
-label:active:after {width: 45px;
+#main_index .container {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  border-radius: 50px;
+  margin: 0 0 5px 5px;
 }
-
-  html.transition, html.transition *, html.transition *:before, html.transition *:after {-webkit-transition: all 750ms !important; transition: all 750ms !important; -webkit-transition-delay: 0 !important; transition-delay: 0 !important;
+#main_index input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
-
-/* ====================================== MOBILE ============================== */ 
-
+#main_index label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: grey;
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+#main_index label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#main_index input:checked + label {
+  background: var(--color-headings);
+}
+#main_index input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+#main_index label:active:after {
+  width: 45px;
+}
+#main_index html.transition, #main_index html.transition *, #main_index html.transition *:before, #main_index html.transition *:after {
+  -webkit-transition: all 750ms !important;
+  transition: all 750ms !important;
+  -webkit-transition-delay: 0 !important;
+  transition-delay: 0 !important;
+}
 @media screen and (max-width: 1150px) {
+  #main_index {
+    /*	===============  headerMobile ================ */
+    /* ===================  mainMobile ================ */
+    /* ===== footerMobile ====== */
+  }
+  #main_index .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+  #main_index .logo-image {
+    width: 98.25px;
+    height: 100px;
+    background-size: contain;
+    margin: 10px 0;
+  }
+  #main_index .navbar {
+    width: 100%;
+    height: 1em;
+  }
+  #main_index .navbar-h1 {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  #main_index .main .display-none {
+    display: block;
+    color: var(--color-text);
+  }
+  #main_index .main {
+    min-height: calc(100% - 380px);
+    flex-flow: column;
+    justify-content: space-between;
+    background: none;
+  }
+  #main_index .main > div {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 33.33%;
+    text-align: center;
+    margin: 20px 0 5px;
+  }
+  #main_index .main:first-child {
+    margin: 0px 0 20px;
+  }
+  #main_index .main:nth-child(2) {
+    margin: 20px 0;
+  }
+  #main_index .main:last-child {
+    margin: 20px 0;
+  }
+  #main_index .main .btn {
+    font-size: 18px;
+  }
+  #main_index .main h3 {
+    padding: 15px 0 10px;
+    font-size: 17.5px;
+  }
+  #main_index .main h3[data-theme=dark] {
+    color: var(--color-text);
+  }
+  #main_index .main p {
+    font-size: 15px;
+    line-height: 1.3em;
+    padding: 0;
+  }
+  #main_index .main p[data-theme=dark] {
+    color: var(--color-text);
+  }
+  #main_index .petite-ecole-contact :last-child {
+    padding: 5px 0 0;
+  }
+  #main_index .ecole-secondaire-contact :last-child {
+    padding: 5px 0 0;
+  }
+  #main_index .ecole-internat-contact :last-child {
+    padding: 5px 0 0;
+  }
+  #main_index .ecole-secondaire-contact a {
+    font-size: 16px;
+  }
+  #main_index .ecole-internat {
+    margin: 0 0 20px;
+  }
+  #main_index .footer {
+    display: none;
+  }
+}
 
-/*	===============  headerMobile ================ */
-	.header{ display: flex;	align-items: center; justify-content: center; flex-flow: column nowrap;
-	}
-	
-	.logo-image {width: 98.25px; height:100px ; background-size: contain;	margin: 10px 0;
-	}
-	
-	.navbar { width: 100%; height: 1em;
-	}
+html.transition, html.transition *, html.transition *:before, html.transition *:after {
+  -webkit-transition: all 750ms !important;
+  transition: all 750ms !important;
+  -webkit-transition-delay: 0 !important;
+  transition-delay: 0 !important;
+}
 
-    .navbar-h1 { font-size:20px; white-space: nowrap;
-	}
-
-	/* ===================  mainMobile ================ */
-	
-	.main .display-none { display: block; color: var(--color-text);
-	}
-
-	.main{	min-height: calc(100% - 380px); flex-flow: column; justify-content: space-between; background: none;
-	}
-
-	.main > div { display: flex; flex-flow: column; flex-basis: 33.33%; text-align: center; margin: 20px 0 5px;
-	}
-
-	.main:first-child { margin: 0px 0 20px;
-	}
-
-	.main:nth-child(2) { margin: 20px 0;
-	}
-	
-	.main:last-child { margin: 20px 0;
-	}
-
-	.main .btn {font-size: 18px;
-		}
-	
-	.main h3 { padding: 15px 0 10px; font-size: 17.5px;
-	}
-
-	.main h3[data-theme="dark"]{color: var(--color-text);
-	}
-	.main p { font-size: 15px; line-height: 1.3em; padding: 0;
-	}
-
-	.main p[data-theme="dark"]{color: var(--color-text);
-	}
-
-	.petite-ecole-contact :last-child { padding: 5px 0 0 ;
-	}
-
-	.ecole-secondaire-contact :last-child {	padding: 5px 0 0;
-	}
-
-	.ecole-internat-contact :last-child { padding: 5px 0 0;
-	}
-
-	.ecole-secondaire-contact a { font-size: 16px;
-	}
-
-	.ecole-internat { margin: 0 0 20px;
-	}
-	
-   	/* ===== footerMobile ====== */
-
-	.footer { display: none;
-	}
-} 
-
-
-
-
+/*# sourceMappingURL=style.css.map */
