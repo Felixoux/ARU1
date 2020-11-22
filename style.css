@@ -144,7 +144,7 @@ html[data-theme=dark] {
   flex-flow: row nowrap;
 }
 
-#main_index body {
+#main_index {
   background-color: var(--bg);
   width: 100%;
   height: 100vh;
@@ -423,10 +423,6 @@ html[data-theme=dark] {
   #main_index .footer {
     display: none;
   }
-}
-
-#index_secondaire {
-  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
