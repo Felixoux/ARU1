@@ -13,10 +13,10 @@
 	TEXT
 
 	AUTRES
-	
+
 	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
 } */
-
+// ./dart-sass/sass sass/style.scss style.css --watch
 html.transition, html.transition *, html.transition *:before, html.transition *:after {-webkit-transition: all 750ms !important; transition: all 750ms !important; -webkit-transition-delay: 0 !important; transition-delay: 0 !important;
 }
 
@@ -24,7 +24,7 @@ html{
 	box-sizing:border-box; --bg: #FCFCFC; --bg-navbar:#1481EE; --bg-button:#1481EE;	--color-text:black;	--color-headings: #c46a10;
 }
 
-html[data-theme="dark"]{--bg: #3A3E43; --bg-navbar:#3A3E43; --bg-button:#c46a10; --color-text:#FFFFFF; --color-headings: #c46a10;
+html[data-theme="dark"]{--bg: #121212; --bg-navbar:#3A3E43; --bg-button:#c46a10; --color-text:#FFFFFF; --color-headings: #c46a10;
 }
 
 // === scrollBar === 
@@ -40,10 +40,8 @@ html[data-theme="dark"]{--bg: #3A3E43; --bg-navbar:#3A3E43; --bg-button:#c46a10;
 .flex {	display: flex;	align-items: center;	justify-content: center;	flex-flow: row nowrap;
 }
 
-
-
 // ============================================================================================ main_index =============================================== 
-#main_index{ background-color:var(--bg); width: 100%; height: 100vh;	position: relative;
+#main_index{ background-color:var(--bg); width: 100%; height: 100vh; position: relative;
 
 	.header{ justify-content: space-between;	margin: 0 3.75%;
 }
@@ -52,7 +50,7 @@ html[data-theme="dark"]{--bg: #3A3E43; --bg-navbar:#3A3E43; --bg-button:#c46a10;
 }
 
 
-	.navbar{width: calc(95% - 196.5px);	height: 2em; border-radius: 15px; border-bottom: 0.5px solid var(--bg-button) ; background-color: var(--bg-navbar);	font-size: 50px; text-transform: uppercase;
+	.navbar{width: calc(95% - 196.5px);	height: 2em; border-radius: 15px;  background-color: var(--bg-navbar);	font-size: 50px; text-transform: uppercase;
 		
 		h1 {color:var(--color-text);
 		}
@@ -100,14 +98,14 @@ html[data-theme="dark"]{--bg: #3A3E43; --bg-navbar:#3A3E43; --bg-button:#c46a10;
 	h3 {	padding: 0 0 25px; font-size: 30px; color:var(--color-text);
 	}
 
-	div { height: 200px; text-align: center;
+	div { height: 200px; text-align: center; 
 	}
 
 	p {	font-size: 17.5px; font-weight: 300; line-height: 1.4em; color: var(--color-text); font-family: 'Roboto Slab', serif;
 	}
 }
 
-.petite-ecole-contact, .ecole-secondaire-contact, .ecole-internat-contact {	width: 100%;
+.petite-ecole-contact, .ecole-secondaire-contact, .ecole-internat-contact {	width: 100%; 
 }
 
 .petite-ecole-contact {	padding-left: 0%;
@@ -238,7 +236,10 @@ label:active:after {width: 45px;
 } 
 }
 
-// ============================================================================================ index_secondaire =============================================== 
+// ============================================================================================ secondaire =============================================== 
 
+#index_secondaire {background-color:#121212; width: 100%; height: 100vh; position: relative;
+	
+}
 
 

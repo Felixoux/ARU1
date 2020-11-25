@@ -109,7 +109,7 @@ html {
 }
 
 html[data-theme=dark] {
-  --bg: #3A3E43;
+  --bg: #121212;
   --bg-navbar:#3A3E43;
   --bg-button:#c46a10;
   --color-text:#FFFFFF;
@@ -166,7 +166,6 @@ html[data-theme=dark] {
   width: calc(95% - 196.5px);
   height: 2em;
   border-radius: 15px;
-  border-bottom: 0.5px solid var(--bg-button);
   background-color: var(--bg-navbar);
   font-size: 50px;
   text-transform: uppercase;
@@ -423,6 +422,13 @@ html[data-theme=dark] {
   #main_index .footer {
     display: none;
   }
+}
+
+#index_secondaire {
+  background-color: #121212;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
