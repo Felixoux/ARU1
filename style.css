@@ -109,8 +109,8 @@ html {
 }
 
 html[data-theme=dark] {
-  --bg: #121212;
-  --bg-navbar:#3A3E43;
+  --bg: #303030;
+  --bg-navbar:#303030;
   --bg-button:#c46a10;
   --color-text:#FFFFFF;
   --color-headings: #c46a10;
@@ -169,12 +169,13 @@ html[data-theme=dark] {
   background-color: var(--bg-navbar);
   font-size: 50px;
   text-transform: uppercase;
+  border-bottom: 0.5px solid var(--bg-button);
 }
 #main_index .navbar h1 {
   color: var(--color-text);
 }
 #main_index .navbar[data-theme=dark] {
-  border: 0.5px solid var(--bg-button);
+  border-top-left-radius: 0.5px solid var(--bg-button);
 }
 #main_index .navbar[data-theme=dark] h1 {
   color: var(--color-text);

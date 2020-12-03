@@ -24,7 +24,7 @@ html{
 	box-sizing:border-box; --bg: #FCFCFC; --bg-navbar:#1481EE; --bg-button:#1481EE;	--color-text:black;	--color-headings: #c46a10;
 }
 
-html[data-theme="dark"]{--bg: #121212; --bg-navbar:#3A3E43; --bg-button:#c46a10; --color-text:#FFFFFF; --color-headings: #c46a10;
+html[data-theme="dark"]{--bg: #303030; --bg-navbar:#303030; --bg-button:#c46a10; --color-text:#FFFFFF; --color-headings: #c46a10;
 }
 
 // === scrollBar === 
@@ -50,13 +50,13 @@ html[data-theme="dark"]{--bg: #121212; --bg-navbar:#3A3E43; --bg-button:#c46a10;
 }
 
 
-	.navbar{width: calc(95% - 196.5px);	height: 2em; border-radius: 15px;  background-color: var(--bg-navbar);	font-size: 50px; text-transform: uppercase;
+	.navbar{width: calc(95% - 196.5px);	height: 2em; border-radius: 15px;  background-color: var(--bg-navbar);	font-size: 50px; text-transform: uppercase;border-bottom: 0.5px solid var(--bg-button);
 		
 		h1 {color:var(--color-text);
 		}
 }
 
-	.navbar[data-theme="dark"] { border: 0.5px solid var(--bg-button);
+	.navbar[data-theme="dark"] { border-top-left-radius: 0.5px solid var(--bg-button);
 		h1 { color: var(--color-text);
 		}
 }
