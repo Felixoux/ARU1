@@ -100,20 +100,11 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
 }
 
 html {
-  box-sizing: border-box;
-  --bg: #FCFCFC;
-  --bg-navbar:#1481EE;
-  --bg-button:#1481EE;
-  --color-text:black;
-  --color-headings: #c46a10;
-}
-
-html[data-theme=dark] {
   --bg: #303030;
   --bg-navbar:#303030;
-  --bg-button:#c46a10;
+  --bg-button:#468ACE;
   --color-text:#FFFFFF;
-  --color-headings: #c46a10;
+  --color-headings: #468ACE;
 }
 
 ::-webkit-scrollbar {
@@ -159,7 +150,7 @@ html[data-theme=dark] {
   width: 196.5px;
   height: 200px;
   margin: 40px 0;
-  background-image: url("img/LOGO.png");
+  background-image: url("img/LOGO-blanc.png");
   cursor: pointer;
 }
 #main_index .navbar {
