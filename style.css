@@ -100,9 +100,10 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
 }
 
 html {
-  --bg: #303030;
-  --bg-navbar:#303030;
+  --bg: #212121;
+  --bg-navbar:#212121;
   --bg-button:#468ACE;
+  --bg-lien:#C46FC4;
   --color-text:#FFFFFF;
   --color-headings: #468ACE;
 }
@@ -156,11 +157,11 @@ html {
 #main_index .navbar {
   width: calc(95% - 196.5px);
   height: 2em;
-  border-radius: 15px;
+  border-radius: 35px;
   background-color: var(--bg-navbar);
   font-size: 50px;
   text-transform: uppercase;
-  border-bottom: 0.5px solid var(--bg-button);
+  box-shadow: -4px -4px 4px -1.5px rgba(255, 255, 255, 0.25), 8px 8px 4px -1.5px rgba(0, 0, 0, 0.25);
 }
 #main_index .navbar h1 {
   color: var(--color-text);
@@ -229,13 +230,14 @@ html {
   margin: 40px 0;
 }
 #main_index .footer h3 {
-  padding: 0 0 25px;
+  padding: 0 0 27.5px;
   font-size: 30px;
   color: var(--color-text);
 }
 #main_index .footer div {
-  height: 200px;
+  min-height: 235px;
   text-align: center;
+  margin-bottom: 25px;
 }
 #main_index .footer p {
   font-size: 17.5px;
@@ -246,6 +248,10 @@ html {
 }
 #main_index .petite-ecole-contact, #main_index .ecole-secondaire-contact, #main_index .ecole-internat-contact {
   width: 100%;
+  box-shadow: -4px -4px 4px -1.5px rgba(255, 255, 255, 0.25), 8px 8px 4px -1.5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  margin: 0 100px;
+  padding: 20px 0 10px;
 }
 #main_index .petite-ecole-contact {
   padding-left: 0%;
@@ -262,15 +268,12 @@ html {
 #main_index .ecole-internat-contact {
   padding-right: 0%;
 }
-#main_index .ecole-internat-contact :last-child {
-  padding: 20px 0;
-}
 #main_index .ecole-secondaire-contact a {
-  background: linear-gradient(to top, var(--bg-button) 0%, var(--bg-button) 5%, transparent 5.01%);
+  background: linear-gradient(to top, var(--bg-lien) 0%, var(--bg-lien) 5%, transparent 5.01%);
   background-size: 0% 100%;
   background-repeat: no-repeat;
   font-size: 19.5px;
-  color: var(--bg-button);
+  color: var(--bg-lien);
   transition: background-size ease 0.3s;
 }
 #main_index .ecole-secondaire-contact a:hover {

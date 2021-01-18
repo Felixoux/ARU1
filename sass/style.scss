@@ -21,7 +21,7 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
 }
 
 
-html{--bg: #303030; --bg-navbar:#303030; --bg-button:#468ACE; --color-text:#FFFFFF; --color-headings: #468ACE;
+html{--bg: #212121; --bg-navbar:#212121; --bg-button:#468ACE;--bg-lien:#C46FC4; --color-text:#FFFFFF; --color-headings: #468ACE;
 }
 
 // === scrollBar === 
@@ -47,7 +47,7 @@ html{--bg: #303030; --bg-navbar:#303030; --bg-button:#468ACE; --color-text:#FFFF
 }
 
 
-	.navbar{width: calc(95% - 196.5px);	height: 2em; border-radius: 15px;  background-color: var(--bg-navbar);	font-size: 50px; text-transform: uppercase;border-bottom: 0.5px solid var(--bg-button);
+	.navbar{width: calc(95% - 196.5px);	height: 2em; border-radius: 35px;  background-color: var(--bg-navbar);	font-size: 50px; text-transform: uppercase; box-shadow: -4px -4px 4px -1.5px rgba(255,255,255, 0.25), 8px 8px 4px -1.5px rgba(0, 0, 0, 0.25); 
 		
 		h1 {color:var(--color-text);
 		}
@@ -92,20 +92,20 @@ html{--bg: #303030; --bg-navbar:#303030; --bg-button:#468ACE; --color-text:#FFFF
 // ====================================   footer  ================================ 
 
 .footer{ display: flex;	justify-content: space-between;	margin: 40px 0;
-	h3 {	padding: 0 0 25px; font-size: 30px; color:var(--color-text);
+	h3 {	padding: 0 0 27.5px; font-size: 30px; color:var(--color-text);
 	}
 
-	div { height: 200px; text-align: center; 
+	div { min-height: 235px; text-align: center; margin-bottom: 25px;
 	}
 
 	p {	font-size: 17.5px; font-weight: 300; line-height: 1.4em; color: var(--color-text); font-family: 'Roboto Slab', serif;
 	}
 }
 
-.petite-ecole-contact, .ecole-secondaire-contact, .ecole-internat-contact {	width: 100%; 
+.petite-ecole-contact, .ecole-secondaire-contact, .ecole-internat-contact {	width: 100%; box-shadow: -4px -4px 4px -1.5px rgba(255,255,255, 0.25), 8px 8px 4px -1.5px rgba(0, 0, 0, 0.25); border-radius: 25px; margin: 0 100px; padding: 20px 0 10px;
 }
 
-.petite-ecole-contact {	padding-left: 0%;
+.petite-ecole-contact {	padding-left: 0%; 
 }
 
 .petite-ecole-contact :last-child {	padding: 20px 0;
@@ -114,18 +114,16 @@ html{--bg: #303030; --bg-navbar:#303030; --bg-button:#468ACE; --color-text:#FFFF
 .ecole-secondaire-contact :last-child {	padding: 20px 0;
 }
 
-.ecole-secondaire-contact :last-child a { padding: 0;
+.ecole-secondaire-contact :last-child a { padding: 0; 
 }
 
 .ecole-internat-contact { padding-right: 0%;
 }
 
-.ecole-internat-contact :last-child {	padding: 20px 0;
-}
 
 // mailto lien 
 
-.ecole-secondaire-contact a {background: linear-gradient(to top,var(--bg-button) 0%,  var(--bg-button) 5%, transparent 5.01%); background-size: 0% 100%; background-repeat: no-repeat; font-size: 19.5px;	color: var(--bg-button); transition: background-size ease 0.3s;
+.ecole-secondaire-contact a {background: linear-gradient(to top,var(--bg-lien) 0%,  var(--bg-lien) 5%, transparent 5.01%); background-size: 0% 100%; background-repeat: no-repeat; font-size: 19.5px;	color: var(--bg-lien); transition: background-size ease 0.3s;
 	&:hover{background-size: 100% 100%; 
 	}
 	&:focus{outline: none ; background-size: 100% 100%; 
