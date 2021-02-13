@@ -416,7 +416,9 @@ a {
   position: relative;
 }
 #accueil .navbar {
-  background-image: url("../img/mapute.png");
+  background-image: url(img/mapute.png);
+  background-size: fill;
+  background-repeat: no-repeat;
   height: 137px;
 }
 #accueil .circle_logo {
