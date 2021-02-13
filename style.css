@@ -57,22 +57,6 @@ a {
 }
 
 /* ======================================  FONTS ================================== */
-h1, h2 {
-  font-family: "Montserrat", sans-serif;
-}
-
-h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-}
-
-a {
-  font-family: "PT Sans", sans-serif;
-}
-
-button {
-  font-family: "Yantramanav", sans-serif;
-}
-
 @font-face {
   font-family: "inter";
   src: url(/fonts/Inter-Regular.ttf) format("truetype");
@@ -430,6 +414,72 @@ button {
   width: 100%;
   height: 100vh;
   position: relative;
+}
+#accueil .navbar {
+  background-image: url(../img/mapute.png);
+  height: 137px;
+}
+#accueil .circle_logo {
+  background-color: var(--textnavbar);
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 17px;
+  margin-left: 41px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+#accueil .logo {
+  background-image: url(/img/LOGO_ARU1_RVB.png);
+  width: 121px;
+  height: 123px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.menu_nav {
+  height: 115px;
+  color: var(--textnavbar);
+  justify-content: space-around;
+  font-family: "inter_bold";
+  font-size: 22.5px;
+  align-items: center;
+}
+
+.menu_nav :first-child {
+  position: relative;
+}
+
+.menu_nav :first-child::before {
+  content: url(/img/house.svg);
+  position: absolute;
+  left: -2em;
+  top: -0.1em;
+}
+
+.menu_nav :nth-child(3) {
+  position: relative;
+}
+
+.menu_nav :nth-child(3)::after {
+  content: url(/img/happy.svg);
+  position: absolute;
+  right: -1.2em;
+  top: -0.1em;
+}
+
+.menu_nav :last-child {
+  position: relative;
+}
+
+.menu_nav :last-child::before {
+  content: url(/img/phone.svg);
+  position: absolute;
+  left: -1.8em;
+  top: -0.35em;
 }
 
 /*# sourceMappingURL=style.css.map */
