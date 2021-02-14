@@ -59,12 +59,12 @@ a {
 /* ======================================  FONTS ================================== */
 @font-face {
   font-family: "inter";
-  src: url(/fonts/Inter-Regular.ttf) format("truetype");
+  src: url(fonts/Inter-Regular.ttf) format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "inter_bold";
-  src: url(/fonts/Inter-Bold.ttf) format("truetype");
+  src: url(fonts/Inter-Bold.ttf) format("truetype");
   font-weight: 700;
 }
 :root {
@@ -546,6 +546,10 @@ a {
   font-size: 29px;
   line-height: 35px;
   color: var(--letterscolor);
+}
+
+infos_importantes_carre {
+  background: var(--);
 }
 
 /*# sourceMappingURL=style.css.map */
