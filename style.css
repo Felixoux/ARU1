@@ -75,7 +75,7 @@ a {
   --bgdark: #171933;
   --letterscolor: #D4DCFF;
   --pink: #D68FD6;
-  --contrast: #4869ee;
+  --contrast: #5396e7;
   --border: #2a2e5e;
 }
 
@@ -423,14 +423,15 @@ a {
   width: 100%;
 }
 #accueil .circle_logo {
+  margin-top: 17px;
+  margin-left: 41px;
   background-color: var(--textnavbar);
   width: 170px;
   height: 170px;
   border-radius: 50%;
   float: left;
-  margin-top: 17px;
-  margin-left: 41px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-position: center center;
 }
 #accueil .logo {
   float: left;
@@ -493,7 +494,7 @@ a {
 }
 
 .video_presentation {
-  width: 100%;
+  float: left;
 }
 
 .video_presentation h2 {
@@ -505,8 +506,12 @@ a {
   color: var(--letterscolor);
 }
 
+.video_presentation h2 span {
+  color: var(--contrast);
+}
+
 .video_presentation div {
-  width: 55%;
+  width: 42vw;
   height: 499px;
   margin-top: 31px;
   margin-left: 62px;
@@ -514,13 +519,33 @@ a {
   background: url(img/Secondaire-menu.jpg);
   background-size: cover;
   border-radius: 25px;
+  background-position: center center;
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
-.video_presentation div button {
-  margin-left: 0;
-  margin-right: 50%;
+.button_video {
   width: 382px;
-  height: 43px;
+  height: 46px;
+  background: var(--contrast);
+  border-radius: 15px;
+  border: none;
+  font-family: "inter";
+  color: #FFF;
+  font-size: 22.5px;
+  cursor: pointer;
+}
+
+.infos_importantes {
+  float: left;
+}
+
+.infos_importantes {
+  padding-top: 29px;
+  padding-left: 111px;
+  font-family: "inter_bold";
+  font-size: 29px;
+  line-height: 35px;
+  color: var(--letterscolor);
 }
 
 /*# sourceMappingURL=style.css.map */
