@@ -238,7 +238,7 @@ label:active:after {width: 45px;
 .logo{background-image:url(/img/LOGO_ARU1_RVB.png); width:121px;height: 123px; background-repeat: no-repeat; background-size: cover; float: left; margin-top: 15px;margin-left: 25px;}
 }
 
-.menu_nav{height:115px; color: var(--textnavbar);justify-content: space-around; font-family: 'inter_bold'; font-size: 22.5px;align-items: center;}
+.menu_nav{height:115px; color: var(--textnavbar);justify-content: space-between;padding: 0 7.5% 0; font-family: 'inter_bold'; font-size: 22.5px;align-items: center;}
 
 .menu_nav :first-child{position: relative;}
 
@@ -252,5 +252,15 @@ label:active:after {width: 45px;
 
 .menu_nav :last-child::before{content:url(../img/phone.svg);position: absolute;left: -1.8em;top: -0.35em;}
 
+// == section upper == presentation video et infos importante == 
+
+.upper{position: relative ;height: 702px; clear: both;}
+
+.video_presentation{width: 100%;}
+
+.video_presentation h2{padding-left: 62px;padding-top:29px ; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
+
+.video_presentation div{width:55%;height: 499px; margin-top:31px;margin-left:62px;margin-right:0px;background: url(../img/Secondaire-menu.jpg);background-size: cover; border-radius: 25px;}
 
 
+.video_presentation div button{ margin-left: 0;margin-right: 50%; width: 382px; height: 43px;}
