@@ -53,6 +53,12 @@ table {
 }
 
 a {
+  color: var(--letterscolor);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--letterscolor);
   text-decoration: none;
 }
 
@@ -533,6 +539,10 @@ a {
   color: #FFF;
   font-size: 22.5px;
   cursor: pointer;
+}
+
+.button_video :first-child {
+  color: var(--letterscolor);
 }
 
 .infos_importantes {

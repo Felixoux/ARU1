@@ -267,6 +267,8 @@ label:active:after {width: 45px;
 
 .button_video{width: 382px;height:46px;background:var(--contrast);border-radius:15px ;border: none;font-family: 'inter';color: #FFF;font-size: 22.5px; cursor: pointer;}
 
+.button_video :first-child{color: var(--letterscolor);}
+
 .infos_importantes{float: left;}
 
 .infos_importantes{padding-top:29px ;padding-left: 111px; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
