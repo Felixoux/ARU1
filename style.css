@@ -54,6 +54,13 @@ table {
 
 a {
   color: var(--letterscolor);
+
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--letterscolor);
+
   text-decoration: none;
 }
 
@@ -540,8 +547,12 @@ a {
   font-size: 22.5px;
   cursor: pointer;
 }
+
 #accueil .button_video a {
   padding: 10px 14.5px;
+}
+.button_video :first-child {
+  color: var(--letterscolor);
 }
 #accueil .infos_importantes {
   float: left;

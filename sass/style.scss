@@ -281,7 +281,14 @@ label:active:after {width: 45px;
 
 .button_video{width: 382px;height:46px;background:var(--contrast);border-radius:15px ;border: none;font-family: 'inter';font-size: 22.5px; cursor: pointer;}
 
+
 .button_video a {padding: 10px 14.5px;}
+
+.button_video :first-child{color: var(--letterscolor);}
+
+.infos_importantes{float: left;}
+.infos_importantes{float: left; padding-top:29px ;padding-left: 111px; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
+
 
 .infos_importantes{float: left;width: calc(50%); padding-top:29px ;padding-left: 111px; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
 
@@ -296,13 +303,6 @@ label:active:after {width: 45px;
 .section_center h2{float: left;margin: 18px 0 0 62px; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
 
 .section_center .scribe{float: left; margin: 13px 0 0 20px;}
-
-
-
-
-
-
-
 
 
 }
