@@ -53,6 +53,7 @@ table {
 }
 
 a {
+  color: var(--letterscolor);
   text-decoration: none;
 }
 
@@ -472,10 +473,10 @@ a {
   letter-spacing: 1px;
   align-items: center;
 }
-#accueil .menu_nav :first-child {
+#accueil .accueil_btn {
   position: relative;
 }
-#accueil .menu_nav :first-child::before {
+#accueil .accueil_btn::before {
   content: url(img/house.svg);
   position: absolute;
   left: -2em;
@@ -490,10 +491,10 @@ a {
   right: -1.2em;
   top: -0.1em;
 }
-#accueil .menu_nav :last-child {
+#accueil .menu_nav :nth-child(5) {
   position: relative;
 }
-#accueil .menu_nav :last-child::before {
+#accueil .menu_nav :nth-child(5)::before {
   content: url(img/phone.svg);
   position: absolute;
   left: -1.8em;
@@ -508,6 +509,7 @@ a {
   float: left;
   padding-left: 62px;
   padding-top: 29px;
+  width: calc(50%);
 }
 #accueil .video_presentation h2 {
   font-family: "inter_bold";
@@ -535,12 +537,15 @@ a {
   border-radius: 15px;
   border: none;
   font-family: "inter";
-  color: #FFF;
   font-size: 22.5px;
   cursor: pointer;
 }
+#accueil .button_video a {
+  padding: 10px 14.5px;
+}
 #accueil .infos_importantes {
   float: left;
+  width: calc(50%);
   padding-top: 29px;
   padding-left: 111px;
   font-family: "inter_bold";
@@ -549,7 +554,7 @@ a {
   color: var(--letterscolor);
 }
 #accueil .infos_importantes_carre {
-  width: 707px;
+  width: 36vw;
   height: 223px;
   margin-top: 30px;
   background: var(--cardbg);
@@ -571,57 +576,24 @@ a {
   padding: 0;
   border-radius: 4px;
   margin-bottom: 20px;
-}
-#accueil .button_scroll div .line1 {
-  width: 16.5px;
-  height: 1px;
-  background-color: black;
-  transform: translate(-5px) rotate(45deg);
-  border: 0.2px solid black;
-  border-radius: 5px;
-}
-#accueil .button_scroll div .line2 {
-  width: 15px;
-  height: 1px;
-  background-color: black;
-  transform: translate(6px) rotate(-45deg);
-  border: 0.2px solid black;
-  border-radius: 5px;
+  clear: both;
 }
 #accueil .section_center {
-  width: 100%;
-  min-height: 527px;
   background: linear-gradient(to top, var(--bglight), var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark);
+  width: 100%;
+  min-height: 526px;
 }
 #accueil .section_center h2 {
   float: left;
-  margin: 19px 0 0 62px;
+  margin: 18px 0 0 62px;
   font-family: "inter_bold";
   font-size: 29px;
   line-height: 35px;
   color: var(--letterscolor);
 }
-#accueil .section_center .scribe_svg {
+#accueil .section_center .scribe {
   float: left;
-  margin: 13px 0 57px 27px;
-  background-image: url(img/scribe.svg);
-  width: 51px;
-  height: 50px;
-}
-#accueil .section_center .container {
-  clear: both;
-  align-items: flex-start;
-  justify-content: start;
-  width: 100%;
-  height: 407px;
-}
-#accueil .section_center .arrow_previous {
-  align-self: center;
-  background-image: url(img/arrow.svg);
-  width: 75px;
-  height: 75px;
-  background-repeat: no-repeat;
-  transform: rotate(180deg);
+  margin: 13px 0 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
