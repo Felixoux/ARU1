@@ -34,6 +34,8 @@
 }
 ::-webkit-scrollbar-thumb{ background: var(--border); border-radius: 4px;
 }
+
+::-webkit-scrollbar-corner { background: var(--bglight) }
 //::-webkit-scrollbar-thumb:hover{background-color: rgb(98, 102, 105);border-radius: 500px;}
 //::-webkit-scrollbar-thumb:active{background-color:rgb(97, 99, 102);	border-radius: 500px;}
 ::-webkit-scrollbar-track {background:var(--bglight); padding: 1px;
@@ -42,6 +44,7 @@
 }
 .flex {	display: flex;	align-items: center;	justify-content: center;	flex-flow: row nowrap;
 }
+
 
 // ============================================================================================ main_index =============================================== 
 #main_index{ background-color:var(--bg); width: 100%; height: 100vh; position: relative;--bg: #212121; --bg-navbar:#212121; --bg-button:#468ACE;--bg-lien:#C46FC4; --color-text:#FFFFFF; --color-headings: #468ACE;
@@ -240,7 +243,7 @@ label:active:after {width: 45px;
 
 // ============================================================================================ secondaire =============================================== 
 
-#accueil {background-color: var(--bglight); width: 100%; height: 100vh; position: relative;
+#accueil {background-color: var(--bglight); width: 100%; height: 100vh; position: relative; 
 
 .navbar{background-image: url(img/mapute.png);background-size: fill; background-repeat: no-repeat;height: 137px; width: 100%;}
 
@@ -265,7 +268,7 @@ label:active:after {width: 45px;
 
 // == section upper == presentation video et infos importante == 
 
-.upper{position: relative ;height: 702px; clear: both;}
+.upper{position: relative ;height: 666px; clear: both;}
 
 .video_presentation{float: left; padding-left: 62px; padding-top: 29px;}
 
@@ -280,7 +283,28 @@ label:active:after {width: 45px;
 
 .infos_importantes{float: left; padding-top:29px ;padding-left: 111px; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
 
-.infos_importantes_carre{width: 707px; height: 223px;margin-top: 30px; background: var(--cardbg);border: 0.8px solid var(--border); border-radius: 4px; overflow: auto; font-family: 'inter'; font-size: 16px; padding-top: 20px; padding-left: 35px; }
+.infos_importantes_carre{width: 707px; height: 223px;margin-top: 30px; background: var(--cardbg);border: 0.8px solid var(--border); border-radius: 4px; overflow: auto; font-family: 'inter'; font-size: 16px; padding-top: 20px; padding-left: 35px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);}
+
+.button_scroll{ margin: 0 auto 0 auto; width: 58px; height: 28px; background-color:var(--bgbutton); border: none; padding: 0; border-radius: 4px; margin-bottom:20px;}
+
+.button_scroll div .line1{width:16.5px; height: 1px; background-color: black;transform: translate(-5px) rotate(45deg) ; border: 0.2px solid black; border-radius: 5px;}
+
+.button_scroll div .line2{width:15px; height: 1px; background-color: black;transform: translate(6px) rotate(-45deg) ; border: 0.2px solid black; border-radius: 5px;}
+
+
+.section_center{width: 100%; min-height: 527px;background: linear-gradient(to top,var(--bglight),var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark);}
+
+.section_center h2{float: left; margin: 19px 0 0 62px; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
+
+.section_center .scribe_svg{float: left;margin: 13px 0 57px 27px; background-image: url(img/scribe.svg); width: 51px; height: 50px; }
+
+.section_center .container{clear:both;align-items: flex-start;justify-content:start; width: 100%; height:407px; }
+
+.section_center .arrow_previous{align-self: center; background-image: url(img/arrow.svg); width: 75px; height: 75px; background-repeat: no-repeat; transform: rotate(180deg); }
+
+
+
+
 
 
 
