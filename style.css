@@ -436,8 +436,8 @@ a {
   width: 100%;
 }
 #accueil .circle_logo {
-  margin-top: 17px;
-  margin-left: 41px;
+  margin-top: 22px;
+  margin-left: 37px;
   background-color: var(--textnavbar);
   width: 170px;
   height: 170px;
@@ -450,7 +450,7 @@ a {
   float: left;
   margin-top: 15px;
   margin-left: 25px;
-  background-image: url(img/LOGO_ARU1_RVB.png);
+  background-image: url(img/logonet.png);
   width: 121px;
   height: 123px;
   background-repeat: no-repeat;
@@ -462,7 +462,8 @@ a {
   justify-content: space-between;
   padding: 0 7.5% 0;
   font-family: "inter_bold";
-  font-size: 22.5px;
+  font-size: 20px;
+  letter-spacing: 1px;
   align-items: center;
 }
 #accueil .menu_nav :first-child {
@@ -499,10 +500,10 @@ a {
 }
 #accueil .video_presentation {
   float: left;
-}
-#accueil .video_presentation h2 {
   padding-left: 62px;
   padding-top: 29px;
+}
+#accueil .video_presentation h2 {
   font-family: "inter_bold";
   font-size: 29px;
   line-height: 35px;
@@ -514,9 +515,7 @@ a {
 #accueil .video_presentation div {
   width: 42vw;
   height: 499px;
-  margin-top: 31px;
-  margin-left: 62px;
-  margin-right: 0px;
+  margin-top: 30px;
   background: url(img/Secondaire-menu.jpg);
   background-size: cover;
   border-radius: 25px;
@@ -536,8 +535,6 @@ a {
 }
 #accueil .infos_importantes {
   float: left;
-}
-#accueil .infos_importantes {
   padding-top: 29px;
   padding-left: 111px;
   font-family: "inter_bold";
@@ -546,10 +543,17 @@ a {
   color: var(--letterscolor);
 }
 #accueil .infos_importantes_carre {
-  background: var(--cardbg);
   width: 707px;
   height: 223px;
-  margin-top: 38px;
+  margin-top: 30px;
+  background: var(--cardbg);
+  border: 0.8px solid var(--border);
+  border-radius: 4px;
+  overflow: auto;
+  font-family: "inter";
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
