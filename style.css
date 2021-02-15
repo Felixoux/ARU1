@@ -54,13 +54,11 @@ table {
 
 a {
   color: var(--letterscolor);
-
   text-decoration: none;
 }
 
 a:visited {
   color: var(--letterscolor);
-
   text-decoration: none;
 }
 
@@ -538,8 +536,8 @@ a:visited {
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
 }
 #accueil .button_video {
-  width: 382px;
-  height: 46px;
+  min-width: 50%;
+  min-height: 46px;
   background: var(--contrast);
   border-radius: 15px;
   border: none;
@@ -547,11 +545,20 @@ a:visited {
   font-size: 22.5px;
   cursor: pointer;
 }
-
 #accueil .button_video a {
   padding: 10px 14.5px;
+  color: white;
 }
-.button_video :first-child {
+#accueil .infos_importantes {
+  float: left;
+}
+#accueil .infos_importantes {
+  float: left;
+  padding-top: 29px;
+  padding-left: 111px;
+  font-family: "inter_bold";
+  font-size: 29px;
+  line-height: 35px;
   color: var(--letterscolor);
 }
 #accueil .infos_importantes {

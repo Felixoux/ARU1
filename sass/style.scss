@@ -278,15 +278,14 @@ label:active:after {width: 45px;
 
 .video_presentation div{width:42vw;height:499px; margin-top:30px;background: url(img/Secondaire-menu.jpg);background-size: cover; border-radius: 25px;background-position: center center;box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);}
 
+.button_video{min-width: 50%; min-height:46px;background:var(--contrast);border-radius:15px ;border: none;font-family: 'inter';font-size: 22.5px; cursor: pointer;}
 
-.button_video{width: 382px;height:46px;background:var(--contrast);border-radius:15px ;border: none;font-family: 'inter';font-size: 22.5px; cursor: pointer;}
 
 
-.button_video a {padding: 10px 14.5px;}
-
-.button_video :first-child{color: var(--letterscolor);}
+.button_video a {padding: 10px 14.5px; color: white;}
 
 .infos_importantes{float: left;}
+
 .infos_importantes{float: left; padding-top:29px ;padding-left: 111px; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
 
 
