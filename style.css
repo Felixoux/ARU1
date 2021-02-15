@@ -77,6 +77,7 @@ a {
   --pink: #D68FD6;
   --contrast: #5396e7;
   --border: #2a2e5e;
+  --cardbg:#22244D;
 }
 
 /* organisation css:{
@@ -93,6 +94,18 @@ a {
 
 	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
 } */
+:root {
+  --bgnavbar: #2C316F;
+  --textnavbar: #E7F8FF;
+  --turquoise: #22789C;
+  --bglight: #1B1E3D;
+  --bgdark: #171933;
+  --letterscolor: #D4DCFF;
+  --pink: #D68FD6;
+  --contrast: #5396e7;
+  --border: #2a2e5e;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -443,8 +456,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.menu_nav {
+#accueil .menu_nav {
   height: 115px;
   color: var(--textnavbar);
   justify-content: space-between;
@@ -453,51 +465,42 @@ a {
   font-size: 22.5px;
   align-items: center;
 }
-
-.menu_nav :first-child {
+#accueil .menu_nav :first-child {
   position: relative;
 }
-
-.menu_nav :first-child::before {
+#accueil .menu_nav :first-child::before {
   content: url(img/house.svg);
   position: absolute;
   left: -2em;
   top: -0.1em;
 }
-
-.menu_nav :nth-child(3) {
+#accueil .menu_nav :nth-child(3) {
   position: relative;
 }
-
-.menu_nav :nth-child(3)::after {
+#accueil .menu_nav :nth-child(3)::after {
   content: url(img/happy.svg);
   position: absolute;
   right: -1.2em;
   top: -0.1em;
 }
-
-.menu_nav :last-child {
+#accueil .menu_nav :last-child {
   position: relative;
 }
-
-.menu_nav :last-child::before {
+#accueil .menu_nav :last-child::before {
   content: url(img/phone.svg);
   position: absolute;
   left: -1.8em;
   top: -0.35em;
 }
-
-.upper {
+#accueil .upper {
   position: relative;
   height: 702px;
   clear: both;
 }
-
-.video_presentation {
+#accueil .video_presentation {
   float: left;
 }
-
-.video_presentation h2 {
+#accueil .video_presentation h2 {
   padding-left: 62px;
   padding-top: 29px;
   font-family: "inter_bold";
@@ -505,12 +508,10 @@ a {
   line-height: 35px;
   color: var(--letterscolor);
 }
-
-.video_presentation h2 span {
+#accueil .video_presentation h2 span {
   color: var(--contrast);
 }
-
-.video_presentation div {
+#accueil .video_presentation div {
   width: 42vw;
   height: 499px;
   margin-top: 31px;
@@ -522,8 +523,7 @@ a {
   background-position: center center;
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
 }
-
-.button_video {
+#accueil .button_video {
   width: 382px;
   height: 46px;
   background: var(--contrast);
@@ -534,12 +534,10 @@ a {
   font-size: 22.5px;
   cursor: pointer;
 }
-
-.infos_importantes {
+#accueil .infos_importantes {
   float: left;
 }
-
-.infos_importantes {
+#accueil .infos_importantes {
   padding-top: 29px;
   padding-left: 111px;
   font-family: "inter_bold";
@@ -547,9 +545,11 @@ a {
   line-height: 35px;
   color: var(--letterscolor);
 }
-
-infos_importantes_carre {
-  background: var(--);
+#accueil .infos_importantes_carre {
+  background: var(--cardbg);
+  width: 707px;
+  height: 223px;
+  margin-top: 38px;
 }
 
 /*# sourceMappingURL=style.css.map */

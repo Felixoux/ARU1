@@ -17,6 +17,17 @@
 	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
 } */
 // ./dart-sass/sass sass/style.scss style.css --watch
+:root {
+    --bgnavbar: #2C316F;
+    --textnavbar: #E7F8FF;
+    --turquoise : #22789C;
+    --bglight: #1B1E3D;
+    --bgdark: #171933;
+    --letterscolor: #D4DCFF;
+    --pink: #D68FD6;
+    --contrast: #5396e7;
+    --border: #2a2e5e;
+}
 
 // === scrollBar === 
 ::-webkit-scrollbar{width: 7px;height: 7px; 
@@ -236,7 +247,7 @@ label:active:after {width: 45px;
 .circle_logo{margin-top: 17px; margin-left: 41px;background-color: var(--textnavbar);width: 170px;height: 170px; border-radius: 50%; float: left; box-shadow:10px 10px 10px rgba(0, 0, 0, 0.10);background-position: center center;}
 
 .logo{float: left; margin-top: 15px;margin-left: 25px;background-image:url(img/LOGO_ARU1_RVB.png); width:121px;height: 123px; background-repeat: no-repeat; background-size: cover; }
-}
+
 
 .menu_nav{height:115px; color: var(--textnavbar);justify-content: space-between;padding: 0 7.5% 0; font-family: 'inter_bold'; font-size: 22.5px;align-items: center;}
 
@@ -271,4 +282,8 @@ label:active:after {width: 45px;
 
 .infos_importantes{padding-top:29px ;padding-left: 111px; font-family: 'inter_bold';font-size: 29px; line-height: 35px;color: var(--letterscolor);}
 
-infos_importantes_carre{background: var(--);}
+.infos_importantes_carre{background: var(--cardbg); width: 707px; height: 223px; margin-top: 38px;}
+
+
+
+}
