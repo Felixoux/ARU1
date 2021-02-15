@@ -83,6 +83,9 @@ a:visited {
   --pink: #D68FD6;
   --contrast: #5396e7;
   --border: #2a2e5e;
+  --cardbg:#22244D;
+  --bgbutton:#2C316F;
+  --arrow:#BBCCE0;
 }
 
 /* organisation css:{
@@ -99,6 +102,18 @@ a:visited {
 
 	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
 } */
+:root {
+  --bgnavbar: #2C316F;
+  --textnavbar: #E7F8FF;
+  --turquoise: #22789C;
+  --bglight: #1B1E3D;
+  --bgdark: #171933;
+  --letterscolor: #D4DCFF;
+  --pink: #D68FD6;
+  --contrast: #5396e7;
+  --border: #2a2e5e;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -107,6 +122,10 @@ a:visited {
 ::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--bglight);
 }
 
 ::-webkit-scrollbar-track {
@@ -429,8 +448,8 @@ a:visited {
   width: 100%;
 }
 #accueil .circle_logo {
-  margin-top: 17px;
-  margin-left: 41px;
+  margin-top: 22px;
+  margin-left: 37px;
   background-color: var(--textnavbar);
   width: 170px;
   height: 170px;
@@ -443,93 +462,79 @@ a:visited {
   float: left;
   margin-top: 15px;
   margin-left: 25px;
-  background-image: url(img/LOGO_ARU1_RVB.png);
+  background-image: url(img/logonet.png);
   width: 121px;
   height: 123px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.menu_nav {
+#accueil .menu_nav {
   height: 115px;
   color: var(--textnavbar);
   justify-content: space-between;
   padding: 0 7.5% 0;
   font-family: "inter_bold";
-  font-size: 22.5px;
+  font-size: 20px;
+  letter-spacing: 1px;
   align-items: center;
 }
-
-.menu_nav :first-child {
+#accueil .menu_nav :first-child {
   position: relative;
 }
-
-.menu_nav :first-child::before {
+#accueil .menu_nav :first-child::before {
   content: url(img/house.svg);
   position: absolute;
   left: -2em;
   top: -0.1em;
 }
-
-.menu_nav :nth-child(3) {
+#accueil .menu_nav :nth-child(3) {
   position: relative;
 }
-
-.menu_nav :nth-child(3)::after {
+#accueil .menu_nav :nth-child(3)::after {
   content: url(img/happy.svg);
   position: absolute;
   right: -1.2em;
   top: -0.1em;
 }
-
-.menu_nav :last-child {
+#accueil .menu_nav :last-child {
   position: relative;
 }
-
-.menu_nav :last-child::before {
+#accueil .menu_nav :last-child::before {
   content: url(img/phone.svg);
   position: absolute;
   left: -1.8em;
   top: -0.35em;
 }
-
-.upper {
+#accueil .upper {
   position: relative;
-  height: 702px;
+  height: 666px;
   clear: both;
 }
-
-.video_presentation {
+#accueil .video_presentation {
   float: left;
-}
-
-.video_presentation h2 {
   padding-left: 62px;
   padding-top: 29px;
+}
+#accueil .video_presentation h2 {
   font-family: "inter_bold";
   font-size: 29px;
   line-height: 35px;
   color: var(--letterscolor);
 }
-
-.video_presentation h2 span {
+#accueil .video_presentation h2 span {
   color: var(--contrast);
 }
-
-.video_presentation div {
+#accueil .video_presentation div {
   width: 42vw;
   height: 499px;
-  margin-top: 31px;
-  margin-left: 62px;
-  margin-right: 0px;
+  margin-top: 30px;
   background: url(img/Secondaire-menu.jpg);
   background-size: cover;
   border-radius: 25px;
   background-position: center center;
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
 }
-
-.button_video {
+#accueil .button_video {
   width: 382px;
   height: 46px;
   background: var(--contrast);
@@ -540,16 +545,11 @@ a:visited {
   font-size: 22.5px;
   cursor: pointer;
 }
-
 .button_video :first-child {
   color: var(--letterscolor);
 }
-
-.infos_importantes {
+#accueil .infos_importantes {
   float: left;
-}
-
-.infos_importantes {
   padding-top: 29px;
   padding-left: 111px;
   font-family: "inter_bold";
@@ -557,9 +557,80 @@ a:visited {
   line-height: 35px;
   color: var(--letterscolor);
 }
-
-infos_importantes_carre {
-  background: var(--);
+#accueil .infos_importantes_carre {
+  width: 707px;
+  height: 223px;
+  margin-top: 30px;
+  background: var(--cardbg);
+  border: 0.8px solid var(--border);
+  border-radius: 4px;
+  overflow: auto;
+  font-family: "inter";
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 35px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#accueil .button_scroll {
+  margin: 0 auto 0 auto;
+  width: 58px;
+  height: 28px;
+  background-color: var(--bgbutton);
+  border: none;
+  padding: 0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+#accueil .button_scroll div .line1 {
+  width: 16.5px;
+  height: 1px;
+  background-color: black;
+  transform: translate(-5px) rotate(45deg);
+  border: 0.2px solid black;
+  border-radius: 5px;
+}
+#accueil .button_scroll div .line2 {
+  width: 15px;
+  height: 1px;
+  background-color: black;
+  transform: translate(6px) rotate(-45deg);
+  border: 0.2px solid black;
+  border-radius: 5px;
+}
+#accueil .section_center {
+  width: 100%;
+  min-height: 527px;
+  background: linear-gradient(to top, var(--bglight), var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark);
+}
+#accueil .section_center h2 {
+  float: left;
+  margin: 19px 0 0 62px;
+  font-family: "inter_bold";
+  font-size: 29px;
+  line-height: 35px;
+  color: var(--letterscolor);
+}
+#accueil .section_center .scribe_svg {
+  float: left;
+  margin: 13px 0 57px 27px;
+  background-image: url(img/scribe.svg);
+  width: 51px;
+  height: 50px;
+}
+#accueil .section_center .container {
+  clear: both;
+  align-items: flex-start;
+  justify-content: start;
+  width: 100%;
+  height: 407px;
+}
+#accueil .section_center .arrow_previous {
+  align-self: center;
+  background-image: url(img/arrow.svg);
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
