@@ -619,7 +619,22 @@ a:visited {
 #accueil .actu {
   width: 100%;
   height: 476px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+#accueil .fleche_gauche:hover {
+  cursor: pointer;
+}
+#accueil .img_fleche_gauche {
+  float: left;
+  padding: 0 0px 0 60px;
+}
+#accueil .fleche_droite:hover {
+  cursor: pointer;
+}
+#accueil .img_fleche_droite {
+  float: right;
+  padding: 0 60px 0 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
