@@ -115,7 +115,7 @@ a:visited {
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8.5px;
   height: 7px;
 }
 
@@ -506,34 +506,41 @@ a:visited {
   top: -0.35em;
 }
 #accueil .upper {
-  position: relative;
-  height: 666px;
   clear: both;
+  padding-left: 3%;
+  padding-right: 5%;
+  width: 100%;
 }
-#accueil .video_presentation {
-  float: left;
-  padding-left: 62px;
+#accueil .upper .container {
+  display: grid;
   padding-top: 29px;
-  width: calc(50%);
+  padding-bottom: 35px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 29px auto;
+  grid-column-gap: 6%;
+  grid-row-gap: 38px;
+  grid-template-areas: "video_title infos_title" "video_iframe infos_square";
 }
-#accueil .video_presentation h2 {
+#accueil .title_video {
+  grid-area: video_title;
   font-family: "inter_bold";
   font-size: 29px;
   line-height: 35px;
   color: var(--letterscolor);
+  width: auto;
 }
-#accueil .video_presentation h2 span {
+#accueil .title_video span {
   color: var(--contrast);
 }
-#accueil .video_presentation div {
-  width: 42vw;
+#accueil .video_iframe {
+  grid-area: video_iframe;
+  width: 98%;
   height: 499px;
-  margin-top: 30px;
-  background: url(img/Secondaire-menu.jpg);
-  background-size: cover;
+  background: url(img/standard_1800x1090_define-firstgen12.jpg);
   border-radius: 25px;
-  background-position: center center;
+  background-position: top;
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
+  background-size: cover;
 }
 #accueil .button_video {
   min-width: 50%;
@@ -549,41 +556,27 @@ a:visited {
   padding: 10px 14.5px;
   color: white;
 }
-#accueil .infos_importantes {
-  float: left;
-}
-#accueil .infos_importantes {
-  float: left;
-  padding-top: 29px;
-  padding-left: 111px;
+#accueil .title_infos {
+  grid-area: infos_title;
   font-family: "inter_bold";
   font-size: 29px;
   line-height: 35px;
   color: var(--letterscolor);
 }
-#accueil .infos_importantes {
-  float: left;
-  width: calc(50%);
-  padding-top: 29px;
-  padding-left: 111px;
-  font-family: "inter_bold";
-  font-size: 29px;
-  line-height: 35px;
-  color: var(--letterscolor);
-}
-#accueil .infos_importantes_carre {
+#accueil .infos_square {
+  grid-area: infos_square;
   width: 36vw;
   height: 223px;
-  margin-top: 30px;
+  padding: 25px 0 0 25px;
   background: var(--cardbg);
   border: 0.8px solid var(--border);
   border-radius: 4px;
-  overflow: auto;
   font-family: "inter";
   font-size: 16px;
-  padding-top: 20px;
-  padding-left: 35px;
+  line-height: 35px;
+  color: var(--letterscolor);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: auto;
 }
 #accueil .button_scroll {
   margin: 0 auto 0 auto;
