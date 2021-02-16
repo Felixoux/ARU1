@@ -44,7 +44,7 @@
 	// == Variables with classes for consistence
 	.flex {display: flex; align-items: center; justify-content: center; flex-flow: row nowrap;}
 
-	.grid {display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr;grid-gap: 3rem;}
+	.grid {display: grid;grid-gap: 3rem;}
 
 	.float{float: left; margin: 2rem 0 0 2rem;}
 
@@ -333,8 +333,8 @@ label:active:after {width: 45px;
 .upper .container{
 	padding-top:29px ;
 	padding-bottom: 35px; 
-	grid-template-rows:29px auto ; 
-	grid-column-gap: 6%; 
+	grid-template-rows:29px auto; 
+	grid-column-gap: 5%; 
 	grid-row-gap: 38px; 
 	grid-template-areas: 
 	"video_title infos_title"
@@ -348,8 +348,8 @@ label:active:after {width: 45px;
 }
 .video_iframe{
 	grid-area: video_iframe; 
-	width:98%; 
-	height:499px; 
+	width: 810px; 
+	height: 499px; 
 	background: url(img/standard_1800x1090_define-firstgen12.jpg); 
 	border-radius: 25px;
 	background-position:top; 
@@ -375,13 +375,13 @@ label:active:after {width: 45px;
 }
 .infos_square{
 	grid-area: infos_square; 
-	width: 36vw; 
-	height: 223px; 
-	padding: 25px 0 0 25px; 
+	width: 707px; 
+	height: 223px;  
 	background: var(--cardbg);
 	border: 0.8px solid var(--border); 
 	border-radius: 4px;  
 	line-height: 35px; 
+	padding: 24px 0 0 35px;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);  overflow: auto;
 }
 .button_scroll{ 
@@ -420,11 +420,14 @@ label:active:after {width: 45px;
 .card-actu_little1, .card-actu_little2, .card-actu_little3{
 	width:330px;
 	height: 407px;
-	background-color: black;
 }
 
 .card-actu_little1{
 	grid-area: 2 / 3 / span 2 / span 1;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 192px 183px 36px 7px;
+	grid-gap: 0;
 }
 
 .card-actu_little2{
@@ -434,6 +437,42 @@ label:active:after {width: 45px;
 .card-actu_little3{
 	grid-area: 2 / 8 / span 2 / span 1;
 }
+
+.card-actu_little1 .img-card{
+	grid-area: 1 / 1 / 1 / 1;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/card-test.jpg);
+	background-size: cover;
+	border-radius: 25px;
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+
+.card-actu_little1 .text-bg_card{
+	grid-area: 1 / 1 / span 3 / 1;
+	justify-self: center;
+	width: 95%;
+	height: 100%;
+	background-color: var(--cardbg);
+	border: 1px solid #2A2E5E;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	z-index: 9; 
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	font-size: 19.5px;
+}
+
+.card-actu_little1 .text-bg_card p{
+	width: 90%;
+	transform: translateY(-30px);
+}
+
+
+.caca{height: 100vh; width: 100%; }
+
 /* == card actu design + grid ==
 
 .card-actu_little{
