@@ -676,6 +676,16 @@ a:visited {
   width: 90%;
   transform: translateY(-30px);
 }
+#accueil .card-actu_little1 .img-card {
+  grid-area: 1/1/1/1;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/card-test.jpg);
+  background-size: cover;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
 #accueil .caca {
   height: 100vh;
   width: 100%;
