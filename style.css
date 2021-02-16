@@ -436,7 +436,6 @@ a:visited {
 
 #accueil {
   background-color: var(--bglight);
-  background-color: black;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -593,42 +592,24 @@ a:visited {
 #accueil .arrow_scroll {
   padding-bottom: 5px;
 }
-#accueil .section_center {
+#accueil .actu {
   background: linear-gradient(to top, var(--bglight), var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark);
   width: 100%;
   min-height: 526px;
 }
-#accueil .section_center h2 {
-  float: left;
-  margin: 18px 0 0 62px;
+#accueil .actu_title {
   font-family: "inter_bold";
   font-size: 29px;
   line-height: 35px;
   color: var(--letterscolor);
 }
-#accueil .section_center .scribe {
-  float: left;
-  margin: 13px 0 0 20px;
+#accueil .container_actu .arrow_previous {
+  display: none;
 }
-#accueil .actu {
-  width: 100%;
-  height: 476px;
+#accueil .card-actu_little {
+  width: 330px;
+  height: 406px;
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-}
-#accueil .fleche_gauche:hover {
-  cursor: pointer;
-}
-#accueil .img_fleche_gauche {
-  float: left;
-  padding: 0 0px 0 60px;
-}
-#accueil .fleche_droite:hover {
-  cursor: pointer;
-}
-#accueil .img_fleche_droite {
-  float: right;
-  padding: 0 60px 0 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
