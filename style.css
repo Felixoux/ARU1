@@ -596,6 +596,9 @@ a:visited {
   margin-bottom: 20px;
   clear: both;
 }
+#accueil .arrow_scroll {
+  padding-bottom: 5px;
+}
 #accueil .section_center {
   background: linear-gradient(to top, var(--bglight), var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark);
   width: 100%;
@@ -612,6 +615,11 @@ a:visited {
 #accueil .section_center .scribe {
   float: left;
   margin: 13px 0 0 20px;
+}
+#accueil .actu {
+  width: 100%;
+  height: 476px;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
