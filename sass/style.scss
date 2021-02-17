@@ -298,6 +298,7 @@ label:active:after {width: 45px;
 }
 .accueil_btn{
 	position: relative;
+	color: var(--textnavbar);
 }
 .accueil_btn::before{
 	content:url(img/house.svg); 

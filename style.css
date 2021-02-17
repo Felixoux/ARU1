@@ -513,6 +513,7 @@ a:visited {
 }
 #accueil .accueil_btn {
   position: relative;
+  color: var(--textnavbar);
 }
 #accueil .accueil_btn::before {
   content: url(img/house.svg);
