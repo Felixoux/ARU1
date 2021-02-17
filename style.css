@@ -487,6 +487,9 @@ a:visited {
   justify-content: space-around;
   width: 80%;
 }
+#accueil .nav-links li {
+  cursor: pointer;
+}
 #accueil .logo {
   position: absolute;
   top: 17px;
