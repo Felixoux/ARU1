@@ -541,7 +541,6 @@ a:visited {
 #accueil .upper {
   padding-left: 3rem;
   padding-right: 5rem;
-  width: 100%;
 }
 #accueil .upper .container {
   padding-top: 29px;
@@ -688,9 +687,61 @@ a:visited {
   align-self: flex-end;
   justify-self: flex-end;
 }
-#accueil .caca {
-  height: 100vh;
+#accueil .show-more-infos {
+  cursor: pointer;
+}
+#accueil section.bottom {
+  justify-content: space-evenly;
   width: 100%;
+  min-height: 756px;
+}
+#accueil .card-inscriptions, #accueil .card-eel {
+  display: grid;
+  grid-template-columns: 20px 494px 19px;
+  grid-template-rows: 48px 317px 19px 44px 11px 44px 19px 22px 36px;
+  height: 560px;
+}
+#accueil .card-inscriptions h2, #accueil .card-eel h2 {
+  grid-area: 1/2/span 1/span 1;
+  align-self: flex-start;
+  justify-self: center;
+}
+#accueil .card-inscriptions .img, #accueil .card-eel .img {
+  grid-area: 2/1/span 1/span 3;
+  width: 533px;
+  height: 317px;
+  background-image: url(img/inscriptions.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+#accueil .bottom p {
+  font-size: 18.5px;
+}
+#accueil .card-inscriptions :nth-child(3), #accueil .card-eel :nth-child(3) {
+  grid-area: 4/2/span 1/span 1;
+}
+#accueil .card-inscriptions :nth-child(4), #accueil .card-eel :nth-child(4) {
+  grid-area: 6/2/span 1/span 1;
+}
+#accueil .card-eel :nth-child(4) a {
+  color: var(--pink);
+  cursor: pointer;
+}
+#accueil .card-inscriptions :nth-child(5) {
+  grid-area: 8/2/span 1/span 1;
+}
+#accueil .card-inscriptions .line-bottom, #accueil .card-eel .line-bottom {
+  grid-area: 9/2/span 1/span 1;
+  align-self: flex-end;
+  justify-self: center;
+  width: 318px;
+  height: 0;
+  border: 0.1px solid var(--letterscolor);
+  border-radius: 25px;
+}
+#accueil .card-eel {
+  grid-template-rows: 48px 317px 19px 44px 27px 22px 83px;
 }
 
 /*# sourceMappingURL=style.css.map */
