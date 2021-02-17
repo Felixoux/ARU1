@@ -475,7 +475,7 @@ a:visited {
   background-color: var(--bgnavbar);
   font-family: "inter_bold";
   color: var(--textnavbar);
-  font-size: 20px;
+  font-size: 22.5px;
   letter-spacing: 1px;
 }
 #accueil .fake-logo {
