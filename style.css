@@ -716,6 +716,9 @@ a:visited {
   background-size: cover;
   border-radius: 50px;
 }
+#accueil .card-eel .img {
+  background-image: url(img/online_school.jpg);
+}
 #accueil .bottom p {
   font-size: 18.5px;
 }
