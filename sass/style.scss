@@ -255,7 +255,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 93px;
+	min-height: 9.9vh;
 	background-color: var(--bgnavbar);
 	font-family: 'inter_bold';
 	color: var(--textnavbar);
@@ -278,6 +278,13 @@ nav {
 .nav-links li{
 	cursor: pointer;
 }
+.nav-links img{
+	position: absolute;
+	top: 32px;
+	left: 375px;
+}
+.nav-links :nth-child(2) {position: relative;}
+
 
 .logo{
 	position:absolute;
@@ -320,7 +327,7 @@ nav {
 	.nav-links{
 		position: absolute;
 		right: 0;
-		height: calc(100vh - 93px) ;
+		height: calc(100vh - 9.9vh) ;
 		top: 93px;
 		background-color: var(--bgnavbar);
 		display: flex;
@@ -460,6 +467,13 @@ nav {
 		grid-area:2 / 1 / 2 / 1;
 		align-self: end;
 		justify-self: end;
+}
+
+.arrow_next{
+	grid-area: 2 / 10 / span 1 / span 1;
+	transform: rotate(180deg);
+	align-self: end;
+	justify-self: start;
 }
 
 .card-actu_little1, .card-actu_little2, .card-actu_little3{
