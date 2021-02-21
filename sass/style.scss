@@ -261,7 +261,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 9.9vh;
+	min-height: 95px;
 	background-color: var(--bgnavbar);
 	font-family: 'inter_bold';
 	color: var(--textnavbar);
@@ -270,11 +270,19 @@ nav {
 }
 
 .nav-links{
+	margin-left: 100px;
 	display: flex;
 	justify-content: space-around;
 	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
-	width: 80%;
+	width: 70%;
 }
+
+.nav-links i{
+	margin:0 10px 0 10px ;
+	color: var(--letterscolor);
+}
+
+
 
 .nav-links li{
 	cursor: pointer;
@@ -327,7 +335,7 @@ nav {
 	.nav-links{
 		position: absolute;
 		right: 0;
-		height: calc(100vh - 9.9vh) ;
+		height: calc(100vh - 95px) ;
 		top: 93px;
 		background-color: var(--bgnavbar);
 		display: flex;
@@ -344,7 +352,12 @@ nav {
 
 	.burger {
 		display: block;
+		margin-right: 35px;
 		cursor: pointer;
+	}
+
+	nav {
+		justify-content: flex-end;
 	}
 }
 
@@ -439,16 +452,17 @@ nav {
 
 // == button scroll
 .button_scroll{ 
-	width: 3.5em; 
+	width: 3.5rem; 
 	height: 28px; 
 	background-color:var(--bgbutton); 
 	border-radius: 3.5px; 
 	margin:20px auto; 
+	color: var(--letterscolor);
+	font-size: 25px;
 }
 
 // == section center == A la une == 
 .actu{
-	width: 100%; 
 	min-height:527px;
 	background:linear-gradient(to top,var(--bglight),var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark); 
 	grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr ;

@@ -477,7 +477,7 @@ a:visited {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 9.9vh;
+  min-height: 95px;
   background-color: var(--bgnavbar);
   font-family: "inter_bold";
   color: var(--textnavbar);
@@ -485,9 +485,14 @@ a:visited {
   letter-spacing: 1px;
 }
 #accueil .nav-links {
+  margin-left: 100px;
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 70%;
+}
+#accueil .nav-links i {
+  margin: 0 10px 0 10px;
+  color: var(--letterscolor);
 }
 #accueil .nav-links li {
   cursor: pointer;
@@ -534,7 +539,7 @@ a:visited {
   #accueil .nav-links {
     position: absolute;
     right: 0;
-    height: calc(100vh - 9.9vh);
+    height: calc(100vh - 95px);
     top: 93px;
     background-color: var(--bgnavbar);
     display: flex;
@@ -549,7 +554,11 @@ a:visited {
   }
   #accueil .burger {
     display: block;
+    margin-right: 35px;
     cursor: pointer;
+  }
+  #accueil nav {
+    justify-content: flex-end;
   }
 }
 #accueil .nav-active {
@@ -628,14 +637,15 @@ a:visited {
   overflow: auto;
 }
 #accueil .button_scroll {
-  width: 3.5em;
+  width: 3.5rem;
   height: 28px;
   background-color: var(--bgbutton);
   border-radius: 3.5px;
   margin: 20px auto;
+  color: var(--letterscolor);
+  font-size: 25px;
 }
 #accueil .actu {
-  width: 100%;
   min-height: 527px;
   background: linear-gradient(to top, var(--bglight), var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark);
   grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr;
