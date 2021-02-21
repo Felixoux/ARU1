@@ -58,7 +58,7 @@
 	
 	.modern-shadow{box-shadow: -4px -4px 4px -1.5px rgb(255 255 255 / 25%), 8px 8px 4px -1.5px rgb(0 0 0 / 25%);}
 
-	.center-mg{margin: 0 auto 0 auto;}
+	.center-mg{margin: 0 auto;}
 
 // == main_index 
 #main_index{ background-color:var(--bg); width: 100%; height: 100vh; position: relative;--bg: #212121; --bg-navbar:#212121; --bg-button:#468ACE;--bg-lien:#C46FC4; --color-text:#FFFFFF; --color-headings: #468ACE;
@@ -243,6 +243,12 @@ label:active:after {width: 45px;
 
 // == Accueil 
 
+.page-wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	position: relative;
+}
+
 #accueil {
 	background-color: var(--bglight); 
 	width: 100%; 
@@ -263,11 +269,6 @@ nav {
 	letter-spacing: 1px;
 }
 
-.fake-logo{
-	width: 170px;
-	height: 93px;
-}
-
 .nav-links{
 	display: flex;
 	justify-content: space-around;
@@ -278,13 +279,8 @@ nav {
 .nav-links li{
 	cursor: pointer;
 }
-.nav-links img{
-	position: absolute;
-	top: 32px;
-	left: 375px;
-}
-.nav-links :nth-child(2) {position: relative;}
 
+.nav-links :nth-child(2) {position: relative;}
 
 .logo{
 	position:absolute;
@@ -298,6 +294,10 @@ nav {
 	height: 170px;
 	border-radius: 50%;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo img{
+	transform: translateY(-5px);
 }
 
 .burger {
@@ -376,76 +376,77 @@ nav {
 
 // == section upper == presentation video et infos importante == 
 
-.upper{
-	// paddddiiiiiiiiiing faut le regle c'était pour faire la nav pour que ca soit plus pratique
-	padding-top: 6em;
-	padding-left: 3rem; 
-	padding-right: 5rem; 
+.upper-container {
+	max-width: 1700px;
+	min-width: 1500px;
+	margin-top: 144px;
+	align-items: flex-start;
+	justify-content: space-between;
 }
-.upper .container{
-	padding-top:29px ;
-	padding-bottom: 35px; 
-	grid-template-rows:29px auto; 
-	grid-column-gap: 5%; 
-	grid-row-gap: 38px; 
-	grid-template-areas: 
-	"video_title infos_title"
-	"video_iframe infos_square"
-}
-.title_video{
-	grid-area: video_title; 	
-}
+
 .title_video span{
 	color: var(--contrast);
 }
-.video_iframe{
-	grid-area: video_iframe; 
-	width: 810px; 
-	height: 499px; 
-	background: url(img/standard_1800x1090_define-firstgen12.jpg); 
-	border-radius: 25px;
-	background-position:top; 
-	box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25); 
-	background-size: cover;
+
+.video-show {
+	margin-left:62px ;
+	max-width: 810px;
+	min-width: none;
 }
+
+.video_iframe{
+	width: 810px;
+	height: 499px; 
+	margin-top: 25px;
+	border-radius: 25px;
+	background: url(img/standard_1800x1090_define-firstgen12.jpg); 
+	background-position:top; 
+	background-size: cover;
+	box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25); 
+}
+
 .button_video{
-	min-width: 50%; 
-	min-height:46px;
-	background:var(--contrast);
-	border-radius:15px ;
+	padding: 0.4em 0.6em 0.4em 0.6em;
+	border-radius:25px ;
 	border: none;
+	background:var(--contrast);
 	font-size: 22.5px; 
 	cursor: pointer;
+	outline: none;
 }
-.button_video a {
-	padding: 10px 14.5px; 
+
+.button_video a { 
+	padding: 0.4em 0.9em 0.4em 0.9em;
 	color: white;
 }
 
-.title_infos {
-	grid-area: infos_title; 
+.infos-upper {
+	margin-right: 20px;
+	margin-left: 125px;
 }
+
 .infos_square{
-	grid-area: infos_square; 
-	width: 707px; 
-	height: 223px;  
-	background: var(--cardbg);
+	height: 223px; 
+	padding: 1em 1em 0 2em;
+	margin-top: 25px;
 	border: 0.8px solid var(--border); 
 	border-radius: 4px;  
-	line-height: 35px; 
-	padding: 24px 0 0 35px;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);  overflow: auto;
+	background: var(--cardbg);
+	line-height: 3em; 
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);  
+	overflow: auto;
 }
+
+// == button scroll
 .button_scroll{ 
-	width: 58px; 
+	width: 3.5em; 
 	height: 28px; 
 	background-color:var(--bgbutton); 
 	border-radius: 3.5px; 
-	margin-bottom:20px; 
+	margin:20px auto; 
 }
 
 // == section center == A la une == 
-
 .actu{
 	width: 100%; 
 	min-height:527px;
@@ -554,9 +555,10 @@ nav {
 // == section bottom 
 
 section.bottom{
+	margin-top: 50px;
 	justify-content: space-evenly;
 	width: 100%;
-	min-height:756px;
+	min-height:625px;
 }
 
 .card-inscriptions, .card-eel {
@@ -620,6 +622,9 @@ section.bottom{
 .card-eel{
 	grid-template-rows: 48px 317px 19px 44px 27px 22px 83px;
 }
+
+
+
 
 
 
