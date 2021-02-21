@@ -461,12 +461,13 @@ a:visited {
   }
 }
 
+/*
 .page-wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-  position: relative;
+	max-width: 1920px;
+	margin: 0 auto;
+	position: relative;
 }
-
+*/
 #accueil {
   background-color: var(--bglight);
   width: 100%;
@@ -584,17 +585,14 @@ a:visited {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 #accueil .upper-container {
-  max-width: 1700px;
-  min-width: 1500px;
+  padding: 0 8em 0 62px;
   margin-top: 144px;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 #accueil .title_video span {
   color: var(--contrast);
 }
 #accueil .video-show {
-  margin-left: 62px;
+  float: left;
   max-width: 810px;
   min-width: none;
 }
@@ -622,8 +620,10 @@ a:visited {
   color: white;
 }
 #accueil .infos-upper {
-  margin-right: 20px;
+  float: left;
   margin-left: 125px;
+  max-width: 750px;
+  min-width: 600px;
 }
 #accueil .infos_square {
   height: 223px;
@@ -637,6 +637,7 @@ a:visited {
   overflow: auto;
 }
 #accueil .button_scroll {
+  clear: both;
   width: 3.5rem;
   height: 28px;
   background-color: var(--bgbutton);
@@ -646,7 +647,7 @@ a:visited {
   font-size: 25px;
 }
 #accueil .actu {
-  min-height: 527px;
+  padding: 0 10px;
   background: linear-gradient(to top, var(--bglight), var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark);
   grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr;
   grid-template-rows: 148px 194px 215px;
