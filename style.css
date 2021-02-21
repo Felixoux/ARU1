@@ -730,9 +730,11 @@ a:visited {
   cursor: pointer;
 }
 #accueil section.bottom {
-  margin-top: 50px;
-  justify-content: space-evenly;
-  width: 100%;
+  margin: 50px auto 0 auto;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  max-width: 1450px;
+  min-width: 1350px;
   min-height: 625px;
 }
 #accueil .card-inscriptions, #accueil .card-eel {
