@@ -474,12 +474,14 @@ a:visited {
   height: 100vh;
   position: relative;
 }
+
 #accueil nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 95px;
-  background-color: var(--bgnavbar);
+  background: url(img/bgla.svg);
+  background-repeat: repeat-x;
   font-family: "inter_bold";
   color: var(--textnavbar);
   font-size: 22.5px;
