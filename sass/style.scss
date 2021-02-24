@@ -17,7 +17,7 @@
 	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
 } */
 
-// ../dart-sass/sass sass/style.scss style.css --watch
+// ../dart-sass/sass sass/style.scss style.css --watch../dart-sass/sass sass/style.scss style.css --watch
 
 // === scrollBar === 
 	::-webkit-scrollbar{width: 8.5px;height: 7px; }
@@ -40,7 +40,7 @@
 
 	.float-stop{clear: both;}
 
-	.font-normal{font-family: 'inter'; color: $letterscolor; font-size: 16px;}
+	.font-normal{font-family: 'inter'; color: $letterscolor; font-size: 18px;}
 
 	.font-bold{font-family: 'inter_bold';}
 
@@ -266,11 +266,11 @@ nav {
 	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
 	width: 70%;
 
-		.nav-links i{
+		i{
 		margin:0 10px 0 10px ;
 		color: $letterscolor;
 	}
-		.nav-links li{
+		li{
 		cursor: pointer;
 	}
 }
@@ -399,9 +399,9 @@ nav {
 	height: 499px; 
 	margin-top: 25px;
 	border-radius: 25px;
-	background: url(img/standard_1800x1090_define-firstgen12.jpg); 
-	background-position:top; 
-	background-size: cover;
+	//background: url(img/standard_1800x1090_define-firstgen12.jpg); 
+	//background-position:top; 
+	//background-size: cover;
 	box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25); 
 }
 
@@ -433,9 +433,19 @@ nav {
 	border: 0.8px solid $border; 
 	border-radius: 4px;  
 	background: $cardbg;
-	line-height: 3em; 
+	line-height: 1.4em; 
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);  
 	overflow: auto;
+	p {
+		margin-bottom: 0.7em;
+		a {
+			color: $pink;
+			text-decoration: underline;
+		}
+		span {
+			color: #ff344f;
+		}
+	}
 }
 
 // == button scroll
@@ -525,8 +535,8 @@ nav {
 }
 
 .card-actu_little1 .text-bg_card p, .card-actu_little2 .text-bg_card p, .card-actu_little3 .text-bg_card p{
-	padding: 0 2% 0 5%;
-	align-self: center;
+	padding: 45px 2% 0 5%;
+	align-self: flex-start;
 }
 
 .card-actu_little1 .line, .card-actu_little2 .line, .card-actu_little3 .line {

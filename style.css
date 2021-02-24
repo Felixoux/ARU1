@@ -98,11 +98,11 @@ a:visited {
 }
 
 ::-webkit-scrollbar-corner {
-  background: #1B1E3D;
+  background: #1b1e3d;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1B1E3D;
+  background: #1b1e3d;
   padding: 1px;
 }
 
@@ -135,7 +135,7 @@ a:visited {
 .font-normal {
   font-family: "inter";
   color: #D4DCFF;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .font-bold {
@@ -441,7 +441,7 @@ a:visited {
 }
 */
 #accueil {
-  background-color: #1B1E3D;
+  background-color: #1b1e3d;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -463,11 +463,11 @@ a:visited {
   justify-content: space-around;
   width: 70%;
 }
-#accueil .nav-links .nav-links i {
+#accueil .nav-links i {
   margin: 0 10px 0 10px;
   color: #D4DCFF;
 }
-#accueil .nav-links .nav-links li {
+#accueil .nav-links li {
   cursor: pointer;
 }
 #accueil .nav-links :nth-child(2) {
@@ -573,9 +573,6 @@ a:visited {
   height: 499px;
   margin-top: 25px;
   border-radius: 25px;
-  background: url(img/standard_1800x1090_define-firstgen12.jpg);
-  background-position: top;
-  background-size: cover;
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
 }
 #accueil .button_video {
@@ -604,9 +601,19 @@ a:visited {
   border: 0.8px solid #2a2e5e;
   border-radius: 4px;
   background: #22244D;
-  line-height: 3em;
+  line-height: 1.4em;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: auto;
+}
+#accueil .infos_square p {
+  margin-bottom: 0.7em;
+}
+#accueil .infos_square p a {
+  color: #D68FD6;
+  text-decoration: underline;
+}
+#accueil .infos_square p span {
+  color: #ff344f;
 }
 #accueil .button_scroll {
   clear: both;
@@ -620,7 +627,7 @@ a:visited {
 }
 #accueil .actu {
   padding: 0 10px;
-  background: linear-gradient(to top, #1B1E3D, #1B1E3D) left bottom/100% 90px no-repeat #171933;
+  background: linear-gradient(to top, #1b1e3d, #1b1e3d) left bottom/100% 90px no-repeat #171933;
   grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr;
   grid-template-rows: 148px 194px 215px;
   grid-gap: 0;
@@ -684,8 +691,8 @@ a:visited {
   font-size: 18.5px;
 }
 #accueil .card-actu_little1 .text-bg_card p, #accueil .card-actu_little2 .text-bg_card p, #accueil .card-actu_little3 .text-bg_card p {
-  padding: 0 2% 0 5%;
-  align-self: center;
+  padding: 45px 2% 0 5%;
+  align-self: flex-start;
 }
 #accueil .card-actu_little1 .line, #accueil .card-actu_little2 .line, #accueil .card-actu_little3 .line {
   grid-area: 4/1/span 1/span 1;
