@@ -22,14 +22,14 @@
 // === scrollBar === 
 	::-webkit-scrollbar{width: 8.5px;height: 7px; }
 	
-	::-webkit-scrollbar-thumb{ background: var(--border); border-radius: 4px;}
+	::-webkit-scrollbar-thumb{ background: $border; border-radius: 4px;}
 	
-	::-webkit-scrollbar-corner { background: var(--bglight) }
+	::-webkit-scrollbar-corner { background: $bglight }
 	
-	::-webkit-scrollbar-track {background:var(--bglight); padding: 1px;}
+	::-webkit-scrollbar-track {background:$bglight; padding: 1px;}
 	
 	// == selection for fonts
-	::selection { background:var(--contrast); color: #fff;}
+	::selection { background:$contrast; color: #fff;}
 	
 	// == Variables with classes for consistence
 	.flex {display: flex; align-items: center; justify-content: center; flex-flow: row nowrap;}

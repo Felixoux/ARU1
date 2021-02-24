@@ -93,21 +93,21 @@ a:visited {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: #2a2e5e;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-corner {
-  background: var(--bglight);
+  background: #1B1E3D;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bglight);
+  background: #1B1E3D;
   padding: 1px;
 }
 
 ::selection {
-  background: var(--contrast);
+  background: #5396e7;
   color: #fff;
 }
 
@@ -446,15 +446,12 @@ a:visited {
   height: 100vh;
   position: relative;
 }
-
 #accueil nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 95px;
   background-color: #2C316F;
-  background: url(img/bgla.svg);
-  background-repeat: repeat-x;
   font-family: "inter_bold";
   color: #E7F8FF;
   font-size: 22.5px;
