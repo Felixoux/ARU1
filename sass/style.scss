@@ -453,7 +453,7 @@ nav {
 // == section center == A la une == 
 .actu{
 	padding: 0 10px;
-	background:linear-gradient(to top,var(--bglight),var(--bglight)) left bottom/100% 90px no-repeat var(--bgdark); 
+	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
 	grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr ;
 	grid-template-rows: 148px 194px 215px;
 	grid-gap: 0;
