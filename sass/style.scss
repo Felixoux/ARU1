@@ -18,17 +18,7 @@
 } */
 
 // ../dart-sass/sass sass/style.scss style.css --watch
-:root {
-    --bgnavbar: #2C316F;
-    --textnavbar: #E7F8FF;
-    --turquoise : #22789C;
-    --bglight: #1B1E3D;
-    --bgdark: #171933;
-    --letterscolor: #D4DCFF;
-    --pink: #D68FD6;
-    --contrast: #5396e7;
-    --border: #2a2e5e;
-}
+
 // === scrollBar === 
 	::-webkit-scrollbar{width: 8.5px;height: 7px; }
 	
@@ -50,11 +40,11 @@
 
 	.float-stop{clear: both;}
 
-	.font-normal{font-family: 'inter'; color: var(--letterscolor); font-size: 16px;}
+	.font-normal{font-family: 'inter'; color: $letterscolor; font-size: 16px;}
 
 	.font-bold{font-family: 'inter_bold';}
 
-	.font-title{font-family: 'inter_bold'; font-size: 29px; color: var(--letterscolor);}
+	.font-title{font-family: 'inter_bold'; font-size: 29px; color: $letterscolor;}
 	
 	.modern-shadow{box-shadow: -4px -4px 4px -1.5px rgb(255 255 255 / 25%), 8px 8px 4px -1.5px rgb(0 0 0 / 25%);}
 
@@ -250,7 +240,7 @@ label:active:after {width: 45px;
 }
 */
 #accueil {
-	background-color: var(--bglight); 
+	background-color: $bglight; 
 	width: 100%; 
 	height: 100vh; 
 	position: relative; 
@@ -262,9 +252,9 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	min-height: 95px;
-	background-color: var(--bgnavbar);
+	background-color: $bgnavbar;
 	font-family: 'inter_bold';
-	color: var(--textnavbar);
+	color: $textnavbar;
 	font-size: 22.5px;
 	letter-spacing: 1px;
 }
@@ -279,7 +269,7 @@ nav {
 
 .nav-links i{
 	margin:0 10px 0 10px ;
-	color: var(--letterscolor);
+	color: $letterscolor;
 }
 
 
@@ -297,7 +287,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--textnavbar);
+	background-color: $textnavbar;
 	width: 170px;
 	height: 170px;
 	border-radius: 50%;
@@ -315,7 +305,7 @@ nav {
 .burger div {
 	width: 25px; 
 	height: 3px;
-	background-color: var(--textnavbar);
+	background-color: $textnavbar;
 	margin: 5px;
 	border-radius: 25px;
 	transition: all 0.3s ease;
@@ -337,7 +327,7 @@ nav {
 		right: 0;
 		height: calc(100vh - 95px) ;
 		top: 93px;
-		background-color: var(--bgnavbar);
+		background-color: $bgnavbar;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -398,7 +388,7 @@ nav {
 }
 
 .title_video span{
-	color: var(--contrast);
+	color: $contrast;
 }
 
 .video-show {
@@ -422,7 +412,7 @@ nav {
 	padding: 0.4em 0.6em 0.4em 0.6em;
 	border-radius:25px ;
 	border: none;
-	background:var(--contrast);
+	background: $contrast;
 	font-size: 22.5px; 
 	cursor: pointer;
 	outline: none;
@@ -444,9 +434,9 @@ nav {
 	height: 223px; 
 	padding: 1em 1em 0 2em;
 	margin-top: 25px;
-	border: 0.8px solid var(--border); 
+	border: 0.8px solid $border; 
 	border-radius: 4px;  
-	background: var(--cardbg);
+	background: $cardbg;
 	line-height: 3em; 
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);  
 	overflow: auto;
@@ -457,10 +447,10 @@ nav {
 	clear: both;
 	width: 3.5rem; 
 	height: 28px; 
-	background-color:var(--bgbutton); 
+	background-color: $bgbutton; 
 	border-radius: 3.5px; 
 	margin:20px auto; 
-	color: var(--letterscolor);
+	color: $letterscolor;
 	font-size: 25px;
 }
 
@@ -529,9 +519,9 @@ nav {
 	grid-area: 2 / 1 / span 2 / 1;
 	width: 303px;
 	height: 232px;
-	background-color: var(--cardbg);
+	background-color: $cardbg;
 	justify-self: center;
-	border: 1px solid var(--border);
+	border: 1px solid $border;
 	border-radius: 25px;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 	z-index: 99;
@@ -546,7 +536,7 @@ nav {
 	grid-area: 4 / 1 / span 1 / span 1;
 	width: 125px;
 	height: 0;
-	border: 1px solid var(--linedark);
+	border: 1px solid $linedark;
 	z-index: 101;
 	border-radius: 25px;
 	align-self: center;
@@ -558,7 +548,8 @@ nav {
 	grid-area: 4 / 1 / span 2 / 1;
 	width: 45px;
 	height: 45px;
-	background: var(--cardbg);border: 1px solid #2A2E5E;
+	background: $cardbg;
+	border: 1px solid $border;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 50px;
 	z-index: 102;
@@ -620,7 +611,7 @@ section.bottom{
 }
 
 .card-eel :nth-child(4) a{
-	color: var(--pink);
+	color: $pink;
 	cursor: pointer;
 }
 
@@ -634,17 +625,13 @@ section.bottom{
 	justify-self: center;
 	width: 318px;
 	height: 0;
-	border: 0.1px solid var(--letterscolor);
+	border: 0.1px solid $letterscolor;
 	border-radius: 25px;
 }
 
 .card-eel{
 	grid-template-rows: 48px 317px 19px 44px 27px 22px 83px;
 }
-
-
-
-
 
 
 
