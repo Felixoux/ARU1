@@ -265,17 +265,14 @@ nav {
 	justify-content: space-around;
 	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
 	width: 70%;
-}
 
-.nav-links i{
-	margin:0 10px 0 10px ;
-	color: $letterscolor;
-}
-
-
-
-.nav-links li{
-	cursor: pointer;
+		.nav-links i{
+		margin:0 10px 0 10px ;
+		color: $letterscolor;
+	}
+		.nav-links li{
+		cursor: pointer;
+	}
 }
 
 .nav-links :nth-child(2) {position: relative;}
@@ -292,23 +289,21 @@ nav {
 	height: 170px;
 	border-radius: 50%;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.logo img{
-	transform: translateY(-5px);
+		.logo img{
+		transform: translateY(-5px);
+	}
 }
 
 .burger {
 	display: none;
-}
-
-.burger div {
-	width: 25px; 
-	height: 3px;
-	background-color: $textnavbar;
-	margin: 5px;
-	border-radius: 25px;
-	transition: all 0.3s ease;
+		div {
+		width: 25px; 
+		height: 3px;
+		background-color: $textnavbar;
+		margin: 5px;
+		border-radius: 25px;
+		transition: all 0.3s ease;
+	}
 }
 
 @media screen and (max-width:1024px) {
@@ -366,16 +361,18 @@ nav {
 	}
 }
 
-.toggle .lin1{
-	transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .lin2{
-	opacity: 0;
-}
-.toggle .lin3{
-	transform: rotate(45deg) translate(-5px,-6px);
-}
+.toggle {
+	.lin1{
+		transform: rotate(-45deg) translate(-5px,6px);
+	}
+	.lin2{
+		opacity: 0;
 
+	}
+	.lin3{
+		transform: rotate(45deg) translate(-5px,-6px);
+	}
+}
 
 // == section upper == presentation video et infos importante == 
 
@@ -416,11 +413,10 @@ nav {
 	font-size: 22.5px; 
 	cursor: pointer;
 	outline: none;
-}
-
-.button_video a { 
-	padding: 0.4em 0.9em 0.4em 0.9em;
-	color: white;
+	a { 
+		padding: 0.4em 0.9em 0.4em 0.9em;
+		color: white;
+	}
 }
 
 .infos-upper {
@@ -527,6 +523,7 @@ nav {
 	z-index: 99;
 	font-size: 18.5px;
 }
+
 .card-actu_little1 .text-bg_card p, .card-actu_little2 .text-bg_card p, .card-actu_little3 .text-bg_card p{
 	padding: 0 2% 0 5%;
 	align-self: center;
@@ -542,7 +539,6 @@ nav {
 	align-self: center;
 	justify-self: center;
 }
-
 
 .card-actu_little1 .btn_more, .card-actu_little2 .btn_more, .card-actu_little3 .btn_more{
 	grid-area: 4 / 1 / span 2 / 1;
