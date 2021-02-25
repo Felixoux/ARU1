@@ -393,7 +393,7 @@ nav {
 	width: 810px;
 	height: 499px; 
 	margin-top: 25px;
-	border-radius: 25px;
+	border-radius: 0 25px 0  25px ;
 	//background: url(img/standard_1800x1090_define-firstgen12.jpg); 
 	//background-position:top; 
 	//background-size: cover;
@@ -597,7 +597,7 @@ section.bottom{
 	background-image: url(img/inscriptions.jpg);
 	background-position: center;
 	background-size:cover;
-	border-radius: 50px;
+	border-radius: 50px ;
 }
 
 .card-eel .img {
@@ -640,7 +640,27 @@ section.bottom{
 }
 
 
-
+.triangle-bg {
+	width: 280px;
+	height: 280px;
+	z-index: 100;
+	position: absolute;
+	right:0px;
+	top: 504.64px;
+	clip-path: polygon(94% 14%, 100% 25%, 100% 81%, 61% 90%);
+	background-color: $bgdark;
+	z-index: -10;
+}
+.square-bg {
+	clip-path: polygon(0 20%, 14% 21%, 35% 75%, 0 99%);
+	width: 280px; 
+	height: 280px;
+	position: absolute;
+	left: 0;
+	top: 250px;
+	background-color: $bgdark;
+	z-index: -10;
+}
 
 
 
