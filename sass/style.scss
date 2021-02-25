@@ -232,13 +232,14 @@ label:active:after {width: 45px;
 }
 
 // == Accueil 
-/*
+
 .page-wrapper {
-	max-width: 1920px;
+	// == Pour ecran  2K ==
+	max-width: 2560px;
 	margin: 0 auto;
 	position: relative;
 }
-*/
+
 #accueil {
 	background-color: $bglight; 
 	width: 100%; 
@@ -264,7 +265,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
-	width: 70%;
+	width: 80%;
 
 		i{
 		margin:0 10px 0 10px ;
@@ -485,7 +486,7 @@ nav {
 
 .card-actu_little1, .card-actu_little2, .card-actu_little3{
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 324px 1176px;
 	grid-template-rows: 168px 24px 172px 38px 7px;
 	grid-gap: 0;
 	width:330px;
@@ -515,9 +516,10 @@ nav {
 }
 
 .card-actu_little1 .text-bg_card, .card-actu_little2 .text-bg_card, .card-actu_little3 .text-bg_card{
-	grid-area: 2 / 1 / span 2 / 1;
-	width: 303px;
-	height: 232px;
+	grid-area: 2 / 1 / span 2 / span 1;
+	// choisir une width pour quand ca se deploi exemple si dessous en commentaire
+	margin: 0 0.55em;
+	min-height: 232px;
 	background-color: $cardbg;
 	justify-self: center;
 	border: 1px solid $border;
@@ -526,6 +528,11 @@ nav {
 	z-index: 99;
 	font-size: 18.5px;
 }
+/*
+.card-actu_little1 .text-bg_card{
+	justify-self: flex-start; pour que ca ne centre pas le bg du texte
+	width: 1500px; pour choisir la taille du bg du texte
+}*/
 
 .card-actu_little1 .text-bg_card p, .card-actu_little2 .text-bg_card p, .card-actu_little3 .text-bg_card p{
 	padding: 45px 2% 0 5%;
@@ -559,8 +566,8 @@ nav {
 .show-more-infos{
 	cursor:pointer;
 }
-// == section bottom 
 
+// == section bottom ==
 section.bottom{
 	margin: 50px auto 0 auto;
 	justify-content: space-between;
