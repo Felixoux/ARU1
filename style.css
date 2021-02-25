@@ -559,16 +559,14 @@ a:visited {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 #accueil .upper-container {
-  padding: 0 8em 0 62px;
+  max-width: 1700px;
+  min-width: 1100px;
+  justify-content: space-between;
+  margin: 0 2em 0 62px;
   margin-top: 144px;
 }
 #accueil .title_video span {
   color: #5396e7;
-}
-#accueil .video-show {
-  float: left;
-  max-width: 810px;
-  min-width: none;
 }
 #accueil .video_iframe {
   width: 810px;
@@ -591,12 +589,11 @@ a:visited {
   color: white;
 }
 #accueil .infos-upper {
-  float: left;
   margin-left: 125px;
-  max-width: 750px;
-  min-width: 600px;
+  align-self: flex-start;
 }
 #accueil .infos_square {
+  max-width: 850px;
   height: 223px;
   padding: 1em 1em 0 2em;
   margin-top: 25px;
