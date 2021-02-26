@@ -135,7 +135,7 @@ a:visited {
 .font-normal {
   font-family: "inter";
   color: #D4DCFF;
-  font-size: 18px;
+  font-size: 18.5px;
 }
 
 .font-bold {
@@ -439,6 +439,7 @@ a:visited {
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 #accueil {
@@ -627,10 +628,10 @@ a:visited {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    font-size: 16px;
   }
   #accueil .upper-container h2 {
     text-align: center;
-    font-size: 25.2272727273px;
   }
   #accueil .upper-container .video-show {
     max-width: 810px;
@@ -770,28 +771,24 @@ a:visited {
   cursor: pointer;
 }
 #accueil section.bottom {
-  margin: 50px auto 0 auto;
+  margin: 75px auto 0 auto;
   justify-content: space-between;
-  padding: 0 50px 0 50px;
+  align-items: flex-start;
+  padding: 0 50px;
   max-width: 1450px;
-  min-width: 1350px;
-  min-height: 625px;
 }
 #accueil .card-inscriptions, #accueil .card-eel {
-  display: grid;
-  grid-template-columns: 20px 494px 19px;
-  grid-template-rows: 48px 317px 19px 44px 11px 44px 19px 22px 36px;
-  height: 560px;
-}
-#accueil .card-inscriptions h2, #accueil .card-eel h2 {
-  grid-area: 1/2/span 1/span 1;
-  align-self: flex-start;
-  justify-self: center;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: center;
+  width: 533px;
+  min-height: 510px;
 }
 #accueil .card-inscriptions .img, #accueil .card-eel .img {
-  grid-area: 2/1/span 1/span 3;
-  width: 533px;
-  height: 317px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 20px 0;
   background-image: url(img/inscriptions.jpg);
   background-position: center;
   background-size: cover;
@@ -800,33 +797,22 @@ a:visited {
 #accueil .card-eel .img {
   background-image: url(img/online_school.jpg);
 }
-#accueil .bottom p {
-  font-size: 18.5px;
+#accueil .card-inscriptions p, #accueil .card-eel p {
+  margin-bottom: 19px;
+  align-self: flex-start;
+  padding-left: 16px;
 }
-#accueil .card-inscriptions :nth-child(3), #accueil .card-eel :nth-child(3) {
-  grid-area: 4/2/span 1/span 1;
-}
-#accueil .card-inscriptions :nth-child(4), #accueil .card-eel :nth-child(4) {
-  grid-area: 6/2/span 1/span 1;
-}
-#accueil .card-eel :nth-child(4) a {
+#accueil .card-eel a {
   color: #D68FD6;
   cursor: pointer;
 }
-#accueil .card-inscriptions :nth-child(5) {
-  grid-area: 8/2/span 1/span 1;
-}
 #accueil .card-inscriptions .line-bottom, #accueil .card-eel .line-bottom {
-  grid-area: 9/2/span 1/span 1;
-  align-self: flex-end;
-  justify-self: center;
-  width: 318px;
-  height: 0;
-  border: 0.1px solid #D4DCFF;
-  border-radius: 25px;
-}
-#accueil .card-eel {
-  grid-template-rows: 48px 317px 19px 44px 27px 22px 83px;
+  width: 60%;
+  height: 0.1px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  background-color: #D4DCFF;
+  border-radius: 5px;
 }
 #accueil .triangle-bg {
   width: 280px;
@@ -848,6 +834,42 @@ a:visited {
   top: 250px;
   background-color: #171933;
   z-index: -10;
+}
+#accueil .square-form-invoid {
+  clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  left: -140px;
+  bottom: -120px;
+  background-color: #171933;
+  transform: rotate(20deg);
+  z-index: -10;
+}
+#accueil .paralleleograme {
+  clip-path: polygon(62% 49%, 100% 73%, 100% 100%, 63% 78%);
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  right: 0;
+  bottom: 350px;
+  background-color: #171933;
+  z-index: -10;
+}
+@media only screen and (max-width:1200px) {
+  #accueil section.bottom {
+    flex-flow: nowrap column;
+    align-items: center;
+    padding: 0;
+  }
+  #accueil .card-inscriptions p, #accueil .card-eel p {
+    align-self: center;
+    text-align: center;
+    padding: 0 25px;
+  }
+  #accueil .card-eel .line-bottom {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

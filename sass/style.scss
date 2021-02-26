@@ -44,7 +44,7 @@
 
 	.float-stop{clear: both;}
 
-	.font-normal{font-family: 'inter'; color: $letterscolor; font-size: 18px;}
+	.font-normal{font-family: 'inter'; color: $letterscolor; font-size: 18.5px;}
 
 	.font-bold{font-family: 'inter_bold';}
 
@@ -242,6 +242,7 @@ label:active:after {width: 45px;
 	max-width: 1920px;
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
 }
 
 #accueil {
@@ -451,9 +452,9 @@ nav {
 		align-items: center;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 16px;
 		h2 {
-			text-align: center;
-			font-size: (18.5px * 3) / 2.2;
+			text-align: center;	
 		}
 		.video-show {
 			max-width:810px;
@@ -622,31 +623,26 @@ nav {
 
 // == section bottom ==
 section.bottom{
-	margin: 50px auto 0 auto;
+	margin:75px auto 0 auto ;
 	justify-content: space-between;
-	padding: 0 50px 0 50px;
+	align-items: flex-start;
+	padding: 0 50px;
 	max-width: 1450px;
-	min-width: 1350px;
-	min-height:625px;
 }
 
 .card-inscriptions, .card-eel {
-	display: grid;
-	grid-template-columns: 20px 494px 19px;
-	grid-template-rows: 48px 317px 19px 44px 11px 44px 19px 22px 36px;
-	height: 560px;
-}
-
-.card-inscriptions h2, .card-eel h2{
-	grid-area: 1 / 2 / span 1 / span 1;
-	align-self: flex-start;
-	justify-self: center;
+	flex-flow: nowrap column;
+	align-items: center;
+	justify-content: center;
+	width: 533px;
+	min-height: 510px;
 }
 
 .card-inscriptions .img, .card-eel .img {
-	grid-area: 2 / 1 / span 1 / span 3 ;
-	width: 533px;
-	height:317px;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin: 20px 0;
 	background-image: url(img/inscriptions.jpg);
 	background-position: center;
 	background-size:cover;
@@ -657,42 +653,27 @@ section.bottom{
 	background-image: url(img/online_school.jpg);
 }
 
-.bottom p {
-	font-size: 18.5px;
+.card-inscriptions p, .card-eel p {
+	margin-bottom: 19px;
+	align-self: flex-start;
+	padding-left:16px ;
 }
 
-.card-inscriptions :nth-child(3), .card-eel :nth-child(3){
-	grid-area:4 / 2 / span 1 / span 1;
-}
-
-.card-inscriptions :nth-child(4), .card-eel :nth-child(4)  {
-	grid-area:6 / 2 / span 1 / span 1;
-}
-
-.card-eel :nth-child(4) a{
+.card-eel a{
 	color: $pink;
 	cursor: pointer;
 }
 
-.card-inscriptions :nth-child(5) {
-	grid-area:8 / 2 / span 1 / span 1;
-}
-
 .card-inscriptions .line-bottom, .card-eel .line-bottom {
-	grid-area: 9 / 2 / span 1 / span 1;
-	align-self: flex-end;
-	justify-self: center;
-	width: 318px;
-	height: 0;
-	border: 0.1px solid $letterscolor;
-	border-radius: 25px;
+	width: 60%;
+	height: 0.1px;
+	margin-top: 15px ;
+	margin-bottom: 50px;
+	background-color: $letterscolor;
+	border-radius: 5px;
 }
 
-.card-eel{
-	grid-template-rows: 48px 317px 19px 44px 27px 22px 83px;
-}
-
-
+// === forms ==
 .triangle-bg {
 	width: 280px;
 	height: 280px;
@@ -714,6 +695,45 @@ section.bottom{
 	background-color: $bgdark;
 	z-index: -10;
 }
+.square-form-invoid {
+	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+	width: 280px; 
+	height: 280px;
+	position: absolute;
+	left: -140px;
+	bottom: -120px;
+	background-color: $bgdark;
+	transform: rotate(20deg);
+	z-index: -10;
+}
+.paralleleograme {
+	clip-path: polygon(62% 49%, 100% 73%, 100% 100%, 63% 78%);
+	width: 280px; 
+	height: 280px;
+	position: absolute;
+	right: 0;
+	bottom: 350px;
+	background-color: $bgdark;
+	z-index: -10;
+}
+// media query section.bottom
+@media #{$bottomBreak} {
+	section.bottom {
+		flex-flow: nowrap column;
+		align-items: center;
+		padding: 0;
+	}
+	.card-inscriptions p, .card-eel p {
+		align-self: center;
+		text-align: center;
+		padding: 0 25px;
+	}
+
+	.card-eel .line-bottom {
+		display: none;
+	}
+}
+
 
 
 
