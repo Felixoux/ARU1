@@ -903,7 +903,6 @@ a:visited {
   align-items: center;
   justify-content: flex-start;
   width: 533px;
-  min-height: 510px;
   line-height: 1.5em;
 }
 #accueil .card-inscriptions .img, #accueil .card-eel .img {
