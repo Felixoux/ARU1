@@ -836,9 +836,10 @@ a:visited {
   }
   #accueil .container-cards {
     justify-content: center;
+    margin: 0 auto;
   }
   #accueil .actu {
-    grid-template-columns: 1fr 90px 90px 240px 5fr 90px 1fr;
+    display: flex;
   }
   #accueil .actu .arrow_previous {
     grid-area: 2/2/span 1/span 1;

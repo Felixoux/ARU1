@@ -596,16 +596,17 @@ $upper: 1300px;
 		grid-template-columns: 1fr 90px 90px 240px 5fr 330px 1fr 1fr ;
 	}
 }
-
+// maybe en display flex pour le petit ecran ? Ca serait plus simple non ?
 @media #{$actuBreak} {
 	.card-actu_little2 {
 		display: none;
 	}
 	.container-cards {
 		justify-content: center;
+		margin: 0 auto;
 	}
 	.actu {
-		grid-template-columns: 1fr 90px 90px 240px 5fr 90px 1fr ;
+		display:flex;
 	}
 	.actu .arrow_previous {
 		grid-area: 2 / 2 / span 1 / span 1;
