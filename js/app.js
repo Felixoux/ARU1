@@ -27,10 +27,3 @@ navSlide();
 
 // A la une 
 
-const plus = document.querySelector('.card-actu_little1 .show-more-infos, .card-actu_little2 .show-more-infos, .card-actu_little3 .show-more-infos ');
-const card = document.querySelector('.card-actu_little1, .card-actu_little2, .card-actu_little3');
-plus.addEventListener('click',()=>{
-    card.classList.toggle(".opened");
-});
-
-

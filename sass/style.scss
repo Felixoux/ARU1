@@ -231,7 +231,7 @@ nav {
 
 .nav-links{
 	z-index: 100;
-	margin-left: 100px;
+	margin-left: $space-section * 0.9;
 	display: flex;
 	justify-content: space-around;
 	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
@@ -263,6 +263,7 @@ nav {
 		.logo img{
 		transform: translateY(-5px);
 	}
+	z-index: 100;
 }
 
 .burger {
@@ -351,20 +352,18 @@ nav {
 	max-width: 1700px;
 	min-width: 1100px;
 	justify-content: space-between;
-	margin: 144px 2em 0 62px;
+	align-items: flex-start;
+	margin: $space-section 2em ($space-section / 4) 62px;
 }
 
-.title_video {
-	padding: 0 10vw;
-	span{
-		color: $contrast;
-	}
+.title_video span{
+	color: $contrast;
 }
 
 .video_iframe{ 
-	margin-top: 25px;
+	margin-top: $gap;
 	border-radius: 0 25px 0  25px ;
-	box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25); 
+	//box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25); 
 }
 /*
 .button_video{
@@ -382,16 +381,16 @@ nav {
 }
 */
 .infos-upper {
-	margin-left: 7%;
-	align-self: flex-start;
+	margin-left: $gap * 5;
 }
 
 .infos_square{
 	max-width: 850px;
 	min-width: 300px;
-	height: 223px; 
+	min-height: 223px; 
+	max-height: 499px;
 	padding: 1em 1em 0 2em;
-	margin-top: 25px;
+	margin-top: $gap;
 	border: 0.8px solid $border; 
 	border-radius: 4px;  
 	background: $cardbg;
@@ -405,7 +404,7 @@ nav {
 			text-decoration: underline;
 		}
 		span {
-			color: #ff344f;
+			color: $red;
 		}
 	}
 }
@@ -417,12 +416,15 @@ nav {
 		min-width: 100px;
 		max-width: 1100px;
 		align-items: center;
-		margin-left: auto;
-		margin-right: auto;
+		margin: ($space-section / 1.3) auto ($space-section / 2) auto;
 		font-size: 16px;
 		h2 {
 			text-align: center;	
 		}
+		.title_video {
+			padding: 0 10vw;
+		}
+
 		.video-show {
 			max-width:810px;
 			padding: 0 1em;
@@ -456,11 +458,14 @@ nav {
 		}
 
 		.infos_square {
-			max-height: 500px;
+			max-height: 400px;
 			min-width: 10%;
-			max-width: 800px;
+			max-width: 600px;
 		}
 	}	
+	.button_scroll {
+		display: none;
+	}
 }
 
 // == button scroll
@@ -470,13 +475,14 @@ nav {
 	height: 28px; 
 	background-color: $bgbutton; 
 	border-radius: 3.5px; 
-	margin:50px auto 20px auto; 
+	margin: 0 auto; 
 	color: $letterscolor;
 	font-size: 25px;
 }
 
 // == section center == A la une == 
 .actu{
+	margin-top: $gap - 12.5px;
 	padding: 0 10px;
 	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
 	grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr ;
@@ -490,7 +496,7 @@ nav {
 .scribe{
 	grid-area: 1 / 3 / 1 / 3;
 	justify-self: end;
-	padding-top: 15px;
+	padding-top: $gap - 10px;
 }
 .arrow_previous{
 		grid-area:2 / 1 / 2 / 1;
@@ -503,12 +509,6 @@ nav {
 	justify-content: space-around;
 }
 
-.arrow_next{
-	grid-area: 2 / 10 / span 1 / span 1;
-	transform: rotate(180deg);
-	align-self: end;
-	justify-self: start;
-}
 
 .card-actu_little1, .card-actu_little2, .card-actu_little3{
 	display: grid;
@@ -517,70 +517,111 @@ nav {
 	grid-gap: 0;
 	width:330px;
 	height: 407px;
+	.img-card{
+		grid-area:1 / 1 / span 2 / 1 ;
+		width: 100%;
+		height: 192px;
+		background-image: url(img/card-test.jpg);
+		background-size: cover;
+		border-radius: 25px;
+		z-index: 150;
+	}
+	.text-bg_card{
+		grid-area: 2 / 1 / span 2 / span 1;
+		margin: 0 0.55em;
+		min-height: 232px;
+		background-color: $cardbg;
+		justify-self: center;
+		border: 1px solid $border;
+		border-radius: 25px;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+		z-index: 99;
+		font-size: 18.5px;
+	}
+	.text-bg_card p{
+		padding: 45px 2% 0 5%;
+		align-self: flex-start;
+	}
+	.line {
+		grid-area: 4 / 1 / span 1 / span 1;
+		width: 125px;
+		height: 0;
+		border: 1px solid $linedark;
+		z-index: 101;
+		border-radius: 25px;
+		align-self: center;
+		justify-self: center;
+	}
+	.btn_more{
+		grid-area: 4 / 1 / span 2 / 1;
+		width: 45px;
+		height: 45px;
+		background: $cardbg;
+		border: 1px solid $border;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 50px;
+		z-index: 102;
+		align-self: flex-end;
+		justify-self: flex-end;	
+	}
 }
 
-.card-actu_little1 .img-card, .card-actu_little2 .img-card, .card-actu_little3 .img-card{
-	grid-area:1 / 1 / span 2 / 1 ;
-	width: 100%;
-	height: 192px;
-	background-image: url(img/card-test.jpg);
-	background-size: cover;
-	border-radius: 25px;
-	z-index: 100;
+.btn_more:hover {
+	transform: scale(1.15);
+		position: relative;
+		overflow: hidden;
+		&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 180%;
+		background-repeat: no-repeat;
+		background-size: 50%, 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient($green, $yellow),  linear-gradient($red, blue);
+		animation: rotate 4s linear infinite;
+		}
+		
+		&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 2px;
+		top: 2px;
+		width: calc(100% - 3px);
+		height: calc(100% - 3px);
+		background:$cardbg;
+		border-radius: 50px;
+		}
 }
-
-.card-actu_little1 .text-bg_card, .card-actu_little2 .text-bg_card, .card-actu_little3 .text-bg_card{
-	grid-area: 2 / 1 / span 2 / span 1;
-	// choisir une width pour quand ca se deploi exemple si dessous en commentaire
-	margin: 0 0.55em;
-	min-height: 232px;
-	background-color: $cardbg;
-	justify-self: center;
-	border: 1px solid $border;
-	border-radius: 25px;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-	z-index: 99;
-	font-size: 18.5px;
-}
-/*
-.card-actu_little1 .text-bg_card{
-	justify-self: flex-start; pour que ca ne centre pas le bg du texte
-	width: 1500px; pour choisir la taille du bg du texte
-}*/
-
-.card-actu_little1 .text-bg_card p, .card-actu_little2 .text-bg_card p, .card-actu_little3 .text-bg_card p{
-	padding: 45px 2% 0 5%;
-	align-self: flex-start;
-}
-
-.card-actu_little1 .line, .card-actu_little2 .line, .card-actu_little3 .line {
-	grid-area: 4 / 1 / span 1 / span 1;
-	width: 125px;
-	height: 0;
-	border: 1px solid $linedark;
-	z-index: 101;
-	border-radius: 25px;
-	align-self: center;
-	justify-self: center;
-}
-
-.card-actu_little1 .btn_more, .card-actu_little2 .btn_more, .card-actu_little3 .btn_more{
-	grid-area: 4 / 1 / span 2 / 1;
-	width: 45px;
-	height: 45px;
-	background: $cardbg;
-	border: 1px solid $border;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 50px;
-	z-index: 102;
-	align-self: flex-end;
-	justify-self: flex-end;
+@keyframes rotate {
+	100% {
+	transform: rotate(1turn);
+	}
 }
 
 .show-more-infos{
 	cursor:pointer;
 }
 
+.arrow_next{
+	grid-area: 2 / 10 / span 1 / span 1;
+	transform: rotate(180deg);
+	align-self: end;
+	justify-self: start;
+}
+/*
+.card-actu_little1 .text-bg_card{   //exemple de pour quand js deploy
+	justify-self: flex-start;
+	width: 70vw;
+	min-height: 280px;
+	z-index: 120; 
+}
+*/
+// Merdia query A la une 
 $upper: 1300px;
 
 @media #{$upperBreak} {
@@ -619,41 +660,51 @@ $upper: 1300px;
 
 // == section bottom ==
 section.bottom{
-	margin:75px auto 0 auto ;
+	margin:($space-section / 2) auto ($space-section / 3) auto ;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 0 50px;
+	padding: 0 ($gap * 2);
 	max-width: 1450px;
 }
 
 .card-inscriptions, .card-eel {
 	flex-flow: nowrap column;
 	align-items: center;
-	justify-content: center;
-	line-height: 1.5em;
+	justify-content: flex-start;
 	width: 533px;
 	min-height: 510px;
-}
+	line-height: 1.5em;
+	.img {
+		width: 100%;
+		height: 0;
+		padding-bottom: 56.25%;
+		margin: 20px 0;
+		background-image: url(img/inscriptions.jpg);
+		background-position: center;
+		background-size:cover;
+		border-radius: 50px ;
+	}
 
-.card-inscriptions .img, .card-eel .img {
-	width: 100%;
-	height: 0;
-	padding-bottom: 56.25%;
-	margin: 20px 0;
-	background-image: url(img/inscriptions.jpg);
-	background-position: center;
-	background-size:cover;
-	border-radius: 50px ;
+	p {
+		margin-bottom: 19px;
+		align-self: flex-start;
+		padding: 0 16px ;
+	}
+
+	.line-bottom {
+		justify-self: flex-end;
+		width: 60%;
+		height: 0.1px;
+		background-color: $letterscolor;
+		border-radius: 5px;
+	}
+}
+.card-inscriptions span {
+	color:$green;
 }
 
 .card-eel .img {
 	background-image: url(img/online_school.jpg);
-}
-
-.card-inscriptions p, .card-eel p {
-	margin-bottom: 19px;
-	align-self: flex-start;
-	padding-left:16px ;
 }
 
 .card-eel a{
@@ -661,14 +712,35 @@ section.bottom{
 	cursor: pointer;
 }
 
-.card-inscriptions .line-bottom, .card-eel .line-bottom {
-	width: 60%;
-	height: 0.1px;
-	margin-top: 15px ;
-	margin-bottom: 50px;
-	background-color: $letterscolor;
-	border-radius: 5px;
+// media query section.bottom
+@media #{$bottomBreak} {
+	section.bottom {
+		flex-flow: nowrap column;
+		align-items: center;
+		padding: 0;
+	}
+
+	.card-inscriptions p, .card-eel p {
+		align-self: center;
+		text-align: center;
+		padding: 0 25px;
+	}
+
+	.card-eel .line-bottom {
+		display: none;
+	}
 }
+
+$bottom:600px;
+@media #{$bottomBreak} {
+	.card-eel {
+		margin-top: $gap * 2;
+	}
+	.card-inscriptions, .card-eel {
+		width: 80%;
+	}
+}
+
 
 // === forms ==
 .triangle-bg {
@@ -713,31 +785,6 @@ section.bottom{
 	background-color: $bgdark;
 	z-index: -10;
 }
-// media query section.bottom
-@media #{$bottomBreak} {
-	section.bottom {
-		flex-flow: nowrap column;
-		align-items: center;
-		padding: 0;
-	}
-
-	.card-inscriptions p, .card-eel p {
-		align-self: center;
-		text-align: center;
-		padding: 0 25px;
-	}
-
-	.card-eel .line-bottom {
-		display: none;
-	}
-}
-
-@media #{$bottomBreak2} {
-	.card-inscriptions, .card-eel {
-		width: 90%;
-	}
-}
-
 
 
 
