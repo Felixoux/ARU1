@@ -2,6 +2,15 @@ $upper: 1360px!default;
 
 $upperBreak:"only screen and (max-width:#{$upper})";
 
+$actu: 1000px!default;
+
+$actuBreak:"only screen and (max-width:#{$actu})";
+
 $bottom:1200px!default;
 
 $bottomBreak:"only screen and (max-width:#{$bottom})";
+
+$bottom2: 600px;
+
+$bottomBreak2:"only screen and (max-width:#{$bottom2})";
+
