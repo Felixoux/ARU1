@@ -1,24 +1,33 @@
-
 // == variable sass ==    
-    
-    // == les bakcground-color ==
 
-    $bglight: #1b1e3d;
-    $bgdark: #171933;
-    $bgnavbar: #2C316F;
-    $bgbutton:#2C316F;
-    $cardbg:#22244D;
-    $turquoise : #22789C;
+// == les bakcground-color ==
 
-    // == les color pour fonts ==
+$bglight: #1b1e3d;
+$bgdark: #171933;
+$bgnavbar: #2C316F;
+$bgbutton:#2C316F;
+$cardbg:#22244D;
+$turquoise : #22789C;
+$color-transparent:rgba(18, 28, 66, 0);
+$shadow:#d8e1e8;
+// == les color pour fonts ==
 
-    $letterscolor: #D4DCFF;
-    $textnavbar: #E7F8FF;
-    $contrast: #5396e7;
+$letterscolor: #D4DCFF;
+$textnavbar: #E7F8FF;
+$contrast: #5396e7;
+$red: #f25353;
+$green:#41cf7c;
+$yellow:#feb32b;
 
-    // == couleurs cosmetiques
-    
-    $pink: #D68FD6;
-    $border: #2a2e5e;
-    $arrow:#BBCCE0;
-    $linedark:#161E3B;
+// == couleurs cosmetiques
+$pink: #D68FD6;
+$border: #2a2e5e;
+$arrow:#BBCCE0;
+$linedark:#161E3B;
+
+// == Le reste ==
+$gap:20px;
+$space:8px;
+$space-section:150px;
+$card-padding:16px;
+$header-height:137px;

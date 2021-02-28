@@ -73,20 +73,114 @@ a:visited {
   src: url(fonts/Inter-Bold.ttf) format("truetype");
   font-weight: 700;
 }
-/* organisation css:{
+.m-1 {
+  margin: 0 1rem;
+}
 
-	POSITION + MARGIN, PADDING
+.m-2 {
+  margin: 0 2rem;
+}
 
-	BORDERS
+.m-3 {
+  margin: 0 3rem;
+}
 
-	BACKGROUND
+.m-4 {
+  margin: 0 4rem;
+}
 
-	TEXT
+.mt-1 {
+  margin: 1rem 0;
+}
 
-	AUTRES
+.mt-2 {
+  margin: 2rem 0;
+}
 
-	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
-} */
+.mt-3 {
+  margin: 3rem 0;
+}
+
+.mt-4 {
+  margin: 4rem 0;
+}
+
+.p-1 {
+  padding: 0 1rem;
+}
+
+.p-2 {
+  padding: 0 2rem;
+}
+
+.p-3 {
+  padding: 0 3rem;
+}
+
+.p-4 {
+  padding: 0 4rem;
+}
+
+.pt-1 {
+  padding: 1rem 0;
+}
+
+.pt-2 {
+  padding: 2rem 0;
+}
+
+.pt-3 {
+  padding: 3rem 0;
+}
+
+.pt-4 {
+  padding: 4rem 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+.grid {
+  display: grid;
+}
+
+.float {
+  float: left;
+}
+
+.float-clear {
+  clear: both;
+}
+
+.center-mg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font-normal {
+  font-family: "inter";
+  color: #D4DCFF;
+  font-size: 18.5px;
+}
+
+.font-title {
+  font-family: "inter_bold";
+  font-size: 29px;
+  color: #D4DCFF;
+}
+
+.font-bold {
+  font-family: "inter_bold";
+}
+
+.modern-shadow {
+  box-shadow: -4px -4px 4px -1.5px rgba(255, 255, 255, 0.25), 8px 8px 4px -1.5px rgba(0, 0, 0, 0.25);
+}
+
 ::-webkit-scrollbar {
   width: 8.5px;
   height: 7px;
@@ -109,51 +203,6 @@ a:visited {
 ::selection {
   background: #5396e7;
   color: #fff;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row nowrap;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 3rem;
-}
-
-.float {
-  float: left;
-  margin: 2rem 0 0 2rem;
-}
-
-.float-stop {
-  clear: both;
-}
-
-.font-normal {
-  font-family: "inter";
-  color: #D4DCFF;
-  font-size: 18.5px;
-}
-
-.font-bold {
-  font-family: "inter_bold";
-}
-
-.font-title {
-  font-family: "inter_bold";
-  font-size: 29px;
-  color: #D4DCFF;
-}
-
-.modern-shadow {
-  box-shadow: -4px -4px 4px -1.5px rgba(255, 255, 255, 0.25), 8px 8px 4px -1.5px rgba(0, 0, 0, 0.25);
-}
-
-.center-mg {
-  margin: 0 auto;
 }
 
 #main_index {

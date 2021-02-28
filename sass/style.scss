@@ -4,25 +4,8 @@
 @import "libs/responsive.scss";
 @import "libs/fonts.scss";
 @import "libs/variables.scss";
-
-
-/* organisation css:{
-
-	POSITION + MARGIN, PADDING
-
-	BORDERS
-
-	BACKGROUND
-
-	TEXT
-
-	AUTRES
-
-	margin ou padding : top left bottom right ( C'est un cercle si on veut, ou l'on part du haut et on y reviens en allant de gauche a droite ).
-} */
-
+@import "libs/genericClasses.scss";
 // ../dart-sass/sass sass/style.scss style.css --watch
-
 // === scrollBar === 
 	::-webkit-scrollbar{width: 8.5px;height: 7px; }
 	
@@ -31,28 +14,8 @@
 	::-webkit-scrollbar-corner { background: $bglight }
 	
 	::-webkit-scrollbar-track {background:$bglight; padding: 1px;}
-	
-	// == selection for fonts
-	::selection { background:$contrast; color: #fff;}
-	
-	// == Variables with classes for consistence
-	.flex {display: flex; align-items: center; justify-content: center; flex-flow: row nowrap;}
-
-	.grid {display: grid;grid-gap: 3rem;}
-
-	.float{float: left; margin: 2rem 0 0 2rem;}
-
-	.float-stop{clear: both;}
-
-	.font-normal{font-family: 'inter'; color: $letterscolor; font-size: 18.5px;}
-
-	.font-bold{font-family: 'inter_bold';}
-
-	.font-title{font-family: 'inter_bold'; font-size: 29px; color: $letterscolor;}
-	
-	.modern-shadow{box-shadow: -4px -4px 4px -1.5px rgb(255 255 255 / 25%), 8px 8px 4px -1.5px rgb(0 0 0 / 25%);}
-
-	.center-mg{margin: 0 auto;}
+// == selection for fonts
+::selection { background:$contrast; color: #fff;}
 
 // == main_index 
 #main_index{ background-color:var(--bg); width: 100%; height: 100vh; position: relative;--bg: #212121; --bg-navbar:#212121; --bg-button:#468ACE;--bg-lien:#C46FC4; --color-text:#FFFFFF; --color-headings: #468ACE;
@@ -238,11 +201,12 @@ label:active:after {width: 45px;
 // == Accueil 
 
 .page-wrapper {
-	// == Pour ecran  1080 ==
+	// == Pour ecran 1080p standart 16/9 ==
 	max-width: 1920px;
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
+	
 }
 
 #accueil {
