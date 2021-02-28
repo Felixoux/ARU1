@@ -568,34 +568,6 @@ nav {
 
 .btn_more:hover {
 	transform: scale(1.15);
-		position: relative;
-		overflow: hidden;
-		&::before {
-		content: '';
-		position: absolute;
-		z-index: -2;
-		left: -50%;
-		top: -50%;
-		width: 200%;
-		height: 180%;
-		background-repeat: no-repeat;
-		background-size: 50%, 50%;
-		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-		background-image: linear-gradient($green, $yellow),  linear-gradient($red, blue);
-		animation: rotate 4s linear infinite;
-		}
-		
-		&::after {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		left: 2px;
-		top: 2px;
-		width: calc(100% - 3px);
-		height: calc(100% - 3px);
-		background:$cardbg;
-		border-radius: 50px;
-		}
 }
 @keyframes rotate {
 	100% {
@@ -621,7 +593,7 @@ nav {
 	z-index: 120; 
 }
 */
-// Merdia query A la une 
+// Media query A la une 
 $upper: 1300px;
 
 @media #{$upperBreak} {
@@ -645,9 +617,6 @@ $upper: 1300px;
 	.container-cards {
 		justify-content: center;
 		margin: 0 auto;
-	}
-	.actu {
-		display:flex;
 	}
 	.actu .arrow_previous {
 		grid-area: 2 / 2 / span 1 / span 1;
