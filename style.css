@@ -922,12 +922,12 @@ a:visited {
     display: none;
   }
 }
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:600px) {
   #accueil .card-eel {
     margin-top: 50px;
   }
   #accueil .card-inscriptions, #accueil .card-eel {
-    width: 75%;
+    width: 90%;
   }
 }
 #accueil .triangle-bg {
