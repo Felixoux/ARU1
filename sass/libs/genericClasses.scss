@@ -22,23 +22,108 @@
     }
 }
 
+.D-none {
+    display: none;
+}
+
+.D-block {
+    display: block;
+}
+
+.D-inl {
+    display: inline;
+}
+
+.D-inl-b {
+    display: inline-block;
+}
+
+.overF-scl {
+    overflow: scroll;
+}
+
+.overF-vsb {
+    overflow: visible;
+}
+
+.overF-aat {
+    overflow: auto;
+}
+
+.overF-hdd {
+    overflow: hidden;
+}
+// flex
 .flex {
     display: flex; 
-    align-items: center; 
-    justify-content: center; 
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
+
+.fl-start {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fl-end {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.flex-cl {
+    flex-flow: nowrap column;
+}
+
+.selfJ-start {
+    justify-self:flex-start ;
+}
+
+.selfJ-center {
+    justify-self:center ;
+}
+
+.selfJ-end {
+    justify-self:flex-end ;
+}
+
+.selfA-start {
+    align-self: flex-start;
+}
+
+.selfA-start {
+    align-self: center;
+}
+
+.selfA-end {
+    align-self: flex-end;
+}
+
 
 .grid {
     display: grid;
 }
-
-.float {
+// float
+.float-l {
     float: left;
 }
 
-.float-clear {
+.float-r {
+    float: right;
+}
+
+.clear {
     clear: both;
+}
+
+.absolute {
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.relative {
+    position: relative;
 }
 
 .center-mg{
@@ -55,11 +140,31 @@
 .font-title{
     font-family: 'inter_bold'; 
     font-size: 29px; 
-    color: $letterscolor;
+    color: $letterscolor; 
 }
 
 .font-bold{
     font-family: 'inter_bold';
+}
+
+.text-r{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.radius-s {
+    border-radius:3px ;
+}
+
+.radius-m {
+    border-radius:25px ;
+}
+
+.radius-l {
+    border-radius:50px ;
 }
 
 .modern-shadow{

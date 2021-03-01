@@ -365,21 +365,7 @@ nav {
 	border-radius: 0 25px 0  25px ;
 	//box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25); 
 }
-/*
-.button_video{
-	padding: 0.4em 0.6em 0.4em 0.6em;
-	background: $contrast;
-	border-radius:25px ;
-	border: none;
-	font-size: 22.5px; 
-	cursor: pointer;
-	outline: none;
-	a { 
-		padding: 0.4em 0.9em 0.4em 0.9em;
-		color: white;
-	}
-}
-*/
+
 .infos-upper {
 	margin-left: $gap * 5;
 }
@@ -509,7 +495,6 @@ nav {
 	justify-content: space-around;
 }
 
-
 .card-actu_little1, .card-actu_little2, .card-actu_little3{
 	display: grid;
 	grid-template-columns: 324px 1176px;
@@ -538,7 +523,7 @@ nav {
 		z-index: 99;
 		font-size: 18.5px;
 	}
-	.text-bg_card p{
+	.text-bg_card p {
 		padding: 45px 2% 0 5%;
 		align-self: flex-start;
 	}
