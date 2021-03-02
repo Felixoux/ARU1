@@ -725,3 +725,71 @@ section.bottom{
 
 // == NE SURTOUT PAS ENLEVER LE CROCHET EN DESSOUS == //
 }
+
+#naviguation { 
+	color: black;
+	width: 100%; 
+	height: 100vh;
+	background-color: $bglight; 
+
+container-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.7);
+	ul {
+		position: fixed;
+		display: flex;
+		flex-flow: nowrap column;
+		justify-content: space-around;
+		align-items: center;
+		height: 590px;
+	}
+	
+	li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 250px;
+		height: 79px;
+		background: #171933;
+		border-radius: 3px;
+	}
+	button {
+		width: 230px;
+		height: 57px;
+		background: #171933;
+		border: 1px solid #2A2E5E;
+		border-radius: 3px;
+		outline: none;
+		font-size: 22.5px;
+		font-family: 'inter';
+		color: $textnavbar;
+	}
+	.container-federation-logo {
+		display: none;
+		position: fixed;
+		left: 15px;
+		bottom: 15px;
+		h2 {
+			color: $textnavbar;
+			color: white;
+			font-size: 22.5px;
+			font-family: 'inter';
+			margin-bottom: $space;
+		}
+		.logo-fed {
+			width: 144px;
+			height: 112px;
+			border-radius: 5px;
+		}
+	}
+	
+}
+
+}
