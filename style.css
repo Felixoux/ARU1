@@ -137,23 +137,107 @@ a:visited {
   padding: 4rem 0;
 }
 
+.D-none {
+  display: none;
+}
+
+.D-block {
+  display: block;
+}
+
+.D-inl {
+  display: inline;
+}
+
+.D-inl-b {
+  display: inline-block;
+}
+
+.overF-scl {
+  overflow: scroll;
+}
+
+.overF-vsb {
+  overflow: visible;
+}
+
+.overF-aat {
+  overflow: auto;
+}
+
+.overF-hdd {
+  overflow: hidden;
+}
+
 .flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.fl-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.fl-end {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-cl {
+  flex-flow: nowrap column;
+}
+
+.selfJ-start {
+  justify-self: flex-start;
+}
+
+.selfJ-center {
+  justify-self: center;
+}
+
+.selfJ-end {
+  justify-self: flex-end;
+}
+
+.selfA-start {
+  align-self: flex-start;
+}
+
+.selfA-start {
+  align-self: center;
+}
+
+.selfA-end {
+  align-self: flex-end;
 }
 
 .grid {
   display: grid;
 }
 
-.float {
+.float-l {
   float: left;
 }
 
-.float-clear {
+.float-r {
+  float: right;
+}
+
+.clear {
   clear: both;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.relative {
+  position: relative;
 }
 
 .center-mg {
@@ -175,6 +259,26 @@ a:visited {
 
 .font-bold {
   font-family: "inter_bold";
+}
+
+.text-r {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.radius-s {
+  border-radius: 3px;
+}
+
+.radius-m {
+  border-radius: 25px;
+}
+
+.radius-l {
+  border-radius: 50px;
 }
 
 .modern-shadow {
@@ -487,7 +591,6 @@ a:visited {
 .page-wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  position: relative;
   overflow: hidden;
 }
 
@@ -496,21 +599,6 @@ a:visited {
   width: 100%;
   height: 100vh;
   position: relative;
-  /*
-  .button_video{
-  	padding: 0.4em 0.6em 0.4em 0.6em;
-  	background: $contrast;
-  	border-radius:25px ;
-  	border: none;
-  	font-size: 22.5px; 
-  	cursor: pointer;
-  	outline: none;
-  	a { 
-  		padding: 0.4em 0.9em 0.4em 0.9em;
-  		color: white;
-  	}
-  }
-  */
   /*
   .card-actu_little1 .text-bg_card{   //exemple de pour quand js deploy
   	justify-self: flex-start;

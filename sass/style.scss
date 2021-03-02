@@ -40,7 +40,7 @@
 }
 
 
- // ==  main  
+// ==  main  
 
 .main{position: relative; justify-content: space-between; height: 45%;	width: 100%; background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)) , url(img/book.jpg);	background-attachment: fixed; background-repeat: no-repeat;	background-size: cover ; background-position: center center;
 	
@@ -199,28 +199,19 @@ label:active:after {width: 45px;
 }
 
 // == Accueil 
-
 .page-wrapper {
 	// == Pour ecran 1080p standart 16/9 ==
 	max-width: 1920px;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-	
 }
 
 #accueil {
 	background-color: $bglight; 
 	width: 100%; 
 	height: 100vh; 
-	position: relative; 
 
 // == navbar 
-
 nav {
-	display: flex;
 	justify-content: space-around;
-	align-items: center;
 	min-height: 95px;
 	background-color: $bgnavbar;
 	font-family: 'inter_bold';
@@ -230,13 +221,11 @@ nav {
 }
 
 .nav-links{
-	z-index: 100;
-	margin-left: $space-section * 0.9;
-	display: flex;
 	justify-content: space-around;
+	margin-left: $space-section * 0.9;
 	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
 	width: 80%;
-
+	z-index: 100;
 		i{
 		margin:0 10px 0 10px ;
 		color: $letterscolor;
@@ -249,21 +238,17 @@ nav {
 .nav-links :nth-child(2) {position: relative;}
 
 .logo{
-	position:absolute;
 	top: 17px;
 	left: 37px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: $textnavbar;
 	width: 170px;
 	height: 170px;
 	border-radius: 50%;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-		.logo img{
+	z-index: 100;
+	.logo img{
 		transform: translateY(-5px);
 	}
-	z-index: 100;
 }
 
 .burger {
@@ -347,7 +332,6 @@ nav {
 }
 
 // == section upper == presentation video et infos importante == 
-
 .upper-container {
 	max-width: 1700px;
 	min-width: 1100px;
@@ -382,7 +366,6 @@ nav {
 	background: $cardbg;
 	line-height: 1.4em; 
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);  
-	overflow: auto;
 	p {
 		margin-bottom: 0.7em;
 		a {
@@ -456,12 +439,10 @@ nav {
 
 // == button scroll
 .button_scroll{ 
-	clear: both;
 	width: 3.5rem; 
 	height: 28px; 
 	background-color: $bgbutton; 
 	border-radius: 3.5px; 
-	margin: 0 auto; 
 	color: $letterscolor;
 	font-size: 25px;
 }
@@ -481,13 +462,10 @@ nav {
 }
 .scribe{
 	grid-area: 1 / 3 / 1 / 3;
-	justify-self: end;
 	padding-top: $gap - 10px;
 }
 .arrow_previous{
-		grid-area:2 / 1 / 2 / 1;
-		align-self: end;
-		justify-self: end;
+	grid-area:2 / 1 / 2 / 1;
 }
 
 .container-cards {
@@ -539,6 +517,8 @@ nav {
 	}
 	.btn_more{
 		grid-area: 4 / 1 / span 2 / 1;
+		align-self: flex-end;
+		justify-self: flex-end;	
 		width: 45px;
 		height: 45px;
 		background: $cardbg;
@@ -546,8 +526,6 @@ nav {
 		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 50px;
 		z-index: 102;
-		align-self: flex-end;
-		justify-self: flex-end;	
 	}
 }
 
@@ -567,8 +545,6 @@ nav {
 .arrow_next{
 	grid-area: 2 / 10 / span 1 / span 1;
 	transform: rotate(180deg);
-	align-self: end;
-	justify-self: start;
 }
 /*
 .card-actu_little1 .text-bg_card{   //exemple de pour quand js deploy
@@ -694,7 +670,7 @@ section.bottom{
 }
 
 
-// === forms ==
+// == forms ==
 .triangle-bg {
 	width: 280px;
 	height: 280px;
@@ -739,4 +715,13 @@ section.bottom{
 }
 
 
+
+
+
+
+
+
+
+
+// == NE SURTOUT PAS ENLEVER LE CROCHET EN DESSOUS == //
 }

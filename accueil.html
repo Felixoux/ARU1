@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
     <title>ARU1 - Bêta</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4be47d1c8b.js" crossorigin="anonymous"></script>
 </head>
-<body id="accueil">
-    <div class="page-wrapper">       
-        <nav>
-            <ul class="nav-links">
+<body id="accueil relative">
+<!-- Nav  -->
+    <div class="page-wrapper relative center-mg overF-hdd">       
+        <nav class="flex">
+            <ul class="nav-links flex">
                 <li><a href="#"><i class="fas fa-home"></i>Accueil</a></li>
                 <li><a href="#">En pratique</a></li>
                 <li><a href="#">Activités</a></li>
@@ -24,9 +24,10 @@
                 <div class="lin3"></div>
             </div>
         </nav>
-        <div class="logo">
+        <div class="logo flex absolute">
             <a><img src="img/logo-aru1.svg" alt="logo" width="120" height="121"></a>
-        </div>       
+        </div>
+<!-- Upper -->
         <div class="upper-container flex">
             <div class="video-show">
                 <h2 class="title_video font-title"><span>Présentation</span> de notre école</h2>
@@ -34,7 +35,7 @@
             </div>
             <div class="infos-upper">
                 <h2 class="title_infos font-title">Infos importantes</h2>
-                <div class="infos_square font-normal">
+                <div class="infos_square overF-aat font-normal">
                     <p>- L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
                     <p>- Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
                     <p>- <span>Urgent:</span> rendre les bulletins avant le 36/01/3021 ;)</p>
@@ -44,13 +45,14 @@
                 </div>
             </div>
         </div>
-        <div class="button_scroll flex">
+        <div class="button_scroll flex clear center-mg">
             <i class="fas fa-chevron-down"></i>
         </div>
+<!-- Actu  -->
         <section class="actu grid">
                 <h2 class="actu_title font-title">A la une</h2>      
-                <img class="scribe" src="img/scribe.svg" alt="scribe">
-                    <img class="arrow_previous" src="img/arrowcommon.svg" alt="Fleche_precedent" width="45" height="75">
+                <img class="scribe selfJ-end" src="img/scribe.svg" alt="scribe">
+                    <img class="arrow_previous selfJ-end selfA-end" src="img/arrowcommon.svg" alt="Fleche_precedent" width="45" height="75">
                     <div class="container-cards flex">
                         <div class="card-actu_little1">
                             <div class="img-card"></div>
@@ -91,8 +93,9 @@
                             </div>
                         </div>
                     </div>
-                    <img class="arrow_next" src="img/arrowcommon.svg" alt="Fleche_precedent" width="45" height="75">
+                    <img class="arrow_next selfA-end selfJ-start" src="img/arrowcommon.svg" alt="Fleche_precedent" width="45" height="75">
         </section>
+<!-- Bottom  -->
         <section class="bottom flex">
             <div class="card-inscriptions flex">
                 <h2 class="font-title">
@@ -113,11 +116,14 @@
                 <div class="line-bottom"></div>
             </div>
         </section>
+<!-- Forms  -->
         <div class="triangle-bg"></div>
         <div class="square-bg"></div>
         <div class="square-form-invoid"></div>
         <div class="paralleleograme"></div>
     </div>
+<!-- Scripts  -->
 <script src="js/app.js"></script>
+<script src="https://kit.fontawesome.com/4be47d1c8b.js" crossorigin="anonymous"></script>
 </body>
 </html>
