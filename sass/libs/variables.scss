@@ -31,3 +31,13 @@ $space:8px;
 $space-section:150px;
 $card-padding:16px;
 $header-height:137px;
+$container-padding:20px;
+$container-width:1330px;
+
+@media only screen and (max-width:900px) {
+    $container-padding:32px;
+}
+@media only screen and (max-width:750px) {
+    $container-width:calc(100vw - #{$container-width} * 2);
+}
+

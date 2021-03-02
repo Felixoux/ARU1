@@ -61,6 +61,10 @@ a:visited {
   text-decoration: none;
 }
 
+button {
+  outline: none;
+}
+
 @font-face {
   font-family: "inter";
   src: url(fonts/Inter-Regular.ttf) format("truetype");
@@ -133,6 +137,474 @@ a:visited {
 
 .pt-4 {
   padding: 4rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  transition: color 0.3s;
+}
+
+hr {
+  height: 1px;
+  background: var(--border);
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container, .header, .footer, .main, .section, .aside {
+  width: 100%;
+  width: 100%;
+  padding-left: calc(50% - (1330px/ 2));
+  padding-right: calc(50% - (1330px/ 2));
+}
+
+.ratio {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.sticky {
+  position: sticky;
+  top: calc(3 * 8px);
+}
+
+.mla {
+  margin-left: auto;
+}
+
+body .p1 {
+  padding: calc(1 * 8px);
+}
+
+body .pt1 {
+  padding-top: calc(1 * 8px);
+}
+
+body .pb1 {
+  padding-bottom: calc(1 * 8px);
+}
+
+body .px1 {
+  padding-left: calc(1 * 8px);
+  padding-right: calc(1 * 8px);
+}
+
+body .p1 {
+  padding: calc(1 * 8px);
+}
+
+body .pt1 {
+  padding-top: calc(1 * 8px);
+}
+
+body .pb1 {
+  padding-bottom: calc(1 * 8px);
+}
+
+body .px1 {
+  padding-left: calc(1 * 8px);
+  padding-right: calc(1 * 8px);
+}
+
+body .py1 {
+  padding-top: calc(1 * 8px);
+  padding-bottom: calc(1 * 8px);
+}
+
+body .my1 {
+  margin-top: calc(1 * 8px);
+  margin-bottom: calc(1 * 8px);
+}
+
+body .m1 {
+  margin: calc(1 * 8px);
+}
+
+body .mx1 {
+  margin-left: calc(1 * 8px);
+  margin-right: calc(1 * 8px);
+}
+
+body .mt1 {
+  margin-top: calc(1 * 8px);
+}
+
+body .mb1 {
+  margin-bottom: calc(1 * 8px);
+}
+
+body .mr1 {
+  margin-right: calc(1 * 8px);
+}
+
+body .ml1 {
+  margin-left: calc(1 * 8px);
+}
+
+body .p2 {
+  padding: calc(2 * 8px);
+}
+
+body .pt2 {
+  padding-top: calc(2 * 8px);
+}
+
+body .pb2 {
+  padding-bottom: calc(2 * 8px);
+}
+
+body .px2 {
+  padding-left: calc(2 * 8px);
+  padding-right: calc(2 * 8px);
+}
+
+body .p2 {
+  padding: calc(2 * 8px);
+}
+
+body .pt2 {
+  padding-top: calc(2 * 8px);
+}
+
+body .pb2 {
+  padding-bottom: calc(2 * 8px);
+}
+
+body .px2 {
+  padding-left: calc(2 * 8px);
+  padding-right: calc(2 * 8px);
+}
+
+body .py2 {
+  padding-top: calc(2 * 8px);
+  padding-bottom: calc(2 * 8px);
+}
+
+body .my2 {
+  margin-top: calc(2 * 8px);
+  margin-bottom: calc(2 * 8px);
+}
+
+body .m2 {
+  margin: calc(2 * 8px);
+}
+
+body .mx2 {
+  margin-left: calc(2 * 8px);
+  margin-right: calc(2 * 8px);
+}
+
+body .mt2 {
+  margin-top: calc(2 * 8px);
+}
+
+body .mb2 {
+  margin-bottom: calc(2 * 8px);
+}
+
+body .mr2 {
+  margin-right: calc(2 * 8px);
+}
+
+body .ml2 {
+  margin-left: calc(2 * 8px);
+}
+
+body .p3 {
+  padding: calc(3 * 8px);
+}
+
+body .pt3 {
+  padding-top: calc(3 * 8px);
+}
+
+body .pb3 {
+  padding-bottom: calc(3 * 8px);
+}
+
+body .px3 {
+  padding-left: calc(3 * 8px);
+  padding-right: calc(3 * 8px);
+}
+
+body .p3 {
+  padding: calc(3 * 8px);
+}
+
+body .pt3 {
+  padding-top: calc(3 * 8px);
+}
+
+body .pb3 {
+  padding-bottom: calc(3 * 8px);
+}
+
+body .px3 {
+  padding-left: calc(3 * 8px);
+  padding-right: calc(3 * 8px);
+}
+
+body .py3 {
+  padding-top: calc(3 * 8px);
+  padding-bottom: calc(3 * 8px);
+}
+
+body .my3 {
+  margin-top: calc(3 * 8px);
+  margin-bottom: calc(3 * 8px);
+}
+
+body .m3 {
+  margin: calc(3 * 8px);
+}
+
+body .mx3 {
+  margin-left: calc(3 * 8px);
+  margin-right: calc(3 * 8px);
+}
+
+body .mt3 {
+  margin-top: calc(3 * 8px);
+}
+
+body .mb3 {
+  margin-bottom: calc(3 * 8px);
+}
+
+body .mr3 {
+  margin-right: calc(3 * 8px);
+}
+
+body .ml3 {
+  margin-left: calc(3 * 8px);
+}
+
+body .p4 {
+  padding: calc(4 * 8px);
+}
+
+body .pt4 {
+  padding-top: calc(4 * 8px);
+}
+
+body .pb4 {
+  padding-bottom: calc(4 * 8px);
+}
+
+body .px4 {
+  padding-left: calc(4 * 8px);
+  padding-right: calc(4 * 8px);
+}
+
+body .p4 {
+  padding: calc(4 * 8px);
+}
+
+body .pt4 {
+  padding-top: calc(4 * 8px);
+}
+
+body .pb4 {
+  padding-bottom: calc(4 * 8px);
+}
+
+body .px4 {
+  padding-left: calc(4 * 8px);
+  padding-right: calc(4 * 8px);
+}
+
+body .py4 {
+  padding-top: calc(4 * 8px);
+  padding-bottom: calc(4 * 8px);
+}
+
+body .my4 {
+  margin-top: calc(4 * 8px);
+  margin-bottom: calc(4 * 8px);
+}
+
+body .m4 {
+  margin: calc(4 * 8px);
+}
+
+body .mx4 {
+  margin-left: calc(4 * 8px);
+  margin-right: calc(4 * 8px);
+}
+
+body .mt4 {
+  margin-top: calc(4 * 8px);
+}
+
+body .mb4 {
+  margin-bottom: calc(4 * 8px);
+}
+
+body .mr4 {
+  margin-right: calc(4 * 8px);
+}
+
+body .ml4 {
+  margin-left: calc(4 * 8px);
+}
+
+body .p5 {
+  padding: calc(5 * 8px);
+}
+
+body .pt5 {
+  padding-top: calc(5 * 8px);
+}
+
+body .pb5 {
+  padding-bottom: calc(5 * 8px);
+}
+
+body .px5 {
+  padding-left: calc(5 * 8px);
+  padding-right: calc(5 * 8px);
+}
+
+body .p5 {
+  padding: calc(5 * 8px);
+}
+
+body .pt5 {
+  padding-top: calc(5 * 8px);
+}
+
+body .pb5 {
+  padding-bottom: calc(5 * 8px);
+}
+
+body .px5 {
+  padding-left: calc(5 * 8px);
+  padding-right: calc(5 * 8px);
+}
+
+body .py5 {
+  padding-top: calc(5 * 8px);
+  padding-bottom: calc(5 * 8px);
+}
+
+body .my5 {
+  margin-top: calc(5 * 8px);
+  margin-bottom: calc(5 * 8px);
+}
+
+body .m5 {
+  margin: calc(5 * 8px);
+}
+
+body .mx5 {
+  margin-left: calc(5 * 8px);
+  margin-right: calc(5 * 8px);
+}
+
+body .mt5 {
+  margin-top: calc(5 * 8px);
+}
+
+body .mb5 {
+  margin-bottom: calc(5 * 8px);
+}
+
+body .mr5 {
+  margin-right: calc(5 * 8px);
+}
+
+body .ml5 {
+  margin-left: calc(5 * 8px);
 }
 
 .D-none {
@@ -228,16 +700,6 @@ a:visited {
   clear: both;
 }
 
-.absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.relative {
-  position: relative;
-}
-
 .center-mg {
   margin-left: auto;
   margin-right: auto;
@@ -251,7 +713,7 @@ a:visited {
 
 .font-title {
   font-family: "inter_bold";
-  font-size: 29px;
+  font-size: 35px;
   color: #D4DCFF;
 }
 
@@ -268,7 +730,7 @@ a:visited {
 }
 
 .radius-s {
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .radius-m {
@@ -281,6 +743,10 @@ a:visited {
 
 .modern-shadow {
   box-shadow: -4px -4px 4px -1.5px rgba(255, 255, 255, 0.25), 8px 8px 4px -1.5px rgba(0, 0, 0, 0.25);
+}
+
+.div-shadow {
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
 ::-webkit-scrollbar {
@@ -587,7 +1053,11 @@ a:visited {
 }
 
 .page-wrapper {
-  max-width: 1920px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
 }
 
 #accueil {
@@ -709,11 +1179,9 @@ a:visited {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 #accueil .upper-container {
-  max-width: 1700px;
-  min-width: 1100px;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 150px 2em 37.5px 62px;
+  margin: 150px 0 37.5px 0;
 }
 #accueil .title_video span {
   color: #5396e7;
@@ -754,7 +1222,6 @@ a:visited {
     min-width: 100px;
     max-width: 1100px;
     align-items: center;
-    margin: 115.3846153846px auto 75px auto;
     font-size: 16px;
   }
   #accueil .upper-container h2 {
@@ -791,7 +1258,7 @@ a:visited {
     padding: 0 1em;
   }
   #accueil .upper-container .infos_square {
-    max-height: 400px;
+    max-height: 250px;
     min-width: 10%;
     max-width: 600px;
   }
@@ -929,13 +1396,6 @@ a:visited {
     justify-self: flex-end;
   }
 }
-#accueil section.bottom {
-  margin: 75px auto 50px auto;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 50px;
-  max-width: 1450px;
-}
 #accueil .card-inscriptions, #accueil .card-eel {
   flex-flow: nowrap column;
   align-items: center;
@@ -1065,25 +1525,24 @@ a:visited {
   justify-content: space-around;
   align-items: center;
   height: 590px;
+  max-height: 100vh;
 }
 #naviguation container-nav li {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 225px;
-  max-width: 400px;
-  height: 79px;
+  width: 225px;
+  max-height: 79px;
+  min-height: 50px;
   background: #171933;
   border-radius: 3px;
 }
 #naviguation container-nav button {
-  min-width: 200px;
-  max-width: 350px;
-  height: 57px;
+  width: 300px;
+  min-height: 57px;
   background: #171933;
   border: 1px solid #2A2E5E;
   border-radius: 3px;
-  outline: none;
   font-size: 22.5px;
   font-family: "inter";
   color: #E7F8FF;
