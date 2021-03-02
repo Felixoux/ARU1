@@ -206,7 +206,7 @@ label:active:after {width: 45px;
 	display:flex;
 	flex-direction:column;
 	width:100%;
-	overflow:hidden
+	overflow:hidden;
 }
 
 #accueil {
@@ -215,19 +215,17 @@ label:active:after {width: 45px;
 	height: 100vh; 
 
 // == navbar 
-nav {
-	justify-content: space-around;
+header {
+	justify-content: center;
 	min-height: 95px;
-	background-color: $bgnavbar;
-	font-family: 'inter_bold';
+	//background-color: $bgnavbar;
 	color: $textnavbar;
-	font-size: 22.5px;
+	font-family: 'inter_bold';
 	letter-spacing: 1px;
 }
 
 .nav-links{
 	justify-content: space-around;
-	margin-left: $space-section * 0.9;
 	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
 	width: 80%;
 	z-index: 100;
@@ -258,6 +256,9 @@ nav {
 
 .burger {
 	display: none;
+	position: absolute;
+	right: 15px;
+	z-index: 300;
 		div {
 		width: 25px; 
 		height: 3px;
@@ -280,17 +281,19 @@ nav {
 	}
 
 	.nav-links{
-		position: absolute;
-		right: 0;
-		height: calc(100vh - 95px) ;
-		top: 93px;
-		background-color: $bgnavbar;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh ;
+		background: #171a34e8;
+		//background-color: $bgnavbar;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 50%;
+		width: 100%;
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in;
+		z-index: 200;
 	}
 
 	.nav-links li {
@@ -340,7 +343,7 @@ nav {
 .upper-container {
 	justify-content: space-between;
 	align-items: flex-start;
-	margin: $space-section 0  ($space-section / 4) 0;
+	margin: $space-section  0 ($space-section / 4) 0;
 }
 
 .title_video span{
@@ -369,7 +372,7 @@ nav {
 	line-height: 1.4em; 
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);  
 	p {
-		margin-bottom: 0.7em;
+		margin-bottom: 1em;
 		a {
 			color: $pink;
 			text-decoration: underline;
@@ -384,7 +387,6 @@ nav {
 		
 	.upper-container {
 		flex-flow: nowrap column;
-		min-width: 100px;
 		max-width: 1100px;
 		align-items: center;
 		font-size: 16px;
@@ -400,11 +402,11 @@ nav {
 			padding: 0 1em;
 		}
 		
-		.ratio {
+		.ratio-video {
 			position: relative;
 		}
 		
-		.ratio::before { 
+		.ratio-video::before { 
 			content: '';
 			display: block;
 			padding-bottom: 56.25%;
@@ -459,14 +461,18 @@ nav {
 }
 .actu_title{
 	grid-area: 1 / 2 / 2 / span 2;
+	justify-self: flex-start;
 	padding-top: 25px;
 }
 .scribe{
 	grid-area: 1 / 3 / 1 / 3;
+	justify-self: flex-end;
 	padding-top: $gap - 10px;
 }
 .arrow_previous{
 	grid-area:2 / 1 / 2 / 1;
+	align-self: flex-end;
+	justify-self: flex-end;
 }
 
 .container-cards {
@@ -546,6 +552,8 @@ nav {
 .arrow_next{
 	grid-area: 2 / 10 / span 1 / span 1;
 	transform: rotate(180deg);
+	align-self: flex-end;
+	justify-self: flex-start;
 }
 /*
 .card-actu_little1 .text-bg_card{   //exemple de pour quand js deploy
@@ -590,12 +598,11 @@ $upper: 1300px;
 }
 
 // == section bottom ==
-section.bottom{
-	// margin:($space-section / 2) auto ($space-section / 3) auto ;
-	// justify-content: space-between;
-	// align-items: flex-start;
-	// //padding: 0 ($gap * 2);
-	// //max-width: 1450px;
+.bottom-container{
+	//margin:($space-section / 2) auto ($space-section / 3) auto ;
+	align-items: flex-start;
+	margin: ($space-section / 2) 0 ($space-section / 3) 0;
+	min-width:1300px;
 }
 
 .card-inscriptions, .card-eel {
@@ -609,9 +616,7 @@ section.bottom{
 		height: 0;
 		padding-bottom: 56.25%;
 		margin: 20px 0;
-		background-image: url(img/inscriptions.jpg);
-		background-position: center;
-		background-size:cover;
+		background:center / cover no-repeat url(img/inscriptions.jpg);
 		border-radius: 50px ;
 	}
 
@@ -644,9 +649,11 @@ section.bottom{
 
 // media query section.bottom
 @media #{$bottomBreak} {
-	section.bottom {
+	.bottom-container {
+		min-width: 200px;
 		flex-flow: nowrap column;
 		align-items: center;
+		//justify-content: center;
 		padding: 0;
 	}
 
@@ -661,7 +668,9 @@ section.bottom{
 	}
 }
 
-@media #{$bottomBreak2} {
+$bottom:600px;
+
+@media #{$bottomBreak} {
 	.card-eel {
 		margin-top: $gap * 2;
 	}

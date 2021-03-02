@@ -9,8 +9,8 @@
 </head>
 <body id="accueil" class="relative">
 <!-- Nav  -->
-    <div class="page-wrapper relative center-mg overF-hdd">       
-        <nav class="flex">
+    <div class="page-wrapper">       
+        <header class="flex">
             <ul class="nav-links flex">
                 <li><a href="#"><i class="fas fa-home"></i>Accueil</a></li>
                 <li><a href="#">En pratique</a></li>
@@ -23,20 +23,20 @@
                 <div class="lin2"></div>
                 <div class="lin3"></div>
             </div>
-        </nav>
-        <div class="logo flex absolute">
+        </header>
+        <div class="logo flex-center absolute">
             <a><img src="img/logo-aru1.svg" alt="logo" width="120" height="121"></a>
         </div>
 <!-- Upper -->
-        <div class="container">
+        <section class="flex-center">
             <div class="upper-container flex">
             <div class="video-show">
-                <h2 class="title_video font-title"><span>Présentation</span> de notre école</h2>
-                <div class="ratio"><iframe width="810" height="499" class="video_iframe" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <h2 class="title_video"><span>Présentation</span> de notre école</h2>
+                <div class="ratio-video"><iframe width="810" height="499" class="video_iframe" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
             <div class="infos-upper">
-                <h2 class="title_infos font-title">Infos importantes</h2>
-                <div class="infos_square overF-aat font-normal">
+                <h2 class="title_infos">Infos importantes</h2>
+                <div class="infos_square overflow-a">
                     <p>- L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
                     <p>- Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
                     <p>- <span>Urgent:</span> rendre les bulletins avant le 36/01/3021 ;)</p>
@@ -45,19 +45,20 @@
                     <p>- Ceci est un exemple</p>
                 </div>
             </div>
-        </div></div>
-        <div class="button_scroll flex clear center-mg">
+        </div>
+        </section>
+        <div class="button_scroll flex-center clear center-mg">
             <i class="fas fa-chevron-down"></i>
         </div>
 <!-- Actu  -->
         <section class="actu grid">
-                <h2 class="actu_title font-title">A la une</h2>      
-                <img class="scribe selfJ-end" src="img/scribe.svg" alt="scribe">
-                    <img class="arrow_previous selfJ-end selfA-end" src="img/arrowcommon.svg" alt="Fleche_precedent" width="45" height="75">
+                <h3 class="actu_title">A la une</h3>      
+                <img class="scribe" src="img/scribe.svg" alt="scribe">
+                    <img class="arrow_previous" src="img/arrowcommon.svg" alt="Fleche_precedent" width="45" height="75">
                     <div class="container-cards flex">
                         <div class="card-actu_little1">
                             <div class="img-card"></div>
-                            <div class="text-bg_card font-normal flex">
+                            <div class="text-bg_card flex">
                                 <p>Ici toutes les informations
                                     sur le Covid-19. Les mesures 
                                     a prendre sont désormais 
@@ -66,30 +67,30 @@
                                 </p>
                             </div>
                             <div class="line"></div>
-                            <div class="btn_more flex">
+                            <div class="btn_more flex-center">
                                 <img class="show-more-infos" src="img/plus-card.png" alt="more-infos" width="20" height="20">
                             </div>
                         </div>
                         <div class="card-actu_little2">
                             <div class="img-card"></div>
-                            <div class="text-bg_card font-normal flex">
+                            <div class="text-bg_card flex">
                                 <p>
                                     Ce genre de texte est un petit resumé pour que les parents puissent comprendre de quoi on parle. <br> En cliquant sur le plus ils verront de quoi il en retourne (La carte s'agrandira pour laisser se placer le texte)
                                 </p>
                             </div>
                             <div class="line"></div>
-                            <div class="btn_more flex">
+                            <div class="btn_more flex-center">
                                 <img class="show-more-infos" src="img/plus-card.png" alt="more-infos" width="20" height="20">
                             </div>
                         </div>
                         <div class="card-actu_little3">
                             <div class="img-card"></div>
-                            <div class="text-bg_card font-normal flex">
+                            <div class="text-bg_card flex">
                                 <p>Les photos ne sont pas définitives évidemment car nous ne possédons pas de photos de l'école. (Pour l'instant...) <br><br> Ce sont des exemples
                                 </p>
                             </div>
                             <div class="line"></div>
-                            <div class="btn_more flex">
+                            <div class="btn_more flex-center">
                                 <img class="show-more-infos" src="img/plus-card.png" alt="more-infos" width="20" height="20">
                             </div>
                         </div>
@@ -97,24 +98,26 @@
                     <img class="arrow_next selfA-end selfJ-start" src="img/arrowcommon.svg" alt="Fleche_precedent" width="45" height="75">
         </section>
 <!-- Bottom  -->
-        <section class="bottom flex">
-            <div class="card-inscriptions flex">
-                <h2 class="font-title">
-                    Inscriptions
-                </h2>
-                <div class="img"></div>
-                <p class="font-normal">Inscriptions dans le secondaire: 2,3,4,5 et 6ème secondaire.</p>
-                <p class="font-normal">Les inscriptions se font uniquement sur rendez-vous : </p>
-                <p class="font-normal">Tel : <span>02 374 05 84</span></p>
-                <div class="line-bottom"></div>
-            </div>
-            <div class="card-eel flex">
-                <h2 class="font-title">Ecole en ligne</h2>
-                <div class="img"></div>
-                <p class="font-normal">Une plateforme pour que les elèves et les parents puissent 
-                    voir les bulletins, documents etc... </p>
-                <p class="font-normal">Aller sur le site de l’école en ligne en <a w href="https://www2.ecoleenligne.be/V01145/membres/login.php?action=login&opt=1&id=1&order=desc&language_init=fr&etp=aru1" target="_blank">cliquant ici</a></p>
-                <div class="line-bottom"></div>
+        <section class="flex-center">
+            <div class="bottom-container flex">
+                <div class="card-inscriptions flex">
+                    <h2>
+                        Inscriptions
+                    </h2>
+                    <div class="img"></div>
+                    <p>Inscriptions dans le secondaire: 2,3,4,5 et 6ème secondaire.</p>
+                    <p>Les inscriptions se font uniquement sur rendez-vous : </p>
+                    <p>Tel : <span>02 374 05 84</span></p>
+                    <div class="line-bottom"></div>
+                </div>
+                <div class="card-eel flex">
+                    <h2>Ecole en ligne</h2>
+                    <div class="img"></div>
+                    <p>Une plateforme pour que les elèves et les parents puissent 
+                        voir les bulletins, documents etc... </p>
+                    <p>Aller sur le site de l’école en ligne en <a w href="https://www2.ecoleenligne.be/V01145/membres/login.php?action=login&opt=1&id=1&order=desc&language_init=fr&etp=aru1" target="_blank">cliquant ici</a></p>
+                    <div class="line-bottom"></div>
+                </div>
             </div>
         </section>
 <!-- Forms  -->

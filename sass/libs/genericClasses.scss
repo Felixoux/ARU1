@@ -28,11 +28,13 @@ img {
 
 a {
     transition:color .3s;
+    color: $letterscolor;
+    font-family: 'inter';
 }
 
 hr {
     height:1px;
-    background:var(--border);
+    background:$border;
     margin:0;
     padding:0;
     border:none;
@@ -62,14 +64,16 @@ hr {
 }
 
 .page-wrapper {
-    min-height:100vh;
     display:flex;
+    min-height:100vh;
     flex-direction:column;
-    width:100%;
+    max-width:1920px;
     overflow:hidden;
+    position: relative;
+    margin: 0 auto;
 }
 
-.container, .header, .footer, .main, .section, .aside {
+header, section, main, footer, .container, .header, .footer, .main, .aside {
     width: 100%;
     width: 100%;
 	padding-left: calc(50% - (#{$container-width}/ 2));
@@ -96,10 +100,21 @@ hr {
     display:inline;
 }
 
+.grid {
+    display: grid;
+}
+
 .flex {
     display:flex!important;
     align-items:center;
     justify-content:space-between;
+}
+
+.flex-center {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap row;
 }
 
 .end {
@@ -141,6 +156,78 @@ hr {
 .mla {
     margin-left:auto;
 }
+
+.mra {
+    margin-right: auto;
+}
+
+.center-mg {
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.text-left {
+    text-align:left!important;
+}
+
+.text-right {
+    text-align:right!important;
+}
+
+.text-center {
+    text-align:center!important;
+}
+
+.bold {
+    font-family: 'inter_bold';
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.unerline {
+    text-decoration: underline;
+}
+
+.unerline:hover {
+    text-decoration: underline;
+}
+
+.text-danger {
+    color: $red;
+}
+
+.text-truncate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'inter_bold';
+    font-size: 40px;
+    color:$letterscolor;
+}
+
+h2 {
+    font-family: 'inter_bold';
+    font-size: 35px;
+    color:$letterscolor;
+}
+
+h3 {
+    font-family: 'inter_bold';
+    font-size: 29px;
+    color:$letterscolor;
+}
+
+p {
+    font-family: 'inter';
+    font-size: 18.5px;
+    color:$letterscolor;
+}
+
 @for $i from 1 to 6 {
     
 body .p#{$i} {
@@ -213,140 +300,26 @@ body .ml#{$i} {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.D-none {
-    display: none;
+.overflow-h {
+    overflow: hidden;
 }
 
-.D-block {
+.display-b {
     display: block;
 }
 
-.D-inl {
-    display: inline;
-}
-
-.D-inl-b {
-    display: inline-block;
-}
-
-.overF-scl {
+.overflow-s {
     overflow: scroll;
 }
 
-.overF-vsb {
+.overflow-v {
     overflow: visible;
 }
 
-.overF-aat {
+.overflow-a {
     overflow: auto;
 }
 
-.overF-hdd {
-    overflow: hidden;
-}
-// flex
-.flex {
-    display: flex; 
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.fl-start {
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.fl-end {
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.flex-cl {
-    flex-flow: nowrap column;
-}
-
-.selfJ-start {
-    justify-self:flex-start ;
-}
-
-.selfJ-center {
-    justify-self:center ;
-}
-
-.selfJ-end {
-    justify-self:flex-end ;
-}
-
-.selfA-start {
-    align-self: flex-start;
-}
-
-.selfA-start {
-    align-self: center;
-}
-
-.selfA-end {
-    align-self: flex-end;
-}
-
-
-.grid {
-    display: grid;
-}
 // float
 .float-l {
     float: left;
@@ -360,11 +333,6 @@ body .ml#{$i} {
     clear: both;
 }
 
-
-.center-mg{
-    margin-left: auto;
-    margin-right: auto;
-}
 // Fonts
 .font-normal{
     font-family: 'inter'; 
@@ -378,29 +346,6 @@ body .ml#{$i} {
     color: $letterscolor; 
 }
 
-.font-bold{
-    font-family: 'inter_bold';
-}
-
-.text-r{
-    text-align: right;
-}
-
-.text-center {
-    text-align: center;
-}
-//radius
-.radius-s {
-    border-radius:4px ;
-}
-
-.radius-m {
-    border-radius:25px ;
-}
-
-.radius-l {
-    border-radius:50px ;
-}
 //shadows
 .modern-shadow{
     box-shadow: -4px -4px 4px -1.5px rgb(255 255 255 / 25%), 8px 8px 4px -1.5px rgb(0 0 0 / 25%);
