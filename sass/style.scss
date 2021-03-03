@@ -96,6 +96,7 @@ header {
 		left: 0;
 		height: 100vh ;
 		background: #171a34e8;
+		backdrop-filter: blur(10px);
 		//background-color: $bgnavbar;
 		display: flex;
 		flex-direction: column;
