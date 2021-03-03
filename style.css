@@ -1178,7 +1178,7 @@ body .ml5 {
 #accueil .upper-container {
   justify-content: space-between;
   align-items: flex-start;
-  margin: 150px 0 37.5px 0;
+  padding: 150px 0 37.5px 0;
 }
 #accueil .title_video span {
   color: #5396e7;

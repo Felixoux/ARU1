@@ -343,7 +343,7 @@ header {
 .upper-container {
 	justify-content: space-between;
 	align-items: flex-start;
-	margin: $space-section  0 ($space-section / 4) 0;
+	padding:  $space-section  0 ($space-section / 4) 0;
 }
 
 .title_video span{
