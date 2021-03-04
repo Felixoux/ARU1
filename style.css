@@ -783,13 +783,17 @@ body .ml5 {
   */
 }
 #accueil header {
+  margin-left: 110px;
   justify-content: center;
+  padding-left: 25px;
   min-height: 95px;
   color: #E7F8FF;
   font-family: "inter_bold";
   letter-spacing: 1px;
 }
 #accueil .nav-links {
+  font-size: 23px;
+  font-weight: bold;
   justify-content: space-around;
   width: 80%;
   z-index: 100;
@@ -1155,6 +1159,9 @@ body .ml5 {
   cursor: pointer;
 }
 @media only screen and (max-width:1360px) {
+  #accueil .card-eel {
+    margin-top: 30px;
+  }
   #accueil .bottom-container {
     min-width: 200px;
     flex-flow: nowrap column;
@@ -1170,10 +1177,7 @@ body .ml5 {
     display: none;
   }
 }
-@media only screen and (max-width:1360px) {
-  #accueil .card-eel {
-    margin-top: 50px;
-  }
+@media only screen and (max-width:600px) {
   #accueil .card-inscriptions, #accueil .card-eel {
     width: 90%;
   }
