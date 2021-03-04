@@ -190,8 +190,7 @@ hr {
   margin: 0 auto;
 }
 
-header, section, main, footer, .container, .header, .footer, .main, .aside {
-  width: 100%;
+header, section, main, footer, .container, .header, .footer, .main {
   width: 100%;
   padding-left: calc(50% - (1330px/ 2));
   padding-right: calc(50% - (1330px/ 2));
@@ -231,7 +230,6 @@ header, section, main, footer, .container, .header, .footer, .main, .aside {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  flex-flow: nowrap row;
 }
 
 .end {
@@ -248,12 +246,6 @@ header, section, main, footer, .container, .header, .footer, .main, .aside {
 
 .flex-end {
   justify-content: flex-end;
-}
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hidden {
@@ -307,11 +299,11 @@ header, section, main, footer, .container, .header, .footer, .main, .aside {
   text-transform: uppercase;
 }
 
-.unerline {
+.underline {
   text-decoration: underline;
 }
 
-.unerline:hover {
+.underline:hover {
   text-decoration: underline;
 }
 
@@ -348,357 +340,8 @@ p {
   color: #D4DCFF;
 }
 
-body .p1 {
-  padding: calc(1 * 8px);
-}
-
-body .pt1 {
-  padding-top: calc(1 * 8px);
-}
-
-body .pb1 {
-  padding-bottom: calc(1 * 8px);
-}
-
-body .px1 {
-  padding-left: calc(1 * 8px);
-  padding-right: calc(1 * 8px);
-}
-
-body .p1 {
-  padding: calc(1 * 8px);
-}
-
-body .pt1 {
-  padding-top: calc(1 * 8px);
-}
-
-body .pb1 {
-  padding-bottom: calc(1 * 8px);
-}
-
-body .px1 {
-  padding-left: calc(1 * 8px);
-  padding-right: calc(1 * 8px);
-}
-
-body .py1 {
-  padding-top: calc(1 * 8px);
-  padding-bottom: calc(1 * 8px);
-}
-
-body .my1 {
-  margin-top: calc(1 * 8px);
-  margin-bottom: calc(1 * 8px);
-}
-
-body .m1 {
-  margin: calc(1 * 8px);
-}
-
-body .mx1 {
-  margin-left: calc(1 * 8px);
-  margin-right: calc(1 * 8px);
-}
-
-body .mt1 {
-  margin-top: calc(1 * 8px);
-}
-
-body .mb1 {
-  margin-bottom: calc(1 * 8px);
-}
-
-body .mr1 {
-  margin-right: calc(1 * 8px);
-}
-
-body .ml1 {
-  margin-left: calc(1 * 8px);
-}
-
-body .p2 {
-  padding: calc(2 * 8px);
-}
-
-body .pt2 {
-  padding-top: calc(2 * 8px);
-}
-
-body .pb2 {
-  padding-bottom: calc(2 * 8px);
-}
-
-body .px2 {
-  padding-left: calc(2 * 8px);
-  padding-right: calc(2 * 8px);
-}
-
-body .p2 {
-  padding: calc(2 * 8px);
-}
-
-body .pt2 {
-  padding-top: calc(2 * 8px);
-}
-
-body .pb2 {
-  padding-bottom: calc(2 * 8px);
-}
-
-body .px2 {
-  padding-left: calc(2 * 8px);
-  padding-right: calc(2 * 8px);
-}
-
-body .py2 {
-  padding-top: calc(2 * 8px);
-  padding-bottom: calc(2 * 8px);
-}
-
-body .my2 {
-  margin-top: calc(2 * 8px);
-  margin-bottom: calc(2 * 8px);
-}
-
-body .m2 {
-  margin: calc(2 * 8px);
-}
-
-body .mx2 {
-  margin-left: calc(2 * 8px);
-  margin-right: calc(2 * 8px);
-}
-
-body .mt2 {
-  margin-top: calc(2 * 8px);
-}
-
-body .mb2 {
-  margin-bottom: calc(2 * 8px);
-}
-
-body .mr2 {
-  margin-right: calc(2 * 8px);
-}
-
-body .ml2 {
-  margin-left: calc(2 * 8px);
-}
-
-body .p3 {
-  padding: calc(3 * 8px);
-}
-
-body .pt3 {
-  padding-top: calc(3 * 8px);
-}
-
-body .pb3 {
-  padding-bottom: calc(3 * 8px);
-}
-
-body .px3 {
-  padding-left: calc(3 * 8px);
-  padding-right: calc(3 * 8px);
-}
-
-body .p3 {
-  padding: calc(3 * 8px);
-}
-
-body .pt3 {
-  padding-top: calc(3 * 8px);
-}
-
-body .pb3 {
-  padding-bottom: calc(3 * 8px);
-}
-
-body .px3 {
-  padding-left: calc(3 * 8px);
-  padding-right: calc(3 * 8px);
-}
-
-body .py3 {
-  padding-top: calc(3 * 8px);
-  padding-bottom: calc(3 * 8px);
-}
-
-body .my3 {
-  margin-top: calc(3 * 8px);
-  margin-bottom: calc(3 * 8px);
-}
-
-body .m3 {
-  margin: calc(3 * 8px);
-}
-
-body .mx3 {
-  margin-left: calc(3 * 8px);
-  margin-right: calc(3 * 8px);
-}
-
-body .mt3 {
-  margin-top: calc(3 * 8px);
-}
-
-body .mb3 {
-  margin-bottom: calc(3 * 8px);
-}
-
-body .mr3 {
-  margin-right: calc(3 * 8px);
-}
-
-body .ml3 {
-  margin-left: calc(3 * 8px);
-}
-
-body .p4 {
-  padding: calc(4 * 8px);
-}
-
-body .pt4 {
-  padding-top: calc(4 * 8px);
-}
-
-body .pb4 {
-  padding-bottom: calc(4 * 8px);
-}
-
-body .px4 {
-  padding-left: calc(4 * 8px);
-  padding-right: calc(4 * 8px);
-}
-
-body .p4 {
-  padding: calc(4 * 8px);
-}
-
-body .pt4 {
-  padding-top: calc(4 * 8px);
-}
-
-body .pb4 {
-  padding-bottom: calc(4 * 8px);
-}
-
-body .px4 {
-  padding-left: calc(4 * 8px);
-  padding-right: calc(4 * 8px);
-}
-
-body .py4 {
-  padding-top: calc(4 * 8px);
-  padding-bottom: calc(4 * 8px);
-}
-
-body .my4 {
-  margin-top: calc(4 * 8px);
-  margin-bottom: calc(4 * 8px);
-}
-
-body .m4 {
-  margin: calc(4 * 8px);
-}
-
-body .mx4 {
-  margin-left: calc(4 * 8px);
-  margin-right: calc(4 * 8px);
-}
-
-body .mt4 {
-  margin-top: calc(4 * 8px);
-}
-
-body .mb4 {
-  margin-bottom: calc(4 * 8px);
-}
-
-body .mr4 {
-  margin-right: calc(4 * 8px);
-}
-
-body .ml4 {
-  margin-left: calc(4 * 8px);
-}
-
-body .p5 {
-  padding: calc(5 * 8px);
-}
-
-body .pt5 {
-  padding-top: calc(5 * 8px);
-}
-
-body .pb5 {
-  padding-bottom: calc(5 * 8px);
-}
-
-body .px5 {
-  padding-left: calc(5 * 8px);
-  padding-right: calc(5 * 8px);
-}
-
-body .p5 {
-  padding: calc(5 * 8px);
-}
-
-body .pt5 {
-  padding-top: calc(5 * 8px);
-}
-
-body .pb5 {
-  padding-bottom: calc(5 * 8px);
-}
-
-body .px5 {
-  padding-left: calc(5 * 8px);
-  padding-right: calc(5 * 8px);
-}
-
-body .py5 {
-  padding-top: calc(5 * 8px);
-  padding-bottom: calc(5 * 8px);
-}
-
-body .my5 {
-  margin-top: calc(5 * 8px);
-  margin-bottom: calc(5 * 8px);
-}
-
-body .m5 {
-  margin: calc(5 * 8px);
-}
-
-body .mx5 {
-  margin-left: calc(5 * 8px);
-  margin-right: calc(5 * 8px);
-}
-
-body .mt5 {
-  margin-top: calc(5 * 8px);
-}
-
-body .mb5 {
-  margin-bottom: calc(5 * 8px);
-}
-
-body .mr5 {
-  margin-right: calc(5 * 8px);
-}
-
-body .ml5 {
-  margin-left: calc(5 * 8px);
-}
-
 .overflow-h {
   overflow: hidden;
-}
-
-.display-b {
-  display: block;
 }
 
 .overflow-s {
@@ -711,6 +354,10 @@ body .ml5 {
 
 .overflow-a {
   overflow: auto;
+}
+
+.display-b {
+  display: block;
 }
 
 .float-l {
@@ -808,7 +455,7 @@ body .ml5 {
 #accueil .nav-links :nth-child(2) {
   position: relative;
 }
-#accueil .logo {
+#accueil .logo-circle {
   top: 17px;
   left: 37px;
   background-color: #E7F8FF;
@@ -817,9 +464,11 @@ body .ml5 {
   border-radius: 50%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 100;
+  overflow: hidden;
 }
-#accueil .logo .logo img {
-  transform: translateY(-5px);
+#accueil .logo-circle svg {
+  width: 250px;
+  height: 250.1px;
 }
 #accueil .burger {
   display: none;
