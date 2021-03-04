@@ -73,8 +73,7 @@ hr {
     margin: 0 auto;
 }
 
-header, section, main, footer, .container, .header, .footer, .main, .aside {
-    width: 100%;
+header, section, main, footer, .container, .header, .footer, .main {
     width: 100%;
 	padding-left: calc(50% - (#{$container-width}/ 2));
 	padding-right: calc(50% - (#{$container-width}/ 2));
@@ -114,12 +113,12 @@ header, section, main, footer, .container, .header, .footer, .main, .aside {
     display: flex!important;
     justify-content: center;
     align-items: center;
-    flex-flow: nowrap row;
 }
 
 .end {
     justify-content:flex-end;
 }
+
 .stretch {
     align-items:stretch;
 }
@@ -127,13 +126,9 @@ header, section, main, footer, .container, .header, .footer, .main, .aside {
 .flex-start {
     justify-content:flex-start;
 }
+
 .flex-end {
     justify-content:flex-end;
-}
-.center {
-    display:flex;
-    align-items:center;
-    justify-content:center;
 }
 
 .hidden {
@@ -187,11 +182,11 @@ header, section, main, footer, .container, .header, .footer, .main, .aside {
     text-transform: uppercase;
 }
 
-.unerline {
+.underline {
     text-decoration: underline;
 }
 
-.unerline:hover {
+.underline:hover {
     text-decoration: underline;
 }
 
@@ -228,86 +223,81 @@ p {
     color:$letterscolor;
 }
 
-@for $i from 1 to 6 {
+// @for $i from 1 to 6 {
     
-body .p#{$i} {
-    padding:calc(#{$i} * #{$space})
-}
+// body .p#{$i} {
+//     padding:calc(#{$i} * #{$space})
+// }
 
-body .pt#{$i} {
-    padding-top:calc(#{$i} * #{$space});
-}
+// body .pt#{$i} {
+//     padding-top:calc(#{$i} * #{$space});
+// }
 
-body .pb#{$i} {
-    padding-bottom:calc(#{$i} * #{$space});
-}
+// body .pb#{$i} {
+//     padding-bottom:calc(#{$i} * #{$space});
+// }
 
-body .px#{$i} {
-    padding-left:calc(#{$i} * #{$space});
-    padding-right:calc(#{$i} * #{$space});
-}
+// body .px#{$i} {
+//     padding-left:calc(#{$i} * #{$space});
+//     padding-right:calc(#{$i} * #{$space});
+// }
 
-body .p#{$i} {
-    padding:calc(#{$i} * #{$space});
-}
+// body .p#{$i} {
+//     padding:calc(#{$i} * #{$space});
+// }
 
-body .pt#{$i} {
-    padding-top:calc(#{$i} * #{$space});
-}
+// body .pt#{$i} {
+//     padding-top:calc(#{$i} * #{$space});
+// }
 
-body .pb#{$i} {
-    padding-bottom:calc(#{$i} * #{$space});
-}
+// body .pb#{$i} {
+//     padding-bottom:calc(#{$i} * #{$space});
+// }
 
-body .px#{$i} {
-    padding-left:calc(#{$i} * #{$space});
-    padding-right:calc(#{$i} * #{$space});
-}
+// body .px#{$i} {
+//     padding-left:calc(#{$i} * #{$space});
+//     padding-right:calc(#{$i} * #{$space});
+// }
 
-body .py#{$i} {
-    padding-top:calc(#{$i} * #{$space});
-    padding-bottom:calc(#{$i} * #{$space});
-}
+// body .py#{$i} {
+//     padding-top:calc(#{$i} * #{$space});
+//     padding-bottom:calc(#{$i} * #{$space});
+// }
 
-body .my#{$i} {
-    margin-top:calc(#{$i} * #{$space});
-    margin-bottom:calc(#{$i} * #{$space});
-}
+// body .my#{$i} {
+//     margin-top:calc(#{$i} * #{$space});
+//     margin-bottom:calc(#{$i} * #{$space});
+// }
 
-body .m#{$i} {
-    margin:calc(#{$i} * #{$space});
-}
+// body .m#{$i} {
+//     margin:calc(#{$i} * #{$space});
+// }
 
-body .mx#{$i} {
-    margin-left:calc(#{$i} * #{$space});
-    margin-right:calc(#{$i} * #{$space});
-}
+// body .mx#{$i} {
+//     margin-left:calc(#{$i} * #{$space});
+//     margin-right:calc(#{$i} * #{$space});
+// }
 
-body .mt#{$i} {
-    margin-top:calc(#{$i} * #{$space});
-}
+// body .mt#{$i} {
+//     margin-top:calc(#{$i} * #{$space});
+// }
 
-body .mb#{$i} {
-    margin-bottom:calc(#{$i} * #{$space});
-}
+// body .mb#{$i} {
+//     margin-bottom:calc(#{$i} * #{$space});
+// }
 
-body .mr#{$i} {
-    margin-right:calc(#{$i} * #{$space});
-}
+// body .mr#{$i} {
+//     margin-right:calc(#{$i} * #{$space});
+// }
 
-body .ml#{$i} {
-    margin-left:calc(#{$i} * #{$space})
-}
-}
+// body .ml#{$i} {
+//     margin-left:calc(#{$i} * #{$space})
+// }
+// }
 
 .overflow-h {
     overflow: hidden;
 }
-
-.display-b {
-    display: block;
-}
-
 .overflow-s {
     overflow: scroll;
 }
@@ -318,6 +308,10 @@ body .ml#{$i} {
 
 .overflow-a {
     overflow: auto;
+}
+
+.display-b {
+    display: block;
 }
 
 // float

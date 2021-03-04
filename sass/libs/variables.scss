@@ -38,6 +38,6 @@ $container-width:1330px;
     $container-padding:32px;
 }
 @media only screen and (max-width:750px) {
-    $container-width:calc(100vw - #{$container-width} * 2);
+    $container-width:calc(100% - #{$container-width} * 2);
 }
 
