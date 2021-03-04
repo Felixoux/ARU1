@@ -136,7 +136,7 @@ header, section, main, footer, .container, .header, .footer, .main {
 }
 
 .w100 {
-    width: 100%;
+    width: 100%!important;
 }
 
 .nowrap {
@@ -223,7 +223,7 @@ p {
     color:$letterscolor;
 }
 
-// @for $i from 1 to 6 {
+ @for $i from 1 to 6 {
     
 // body .p#{$i} {
 //     padding:calc(#{$i} * #{$space})
@@ -254,10 +254,10 @@ p {
 //     padding-bottom:calc(#{$i} * #{$space});
 // }
 
-// body .px#{$i} {
-//     padding-left:calc(#{$i} * #{$space});
-//     padding-right:calc(#{$i} * #{$space});
-// }
+ body .px#{$i} {
+     padding-left:calc(#{$i} * #{$space});
+     padding-right:calc(#{$i} * #{$space});
+}
 
 // body .py#{$i} {
 //     padding-top:calc(#{$i} * #{$space});
@@ -293,7 +293,7 @@ p {
 // body .ml#{$i} {
 //     margin-left:calc(#{$i} * #{$space})
 // }
-// }
+}
 
 .overflow-h {
     overflow: hidden;

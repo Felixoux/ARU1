@@ -253,7 +253,7 @@ header, section, main, footer, .container, .header, .footer, .main {
 }
 
 .w100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .nowrap {
@@ -338,6 +338,31 @@ p {
   font-family: "inter";
   font-size: 18.5px;
   color: #D4DCFF;
+}
+
+body .px1 {
+  padding-left: calc(1 * 8px);
+  padding-right: calc(1 * 8px);
+}
+
+body .px2 {
+  padding-left: calc(2 * 8px);
+  padding-right: calc(2 * 8px);
+}
+
+body .px3 {
+  padding-left: calc(3 * 8px);
+  padding-right: calc(3 * 8px);
+}
+
+body .px4 {
+  padding-left: calc(4 * 8px);
+  padding-right: calc(4 * 8px);
+}
+
+body .px5 {
+  padding-left: calc(5 * 8px);
+  padding-right: calc(5 * 8px);
 }
 
 .overflow-h {
@@ -545,7 +570,7 @@ p {
 #accueil .upper-container {
   justify-content: space-between;
   align-items: flex-start;
-  padding: 150px 0 37.5px 0;
+  padding: 150px 0 0 0;
 }
 #accueil .title_video span {
   color: #5396e7;
@@ -630,15 +655,17 @@ p {
   }
 }
 #accueil .button_scroll {
-  width: 3.5rem;
-  height: 28px;
+  z-index: 10;
+  margin: calc((150px/2.5)) auto 0 auto;
+  width: 4.5rem;
+  height: 30px;
   background-color: #2C316F;
-  border-radius: 3.5px;
+  border-radius: 50px;
   color: #D4DCFF;
   font-size: 25px;
 }
 #accueil .actu {
-  margin-top: 12.5px;
+  margin-top: -12.5px;
   padding: 0 10px;
   background: linear-gradient(to top, #1b1e3d, #1b1e3d) left bottom/100% 90px no-repeat #171933;
   grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr;
@@ -831,6 +858,54 @@ p {
     width: 90%;
   }
 }
+#accueil footer {
+  justify-content: space-around;
+  background: #171933;
+  min-height: 350px;
+}
+#accueil footer a {
+  color: #D68FD6;
+  transition: all 0.2s ease-in-out;
+}
+#accueil footer a:hover {
+  transform: scale(1.15);
+  text-decoration: underline;
+}
+#accueil footer div {
+  width: 33%;
+  flex-flow: wrap column;
+}
+#accueil .social-media div {
+  width: 80%;
+}
+#accueil .federation img {
+  width: 250px;
+}
+#accueil .advice div {
+  flex-flow: column nowrap;
+  line-height: 1.6em;
+}
+#accueil .social-media div, #accueil .federation img, #accueil .advice div {
+  border-radius: 15px;
+  height: 200px;
+  flex-flow: column;
+  justify-content: space-around;
+}
+@media only screen and (max-width:1000px) {
+  #accueil footer {
+    flex-flow: column;
+  }
+  #accueil footer div {
+    width: 100%;
+  }
+  #accueil .social-media, #accueil .advice {
+    max-width: 65%;
+    min-width: 260px;
+  }
+  #accueil .social-media {
+    word-break: break-all;
+  }
+}
 #accueil .triangle-bg {
   width: 280px;
   height: 280px;
@@ -858,7 +933,7 @@ p {
   height: 280px;
   position: absolute;
   left: -140px;
-  bottom: -120px;
+  bottom: 225px;
   background-color: #171933;
   transform: rotate(20deg);
   z-index: -10;
@@ -869,7 +944,7 @@ p {
   height: 280px;
   position: absolute;
   right: 0;
-  bottom: 350px;
+  bottom: 625px;
   background-color: #171933;
   z-index: -10;
 }

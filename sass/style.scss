@@ -160,7 +160,7 @@ header {
 .upper-container {
 	justify-content: space-between;
 	align-items: flex-start;
-	padding:  $space-section  0 ($space-section / 4) 0;
+	padding:  $space-section  0 0 0;//($space-section / 4)
 }
 
 .title_video span{
@@ -259,17 +259,19 @@ header {
 
 // == button scroll
 .button_scroll{ 
-	width: 3.5rem; 
-	height: 28px; 
+	z-index: 10;
+	margin: calc((#{$space-section}/2.5)) auto 0 auto;
+	width: 4.5rem; 
+	height: 30px; 
 	background-color: $bgbutton; 
-	border-radius: 3.5px; 
+	border-radius: 50px; 
 	color: $letterscolor;
 	font-size: 25px;
 }
 
 // == section center == A la une == 
 .actu{
-	margin-top: $gap - 12.5px;
+	margin-top: 0 - 12.5px; //$gap
 	padding: 0 10px;
 	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
 	grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr ;
@@ -496,6 +498,91 @@ $upper: 1300px;
 	}
 }
 
+// Footer 
+
+footer {
+	justify-content: space-around;
+	background: $bgdark;
+	min-height: 350px;
+	a {
+		color: $pink;
+		transition: all .2s ease-in-out;
+	}
+	a:hover {
+		transform: scale(1.15);
+		text-decoration: underline;
+	}
+}
+
+footer div {
+	width: 33%;
+	flex-flow: wrap column;
+}
+
+.social-media div {
+	width: 80%;
+}
+
+.federation img {
+	width:250px;
+}
+
+ .advice div {
+		flex-flow: column nowrap;
+		line-height: 1.6em;
+ }
+
+.social-media div, .federation img, .advice div {
+	border-radius: 15px;
+	height: 200px;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
+@media #{$footerBreak} {
+	footer {
+		flex-flow: column;
+	}
+
+	footer div {
+		width: 100%;
+	}
+
+	.social-media, .advice  {
+		max-width: 65%;
+		min-width:260px;
+	}
+
+	.social-media {
+		word-break: break-all;
+	}
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // == forms ==
 .triangle-bg {
@@ -525,7 +612,7 @@ $upper: 1300px;
 	height: 280px;
 	position: absolute;
 	left: -140px;
-	bottom: -120px;
+	bottom: 225px;
 	background-color: $bgdark;
 	transform: rotate(20deg);
 	z-index: -10;
@@ -536,7 +623,7 @@ $upper: 1300px;
 	height: 280px;
 	position: absolute;
 	right: 0;
-	bottom: 350px;
+	bottom: 625px;
 	background-color: $bgdark;
 	z-index: -10;
 }
