@@ -519,8 +519,17 @@ footer div {
 	flex-flow: wrap column;
 }
 
+.social-media div, .federation img, .advice div {
+	border-radius: 15px;
+	height: 200px;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
 .social-media div {
+	flex-flow: column wrap;
 	width: 80%;
+	align-items: flex-start;
 }
 
 .federation img {
@@ -532,12 +541,6 @@ footer div {
 		line-height: 1.6em;
  }
 
-.social-media div, .federation img, .advice div {
-	border-radius: 15px;
-	height: 200px;
-	flex-flow: column;
-	justify-content: space-around;
-}
 
 @media #{$footerBreak} {
 	footer {

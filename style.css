@@ -875,8 +875,16 @@ body .px5 {
   width: 33%;
   flex-flow: wrap column;
 }
+#accueil .social-media div, #accueil .federation img, #accueil .advice div {
+  border-radius: 15px;
+  height: 200px;
+  flex-flow: column;
+  justify-content: space-around;
+}
 #accueil .social-media div {
+  flex-flow: column wrap;
   width: 80%;
+  align-items: flex-start;
 }
 #accueil .federation img {
   width: 250px;
@@ -884,12 +892,6 @@ body .px5 {
 #accueil .advice div {
   flex-flow: column nowrap;
   line-height: 1.6em;
-}
-#accueil .social-media div, #accueil .federation img, #accueil .advice div {
-  border-radius: 15px;
-  height: 200px;
-  flex-flow: column;
-  justify-content: space-around;
 }
 @media only screen and (max-width:1000px) {
   #accueil footer {
@@ -906,47 +908,33 @@ body .px5 {
     word-break: break-all;
   }
 }
-#accueil .triangle-bg {
+#accueil .triangle-bg, #accueil .square-bg, #accueil .square-form-invoid, #accueil .paralleleograme {
   width: 280px;
   height: 280px;
-  z-index: 100;
   position: absolute;
+  background-color: #171933;
+  z-index: -10;
+}
+#accueil .triangle-bg {
   right: 0px;
   top: 504.64px;
   clip-path: polygon(94% 14%, 100% 25%, 100% 81%, 61% 90%);
-  background-color: #171933;
-  z-index: -10;
 }
 #accueil .square-bg {
   clip-path: polygon(0 20%, 14% 21%, 35% 75%, 0 99%);
-  width: 280px;
-  height: 280px;
-  position: absolute;
   left: 0;
   top: 250px;
-  background-color: #171933;
-  z-index: -10;
 }
 #accueil .square-form-invoid {
   clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-  width: 280px;
-  height: 280px;
-  position: absolute;
   left: -140px;
   bottom: 225px;
-  background-color: #171933;
   transform: rotate(20deg);
-  z-index: -10;
 }
 #accueil .paralleleograme {
   clip-path: polygon(62% 49%, 100% 73%, 100% 100%, 63% 78%);
-  width: 280px;
-  height: 280px;
-  position: absolute;
   right: 0;
   bottom: 625px;
-  background-color: #171933;
-  z-index: -10;
 }
 
 #naviguation {
