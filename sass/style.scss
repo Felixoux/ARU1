@@ -559,73 +559,38 @@ footer div {
 }
 	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // == forms ==
-.triangle-bg {
+.triangle-bg, .square-bg, .square-form-invoid, .paralleleograme {
 	width: 280px;
 	height: 280px;
-	z-index: 100;
 	position: absolute;
+	background-color: $bgdark;
+	z-index: -10;
+}
+
+.triangle-bg {
 	right:0px;
 	top: 504.64px;
-	clip-path: polygon(94% 14%, 100% 25%, 100% 81%, 61% 90%);
-	background-color: $bgdark;
-	z-index: -10;
+	clip-path: polygon(94% 14%, 100% 25%, 100% 81%, 61% 90%);	
 }
+
 .square-bg {
 	clip-path: polygon(0 20%, 14% 21%, 35% 75%, 0 99%);
-	width: 280px; 
-	height: 280px;
-	position: absolute;
 	left: 0;
 	top: 250px;
-	background-color: $bgdark;
-	z-index: -10;
 }
+
 .square-form-invoid {
 	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-	width: 280px; 
-	height: 280px;
-	position: absolute;
 	left: -140px;
 	bottom: 225px;
-	background-color: $bgdark;
 	transform: rotate(20deg);
-	z-index: -10;
 }
+
 .paralleleograme {
 	clip-path: polygon(62% 49%, 100% 73%, 100% 100%, 63% 78%);
-	width: 280px; 
-	height: 280px;
-	position: absolute;
 	right: 0;
 	bottom: 625px;
-	background-color: $bgdark;
-	z-index: -10;
 }
 
 
@@ -637,7 +602,7 @@ footer div {
 
 
 
-// == NE SURTOUT PAS ENLEVER LE CROCHET EN DESSOUS == //
+// == NE SURTOUT PAS ENLEVER LE CROCHET EN DESSOUS == // == fihn de Acceuil !!!
 }
 
 #naviguation { 
