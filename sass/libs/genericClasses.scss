@@ -14,13 +14,15 @@
 
 @for $i from 1 to 5 {
     .p-#{$i} {
-        padding:0 ($i * 1rem);
+        padding-left: ($i * 1rem);
+        padding-right: ($i * 1rem);
     }
 }
 
 @for $i from 1 to 5 {
     .pt-#{$i} {
-        padding:($i * 1rem) 0 ;
+        padding-top:($i * 1rem)  ;
+        padding-bottom:($i * 1rem)  ;
     }
 }
 

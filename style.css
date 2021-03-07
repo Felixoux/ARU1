@@ -126,35 +126,43 @@ textarea {
 }
 
 .p-1 {
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .p-2 {
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .p-3 {
-  padding: 0 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .p-4 {
-  padding: 0 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pt-1 {
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pt-2 {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pt-3 {
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pt-4 {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 img {
@@ -920,24 +928,26 @@ body .px5 {
 
 #footer {
   background: #171933;
-  height: 623px;
-  align-items: flex-start;
+  min-height: 623px;
 }
-#footer .gold-book form, #footer .newsletter form {
+#footer form {
   flex-flow: column;
   align-items: flex-start;
 }
 #footer textarea {
-  width: 100%;
-  background: #1b1e3d;
-  max-width: 530px;
-  height: 287px;
+  width: 95%;
+  max-width: 505px;
+  height: 200px;
   padding: 1.5em 2em;
+  background: #1b1e3d;
   transition: all 0.2s ease-in;
 }
 #footer textarea:focus {
   border: 1px solid #5396e7;
   box-shadow: none;
+}
+#footer .ex-mail {
+  margin-bottom: 0;
 }
 #footer .submit-btn, #footer .cancel-btn, #footer .subscribe-btn {
   font-size: 22px;
@@ -956,6 +966,7 @@ body .px5 {
 }
 #footer .email-input {
   width: 100%;
+  max-width: 505px;
   min-height: 44px;
   padding: calc(1.5 * 8px) calc(1 * 8px);
   background: #171933;
@@ -963,6 +974,7 @@ body .px5 {
   border-radius: 3px;
   color: #D4DCFF;
   outline: 0;
+  font-size: 16px;
 }
 #footer .email-input:focus {
   border-color: #5396e7;
@@ -984,7 +996,7 @@ body .px5 {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-#footer .cancel-btn:hover {
+#footer .cancel-btn:active {
   background-color: #f253533f;
 }
 #footer .submit-btn:hover {
