@@ -543,26 +543,52 @@ $upper: 1300px;
 	background: $bgdark;
 	min-height: 623px;
 
+	.gold-book {
+		max-width: 505px;
+	}
+
+	.newsletter {
+		max-width: 528px;
+	}
+
 	form {
 		flex-flow: column;
 		align-items: flex-start;
 	}
+
 	textarea {
-		width: 95%;
-		max-width: 505px;
+		width: 100%;
 		height:200px;	
 		padding: 1.5em 2em;
 		background:$bglight;
 		transition: all .2s ease-in;
+		&:focus {
+			border: 1px solid $contrast;
+			box-shadow: none;
+		}
 	}
 
-	textarea:focus {
-		border: 1px solid $contrast;
-		box-shadow: none;
-	}
+
 
 	.ex-mail {
 		margin-bottom: 0;
+	}
+
+	.email-input {
+		width: 100%;
+		min-height: 44px;
+		padding: calc(1.5 * #{$space}) calc(1 * #{$space});
+		background: $bgdark;
+		border: 1px solid $border;
+    	border-radius: 3px;
+    	color: $letterscolor;
+    	outline: 0;	
+		font-size: 16px;
+	}
+
+	.email-input:focus {
+		border-color: $contrast;
+    	box-shadow: 0 0 0 3px $contrast25;
 	}
 
 	.submit-btn, .cancel-btn, .subscribe-btn {
@@ -582,24 +608,6 @@ $upper: 1300px;
 
 	.subscribe-btn {
 		background: $green;
-	}
-
-	.email-input {
-		width: 100%;
-		max-width: 505px;
-		min-height: 44px;
-		padding: calc(1.5 * #{$space}) calc(1 * #{$space});
-		background: $bgdark;
-		border: 1px solid $border;
-    	border-radius: 3px;
-    	color: $letterscolor;
-    	outline: 0;	
-		font-size: 16px;
-	}
-
-	.email-input:focus {
-		border-color: $contrast;
-    	box-shadow: 0 0 0 3px $contrast25;
 	}
 
 	.network {
@@ -631,8 +639,23 @@ $upper: 1300px;
 	.subscribe-btn:hover {
 		background-color:$green25 ;
 	}
-// == Pas enlever le truc cen dessou fin du footer !!!
+
+	@media only screen and (min-width:1000px) {
+		#footer {
+			display: grid !important;
+		}
+		.netowrk {
+			.gold-book {
+				padding: 0;
+			}
+		}
+	}
+
+	// == Pas enlever le truc cen dessou fin du footer !!!
 }
+	
+
+
 
 #naviguation { 
 	color: black;

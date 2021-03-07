@@ -108,13 +108,13 @@ header, section, main, footer, .container, .header, .footer, .main {
 }
 
 .flex {
-    display:flex!important;
+    display:flex;
     align-items:center;
     justify-content:space-between;
 }
 
 .flex-center {
-    display: flex!important;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -140,7 +140,7 @@ header, section, main, footer, .container, .header, .footer, .main {
 }
 
 .w100 {
-    width: 100%!important;
+    width: 100%;
 }
 
 .nowrap {
@@ -166,15 +166,15 @@ header, section, main, footer, .container, .header, .footer, .main {
 }
 
 .text-left {
-    text-align:left!important;
+    text-align:left;
 }
 
 .text-right {
-    text-align:right!important;
+    text-align:right;
 }
 
 .text-center {
-    text-align:center!important;
+    text-align:center;
 }
 
 .bold {
