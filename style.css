@@ -61,8 +61,13 @@ a:visited {
   text-decoration: none;
 }
 
-button {
+button, form, textarea, input {
   outline: none;
+  border: none;
+}
+
+textarea {
+  resize: none;
 }
 
 @font-face {
@@ -76,35 +81,48 @@ button {
   font-weight: 700;
 }
 .m-1 {
-  margin: 0 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .m-2 {
-  margin: 0 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .m-3 {
-  margin: 0 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .m-4 {
-  margin: 0 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.m-5 {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .mt-1 {
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mt-2 {
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mt-3 {
-  margin: 3rem 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .mt-4 {
-  margin: 4rem 0;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .p-1 {
@@ -334,6 +352,12 @@ h3 {
   color: #D4DCFF;
 }
 
+h4 {
+  font-family: "inter_bold";
+  font-size: 22px;
+  color: #D4DCFF;
+}
+
 p {
   font-family: "inter";
   font-size: 18.5px;
@@ -417,6 +441,13 @@ body .px5 {
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
+.solid-shadow {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*
+../dart-sass/sass sass/style.scss style.css --watch
+ */
 ::-webkit-scrollbar {
   width: 8.5px;
   height: 7px;
@@ -795,7 +826,7 @@ body .px5 {
 #accueil .bottom-container {
   align-items: flex-start;
   margin: 75px 0 50px 0;
-  min-width: 1300px;
+  min-width: 1330px;
 }
 #accueil .card-inscriptions, #accueil .card-eel {
   flex-flow: nowrap column;
@@ -858,56 +889,6 @@ body .px5 {
     width: 90%;
   }
 }
-#accueil footer {
-  justify-content: space-around;
-  background: #171933;
-  min-height: 350px;
-}
-#accueil footer a {
-  color: #D68FD6;
-  transition: all 0.2s ease-in-out;
-}
-#accueil footer a:hover {
-  transform: scale(1.15);
-  text-decoration: underline;
-}
-#accueil footer div {
-  width: 33%;
-  flex-flow: wrap column;
-}
-#accueil .social-media div, #accueil .federation img, #accueil .advice div {
-  border-radius: 15px;
-  height: 200px;
-  flex-flow: column;
-  justify-content: space-around;
-}
-#accueil .social-media div {
-  flex-flow: column wrap;
-  width: 80%;
-  align-items: flex-start;
-}
-#accueil .federation img {
-  width: 250px;
-}
-#accueil .advice div {
-  flex-flow: column nowrap;
-  line-height: 1.6em;
-}
-@media only screen and (max-width:1000px) {
-  #accueil footer {
-    flex-flow: column;
-  }
-  #accueil footer div {
-    width: 100%;
-  }
-  #accueil .social-media, #accueil .advice {
-    max-width: 65%;
-    min-width: 260px;
-  }
-  #accueil .social-media {
-    word-break: break-all;
-  }
-}
 #accueil .triangle-bg, #accueil .square-bg, #accueil .square-form-invoid, #accueil .paralleleograme {
   width: 280px;
   height: 280px;
@@ -935,6 +916,62 @@ body .px5 {
   clip-path: polygon(62% 49%, 100% 73%, 100% 100%, 63% 78%);
   right: 0;
   bottom: 625px;
+}
+
+#footer {
+  background: #171933;
+  height: 623px;
+  align-items: flex-start;
+}
+#footer .gold-book form, #footer .newsletter form {
+  flex-flow: column;
+  align-items: flex-start;
+}
+#footer textarea {
+  background: #1b1e3d;
+  max-width: 530px;
+  height: 287px;
+  padding: 1.5em 2em;
+}
+#footer .submit-btn, #footer .cancel-btn, #footer .subscribe-btn {
+  font-size: 22px;
+  border-radius: 25px;
+  padding: 0.24em 2.2em;
+  color: white;
+}
+#footer .cancel-btn {
+  background: #f25353;
+}
+#footer .submit-btn {
+  background: #5396e7;
+}
+#footer .subscribe-btn {
+  background: #41cf7c;
+}
+#footer .email-input {
+  background: #171933;
+  border: 4px solid #2a2e5e;
+  border-radius: 4px;
+  font-size: 22px;
+  width: 402px;
+  height: 58px;
+  padding: 0 0 0 15px;
+}
+#footer .network {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  flex-flow: column;
+}
+#footer .network img {
+  border-radius: 4px;
+}
+#footer .network img:hover, #footer .social-media img:hover, #footer .submit-btn:hover, #footer .cancel-btn:hover, #footer .subscribe-btn:hover {
+  transform: scale(1.08);
+}
+#footer .network img, #footer .social-media img, #footer .submit-btn, #footer .cancel-btn, #footer .subscribe-btn {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 #naviguation {

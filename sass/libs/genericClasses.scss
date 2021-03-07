@@ -1,12 +1,14 @@
-@for $i from 1 to 5 {
+@for $i from 1 to 6 {
     .m-#{$i} {
-        margin:0 ($i * 1rem);
+        margin-left:($i * 1rem);
+        margin-right:($i * 1rem) ;
     }
 }
 
 @for $i from 1 to 5 {
     .mt-#{$i} {
-        margin:($i * 1rem) 0 ;
+        margin-top:($i * 1rem)  ;
+        margin-bottom: ($i * 1rem);
     }
 }
 
@@ -217,6 +219,12 @@ h3 {
     color:$letterscolor;
 }
 
+h4 {
+    font-family: 'inter_bold';
+    font-size: 22px;
+    color:$letterscolor;
+}
+
 p {
     font-family: 'inter';
     font-size: 18.5px;
@@ -347,4 +355,8 @@ p {
 
 .div-shadow {
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25); 
+}
+
+.solid-shadow {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
