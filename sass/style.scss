@@ -273,7 +273,7 @@ header {
 
 // == section center == A la une == 
 .actu{
-	margin-top: 0 - 12.5px; //$gap
+	margin-top: 0 - 12.5px; 
 	padding: 0 10px;
 	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
 	grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr ;
@@ -539,25 +539,28 @@ $upper: 1300px;
 // == NE SURTOUT PAS ENLEVER LE CROCHET EN DESSOUS == // == fin de Acceuil !!!
 }
 
-#footer {
-	background: $bgdark;
-	min-height: 623px;
+.footer {
+	background-color: $bgdark;
+	padding-top: calc(7 * #{$space}) ;
 
 	.gold-book {
 		max-width: 505px;
+		padding: 0 15px ;
 	}
 
 	.newsletter {
 		max-width: 528px;
+		padding: 0 15px;
 	}
 
 	form {
-		flex-flow: column;
+		flex-flow: column nowrap;
 		align-items: flex-start;
 	}
 
 	textarea {
 		width: 100%;
+		max-width: 505px;
 		height:200px;	
 		padding: 1.5em 2em;
 		background:$bglight;
@@ -567,8 +570,6 @@ $upper: 1300px;
 			box-shadow: none;
 		}
 	}
-
-
 
 	.ex-mail {
 		margin-bottom: 0;
@@ -581,8 +582,6 @@ $upper: 1300px;
 		background: $bgdark;
 		border: 1px solid $border;
     	border-radius: 3px;
-    	color: $letterscolor;
-    	outline: 0;	
 		font-size: 16px;
 	}
 
@@ -599,35 +598,40 @@ $upper: 1300px;
 	}
 
 	.cancel-btn {
-		background: $red;
+		background-color: $red;
 	}
 
 	.submit-btn {
-		background: $contrast;
+		background-color: $contrast;
 	}
 
 	.subscribe-btn {
-		background: $green;
+		background-color: $green;
 	}
 
 	.network {
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		flex-flow: column;
+		flex-flow: column nowrap;
 		img {
 			border-radius: 4px;
-
 		}
+	}
+
+	.copyright {
+		padding: 50px 0 calc(3 * #{$space}) 15px;
+	}
+
+	.network img, .social-media img, .submit-btn, .cancel-btn, .subscribe-btn {
+		transition: all .2s ease-in-out;
+		cursor: pointer;
 	}
 
 	.network img:hover, .social-media img:hover {
 		transform: scale(1.08);
 	}
-	.network img, .social-media img, .submit-btn, .cancel-btn, .subscribe-btn {
-		transition: all .2s ease-in-out;
-		cursor: pointer;
-	}
+	
 	.cancel-btn:active {
 		background-color: $red25;
 	}
@@ -640,88 +644,90 @@ $upper: 1300px;
 		background-color:$green25 ;
 	}
 
-	@media only screen and (min-width:1000px) {
-		#footer {
-			display: grid !important;
-		}
-		.netowrk {
-			.gold-book {
-				padding: 0;
-			}
-		}
-	}
+	
 
 	// == Pas enlever le truc cen dessou fin du footer !!!
 }
-	
 
-
-
-#naviguation { 
-	color: black;
-	width: 100%; 
-	height: 100vh;
-	background-color: $bglight; 
-
-container-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100vh;
-	background: rgba(0, 0, 0, 0.7);
-	ul {
-		position: fixed;
-		display: flex;
-		flex-flow: nowrap column;
-		justify-content: space-around;
-		align-items: center;
-		height: 590px;
-		max-height: 100vh;
+@media only screen and (min-width:425px) {
+	.subscribe-btn, .submit-btn {
+		margin-left: 20px;
 	}
-	
-	li {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 225px;
-		max-height: 79px;
-		min-height: 50px;
-		background: #171933;
-		border-radius: 3px;
+}
+
+@media only screen and (min-width:1030px) {
+	#footer {
+		display:grid;
+	 	height: 623px;
+	 	grid-template-columns:38.5fr 39fr ;
+	 	grid-template-rows: 1fr 0;
+	 	grid-column-gap:10%;
+	 	h4 {
+		font-size: 22px;
+		margin: 0 0 45px 0;
+		line-height: 1.1;
 	}
-	button {
-		width: 300px;
-		min-height: 57px;
-		background: #171933;
-		border:1px solid #2A2E5E;
-		border-radius: 3px;
-		font-size: 22.5px;
-		font-family: 'inter';
-		color: $textnavbar;
+
+	textarea {
+		width: 505px;
+		height: 287px;
 	}
-	.container-federation-logo {
-		display: none;
-		position: fixed;
-		left: 15px;
-		bottom: 15px;
-		h2 {
-			color: $textnavbar;
-			color: white;
-			font-size: 22.5px;
-			font-family: 'inter';
-			margin-bottom: $space;
-		}
-		.logo-fed {
-			width: 144px;
-			height: 112px;
-			border-radius: 5px;
+
+	.gold-book {
+		grid-area: 1 / 1 / span 1 /span 1;
+	}
+
+	.newsletter input {
+		margin-bottom: 0;
+	}
+
+	.newsletter p {
+		margin: 0 ;
+	}
+
+	form div {
+		margin: 10px 0 0 0;
+	}
+
+	.social-media h4 {
+		margin: 60px 0 30px 0;
+	}
+
+	.copyright {
+		grid-area: 1 / 1 / span 1 / span 1;
+		align-self: flex-end;
+	}
+
+	.network {
+		bottom: 8.5px;
+		img {
+			width: 143px;
+			height: 114px;
 		}
 	}
+}
 	
 }
 
+@media only screen and (min-width:1360px) {
+	#footer {
+		grid-column-gap:327px;
+		padding-left: calc(50% - (#{$container-width}/ 2));
+	 	padding-right: calc(50% - (#{$container-width}/ 2));
+		 h4 {
+			font-size: 29px;
+		 }
+	}
+
+	.gold-book {
+		padding: 0;
+	}
+
+	.newsletter {
+		padding: 0;
+	}
 }
+	
+
+
+
