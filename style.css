@@ -928,10 +928,16 @@ body .px5 {
   align-items: flex-start;
 }
 #footer textarea {
+  width: 100%;
   background: #1b1e3d;
   max-width: 530px;
   height: 287px;
   padding: 1.5em 2em;
+  transition: all 0.2s ease-in;
+}
+#footer textarea:focus {
+  border: 1px solid #5396e7;
+  box-shadow: none;
 }
 #footer .submit-btn, #footer .cancel-btn, #footer .subscribe-btn {
   font-size: 22px;
@@ -949,13 +955,18 @@ body .px5 {
   background: #41cf7c;
 }
 #footer .email-input {
+  width: 100%;
+  min-height: 44px;
+  padding: calc(1.5 * 8px) calc(1 * 8px);
   background: #171933;
-  border: 4px solid #2a2e5e;
-  border-radius: 4px;
-  font-size: 22px;
-  width: 402px;
-  height: 58px;
-  padding: 0 0 0 15px;
+  border: 1px solid #2a2e5e;
+  border-radius: 3px;
+  color: #D4DCFF;
+  outline: 0;
+}
+#footer .email-input:focus {
+  border-color: #5396e7;
+  box-shadow: 0 0 0 3px #4869ee3f;
 }
 #footer .network {
   position: absolute;
@@ -966,12 +977,21 @@ body .px5 {
 #footer .network img {
   border-radius: 4px;
 }
-#footer .network img:hover, #footer .social-media img:hover, #footer .submit-btn:hover, #footer .cancel-btn:hover, #footer .subscribe-btn:hover {
+#footer .network img:hover, #footer .social-media img:hover {
   transform: scale(1.08);
 }
 #footer .network img, #footer .social-media img, #footer .submit-btn, #footer .cancel-btn, #footer .subscribe-btn {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+#footer .cancel-btn:hover {
+  background-color: #f253533f;
+}
+#footer .submit-btn:hover {
+  background-color: #4869ee3f;
+}
+#footer .subscribe-btn:hover {
+  background-color: #41cf7c3f;
 }
 
 #naviguation {
