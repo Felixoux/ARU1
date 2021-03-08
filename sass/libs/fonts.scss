@@ -3,6 +3,13 @@
     src: url(fonts/Inter-Regular.ttf) format("truetype");
     font-weight: 400;
 }
+
+@font-face{
+    font-family: 'inter_medium';
+    src: url(fonts/inter-medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
 @font-face{
     font-family: 'inter_bold';
     src: url(fonts/Inter-Bold.ttf) format("truetype");

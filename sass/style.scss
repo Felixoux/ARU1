@@ -7,157 +7,452 @@
 @import "libs/genericClasses.scss";
 /*
 ../dart-sass/sass sass/style.scss style.css --watch
+ */
+// == Header ==
+.header {
+	padding-top: calc(6 * #{$space});
+    padding-bottom: calc(3 * #{$space});
+	color: $letterscolor;
+	line-height: 1;
+	font-size: 16.5px;
 
- */ 
-// === scrollBar === 
-	::-webkit-scrollbar{width: 8.5px;height: 7px; }
-	
-	::-webkit-scrollbar-thumb{ background: $border; border-radius: 4px;}
-	
-	::-webkit-scrollbar-corner { background: $bglight }
-	
-	::-webkit-scrollbar-track {background:$bglight; padding: 1px;}
-// == selection for fonts
-	::selection { background:$contrast; color: #fff;}
+	ul {
+		display: flex;
+		align-items: center;
+	}
 
-// == Accueil 
+	 li {
+	 	display: flex;
+     	align-items: center;
+    // 	height: 26px;
+    	white-space: nowrap;
+	 }
+
+	.header-nav {
+		height: 26px;
+    	margin-top: -5px;
+    	margin-bottom: -5px;
+    	flex-wrap: wrap;
+    	overflow: hidden;
+	}
+
+	.header__home {
+		height: 16px;
+		justify-content: flex-start;
+		border-right: 1px solid $border;
+		margin-right: calc(2 * #{$space});
+		padding-right: calc(1 * #{$space});
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.header-nav>*+* {
+		margin-left: calc(6 * #{$space});
+	}
+
+	.header__home+li {
+		margin-left: 0;
+	}
+
+	a {
+		transition: color .3s;
+		font-family:'inter_medium';
+	}
+
+	a:hover, a[aria-current], button:hover {
+		color: $contrast;
+	}
+
+	svg {
+		width: 12px;
+		height: 12px;
+		margin-right: calc(1 * #{$space});
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $border;
+		max-width: var(--container-width);
+		margin-left: auto;
+		margin-right: auto;
+		height: 1px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// == ne pas enlever ce crochet en dessous !!!! FIN HEADER NAV 
+}
+
+
+
+// == Footer == 
+#footer {
+	background-color: $bgdark;
+	padding-top: ($space-section / 2);
+	padding-bottom: ($space-section / 6);
+
+	.gold-book, .newsletter {
+		max-width: 528px;
+	}
+
+	form {
+		flex-flow: column nowrap;
+		align-items: flex-start;
+	}
+
+	textarea {
+		width: 100%;
+		max-width: 505px;
+		height:200px;	
+		padding: 1.5em 2em;
+		background:$bglight;
+		transition: all .2s ease-in;
+		&:focus {
+			border: 1px solid $contrast;
+			box-shadow: none;
+			background:#1b1e3d54;
+		}
+	}
+		.bg-mail {
+		width: 100%;
+		margin-top: 1.5rem;
+		background: $cardbg;
+		border: 1px solid $border;
+		border-radius: 4px;
+		padding: 15px;
+	}
+	 	.email-input {
+		width: 100%;
+		min-height: 44px;
+		padding: calc(1.5 * #{$space}) calc(1 * #{$space});
+		background: $bgdark;
+		border: 1px solid $border;
+    	border-radius: 3px;
+		font-size: 16px;
+		&:focus {
+			border-color: $contrast;
+			box-shadow: 0 0 0 3px $contrast25;
+		}
+	}
+
+	form .btn-area {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.submit-btn, .cancel-btn, .subscribe-btn {
+		font-size: 22px;
+		border-radius: 25px;
+		padding: 0.24em 2.2em;
+		color: white;
+		cursor: pointer;
+	}
+
+	.cancel-btn {
+		background-color: $red;
+		&:hover {
+			background-color: $red25;
+		}
+		&:active {
+			background-color: $red;
+		}
+	}
+
+	.submit-btn {
+		background-color: $contrast;
+		&:hover {
+			background-color: $contrast25;
+		}
+		&:active {
+			background-color: $contrast;
+		}
+	}
+
+	.subscribe-btn {
+		background-color: $green;
+		&:hover {
+			background-color:$green25 ;
+		}
+		&:active {
+			background-color:$green ;
+		}
+	
+		
+	}
+
+	.network {
+		position: absolute;
+		bottom: 22px;
+		right: 22px;
+		flex-flow: column nowrap;
+		img {
+			border-radius: 4px;
+		}
+	}
+
+	.copyright {
+		margin-top: 6.5rem;
+	}
+
+	.network img, .social-media img{
+		transition: all .25s ease-in-out;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.08);
+		}
+	}
+
+	h4 svg {
+		width: 1.5em;
+		height: 1.5em;
+		top: -70%;
+		left: 65%;
+		transform: rotate(5deg);
+	}
+
+	// == Pas enlever le truc cen dessou fin du footer !!!
+}
+
+@media only screen and (min-width:440px) {
+	#footer {
+		form .btn-area {
+			flex-flow: row nowrap;
+		}
+		.submit-btn, .subscribe-btn {
+			margin: 0 0 0 25px;
+		}
+		.network img {
+			width: 143px;
+			height: 114px;				
+		}
+		h4 svg {
+			left: 45%;
+			top: -80%;
+		}
+	}	
+}
+
+@media only screen and (min-width:700px) {
+	#footer {
+		.gold-book, .newsletter {
+			margin: 0 auto;
+		}
+	}
+}
+
+@media only screen and (min-width:1030px) {
+	#footer {
+		display:grid;
+	 	height: 623px;
+	 	grid-template-columns:38.5fr 39fr ;
+	 	grid-template-rows: 1fr 0;
+		grid-column-gap:60px;
+		.gold-book, .newsletter {
+			 margin: 0;
+			 width: 100%;
+		}
+		h4 {
+			font-size: 29px;
+			margin: 0 0 45px 0;
+			line-height: 1.1;	
+		}
+		textarea {
+			height: 287px;
+		}
+	
+		.newsletter input {
+			margin-bottom: 0;
+		}
+	
+		.newsletter p {
+			margin: 0 ;
+		}
+	
+		form .btn-area {
+			margin: 2em 0 0 0;
+		}
+	
+		.social-media h4 {
+			margin: 55px 0 15px 0;
+		}
+	
+		.newsletter .copyright {
+			display: none;
+		}
+
+		.gold-book .copyright{
+			display: block;
+			margin-top: 4rem; 
+		}
+		h4 svg {
+			left: 55%;
+		}
+	
+	}
+
+}
+
+@media only screen and (min-width:1360px) {
+	#footer {
+		grid-column-gap:327px;
+	}
+}
+	
+// == Accueil ==
 
 #accueil {
 	background-color: $bglight; 
 	width: 100%; 
 	height: 100vh; 
 
-// == navbar 
-header {
-	margin-left: 110px; 
-	justify-content: center;
-	padding-left: 25px;
-	min-height: 95px;
-	//background-color: $bgnavbar;
-	color: $textnavbar;
-	font-family: 'inter_bold';
-	letter-spacing: 1px;
-}
+// // == navbar 
+// header {
+// 	margin-left: 110px; 
+// 	justify-content: center;
+// 	padding-left: 25px;
+// 	min-height: 95px;
+// 	//background-color: $bgnavbar;
+// 	color: $textnavbar;
+// 	font-family: 'inter_bold';
+// 	letter-spacing: 1px;
+// }
 
-.nav-links{
-	font-size: 23px;
-	font-weight: bold;
-	justify-content: space-around;
-	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
-	width: 80%;
-	z-index: 100;
-		i{
-		margin:0 10px 0 10px ;
-		color: $letterscolor;
-	}
-		li{
-		cursor: pointer;
-	}
-}
+// .nav-links{
+// 	font-size: 23px;
+// 	font-weight: bold;
+// 	justify-content: space-around;
+// 	// on peut jouer avec la largeur pour espacer les LI de la NAV :)
+// 	width: 80%;
+// 	z-index: 100;
+// 		i{
+// 		margin:0 10px 0 10px ;
+// 		color: $letterscolor;
+// 	}
+// 		li{
+// 		cursor: pointer;
+// 	}
+// }
 
-.nav-links :nth-child(2) {position: relative;}
+// .nav-links :nth-child(2) {position: relative;}
 
-.logo-circle{
-	top: 17px;
-	left: 37px;
-	background-color: $textnavbar;
-	width: 170px;
-	height: 170px;
-	border-radius: 50%;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-	z-index: 100;
-	overflow: hidden;
-	 svg{
-		width:250px ;
-		height: 250.1px;
-	}
-}
+// .logo-circle{
+// 	top: 17px;
+// 	left: 37px;
+// 	background-color: $textnavbar;
+// 	width: 170px;
+// 	height: 170px;
+// 	border-radius: 50%;
+// 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+// 	z-index: 100;
+// 	overflow: hidden;
+// 	 svg{
+// 		width:250px ;
+// 		height: 250.1px;
+// 	}
+// }
 
-.burger {
-	display: none;
-	position: absolute;
-	right: 15px;
-	z-index: 300;
-		div {
-		width: 25px; 
-		height: 3px;
-		background-color: $textnavbar;
-		margin: 5px;
-		border-radius: 25px;
-		transition: all 0.3s ease;
-	}
-}
+// .burger {
+// 	display: none;
+// 	position: absolute;
+// 	right: 15px;
+// 	z-index: 300;
+// 		div {
+// 		width: 25px; 
+// 		height: 3px;
+// 		background-color: $textnavbar;
+// 		margin: 5px;
+// 		border-radius: 25px;
+// 		transition: all 0.3s ease;
+// 	}
+// }
 
-@media screen and (max-width:1024px) {
-	.nav-links{
-		width: 75%;
-	}
-}
+// @media screen and (max-width:1024px) {
+// 	.nav-links{
+// 		width: 75%;
+// 	}
+// }
 
-@media screen and (max-width:768px) {
-	body {
-		overflow-x: hidden;
-	}
+// @media screen and (max-width:768px) {
+// 	body {
+// 		overflow-x: hidden;
+// 	}
 
-	.nav-links{
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100vh ;
-		background: #171a34e8;
-		backdrop-filter: blur(10px);
-		//background-color: $bgnavbar;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		transform: translateX(100%);
-		transition: transform 0.5s ease-in;
-		z-index: 200;
-	}
+// 	.nav-links{
+// 		position: fixed;
+// 		top: 0;
+// 		left: 0;
+// 		height: 100vh ;
+// 		background: #171a34e8;
+// 		backdrop-filter: blur(10px);
+// 		//background-color: $bgnavbar;
+// 		display: flex;
+// 		flex-direction: column;
+// 		align-items: center;
+// 		width: 100%;
+// 		transform: translateX(100%);
+// 		transition: transform 0.5s ease-in;
+// 		z-index: 200;
+// 	}
 
-	.nav-links li {
-		opacity: 0;
-	}
+// 	.nav-links li {
+// 		opacity: 0;
+// 	}
 
-	.burger {
-		display: block;
-		margin-right: 35px;
-		cursor: pointer;
-	}
+// 	.burger {
+// 		display: block;
+// 		margin-right: 35px;
+// 		cursor: pointer;
+// 	}
 
-	nav {
-		justify-content: flex-end;
-	}
-}
+// 	nav {
+// 		justify-content: flex-end;
+// 	}
+// }
 
-.nav-active {
-	transform: translateX(0%);
-}
+// .nav-active {
+// 	transform: translateX(0%);
+// }
 
-@keyframes navLinkFade {
-	from{
-		opacity: 0;
-		transform: translateX(50px);
-	}
-	to{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
+// @keyframes navLinkFade {
+// 	from{
+// 		opacity: 0;
+// 		transform: translateX(50px);
+// 	}
+// 	to{
+// 		opacity: 1;
+// 		transform: translateX(0px);
+// 	}
+// }
 
-.toggle {
-	.lin1{
-		transform: rotate(-45deg) translate(-5px,6px);
-	}
-	.lin2{
-		opacity: 0;
+// .toggle {
+// 	.lin1{
+// 		transform: rotate(-45deg) translate(-5px,6px);
+// 	}
+// 	.lin2{
+// 		opacity: 0;
 
-	}
-	.lin3{
-		transform: rotate(45deg) translate(-5px,-6px);
-	}
-}
+// 	}
+// 	.lin3{
+// 		transform: rotate(45deg) translate(-5px,-6px);
+// 	}
+// }
 
 // == section upper == presentation video et infos importante == 
 .upper-container {
@@ -522,219 +817,7 @@ $upper: 1300px;
 
 // == NE SURTOUT PAS ENLEVER LE CROCHET EN DESSOUS == // == fin de Acceuil !!!
 }
-// == FOOTER == PHP == CSS = FOOTER
-.footer {
-	background-color: $bgdark;
-	padding-top: ($space-section / 2);
-	padding-bottom: ($space-section / 6);
 
-	.gold-book, .newsletter {
-		max-width: 528px;
-	}
-
-	form {
-		flex-flow: column nowrap;
-		align-items: flex-start;
-	}
-
-	textarea {
-		width: 100%;
-		max-width: 505px;
-		height:200px;	
-		padding: 1.5em 2em;
-		background:$bglight;
-		transition: all .2s ease-in;
-		&:focus {
-			border: 1px solid $contrast;
-			box-shadow: none;
-			background:#1b1e3d54;
-		}
-	}
-		.bg-mail {
-		width: 100%;
-		margin-top: 1.5rem;
-		background: $cardbg;
-		border: 1px solid $border;
-		border-radius: 4px;
-		padding: 15px;
-	}
-	 	.email-input {
-		width: 100%;
-		min-height: 44px;
-		padding: calc(1.5 * #{$space}) calc(1 * #{$space});
-		background: $bgdark;
-		border: 1px solid $border;
-    	border-radius: 3px;
-		font-size: 16px;
-		&:focus {
-			border-color: $contrast;
-			box-shadow: 0 0 0 3px $contrast25;
-		}
-	}
-
-	form .btn-area {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.submit-btn, .cancel-btn, .subscribe-btn {
-		font-size: 22px;
-		border-radius: 25px;
-		padding: 0.24em 2.2em;
-		color: white;
-		cursor: pointer;
-	}
-
-	.cancel-btn {
-		background-color: $red;
-		&:hover {
-			background-color: $red25;
-		}
-		&:active {
-			background-color: $red;
-		}
-	}
-
-	.submit-btn {
-		background-color: $contrast;
-		&:hover {
-			background-color: $contrast25;
-		}
-		&:active {
-			background-color: $contrast;
-		}
-	}
-
-	.subscribe-btn {
-		background-color: $green;
-		&:hover {
-			background-color:$green25 ;
-		}
-		&:active {
-			background-color:$green ;
-		}
-	
-		
-	}
-
-	.network {
-		position: absolute;
-		bottom: 22px;
-		right: 22px;
-		flex-flow: column nowrap;
-		img {
-			border-radius: 4px;
-		}
-	}
-
-	.copyright {
-		margin-top: 6.5rem;
-	}
-
-	.network img, .social-media img{
-		transition: all .25s ease-in-out;
-		cursor: pointer;
-		&:hover {
-			transform: scale(1.08);
-		}
-	}
-
-	h4 svg {
-		width: 1.5em;
-		height: 1.5em;
-		top: -70%;
-		left: 65%;
-		transform: rotate(5deg);
-	}
-
-	// == Pas enlever le truc cen dessou fin du footer !!!
-}
-
-@media only screen and (min-width:440px) {
-	#footer {
-		form .btn-area {
-			flex-flow: row nowrap;
-		}
-		.submit-btn, .subscribe-btn {
-			margin: 0 0 0 25px;
-		}
-		.network img {
-			width: 143px;
-			height: 114px;				
-		}
-		h4 svg {
-			left: 45%;
-			top: -80%;
-		}
-	}	
-}
-
-@media only screen and (min-width:700px) {
-	#footer {
-		.gold-book, .newsletter {
-			margin: 0 auto;
-		}
-	}
-}
-
-@media only screen and (min-width:1030px) {
-	#footer {
-		display:grid;
-	 	height: 623px;
-	 	grid-template-columns:38.5fr 39fr ;
-	 	grid-template-rows: 1fr 0;
-		grid-column-gap:60px;
-		.gold-book, .newsletter {
-			 margin: 0;
-			 width: 100%;
-		}
-		h4 {
-			font-size: 29px;
-			margin: 0 0 45px 0;
-			line-height: 1.1;	
-		}
-		textarea {
-			height: 287px;
-		}
-	
-		.newsletter input {
-			margin-bottom: 0;
-		}
-	
-		.newsletter p {
-			margin: 0 ;
-		}
-	
-		form .btn-area {
-			margin: 2em 0 0 0;
-		}
-	
-		.social-media h4 {
-			margin: 55px 0 15px 0;
-		}
-	
-		.newsletter .copyright {
-			display: none;
-		}
-
-		.gold-book .copyright{
-			display: block;
-			margin-top: 4rem; 
-		}
-		h4 svg {
-			left: 55%;
-		}
-	
-	}
-
-}
-
-@media only screen and (min-width:1360px) {
-	#footer {
-		grid-column-gap:327px;
-	}
-}
-	
 
 
 
