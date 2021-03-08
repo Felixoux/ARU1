@@ -526,10 +526,12 @@ body .px5 {
   margin-left: auto;
   margin-right: auto;
   height: 1px;
+  z-index: -1;
 }
 .header ul {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .header li {
   display: flex;
@@ -538,15 +540,11 @@ body .px5 {
 }
 .header .header-nav {
   display: flex;
-  min-height: 26px;
+  height: 26px;
   margin-top: -5px;
   margin-bottom: -5px;
   flex-wrap: wrap;
   overflow-x: hidden;
-  overflow-y: visible;
-}
-.header .header-nav li {
-  position: relative;
 }
 .header .header__home {
   height: 16px;
@@ -615,71 +613,18 @@ body .px5 {
   font-size: 0;
   text-indent: -3000px;
 }
-@media (max-width: 1170px) {
-  .header .header__burger {
-    display: block;
-  }
-  .header .header {
-    padding-top: calc(4 * 8px);
-  }
-  .header .header.is-open {
-    position: relative;
-    color: #D4DCFF;
-  }
-  .header .header.is-open .header-nav {
-    display: grid;
-    grid-gap: calc(4 * 8px);
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    background: #171933D8;
-    border: 1px solid #2a2e5e;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    transition: opacity 0.3s;
-    z-index: 3;
-    backdrop-filter: blur(10px);
-    padding: calc(2 * 8px);
-  }
-  .header .header.is-open .header-nav .header__home {
-    display: none;
-    animation-delay: 50ms;
-  }
-  .header .header.is-open li {
-    display: block;
-    width: 200px;
-    margin-left: 0 !important;
-    animation: slideIn 0.5s both;
-    font-size: 1.3rem;
-    animation-delay: 0.3s;
-  }
-  .header .header.is-open li:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  .header .header.is-open li:nth-child(3) {
-    animation-delay: 0.15s;
-  }
-  .header .header.is-open li:nth-child(4) {
-    animation-delay: 0.2s;
-  }
-  .header .header.is-open li:nth-child(5) {
-    animation-delay: 0.25s;
-  }
-  .header .header.is-open li:nth-child(6) {
-    animation-delay: 0.3s;
-  }
-  .header .header.is-open .header-side {
-    position: fixed;
-    top: calc(3 * 8px);
-    right: calc(2 * 8px);
-    z-index: 4;
-  }
+.header .nav__scroll {
+  position: absolute;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 165px;
+  height: 180px;
 }
 
 #footer {
