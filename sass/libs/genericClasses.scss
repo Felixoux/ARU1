@@ -234,6 +234,10 @@ p {
     color:$letterscolor;
 }
 
+span {
+    color: $contrast;
+}
+
  @for $i from 1 to 6 {
     
 // body .p#{$i} {

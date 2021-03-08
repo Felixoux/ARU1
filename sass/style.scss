@@ -163,7 +163,7 @@ header {
 .upper-container {
 	justify-content: space-between;
 	align-items: flex-start;
-	padding:  $space-section  0 0 0;//($space-section / 4)
+	padding:  $space-section  0 ($space-section ) 0 ;
 }
 
 .title_video span{
@@ -260,22 +260,9 @@ header {
 	}
 }
 
-// == button scroll
-.button_scroll{ 
-	z-index: 10;
-	margin: calc((#{$space-section}/2.5)) auto 0 auto;
-	width: 4.5rem; 
-	height: 30px; 
-	background-color: $bgbutton; 
-	border-radius: 50px; 
-	color: $letterscolor;
-	font-size: 25px;
-}
-
 // == section center == A la une == 
 .actu{
-	margin-top: 0 - 12.5px; 
-	padding: 0 10px;
+	padding-top: 0 - 12.5px; 
 	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
 	grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr ;
 	grid-template-rows: 148px 194px 215px;
@@ -421,9 +408,8 @@ $upper: 1300px;
 
 // == section bottom ==
 .bottom-container{
-	//margin:($space-section / 2) auto ($space-section / 3) auto ;
 	align-items: flex-start;
-	margin: ($space-section / 2) 0 ($space-section / 3) 0;
+	padding: ($space-section) 0;
 	min-width:1330px;
 }
 
@@ -539,7 +525,7 @@ $upper: 1300px;
 
 // == NE SURTOUT PAS ENLEVER LE CROCHET EN DESSOUS == // == fin de Acceuil !!!
 }
-
+// == FOOTER == PHP == CSS = FOOTER
 .footer {
 	background-color: $bgdark;
 	padding-top: calc(7 * #{$space});
