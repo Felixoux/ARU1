@@ -16,6 +16,20 @@
 	line-height: 1;
 	font-size: 16.5px;
 
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $border;
+		max-width: var(--container-width);
+		margin-left: auto;
+		margin-right: auto;
+		height: 1px;
+	}
+
 	ul {
 		display: flex;
 		align-items: center;
@@ -29,11 +43,25 @@
 	 }
 
 	.header-nav {
+		display: flex;
 		height: 26px;
     	margin-top: -5px;
     	margin-bottom: -5px;
     	flex-wrap: wrap;
-    	overflow: hidden;
+    	overflow-x: hidden;
+	}
+
+	.header-nav li {
+		position: relative;
+	}
+
+	.header-nav .nav__scroll {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 500px;
+		height: 200px;
+		display: inline;
 	}
 
 

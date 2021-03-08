@@ -17,7 +17,8 @@
                         <path fill="currentColor" d="M0 4v7a1 1 0 001 1h3V8h4v4h3a1 1 0 001-1V4L6 0 0 4z" fill="currentColor"></path>
                 </svg></a> 
                 </li>
-                <li><a href="#">
+                <li>
+                    <a href="#">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                viewBox="0 0 31.666 31.666" style="enable-background:new 0 0 31.666 31.666;"
 	                xml:space="preserve">
@@ -31,7 +32,13 @@
 
                     </svg>
                     Notre établissement
-                </a></li>
+                    </a>
+                    <ul class="nav__scroll flex">
+                        <li><a href="#">Le personnel</a></li>
+                        <li><a href="#">R.O.I</a></li>
+                        <li><a href="#">Nos projets</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">
                     <svg height="325pt" viewBox="0 0 325 325.37515" width="325pt" xmlns="http://www.w3.org/2000/svg"><path fill=currentColor d="m114.6875 284.675781-73.800781-73.800781 178.5-178.5 73.800781 73.800781zm-80.699219-60.800781 67.699219 67.699219-101.5 33.800781zm281.898438-140.300781-12.800781 12.800781-73.898438-73.898438 12.800781-12.800781c12.894531-12.902343 33.804688-12.902343 46.699219 0l27.199219 27.199219c12.800781 12.9375 12.800781 33.765625 0 46.699219zm0 0"/></svg>
                     En pratique 
@@ -182,8 +189,8 @@
                 <form class="flex" action="accueil.html" method="post">
                     <textarea class="solid-shadow font-normal" name="" id="" cols="70" rows="10" placeholder="Votre avis sur le site..."></textarea>
                     <div class="btn-area mt-2 flex">
-                        <INPUT class="cancel-btn font-normal" TYPE="reset" NAME="nom" VALUE="Annuler">
-                        <INPUT class="submit-btn mt-1 font-normal" TYPE="submit" NAME="nom" VALUE="Envoyer">
+                        <button class="cancel-btn font-normal" type="reset" value="cancel">Annuler</button>
+                        <button class="submit-btn mt-1 font-normal" type="submit" value="send">Envoyer      </button>
                     </div>
                 </form>
                 <div class="copyright hidden">
@@ -199,8 +206,8 @@
                 <form class="flex" action="accueil.html" method="post">
                     <div class="bg-mail"><input class="font-normal email-input" type="text" placeholder="pierre.durand@gmail.com"></div>
                     <div class="btn-area flex mt-2">
-                        <INPUT class="cancel-btn font-normal" TYPE="reset" NAME="nom" VALUE="Annuler">
-                        <INPUT class="subscribe-btn mt-1  font-normal" TYPE="submit" NAME="nom" VALUE="S’inscrire">
+                        <button class="cancel-btn font-normal" type="reset" value="cancel">Annuler</button>
+                        <button class="subscribe-btn mt-1 font-normal" type="submit" value="subscribe">S'inscrire</button>
                     </div>
                 </form>  
                 <div class="social-media">
