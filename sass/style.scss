@@ -7,6 +7,7 @@
 @import "libs/genericClasses.scss";
 /*
 ../dart-sass/sass sass/style.scss style.css --watch
+
  */ 
 // === scrollBar === 
 	::-webkit-scrollbar{width: 8.5px;height: 7px; }
@@ -502,9 +503,9 @@ $upper: 1300px;
 
 // == forms ==
 .triangle-bg, .square-bg, .square-form-invoid, .paralleleograme {
+	position: absolute;
 	width: 280px;
 	height: 280px;
-	position: absolute;
 	background-color: $bgdark;
 	z-index: -10;
 }
@@ -541,7 +542,8 @@ $upper: 1300px;
 
 .footer {
 	background-color: $bgdark;
-	padding: calc(7 * #{$space}) 0;
+	padding-top: calc(7 * #{$space});
+	padding-bottom: calc(7 * #{$space});
 
 	.gold-book, .newsletter {
 		max-width: 528px;
@@ -565,12 +567,15 @@ $upper: 1300px;
 			background:#1b1e3d54;
 		}
 	}
-
-	.ex-mail {
-		margin-bottom: 0;
+		.bg-mail {
+		width: 100%;
+		margin-top: 1.5rem;
+		background: $cardbg;
+		border: 1px solid $border;
+		border-radius: 4px;
+		padding: 15px;
 	}
-
-	.email-input {
+	 	.email-input {
 		width: 100%;
 		min-height: 44px;
 		padding: calc(1.5 * #{$space}) calc(1 * #{$space});
@@ -578,11 +583,10 @@ $upper: 1300px;
 		border: 1px solid $border;
     	border-radius: 3px;
 		font-size: 16px;
-	}
-
-	.email-input:focus {
-		border-color: $contrast;
-    	box-shadow: 0 0 0 3px $contrast25;
+		&:focus {
+			border-color: $contrast;
+			box-shadow: 0 0 0 3px $contrast25;
+		}
 	}
 
 	form .btn-area {
@@ -595,24 +599,45 @@ $upper: 1300px;
 		border-radius: 25px;
 		padding: 0.24em 2.2em;
 		color: white;
+		cursor: pointer;
 	}
 
 	.cancel-btn {
 		background-color: $red;
+		&:hover {
+			background-color: $red25;
+		}
+		&:active {
+			background-color: $red;
+		}
 	}
 
 	.submit-btn {
 		background-color: $contrast;
+		&:hover {
+			background-color: $contrast25;
+		}
+		&:active {
+			background-color: $contrast;
+		}
 	}
 
 	.subscribe-btn {
 		background-color: $green;
+		&:hover {
+			background-color:$green25 ;
+		}
+		&:active {
+			background-color:$green ;
+		}
+	
+		
 	}
 
 	.network {
 		position: absolute;
-		bottom: 0;
-		right: 0;
+		bottom: 56px;
+		right: 8.5px;
 		flex-flow: column nowrap;
 		img {
 			border-radius: 4px;
@@ -620,61 +645,42 @@ $upper: 1300px;
 	}
 
 	.copyright {
-		padding: 50px 0 calc(3 * #{$space}) 2em;
+		margin-top: 6.5rem;
 	}
 
-	.network img, .social-media img, .submit-btn, .cancel-btn, .subscribe-btn {
-		transition: background-color .2ss ease-in-out;
-		transition: active .01s ease-in-out;
+	.network img, .social-media img{
+		transition: all .25s ease-in-out;
 		cursor: pointer;
+		&:hover {
+			transform: scale(1.08);
+		}
 	}
-
-	.network img:hover, .social-media img:hover {
-		transform: scale(1.08);
-	}
-	
-	.cancel-btn:hover {
-		background-color: $red25;
-	}
-
-	.submit-btn:hover {
-		background-color: $contrast25;
-	}
-	
-	.subscribe-btn:hover {
-		background-color:$green25 ;
-	}
-
-	.cancel-btn:active {
-		background-color: $red;
-	}
-
-	.submit-btn:active {
-		background-color: $contrast;
-	}
-	
-	.subscribe-btn:active {
-		background-color:$green ;
-	}
-
-	
 
 	// == Pas enlever le truc cen dessou fin du footer !!!
 }
 
 @media only screen and (min-width:440px) {
-	form .btn-area {
-		flex-direction: row!important;
-	}
-	.submit-btn, .subscribe-btn {
-		margin-top: 0;
-		margin-left: 25px;
+	#footer {
+		form .btn-area {
+			flex-flow: row nowrap;
+		}
+		.submit-btn, .subscribe-btn {
+			margin: 0 0 0 25px;
+		}
 	}
 }
 
 @media only screen and (min-width:700px) {
-	.gold-book, .newsletter {
-		margin: 0 auto;
+	#footer {
+		.gold-book, .newsletter {
+			margin: 0 auto;
+		}
+		.network {
+			img {
+				width: 143px;
+				height: 114px;
+			}
+		}
 	}
 }
 
@@ -684,79 +690,54 @@ $upper: 1300px;
 	 	height: 623px;
 	 	grid-template-columns:38.5fr 39fr ;
 	 	grid-template-rows: 1fr 0;
-	 	grid-column-gap:10%;
-	 	h4 {
-		font-size: 22px;
-		margin: 0 0 45px 0;
-		line-height: 1.1;
-	}
-
-	textarea {
-		width: 505px;
-		height: 287px;
-	}
-
-	.gold-book {
-		grid-area: 1 / 1 / span 1 /span 1;
-	}
-
-	.newsletter input {
-		margin-bottom: 0;
-	}
-
-	.newsletter p {
-		margin: 0 ;
-	}
-
-	form div {
-		margin: 2em 0 0 0;
-	}
-
-	.social-media h4 {
-		margin: 60px 0 30px 0;
-	}
-
-	.copyright {
-		grid-area: 1 / 1 / span 1 / span 1;
-		align-self: flex-end;
-	}
-
-	.network {
-		bottom: 8.5px;
-		img {
-			width: 143px;
-			height: 114px;
+		grid-column-gap:60px;
+		.gold-book, .newsletter {
+			 margin: 0;
+			 width: 100%;
 		}
-	}
-}
+		h4 {
+			font-size: 29px;
+			margin: 0 0 45px 0;
+			line-height: 1.1;	
+		}
+		textarea {
+			height: 287px;
+		}
 	
+		.gold-book {
+			grid-area: 1 / 1 / span 1 /span 1;
+		}
+	
+		.newsletter input {
+			margin-bottom: 0;
+		}
+	
+		.newsletter p {
+			margin: 0 ;
+		}
+	
+		form .btn-area {
+			margin: 2em 0 0 0;
+		}
+	
+		.social-media h4 {
+			margin: 55px 0 15px 0;
+		}
+	
+		.newsletter .copyright {
+			grid-area: 1 / 1 / span 1 / span 1;
+			align-self: flex-start;
+			justify-self: flex-start;
+			margin: 0; // Bien mettre le copyright
+		}
+	
+	}
+
 }
 
 @media only screen and (min-width:1360px) {
 	#footer {
 		grid-column-gap:327px;
-		padding-left: calc(50% - (#{$container-width}/ 2));
-	 	padding-right: calc(50% - (#{$container-width}/ 2));
-		 h4 {
-			font-size: 29px;
-		 }
-	}
-	// #footer::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	bottom: 0;
-	// 	right: 0;
-	// 	background:no-repeat url(img/svg/bg-logo-aru1.svg);
-	// }
-
-	.gold-book {
-		padding: 0;
-	}
-
-	.newsletter {
-		padding: 0;
 	}
 }
 	
