@@ -220,12 +220,11 @@ a {
   font-family: "inter";
 }
 
-hr {
-  height: 1px;
-  background: #2a2e5e;
-  margin: 0;
-  padding: 0;
-  border: none;
+.hr {
+  width: 100%;
+  height: 0.1px;
+  background-color: #D4DCFF;
+  border-radius: 5px;
 }
 
 .waves {
@@ -629,7 +628,7 @@ body .px5 {
 #footer {
   background-color: #171933;
   padding-top: 75px;
-  padding-bottom: 25px;
+  padding-bottom: 75px;
 }
 #footer .gold-book, #footer .newsletter {
   max-width: 528px;
@@ -828,7 +827,7 @@ body .px5 {
 #accueil .upper-container {
   justify-content: space-between;
   align-items: flex-start;
-  padding: 150px 0 150px 0;
+  padding: 150px 0 75px 0;
 }
 #accueil .title_video span {
   color: #5396e7;
@@ -1039,14 +1038,12 @@ body .px5 {
     justify-self: flex-end;
   }
 }
-#accueil .bottom-container {
-  align-items: flex-start;
-  padding: 75px 0;
-  min-width: 1330px;
+#accueil section.bottom {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 #accueil .card-inscriptions, #accueil .card-eel {
   flex-flow: nowrap column;
-  align-items: center;
   justify-content: flex-start;
   width: 533px;
   line-height: 1.5em;
@@ -1055,21 +1052,19 @@ body .px5 {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-  margin: 20px 0;
+  margin: 2em 0;
   background: center/cover no-repeat url(img/inscriptions.jpg);
   border-radius: 50px;
 }
 #accueil .card-inscriptions p, #accueil .card-eel p {
+  text-align: center;
   margin-bottom: 19px;
-  align-self: flex-start;
+  align-self: center;
   padding: 0 16px;
 }
-#accueil .card-inscriptions .line-bottom, #accueil .card-eel .line-bottom {
+#accueil .card-inscriptions .hr, #accueil .card-eel .hr {
   justify-self: flex-end;
   width: 60%;
-  height: 0.1px;
-  background-color: #D4DCFF;
-  border-radius: 5px;
 }
 #accueil .card-inscriptions span {
   color: #41cf7c;
@@ -1081,21 +1076,19 @@ body .px5 {
   color: #D68FD6;
   cursor: pointer;
 }
-@media only screen and (max-width:1360px) {
+@media only screen and (max-width: 1250px) {
   #accueil .card-eel {
-    margin-top: 30px;
+    margin-top: 75px;
   }
-  #accueil .bottom-container {
+  #accueil section.bottom {
     min-width: 200px;
     flex-flow: nowrap column;
-    align-items: center;
   }
-  #accueil .card-inscriptions p, #accueil .card-eel p {
-    align-self: center;
-    text-align: center;
-  }
-  #accueil .card-eel .line-bottom {
+  #accueil .card-eel .hr {
     display: none;
+  }
+  #accueil .card-inscriptions .img, #accueil .card-eel .img {
+    border-radius: 25px;
   }
 }
 @media only screen and (max-width:600px) {
