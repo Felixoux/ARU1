@@ -36,6 +36,7 @@
     	overflow: hidden;
 	}
 
+
 	.header__home {
 		height: 16px;
 		justify-content: flex-start;
@@ -53,6 +54,27 @@
 	.header__home+li {
 		margin-left: 0;
 	}
+
+	.header-side {
+		margin-right: calc(-2 * #{$space});
+		margin-left: calc(2 * #{$space});
+	}
+
+	.header-side>li {
+		margin-right: calc(2 * #{$space});
+	}
+
+	.header__burger {
+		display: none;
+		margin-left: calc(1 * #{$space});
+	}
+
+	@media (max-width: 1170px){
+		.header__burger {
+			display: block;
+		}
+	}
+	
 
 	a {
 		transition: color .3s;
@@ -83,6 +105,7 @@
 		height: 1px;
 	}
 
+	
 
 
 
@@ -155,6 +178,9 @@
 	form .btn-area {
 		flex-direction: column;
 		align-items: flex-start;
+		.cancel-btn {
+			order: 2;
+		}
 	}
 
 	.submit-btn, .cancel-btn, .subscribe-btn {
@@ -234,6 +260,9 @@
 	#footer {
 		form .btn-area {
 			flex-flow: row nowrap;
+			.cancel-btn {
+				order: 0;
+			}
 		}
 		.submit-btn, .subscribe-btn {
 			margin: 0 0 0 25px;
@@ -299,7 +328,7 @@
 
 		.gold-book .copyright{
 			display: block;
-			margin-top: 4rem; 
+			margin-top: 3.5rem; 
 		}
 		h4 svg {
 			left: 55%;
