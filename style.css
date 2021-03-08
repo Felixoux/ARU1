@@ -572,18 +572,34 @@ body .px5 {
   height: 14px;
   margin-right: calc(1 * 8px);
 }
-.header::after {
+.header .header__burger button {
+  width: 25px;
+  height: 25px;
+  background-color: #1b1e3d;
+  cursor: pointer;
+}
+.header .header__burger button:hover {
+  color: #5396e7;
+}
+.header .header__burger span, .header .header__burger span::after, .header .header__burger span::before {
   content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #2a2e5e;
-  max-width: var(--container-width);
-  margin-left: auto;
-  margin-right: auto;
-  height: 1px;
+  display: block;
+  width: 12px;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+  transition: 0.3s;
+  transition-property: top, bottom, transform;
+}
+.header .header__burger span::after {
+  top: -6px;
+}
+.header .header__burger span::before {
+  bottom: -4px;
+}
+.header .header__burger span {
+  font-size: 0;
+  text-indent: -3000px;
 }
 
 #footer {

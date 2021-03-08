@@ -91,18 +91,38 @@
 		margin-right: calc(1 * #{$space});
 	}
 
-	&::after {
+	.header__burger button {
+		width: 25px;
+		height: 25px;
+		background-color:$bglight;
+		cursor: pointer;
+		&:hover {
+			color: $contrast;
+		}
+	}
+
+	.header__burger span,.header__burger span::after,.header__burger span::before {
 		content: "";
-		position: absolute;
-		width: 100%;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: $border;
-		max-width: var(--container-width);
-		margin-left: auto;
-		margin-right: auto;
-		height: 1px;
+		display: block;
+		width: 12px;
+		height: 2px;
+		background: currentColor;
+		position: relative;
+		transition: .3s;
+		transition-property: top,bottom,transform
+	}
+	
+	.header__burger span::after {
+		top: -6px
+	}
+	
+	.header__burger span::before {
+		bottom: -4px
+	}
+	
+	.header__burger span {
+		font-size: 0;
+		text-indent: -3000px
 	}
 
 	
