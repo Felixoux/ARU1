@@ -929,15 +929,10 @@ body .px5 {
 
 .footer {
   background-color: #171933;
-  padding-top: calc(7 * 8px);
+  padding: calc(7 * 8px) 0;
 }
-.footer .gold-book {
-  max-width: 505px;
-  padding: 0 15px;
-}
-.footer .newsletter {
+.footer .gold-book, .footer .newsletter {
   max-width: 528px;
-  padding: 0 15px;
 }
 .footer form {
   flex-flow: column nowrap;
@@ -954,6 +949,7 @@ body .px5 {
 .footer textarea:focus {
   border: 1px solid #5396e7;
   box-shadow: none;
+  background: #1b1e3d54;
 }
 .footer .ex-mail {
   margin-bottom: 0;
@@ -970,6 +966,10 @@ body .px5 {
 .footer .email-input:focus {
   border-color: #5396e7;
   box-shadow: 0 0 0 3px #4869ee3f;
+}
+.footer form .btn-area {
+  flex-direction: column;
+  align-items: flex-start;
 }
 .footer .submit-btn, .footer .cancel-btn, .footer .subscribe-btn {
   font-size: 22px;
@@ -996,16 +996,17 @@ body .px5 {
   border-radius: 4px;
 }
 .footer .copyright {
-  padding: 50px 0 calc(3 * 8px) 15px;
+  padding: 50px 0 calc(3 * 8px) 2em;
 }
 .footer .network img, .footer .social-media img, .footer .submit-btn, .footer .cancel-btn, .footer .subscribe-btn {
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2ss ease-in-out;
+  transition: active 0.01s ease-in-out;
   cursor: pointer;
 }
 .footer .network img:hover, .footer .social-media img:hover {
   transform: scale(1.08);
 }
-.footer .cancel-btn:active {
+.footer .cancel-btn:hover {
   background-color: #f253533f;
 }
 .footer .submit-btn:hover {
@@ -1014,10 +1015,29 @@ body .px5 {
 .footer .subscribe-btn:hover {
   background-color: #41cf7c3f;
 }
+.footer .cancel-btn:active {
+  background-color: #f25353;
+}
+.footer .submit-btn:active {
+  background-color: #5396e7;
+}
+.footer .subscribe-btn:active {
+  background-color: #41cf7c;
+}
 
-@media only screen and (min-width: 425px) {
-  .subscribe-btn, .submit-btn {
-    margin-left: 20px;
+@media only screen and (min-width: 440px) {
+  form .btn-area {
+    flex-direction: row !important;
+  }
+
+  .submit-btn, .subscribe-btn {
+    margin-top: 0;
+    margin-left: 25px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .gold-book, .newsletter {
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 1030px) {
@@ -1047,7 +1067,7 @@ body .px5 {
     margin: 0;
   }
   #footer form div {
-    margin: 10px 0 0 0;
+    margin: 2em 0 0 0;
   }
   #footer .social-media h4 {
     margin: 60px 0 30px 0;

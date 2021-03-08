@@ -541,16 +541,10 @@ $upper: 1300px;
 
 .footer {
 	background-color: $bgdark;
-	padding-top: calc(7 * #{$space}) ;
+	padding: calc(7 * #{$space}) 0;
 
-	.gold-book {
-		max-width: 505px;
-		padding: 0 15px ;
-	}
-
-	.newsletter {
+	.gold-book, .newsletter {
 		max-width: 528px;
-		padding: 0 15px;
 	}
 
 	form {
@@ -568,6 +562,7 @@ $upper: 1300px;
 		&:focus {
 			border: 1px solid $contrast;
 			box-shadow: none;
+			background:#1b1e3d54;
 		}
 	}
 
@@ -588,6 +583,11 @@ $upper: 1300px;
 	.email-input:focus {
 		border-color: $contrast;
     	box-shadow: 0 0 0 3px $contrast25;
+	}
+
+	form .btn-area {
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	.submit-btn, .cancel-btn, .subscribe-btn {
@@ -620,11 +620,12 @@ $upper: 1300px;
 	}
 
 	.copyright {
-		padding: 50px 0 calc(3 * #{$space}) 15px;
+		padding: 50px 0 calc(3 * #{$space}) 2em;
 	}
 
 	.network img, .social-media img, .submit-btn, .cancel-btn, .subscribe-btn {
-		transition: all .2s ease-in-out;
+		transition: background-color .2ss ease-in-out;
+		transition: active .01s ease-in-out;
 		cursor: pointer;
 	}
 
@@ -632,7 +633,7 @@ $upper: 1300px;
 		transform: scale(1.08);
 	}
 	
-	.cancel-btn:active {
+	.cancel-btn:hover {
 		background-color: $red25;
 	}
 
@@ -644,14 +645,36 @@ $upper: 1300px;
 		background-color:$green25 ;
 	}
 
+	.cancel-btn:active {
+		background-color: $red;
+	}
+
+	.submit-btn:active {
+		background-color: $contrast;
+	}
+	
+	.subscribe-btn:active {
+		background-color:$green ;
+	}
+
 	
 
 	// == Pas enlever le truc cen dessou fin du footer !!!
 }
 
-@media only screen and (min-width:425px) {
-	.subscribe-btn, .submit-btn {
-		margin-left: 20px;
+@media only screen and (min-width:440px) {
+	form .btn-area {
+		flex-direction: row!important;
+	}
+	.submit-btn, .subscribe-btn {
+		margin-top: 0;
+		margin-left: 25px;
+	}
+}
+
+@media only screen and (min-width:700px) {
+	.gold-book, .newsletter {
+		margin: 0 auto;
 	}
 }
 
@@ -686,7 +709,7 @@ $upper: 1300px;
 	}
 
 	form div {
-		margin: 10px 0 0 0;
+		margin: 2em 0 0 0;
 	}
 
 	.social-media h4 {
@@ -718,6 +741,15 @@ $upper: 1300px;
 			font-size: 29px;
 		 }
 	}
+	// #footer::after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	bottom: 0;
+	// 	right: 0;
+	// 	background:no-repeat url(img/svg/bg-logo-aru1.svg);
+	// }
 
 	.gold-book {
 		padding: 0;
