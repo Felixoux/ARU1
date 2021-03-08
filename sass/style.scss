@@ -543,7 +543,7 @@ $upper: 1300px;
 .footer {
 	background-color: $bgdark;
 	padding-top: calc(7 * #{$space});
-	padding-bottom: calc(7 * #{$space});
+	padding-bottom: calc(3 * #{$space});
 
 	.gold-book, .newsletter {
 		max-width: 528px;
@@ -636,8 +636,8 @@ $upper: 1300px;
 
 	.network {
 		position: absolute;
-		bottom: 56px;
-		right: 8.5px;
+		bottom: 22px;
+		right: 22px;
 		flex-flow: column nowrap;
 		img {
 			border-radius: 4px;
@@ -667,19 +667,17 @@ $upper: 1300px;
 		.submit-btn, .subscribe-btn {
 			margin: 0 0 0 25px;
 		}
-	}
+		.network img {
+			width: 143px;
+			height: 114px;				
+		}
+	}	
 }
 
 @media only screen and (min-width:700px) {
 	#footer {
 		.gold-book, .newsletter {
 			margin: 0 auto;
-		}
-		.network {
-			img {
-				width: 143px;
-				height: 114px;
-			}
 		}
 	}
 }
@@ -704,10 +702,6 @@ $upper: 1300px;
 			height: 287px;
 		}
 	
-		.gold-book {
-			grid-area: 1 / 1 / span 1 /span 1;
-		}
-	
 		.newsletter input {
 			margin-bottom: 0;
 		}
@@ -725,10 +719,12 @@ $upper: 1300px;
 		}
 	
 		.newsletter .copyright {
-			grid-area: 1 / 1 / span 1 / span 1;
-			align-self: flex-start;
-			justify-self: flex-start;
-			margin: 0; // Bien mettre le copyright
+			display: none;
+		}
+
+		.gold-book .copyright{
+			display: block;
+			margin-top: 4rem; 
 		}
 	
 	}

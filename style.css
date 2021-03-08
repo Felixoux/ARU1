@@ -947,7 +947,7 @@ body .px5 {
 .footer {
   background-color: #171933;
   padding-top: calc(7 * 8px);
-  padding-bottom: calc(7 * 8px);
+  padding-bottom: calc(3 * 8px);
 }
 .footer .gold-book, .footer .newsletter {
   max-width: 528px;
@@ -1030,8 +1030,8 @@ body .px5 {
 }
 .footer .network {
   position: absolute;
-  bottom: 56px;
-  right: 8.5px;
+  bottom: 22px;
+  right: 22px;
   flex-flow: column nowrap;
 }
 .footer .network img {
@@ -1055,14 +1055,14 @@ body .px5 {
   #footer .submit-btn, #footer .subscribe-btn {
     margin: 0 0 0 25px;
   }
+  #footer .network img {
+    width: 143px;
+    height: 114px;
+  }
 }
 @media only screen and (min-width: 700px) {
   #footer .gold-book, #footer .newsletter {
     margin: 0 auto;
-  }
-  #footer .network img {
-    width: 143px;
-    height: 114px;
   }
 }
 @media only screen and (min-width: 1030px) {
@@ -1085,9 +1085,6 @@ body .px5 {
   #footer textarea {
     height: 287px;
   }
-  #footer .gold-book {
-    grid-area: 1/1/span 1/span 1;
-  }
   #footer .newsletter input {
     margin-bottom: 0;
   }
@@ -1101,10 +1098,11 @@ body .px5 {
     margin: 55px 0 15px 0;
   }
   #footer .newsletter .copyright {
-    grid-area: 1/1/span 1/span 1;
-    align-self: flex-start;
-    justify-self: flex-start;
-    margin: 0;
+    display: none;
+  }
+  #footer .gold-book .copyright {
+    display: block;
+    margin-top: 4rem;
   }
 }
 @media only screen and (min-width: 1360px) {
