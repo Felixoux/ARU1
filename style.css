@@ -531,7 +531,6 @@ body .px5 {
 .header ul {
   display: flex;
   align-items: center;
-  position: relative;
 }
 .header li {
   display: flex;
@@ -544,7 +543,7 @@ body .px5 {
   margin-top: -5px;
   margin-bottom: -5px;
   flex-wrap: wrap;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .header .header__home {
   height: 16px;

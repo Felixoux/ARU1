@@ -35,7 +35,6 @@
 	ul {
 		display: flex;
 		align-items: center;
-		position: relative;
 	}
 
 	li {
@@ -50,8 +49,9 @@
     	margin-top: -5px;
     	margin-bottom: -5px;
     	flex-wrap: wrap;
-    	overflow-x: hidden;
+    	overflow: hidden;
 	}
+
 
 	.header__home {
 		height: 16px;
