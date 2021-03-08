@@ -1040,6 +1040,13 @@ body .px5 {
 .footer .network img:hover, .footer .social-media img:hover {
   transform: scale(1.08);
 }
+.footer h4 svg {
+  width: 1.5em;
+  height: 1.5em;
+  top: -70%;
+  left: 65%;
+  transform: rotate(5deg);
+}
 
 @media only screen and (min-width: 440px) {
   #footer form .btn-area {
@@ -1051,6 +1058,10 @@ body .px5 {
   #footer .network img {
     width: 143px;
     height: 114px;
+  }
+  #footer h4 svg {
+    left: 45%;
+    top: -80%;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -1096,6 +1107,9 @@ body .px5 {
   #footer .gold-book .copyright {
     display: block;
     margin-top: 4rem;
+  }
+  #footer h4 svg {
+    left: 55%;
   }
 }
 @media only screen and (min-width: 1360px) {

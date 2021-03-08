@@ -642,6 +642,14 @@ $upper: 1300px;
 		}
 	}
 
+	h4 svg {
+		width: 1.5em;
+		height: 1.5em;
+		top: -70%;
+		left: 65%;
+		transform: rotate(5deg);
+	}
+
 	// == Pas enlever le truc cen dessou fin du footer !!!
 }
 
@@ -656,6 +664,10 @@ $upper: 1300px;
 		.network img {
 			width: 143px;
 			height: 114px;				
+		}
+		h4 svg {
+			left: 45%;
+			top: -80%;
 		}
 	}	
 }
@@ -711,6 +723,9 @@ $upper: 1300px;
 		.gold-book .copyright{
 			display: block;
 			margin-top: 4rem; 
+		}
+		h4 svg {
+			left: 55%;
 		}
 	
 	}
