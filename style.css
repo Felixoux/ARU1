@@ -267,10 +267,6 @@ header, section, main, footer, .container, .header, .footer, .main {
   padding-right: calc(50% - var(--container-width) / 2);
 }
 
-body {
-  word-break: break-word;
-}
-
 .ratio {
   height: 0;
   padding-bottom: 56.25%;
@@ -866,7 +862,7 @@ body .px5 {
   padding-bottom: 75px;
 }
 #accueil .video_iframe {
-  border-radius: 0 25px 0 25px;
+  border-radius: 0 25px 25px 25px;
 }
 #accueil .infos-upper {
   margin-left: 125px;
@@ -931,7 +927,6 @@ body .px5 {
   }
 }
 #accueil .actu {
-  padding-top: -12.5px;
   background: linear-gradient(to top, #1b1e3d, #1b1e3d) left bottom/100% 90px no-repeat #171933;
   grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr;
   grid-template-rows: 148px 194px 215px;

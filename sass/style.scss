@@ -610,7 +610,7 @@
 }
 
 .video_iframe{ 
-	border-radius: 0 25px 0  25px;
+	border-radius: 0 25px 25px  25px;
 }
 
 .infos-upper {
@@ -687,7 +687,6 @@
 
 // == section center == A la une == 
 .actu{
-	padding-top: 0 - 12.5px; 
 	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
 	grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr ;
 	grid-template-rows: 148px 194px 215px;
