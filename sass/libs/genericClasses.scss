@@ -83,6 +83,10 @@ header, section, main, footer, .container, .header, .footer, .main {
 	padding-right: calc(50% - var(--container-width) / 2);
 }
 
+body {
+    word-break: break-word;
+}
+
 .ratio {
     height:0;
     padding-bottom:56.25%;
@@ -365,4 +369,35 @@ span {
 
 .solid-shadow {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+// Animations 
+
+.btn-hover__effect {
+    background-color: $red;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+        &:after, &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color:$red;
+          z-index: -2;
+        }
+        &:before {
+          width: 0%;
+          background-color: darken($red, 15%);
+          transition: all .3s;
+          z-index: -1;
+        }
+        &:hover {
+          &:before {
+            width: 100%;
+        }
+    }
 }

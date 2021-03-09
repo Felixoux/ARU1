@@ -323,24 +323,22 @@
 
 	.submit-btn {
 		background-color: $contrast;
-		&:hover {
-			background-color: $contrast25;
+		&:after, &:before {
+			background-color:$contrast;
 		}
-		&:active {
-			background-color: $contrast;
+		&:before {
+			background-color: darken($contrast, 15%);
 		}
 	}
 
 	.subscribe-btn {
 		background-color: $green;
-		&:hover {
-			background-color:$green25 ;
+		&:after, &:before {
+			background-color:$green;
 		}
-		&:active {
-			background-color:$green ;
+		&:before {
+			background-color: darken($green, 15%);
 		}
-	
-		
 	}
 
 	.network {

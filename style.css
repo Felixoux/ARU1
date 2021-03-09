@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -267,6 +267,10 @@ header, section, main, footer, .container, .header, .footer, .main {
   padding-right: calc(50% - var(--container-width) / 2);
 }
 
+body {
+  word-break: break-word;
+}
+
 .ratio {
   height: 0;
   padding-bottom: 56.25%;
@@ -502,6 +506,33 @@ body .px5 {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.btn-hover__effect {
+  background-color: #f25353;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-hover__effect:after, .btn-hover__effect:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f25353;
+  z-index: -2;
+}
+.btn-hover__effect:before {
+  width: 0%;
+  background-color: #e71111;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.btn-hover__effect:hover:before {
+  width: 100%;
+}
+
 /*
 ../dart-sass/sass sass/style.scss style.css --watch
  */
@@ -697,20 +728,20 @@ body .px5 {
 #footer .submit-btn {
   background-color: #5396e7;
 }
-#footer .submit-btn:hover {
-  background-color: #4869ee3f;
-}
-#footer .submit-btn:active {
+#footer .submit-btn:after, #footer .submit-btn:before {
   background-color: #5396e7;
+}
+#footer .submit-btn:before {
+  background-color: #1d6ed0;
 }
 #footer .subscribe-btn {
   background-color: #41cf7c;
 }
-#footer .subscribe-btn:hover {
-  background-color: #41cf7c3f;
-}
-#footer .subscribe-btn:active {
+#footer .subscribe-btn:after, #footer .subscribe-btn:before {
   background-color: #41cf7c;
+}
+#footer .subscribe-btn:before {
+  background-color: #279c58;
 }
 #footer .network {
   position: absolute;
