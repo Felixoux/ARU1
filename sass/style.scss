@@ -605,29 +605,22 @@
 .upper-container {
 	justify-content: space-between;
 	align-items: flex-start;
-	padding:  $space-section  0 ($space-section / 2) 0 ;
-}
-
-.title_video span{
-	color: $contrast;
+	padding-top:  ($space-section / 1.2);
+	padding-bottom: ($space-section / 2);
 }
 
 .video_iframe{ 
-	margin-top: $gap;
 	border-radius: 0 25px 0  25px;
 }
 
 .infos-upper {
-	margin-left: $gap * 5;
+	margin-left: 5 * $gap;
 }
 
 .infos_square{
-	max-width: 850px;
-	min-width: 300px;
 	min-height: 223px; 
 	max-height: 499px;
 	padding: 1em 1em 0 2em;
-	margin-top: $gap;
 	border: 0.8px solid $border; 
 	border-radius: 4px;  
 	background: $cardbg;
@@ -639,9 +632,6 @@
 			color: $pink;
 			text-decoration: underline;
 		}
-		span {
-			color: $red;
-		}
 	}
 }
 
@@ -649,7 +639,6 @@
 		
 	.upper-container {
 		flex-flow: nowrap column;
-		max-width: 1100px;
 		align-items: center;
 		font-size: 16px;
 		h2 {
@@ -685,21 +674,15 @@
 		}
 
 		.infos-upper {
-			margin-top: 100px;
+			margin-top: calc(#{$space-section} / 1.2);
 			margin-left: 0;
-			align-self: center;
-			padding: 0 1em;
 		}
 
 		.infos_square {
 			max-height: 250px;
-			min-width: 10%;
-			max-width: 600px;
+			max-width: 650px;
 		}
 	}	
-	.button_scroll {
-		display: none;
-	}
 }
 
 // == section center == A la une == 

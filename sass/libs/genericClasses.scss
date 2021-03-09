@@ -241,6 +241,10 @@ span {
     color: $contrast;
 }
 
+.alert {
+    color: $red;
+}
+
  @for $i from 1 to 6 {
     
 // body .p#{$i} {
