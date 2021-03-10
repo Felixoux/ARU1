@@ -616,8 +616,8 @@ body .px5 {
   color: #5396e7;
 }
 .header svg {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: calc(1 * 8px);
 }
 .header .header__burger button {
