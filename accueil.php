@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="shortcut icon" href="img/svg/logo-aru1.svg">
+    <link rel="shortcut icon" href="img/svg/logo-aru1-morgane.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ARU1 - Bêta</title>
@@ -13,7 +13,7 @@
         <nav class="header flex relative">
             <ul class="header-nav">
                 <li class="header__home flex">
-                    <a href="index.html">
+                    <a href="index.php">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" id="home">
                             <path fill="currentColor" d="M0 4v7a1 1 0 001 1h3V8h4v4h3a1 1 0 001-1V4L6 0 0 4z"></path>
                         </svg>
