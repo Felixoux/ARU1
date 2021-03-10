@@ -12,9 +12,10 @@
 .header {
 	padding-top: calc(6 * #{$space});
     padding-bottom: calc(3 * #{$space});
-	color: $letterscolor;
+	color: $textnavbar;
 	line-height: 1;
-	font-size: 16.5px;
+	font-size: 18.5px;
+	font-family:'inter_medium';
 	overflow-y: visible;
 
 	&::after {
@@ -72,12 +73,13 @@
 	}
 
 	.header-side {
-		margin-right: calc(-4 * #{$space});
+		margin-right: calc(-2 * #{$space});
 		margin-left: calc(2 * #{$space});
 	}
 
 	.header-side>li {
 		margin-right: calc(2 * #{$space});
+		color: $textnavbar25;
 	}
 
 	.header__burger {
@@ -87,7 +89,6 @@
 
 	a {
 		transition: color .3s;
-		font-family:'inter_medium';
 	}
 
 	a:hover, a[aria-current], button:hover {
