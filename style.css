@@ -71,25 +71,19 @@ textarea {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("fonts/Inter-Regular.eot");
-  src: url("fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Inter-Regular.woff2") format("woff2"), url("fonts/Inter-Regular.woff") format("woff"), url("fonts/Inter-Regular.ttf") format("truetype"), url("fonts/Inter-Regular.svg#Inter-Regular") format("svg");
+  font-family: "inter";
+  src: url(fonts/Inter-Regular.ttf) format("truetype");
   font-weight: 400;
-  font-display: swap;
 }
 @font-face {
-  font-family: "Inter_medium";
-  src: url("fonts/Inter-Medium.eot");
-  src: url("fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Inter-Medium.woff2") format("woff2"), url("fonts/Inter-Medium.woff") format("woff"), url("fonts/Inter-Medium.ttf") format("truetype"), url("fonts/Inter-Medium.svg#Inter-Medium") format("svg");
+  font-family: "inter_medium";
+  src: url(fonts/Inter-Medium.ttf) format("truetype");
   font-weight: 500;
-  font-display: swap;
 }
 @font-face {
-  font-family: "Inter_bold";
-  src: url("fonts/Inter-Bold.eot");
-  src: url("fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Inter-Bold.woff2") format("woff2"), url("fonts/Inter-Bold.woff") format("woff"), url("fonts/Inter-Bold.ttf") format("truetype"), url("fonts/Inter-Bold.svg#Inter-Bold") format("svg");
+  font-family: "inter_bold";
+  src: url(fonts/Inter-Bold.ttf) format("truetype");
   font-weight: 700;
-  font-display: swap;
 }
 :root {
   --container-padding:20px;
@@ -545,10 +539,9 @@ body .px5 {
 .header {
   padding-top: calc(6 * 8px);
   padding-bottom: calc(3 * 8px);
-  color: #E7F8FF;
+  color: #D4DCFF;
   line-height: 1;
-  font-size: 18.5px;
-  font-family: "inter_medium";
+  font-size: 16.5px;
   overflow-y: visible;
 }
 .header::after {
@@ -598,12 +591,11 @@ body .px5 {
   margin-left: 0;
 }
 .header .header-side {
-  margin-right: calc(-2 * 8px);
+  margin-right: calc(-4 * 8px);
   margin-left: calc(2 * 8px);
 }
 .header .header-side > li {
   margin-right: calc(2 * 8px);
-  color: #8491C7;
 }
 .header .header__burger {
   display: none;
@@ -611,6 +603,7 @@ body .px5 {
 }
 .header a {
   transition: color 0.3s;
+  font-family: "inter_medium";
 }
 .header a:hover, .header a[aria-current], .header button:hover {
   color: #5396e7;
