@@ -8,7 +8,7 @@
 /*
 ../dart-sass/sass sass/style.scss style.css --watch
  */
-// == Header ==
+// == Header-nav==
 .header {
 	padding-top: calc(6 * #{$space});
     padding-bottom: calc(3 * #{$space});
@@ -72,7 +72,7 @@
 	}
 
 	.header-side {
-		margin-right: calc(-2 * #{$space});
+		margin-right: calc(-4 * #{$space});
 		margin-left: calc(2 * #{$space});
 	}
 
@@ -308,7 +308,8 @@
 		border-radius: 25px;
 		padding: 0.24em 2.2em;
 		color: white;
-		cursor: pointer;
+		transition: all .3s;
+		cursor:pointer;
 	}
 
 	.cancel-btn {
@@ -341,6 +342,10 @@
 		}
 	}
 
+	.copyright {
+		margin-top: 6.5rem;
+	}
+
 	.network {
 		position: absolute;
 		bottom: 22px;
@@ -349,10 +354,6 @@
 		img {
 			border-radius: 4px;
 		}
-	}
-
-	.copyright {
-		margin-top: 6.5rem;
 	}
 
 	.network img, .social-media img{
@@ -368,7 +369,7 @@
 		height: 1.5em;
 		top: -70%;
 		left: 65%;
-		transform: rotate(5deg);
+		transform: rotate(10deg);
 	}
 
 	// == Pas enlever le truc cen dessou fin du footer !!!
@@ -765,7 +766,8 @@
 		border: 1px solid $border;
 		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 50px;
-		z-index: 102;
+		z-index:100;
+		transition: all .3s;
 	}
 }
 
@@ -928,15 +930,10 @@ section.bottom{
 .square-form-invoid {
 	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
 	left: -140px;
-	bottom: 225px;
+	bottom: 550px;
 	transform: rotate(20deg);
 }
 
-.paralleleograme {
-	clip-path: polygon(62% 49%, 100% 73%, 100% 100%, 63% 78%);
-	right: 0;
-	bottom: 625px;
-}
 
 
 
