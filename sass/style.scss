@@ -687,96 +687,68 @@
 }
 
 // == section center == A la une == 
-.actu{
+section.actu{
 	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
-	grid-template-columns: 1fr 90px 90px 240px 2.5fr 330px 2.5fr 330px 1fr 1fr ;
-	grid-template-rows: 148px 194px 215px;
-	grid-gap: 0;
+	height: 530px;
+	margin: calc(#{$space-section} / 10) 0;
 }
-.actu_title{
-	grid-area: 1 / 2 / 2 / span 2;
-	justify-self: flex-start;
-	padding-top: 25px;
+
+.actu .container {
+	height: auto;
+	padding-top: 28px;
 }
-.scribe{
-	grid-area: 1 / 3 / 1 / 3;
-	justify-self: flex-end;
-	padding-top: $gap - 10px;
-}
-.arrow_previous{
-	grid-area:2 / 1 / 2 / 1;
+
+.card-actu{
 	align-self: flex-end;
-	justify-self: flex-end;
-}
-
-.container-cards {
-	grid-area:2 / 2 / span 2 / span 8;
-	justify-content: space-around;
-}
-
-.card-actu_little1, .card-actu_little2, .card-actu_little3{
-	display: grid;
-	grid-template-columns: 324px 1176px;
-	grid-template-rows: 168px 24px 172px 38px 7px;
-	grid-gap: 0;
+	flex-direction: column;
 	width:330px;
 	height: 407px;
 	.img-card{
-		grid-area:1 / 1 / span 2 / 1 ;
+		flex-shrink: 0;
 		width: 100%;
-		height: 192px;
+		height: 192px !important;
 		background-image: url(img/card-test.jpg);
 		background-size: cover;
 		border-radius: 25px;
-		z-index: 150;
+		z-index: 10;
+		
 	}
 	.text-bg_card{
-		grid-area: 2 / 1 / span 2 / span 1;
+		flex-flow: column;
+		flex-shrink: 0;
+		transform: translateY(-25px);
 		margin: 0 0.55em;
-		min-height: 232px;
-		background-color: $cardbg;
+		height: 232px;
 		justify-self: center;
+		background-color: $cardbg;
 		border: 1px solid $border;
 		border-radius: 25px;
 		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-		z-index: 99;
 		font-size: 18.5px;
 	}
 	.text-bg_card p {
-		padding: 45px 2% 0 5%;
 		align-self: flex-start;
+		padding: 45px 2% 0 5%;
 	}
 	.line {
-		grid-area: 4 / 1 / span 1 / span 1;
-		width: 125px;
-		height: 0;
-		border: 1px solid $linedark;
-		z-index: 101;
-		border-radius: 25px;
 		align-self: center;
-		justify-self: center;
+		margin-bottom: 0.35em;
+		width: 125px;
+		border: 1px solid $linedark;
+		border-radius: 25px;
 	}
 	.btn_more{
-		grid-area: 4 / 1 / span 2 / 1;
+		flex-shrink: 0;
 		align-self: flex-end;
 		justify-self: flex-end;	
+		transform: translateY(-65px);
 		width: 45px;
 		height: 45px;
 		background: $cardbg;
 		border: 1px solid $border;
 		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 50px;
-		z-index:100;
-		transition: all .3s;
-	}
-}
-
-.btn_more:hover {
-	transform: scale(1.15);
-}
-@keyframes rotate {
-	100% {
-	transform: rotate(1turn);
+		z-index: 10;
 	}
 }
 
@@ -790,47 +762,27 @@
 	align-self: flex-end;
 	justify-self: flex-start;
 }
-/*
-.card-actu_little1 .text-bg_card{   //exemple de pour quand js deploy
-	justify-self: flex-start;
-	width: 70vw;
-	min-height: 280px;
-	z-index: 120; 
-}
-*/
-// Media query A la une 
-$upper: 1300px;
 
-@media #{$upperBreak} {
-	.card-actu_little3 {
-		display: none;
-	}
-	.container-cards {
-		width: 85%;
+// Media query A la une 
+@media only screen and (max-width:1100px) {
+	.actu .container {
 		justify-content: space-around;
-		margin: 0 auto;
+		.card-actu.item2 {
+			display: none;
+		}
 	}
+}
+
+@media only screen and (max-width:750px) {
 	.actu {
-		grid-template-columns: 1fr 90px 90px 240px 5fr 330px 1fr 1fr ;
+		.card-actu.item3 {
+			display: none;
+		}
 	}
 }
-// maybe en display flex pour le petit ecran ? Ca serait plus simple non ?
-@media #{$actuBreak} {
-	.card-actu_little2 {
-		display: none;
-	}
-	.container-cards {
-		justify-content: center;
-		margin: 0 auto;
-	}
-	.actu .arrow_previous {
-		grid-area: 2 / 2 / span 1 / span 1;
-	}
-	.actu .arrow_next {
-		grid-area: 2 / 6 / span 1 / span 1;
-		justify-self: flex-end;
-	}
-}
+
+
+
 
 // == section bottom ==
 section.bottom{

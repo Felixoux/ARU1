@@ -26,6 +26,3 @@ const navSlide = () => {
 navSlide();
 
 // A la une 
-
-// if ==> 
-
