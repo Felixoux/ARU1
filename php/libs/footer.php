@@ -27,8 +27,8 @@
                 </form>  
                 <div class="social-media">
                     <h4 class="mt-1">Nous suivre sur les réseaux</h4>
-                    <a href="https://www.youtube.com/channel/UCDnbDtLrXeVtmkuFRjvf46A" target="_blank"><img width="85" height="60" src="/aru1/img/svg/youtube-logo.svg" alt="Logo-youtube"></a>
-                    <a href="https://www.facebook.com/pages/category/Nonprofit-Organization/Les-Amis-de-LAru1-104390721107594/" target="_blank"><img class="m-2" width="60" height="60" src="/aru1/img/svg/facebook.svg" alt="Logo-facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCDnbDtLrXeVtmkuFRjvf46A" target="_blank"><img width="85" height="60" src="/img/svg/youtube-logo.svg" alt="Logo-youtube"></a>
+                    <a href="https://www.facebook.com/pages/category/Nonprofit-Organization/Les-Amis-de-LAru1-104390721107594/" target="_blank"><img class="m-2" width="60" height="60" src="/img/svg/facebook.svg" alt="Logo-facebook"></a>
                 </div>
                 <div class="copyright">
                     <p class="uppercase">© 2021 aru1</p>
@@ -36,6 +36,6 @@
             </div>    
             <div class="network flex">
                 <p class=" mt-1">Notre Réseau</p>
-                <a href="http://www.wallonie-bruxelles-enseignement.be/" target="_blank"><img width="95" height="76" src="/aru1/img/logo-federation.jpg" alt="Logo-Federation"></a>
+                <a href="http://www.wallonie-bruxelles-enseignement.be/" target="_blank"><img width="95" height="76" src="/img/logo-federation.jpg" alt="Logo-Federation"></a>
             </div> 
         </footer>
