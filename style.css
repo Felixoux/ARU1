@@ -851,6 +851,23 @@ body .px5 {
     grid-column-gap: 327px;
   }
 }
+#index {
+  background-color: #1b1e3d;
+}
+#index h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#index main > div {
+  margin-top: 20px;
+}
+#index main div {
+  margin-bottom: 5rem;
+}
+#index main img {
+  border-radius: 15px;
+}
+
 #accueil {
   background-color: #1b1e3d;
   width: 100%;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ARU1 - Bêta</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body id="accueil" class="relative">
 <!-- Nav  -->
@@ -207,7 +207,7 @@
                 </div>
          </section>
 <!-- Footer -->
-        <?php require 'php/libs/footer.php'; ?>
+        <?php require '../php/libs/footer.php'; ?>
 <!-- Forms  -->
         <div class="triangle-bg"></div>
         <div class="square-bg"></div>

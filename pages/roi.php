@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>R.O.I</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body id="roi-page">
     <div class="page-wrapper">
@@ -200,7 +200,7 @@
             </div>
         </div>
 <!-- Footer -->
-<?php require 'php/libs/footer.php'; ?> 
+<?php require '../php/libs/footer.php'; ?> 
     </div>
 </body>
 </html>
