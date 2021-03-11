@@ -664,9 +664,10 @@ body .px5 {
 }
 
 #footer {
-  background-color: #171933;
   padding-top: 75px;
   padding-bottom: 75px;
+  background-color: #171933;
+  border-top: 2px solid #4869ee3f;
 }
 #footer .gold-book, #footer .newsletter {
   max-width: 528px;

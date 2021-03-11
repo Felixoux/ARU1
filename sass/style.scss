@@ -248,9 +248,11 @@
 
 // == Footer == 
 #footer {
-	background-color: $bgdark;
 	padding-top: ($space-section / 2);
 	padding-bottom: ($space-section / 2);
+	background-color: $bgdark;
+	border-top: 2px solid $contrast25;
+	
 
 	.gold-book, .newsletter {
 		max-width: 528px;
