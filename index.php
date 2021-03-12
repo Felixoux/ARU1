@@ -8,25 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="index">
-    <div class="page-wrapper">
-        <header class="mt-2"><img src="img/big-photo.jpg" alt="L'école">
-        </header>
-        <main>
-            <div>
-                <h3>Ecole fondamentale</h3>
-                <img  src="img/Fondamental-menu.jpg" alt="ecole fondamentale">
+    <header class="mt-2"><img src="img/big-photo.jpg" alt="L'école">
+    </header>
+    <main>
+        <div>
+            <h3>Ecole fondamentale</h3>
+            <div class="container-overflow">
+                <a href="http://www.la-petite-ecole.be"><img  src="img/Fondamental-menu.jpg" alt="ecole fondamentale"></a>
             </div>
-            <div>
-                <h3>Ecole secondaire</h3>
-                <img src="img/Secondaire-menu.jpg" alt="ecole secondaire">
+        </div>
+        <div>
+            <h3>Ecole secondaire</h3>
+            <div class="container-overflow">
+                <a href="pages/accueil.php"><img src="img/Secondaire-menu.jpg" alt="ecole secondaire"></a>
             </div>
-            <div>
-                <h3>Internat</h3>
-                <img src="img/Internat-menu.jpg" alt="internat">
+        </div>
+        <div>
+            <h3>Internat</h3>
+            <div class="container-overflow">
+                <a href="pages/internat.php"> <img src="img/Internat-menu.jpg" alt="internat"></a>
             </div>
-        </main>
-        <footer class="hidden">
-            <h3 >Contact</h3>
+        </div>
+    </main>
+    <footer class="hidden">
+            <h3 >Contacts</h3>
             <div class="contact-1 modern-shadow pt-1">
                 <h4>Section fondamentale</h4>
                 <p>
@@ -60,7 +65,6 @@
                     Fax : 02/ 372 38 42
                 </p>
             </div>
-        </footer> 
-    </div>
+    </footer> 
 </body>
 </html>

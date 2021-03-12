@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body id="accueil" class="relative">
-<!-- Nav  -->
-    <div class="page-wrapper">       
+<!-- Nav  -->       
         <nav class="header flex relative">
             <ul class="header-nav">
                 <li class="header__home flex">
@@ -96,7 +95,7 @@
                 </li>
             </ul>
         </nav>
-<!-- Upper -->
+        <!-- Upper -->
         <section class="upper-container flex">
             <div class="video-show">
                 <h2 class="title_video"><span>Présentation</span> de notre école</h2>
@@ -116,7 +115,7 @@
             </div>
         
         </section>
-<!-- Actu  -->
+        <!-- Actu  -->
         <section class="actu">  
             <h3 class="float-l mt-2">A la une</h3>
             <svg class="scribe float-l m-2 mt-1" width="50" height="50"  version="1.1" baseProfile="tiny" id="Calque_1"
@@ -152,7 +151,7 @@
                         <div class="line"></div>
                     </div>          
                     <div class="btn_more flex-center">
-                        <img class="show-more-infos" src="img/svg/plus.svg" alt="more-infos" width="20" height="20">
+                        <img class="show-more-infos" src="/img/svg/plus.svg" alt="more-infos" width="20" height="20">
                     </div>
                 </div>
                 <div class="card-actu flex item2">
@@ -167,7 +166,7 @@
                         <div class="line"></div>
                     </div>          
                     <div class="btn_more flex-center">
-                        <img class="show-more-infos" src="img/svg/plus.svg" alt="more-infos" width="20" height="20">
+                        <img class="show-more-infos" src="/img/svg/plus.svg" alt="more-infos" width="20" height="20">
                     </div>
                 </div>
                 <div class="card-actu flex item3">
@@ -182,12 +181,12 @@
                         <div class="line"></div>
                     </div>          
                     <div class="btn_more flex-center">
-                        <img class="show-more-infos" src="img/svg/plus.svg" alt="more-infos" width="20" height="20">
+                        <img class="show-more-infos" src="/img/svg/plus.svg" alt="more-infos" width="20" height="20">
                     </div>
                 </div>  
             </div>     
         </section>
-<!-- Bottom  -->
+        <!-- Bottom  -->
         <section class="bottom flex">
                 <div class="card-inscriptions flex">
                     <h3>Inscriptions</h3>
@@ -202,17 +201,15 @@
                     <div class="img"></div>
                     <p>Une plateforme pour que les elèves et les parents puissent 
                         voir les bulletins, documents etc... </p>
-                    <p>Aller sur le site de l’école en ligne en <a href="https://www.youtube.com/watch?v=COMaG7pObgE&list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbA&start_radio=1" target="_blank">cliquant ici</a></p>
+                    <p>Aller sur le site de l’école en ligne en <a href="https://aru1.ecoleenligne.be" target="_blank">cliquant ici</a></p>
                     <div class="hr"></div>
                 </div>
          </section>
-<!-- Footer -->
+        <!-- Footer -->
         <?php require '../php/libs/footer.php'; ?>
-<!-- Forms  -->
+        <!-- Forms  -->
         <div class="triangle-bg"></div>
-        <div class="square-bg"></div>
-        <div class="square-form-invoid"></div>
-    </div>               
+        <div class="square-bg"></div>           
 <!-- Scripts  -->
     <script src="js/app.js"></script>
 </body>

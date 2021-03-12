@@ -38,4 +38,5 @@
                 <p class=" mt-1">Notre Réseau</p>
                 <a href="http://www.wallonie-bruxelles-enseignement.be/" target="_blank"><img width="95" height="76" src="/img/logo-federation.jpg" alt="Logo-Federation"></a>
             </div> 
+            <div class="square-form-invoid"></div> 
         </footer>
