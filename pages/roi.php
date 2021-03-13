@@ -12,7 +12,7 @@
         <div class="container">
             <div class="summary-roi">
                 <h2 class="pt-2 uppercase">r.o.i</h2>
-                <h4 class="pt-1">Le reglement peut être lu ici même sur le site ou sous forme de pdf en <a href="docs/pdf/ROI.pdf" target="_blank">cliquant ici</a></h4>
+                <h4 class="pt-1">Le reglement peut être lu ici même sur le site ou sous forme de pdf en <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h4>
             </div>
             <div class="roi">
                 <h2 class="pt-2 uppercase">reglement d'ordre <span>interieur</span></h2>
