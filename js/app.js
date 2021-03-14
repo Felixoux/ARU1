@@ -1,7 +1,7 @@
 // Deroulement effect navbar
-var liParent = document.querySelector('.header-nav .deroulant');
-var liSlide = document.querySelector('.header-nav .sous');
+$liParent = document.querySelector('.header-nav li');
+$liSlide = document.querySelector('.header-nav .deroulant');
 
-    liParent.addEventListener('mouseover', () => {
-    $liSlide.classList.toogle(".active");
+$liParent.addEventListener('mouseover', () => {
+    $liSlide.classList.add(".active");
 })
