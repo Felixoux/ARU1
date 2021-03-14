@@ -49,10 +49,10 @@
                     <ul class="sous drop2">
                         <li class="invisible"></li>
                         <li><a href="#">Communications</a></li>
-                        <li><a href="roi.php">Agenda</a></li>
+                        <li><a href="#">Agenda</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Grille d'option</a></li>
-                        <li><a href="#">Cours en ligne</a></li>
+                        <li><a href="coursenligne.php">Cours en ligne</a></li>
                     </ul>
                 </li>
                 <li class="relative">

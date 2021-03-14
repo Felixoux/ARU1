@@ -1251,5 +1251,50 @@ body .px5 {
     overflow: auto;
   }
 }
+#coursenligne_page {
+  background-color: #171933;
+  width: 100%;
+  height: 100vh;
+}
+#coursenligne_page .container-cel {
+  display: flex;
+  justify-content: center;
+}
+#coursenligne_page .coursenligne {
+  background-color: #1b1e3d;
+  border: 1px solid #2a2e5e;
+  border-radius: 10px;
+  margin: 150px 1em 200px 1em;
+}
+#coursenligne_page .coursenligne p, #coursenligne_page .coursenligne h2, #coursenligne_page .coursenligne h3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+#coursenligne_page .coursenligne h3 {
+  font-size: 25px;
+}
+#coursenligne_page .coursenligne p {
+  line-height: 1.5em;
+  font-size: 20px;
+}
+#coursenligne_page .coursenligne :nth-child(3) {
+  margin: 1.3em 0 0.5em;
+}
+#coursenligne_page .coursenligne :last-child {
+  margin-bottom: 2em;
+}
+#coursenligne_page .coursenligne a {
+  color: #D68FD6;
+}
+#coursenligne_page .coursenligne a:hover {
+  color: #c257c2;
+}
+
+@media only screen and (max-width: 1020px) {
+  #coursenligne_page .coursenligne p, #coursenligne_page .coursenligne h2, #coursenligne_page .coursenligne h3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

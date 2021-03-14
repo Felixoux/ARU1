@@ -952,3 +952,64 @@ section.bottom{
 		}
 	}
 }
+
+//online-class
+#coursenligne_page {
+	background-color: $bgdark; 
+	width: 100%; 
+	height: 100vh;
+
+	.container-cel {
+		display: flex;
+		justify-content:center;
+	}
+
+	.coursenligne {
+		background-color: $bglight;
+		border: 1px solid $border;
+		border-radius: 10px;
+		margin: $space-section 1em 200px 1em;
+
+		p, h2, h3{
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+
+		h3 {
+			font-size: 25px;
+		}
+
+		p {
+			line-height: 1.5em;
+			font-size: 20px;
+		}
+
+		:nth-child(3) {
+			margin: 1.3em 0 0.5em;
+		}
+
+		:last-child {
+			margin-bottom: 2em;
+		}
+
+		a{
+			color: $pink;
+		}
+
+		a:hover {
+			color: darken($pink, 15%);
+		}
+	}
+}
+
+// Media query Cours en ligne
+@media only screen and (max-width:1020px) {
+	#coursenligne_page{
+		.coursenligne {
+			p, h2, h3 {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}
+	}
+}
