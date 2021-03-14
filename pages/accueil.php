@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="shortcut icon" href="img/svg/logo-aru1-morgane.svg">
+    <link rel="shortcut icon" href="/img/svg/logo-aru1-morgane.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ARU1 - Bêta</title>
@@ -12,14 +12,14 @@
         <nav class="header flex relative">
             <ul class="header-nav">
                 <li class="header__home flex">
-                    <a href="index.php">
+                    <a href="accueil.php">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" id="home">
                             <path fill="currentColor" d="M0 4v7a1 1 0 001 1h3V8h4v4h3a1 1 0 001-1V4L6 0 0 4z"></path>
                         </svg>
                     </a>
                 </li>
                 <li class="relative">
-                    <a class="building" href="#">
+                    <a class="line" href="#">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                    viewBox="0 0 31.666 31.666" style="enable-background:new 0 0 31.666 31.666;"
 	                    xml:space="preserve">
@@ -33,19 +33,27 @@
                     </svg>
                     Notre établissement
                     </a>
-                    <ul class="deroulant">
+                    <ul class="sous">
                         <li class="invisible"></li>
                         <li><a href="#">Le personnel</a></li>
-                        <li><a href="#">R.O.I.</a></li>
+                        <li><a href="roi.php">R.O.I.</a></li>
                         <li><a href="#">Nos projets</a></li>
                     </ul>
                 </li>
                 <li class="relative">
-                    <a class="pratique" href="#">
+                    <a class="line line2" href="#">
                         <svg height="325pt" viewBox="0 0 325 325.37515" width="325pt" xmlns="http://www.w3.org/2000/svg"><path fill=currentColor d="m114.6875 284.675781-73.800781-73.800781 178.5-178.5 73.800781 73.800781zm-80.699219-60.800781 67.699219 67.699219-101.5 33.800781zm281.898438-140.300781-12.800781 12.800781-73.898438-73.898438 12.800781-12.800781c12.894531-12.902343 33.804688-12.902343 46.699219 0l27.199219 27.199219c12.800781 12.9375 12.800781 33.765625 0 46.699219zm0 0"/>
                         </svg>
                     En pratique 
                     </a>
+                    <ul class="sous drop2">
+                        <li class="invisible"></li>
+                        <li><a href="#">Communications</a></li>
+                        <li><a href="roi.php">Agenda</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Grille d'option</a></li>
+                        <li><a href="#">Cours en ligne</a></li>
+                    </ul>
                 </li>
                 <li class="relative">
                     <a class="avtivity" href="#">
@@ -55,7 +63,7 @@
                     </a>
                 </li>
                 <li class="relative">
-                    <a class="partners" href="#">
+                    <a class="line line3" href="#">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                        viewBox="0 0 484.027 484.027" style="enable-background:new 0 0 484.027 484.027;" xml:space="preserve">
 			                <path fill="currentColor" d="M399.685,183.158c35.355,0,63.785-28.517,63.785-63.699c0-35.204-28.452-63.763-63.785-63.763
@@ -70,6 +78,12 @@
                         </svg>
                     Nos partenaires 
                     </a>
+                    <ul class="sous drop3">
+                        <li class="invisible"></li>
+                        <li><a href="#">P.M.S</a></li>
+                        <li><a href="roi.php">L'aparu1</a></li>
+                        <li><a href="#">Les amis</a></li>
+                    </ul>
                 </li>
                 <li class="relative">
                     <a class="contacts" href="#">
@@ -78,13 +92,6 @@
                     Contacts
                     </a>
                 </li>
-                <!-- <li><a href="#">
-                    <svg enable-background="new 0 0 433.664 433.664" version="1.1" viewBox="0 0 433.66 433.66" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="m229.38 271.62c-4.096 2.56-8.704 3.584-12.8 3.584s-8.704-1.024-12.8-3.584l-203.78-124.42v165.38c0 35.328 28.672 64 64 64h305.66c35.328 0 64-28.672 64-64v-165.38l-204.29 124.42z"/>
-                        <path fill="currentColor" d="m369.66 57.088h-305.66c-30.208 0-55.808 21.504-61.952 50.176l215.04 131.07 214.53-131.07c-6.144-28.672-31.744-50.176-61.952-50.176z"/>
-                </svg>
-                
-                    Newsletter</a></li>   -->
             </ul>
             <ul class="header-side">
                 <li>En pratique</li>
@@ -100,7 +107,7 @@
         <section class="upper-container flex">
             <div class="video-show">
                 <h2 class="title_video"><span>Présentation</span> de notre école</h2>
-                <div class="ratio-video"><iframe width="810" height="499" class="video_iframe mt-1" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="ratio-video"><iframe width="810" height="499" class="video_iframe mt-1" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
             <div class="infos-upper">
                 <h2 class="title_infos">Infos importantes</h2>
