@@ -13,79 +13,74 @@
 	padding-top: calc(6 * #{$space});
     padding-bottom: calc(3 * #{$space});
 	color: $textnavbar;
-	line-height: 1;
 	font-size: 18.5px;
 	font-family:'inter_medium';
 
 	&::after {
 		content: "";
 		position: absolute;
-		width: 100%;
-		left: 0;
-		right: 0;
 		bottom: 0;
+		width: var(--container-width);
 		background-color: $border;
-		max-width: var(--container-width);
-		margin-left: auto;
-		margin-right: auto;
 		height: 1px;
 		z-index: -2;
 	}
 
-	ul {
+	ul, li  {
 		display: flex;
 		align-items: center;
-	}
-
-	li {
-		display: flex;
-		align-items: center;
-	}
-	
-	.header-nav > li a {
-		z-index: 2;
-	}
-
-	.deroulant {
-		display: none;
-	}
-
-	.deroulant  {
-		display: flex;
-		justify-content:space-around ;
-		flex-direction: column;
-		position: absolute;
-		top: 20px;
-		width: 225px;
-		height: 250px;
-		background-color: $bglight;
-		border: 1px solid $border;
-		border-radius: 5px;
-		transform: translate(-8px, -40px);
-		z-index: 0;
-		.invisible {
-			padding-top: 20px;
-		}
-	}
-
-	.building::after {
-		content: '';
-		position: absolute;
-		width: 50px;
-		top: 45px;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: $border;
-		margin-left: auto;
-		margin-right: auto;
-		height: 1px;
 	}
 
 	.header-nav {
 		display: flex;
 		height: 26px;
     	flex-wrap: wrap;
+		& > li a {
+			z-index: 2;
+		}
+	}
+	
+	.sous {	display: none;  }
+
+	ul li:hover .sous  {
+		opacity: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content:space-around ;
+		position: absolute;
+		top: 20px;
+		width: 250px;
+		height: 250px;
+		background-color: $bglight;
+		border: 1px solid $border;
+		border-radius: 5px;
+		transform: translate(-22px, -40px);
+		z-index: 0;
+		.invisible {
+			padding-top: 20px;
+		}
+	}
+
+	ul li:hover .drop2 {
+		width: 200px;
+		height: 370px;
+		transform: translate(-34.5px, -40px);
+	}
+	ul li:hover .drop3 {
+		width: 225px;
+		transform: translate(-28px, -40px);
+	}
+
+	.line::after {
+		content: '';
+		position: absolute;
+		width: 90%;
+		top: 45px;
+		left: 0;
+		right: 0;
+		background-color: $border;
+		margin: 0 auto;
+		height: 1px;
 	}
 
 
@@ -104,7 +99,7 @@
 	}
 
 	.header__home+li {
-		margin-left: 0;
+		margin-left: 0px;
 	}
 
 	.header-side {
@@ -124,9 +119,12 @@
 
 	a {
 		transition: color .3s;
+		&:hover {
+			color: $contrast;
+		}
 	}
 
-	a:hover, a[aria-current], button:hover {
+	button:hover {
 		color: $contrast;
 	}
 
@@ -178,8 +176,6 @@
 		font-size: 0;
 		text-indent: -3000px
 	}
-
-	
 
 	// media query header !!!
 
@@ -258,35 +254,25 @@
 	// }
 	
 
-	
-
-
-
-		.nav__scroll {
-			position: absolute;
-			flex-flow: column;
-			justify-content: space-around;
-			align-items: center;
-			top: 0px;
-			left: 0px;
-			right: 0;
-			bottom: 0;
-			z-index: 1000;
-			width: 165px;
-			height: 180px;
-		}
-
-
-
-
-
-
-
-
 
 
 	// == ne pas enlever ce crochet en dessous !!!! FIN HEADER NAV 
 }
+
+//header 
+#header { 
+	background-color:$bglight;
+	width: 100%;
+	height: 100vh;
+	// nav {
+	 	//
+	// }
+
+
+// ne pas enlever crochet fin header !!!
+}
+
+
 // == Footer == 
 #footer {
 	padding-top: ($space-section / 2);
@@ -509,6 +495,8 @@
 // == Index ==
 #index {
 	background-color:$bglight;
+	width: 100%;
+	height: 100vh;
 
 	main {
 		h3 {
@@ -965,7 +953,7 @@ section.bottom{
 	}
 }
 
-// Cours en ligne
+//online-class
 #coursenligne_page {
 	background-color: $bgdark; 
 	width: 100%; 
@@ -991,9 +979,7 @@ section.bottom{
 			font-size: 25px;
 		}
 
-		
-		p{
-
+		p {
 			line-height: 1.5em;
 			font-size: 20px;
 		}

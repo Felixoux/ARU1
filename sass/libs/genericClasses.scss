@@ -74,7 +74,7 @@ a {
     position: relative;
 }
 
-header, section, main, footer, .container, .header, .footer, .main {
+header, section, main, footer, nav, .container, .header, .footer, .main {
     box-sizing: border-box;
     width: 100%;
 	padding-left: calc(50% - var(--container-width) / 2);

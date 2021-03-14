@@ -53,8 +53,6 @@
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Grille d'option</a></li>
                         <li><a href="coursenligne.php">Cours en ligne</a></li>
-
-                        <li><a href="pages/coursenligne.php">Cours en ligne</a></li>
                     </ul>
                 </li>
                 <li class="relative">
@@ -109,7 +107,7 @@
         <section class="upper-container flex">
             <div class="video-show">
                 <h2 class="title_video"><span>Présentation</span> de notre école</h2>
-                <div class="ratio-video"><iframe width="810" height="499" class="video_iframe mt-1" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="ratio-video"><iframe width="810" height="499" class="video_iframe mt-1" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
             <div class="infos-upper">
                 <h2 class="title_infos">Infos importantes</h2>
