@@ -181,6 +181,10 @@ header, section, main, footer, nav, .container, .header, .footer, .main {
     font-weight: 700;
 }
 
+.italic {
+    font-style:italic;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -202,34 +206,19 @@ header, section, main, footer, nav, .container, .header, .footer, .main {
     overflow: hidden;
 }
 
-h1 {
+h1, h2 {
     font-family: 'inter_bold';
-    font-size: 40px;
     color:$letterscolor;
 }
 
-h2 {
-    font-family: 'inter_bold';
-    font-size: 35px;
+h3, h4 {
+    font-family: 'inter_medium';
     color:$letterscolor;
 }
 
-h3 {
-    font-family: 'inter_bold';
-    font-size: 29px;
-    color:$letterscolor;
-}
-
-h4 {
-    font-family: 'inter_bold';
-    font-size: 22px;
-    color:$letterscolor;
-}
-
-p {
+h5, p {
     font-family: 'inter';
-    font-size: 18.5px;
-    color:$letterscolor;
+    color: $letterscolor;
 }
 
 span {
@@ -238,78 +227,6 @@ span {
 
 .alert {
     color: $red;
-}
-
- @for $i from 1 to 6 {
-    
-// body .p#{$i} {
-//     padding:calc(#{$i} * #{$space})
-// }
-
-// body .pt#{$i} {
-//     padding-top:calc(#{$i} * #{$space});
-// }
-
-// body .pb#{$i} {
-//     padding-bottom:calc(#{$i} * #{$space});
-// }
-
-// body .px#{$i} {
-//     padding-left:calc(#{$i} * #{$space});
-//     padding-right:calc(#{$i} * #{$space});
-// }
-
-// body .p#{$i} {
-//     padding:calc(#{$i} * #{$space});
-// }
-
-// body .pt#{$i} {
-//     padding-top:calc(#{$i} * #{$space});
-// }
-
-// body .pb#{$i} {
-//     padding-bottom:calc(#{$i} * #{$space});
-// }
-
- body .px#{$i} {
-     padding-left:calc(#{$i} * #{$space});
-     padding-right:calc(#{$i} * #{$space});
-}
-
-// body .py#{$i} {
-//     padding-top:calc(#{$i} * #{$space});
-//     padding-bottom:calc(#{$i} * #{$space});
-// }
-
-// body .my#{$i} {
-//     margin-top:calc(#{$i} * #{$space});
-//     margin-bottom:calc(#{$i} * #{$space});
-// }
-
-// body .m#{$i} {
-//     margin:calc(#{$i} * #{$space});
-// }
-
-// body .mx#{$i} {
-//     margin-left:calc(#{$i} * #{$space});
-//     margin-right:calc(#{$i} * #{$space});
-// }
-
-// body .mt#{$i} {
-//     margin-top:calc(#{$i} * #{$space});
-// }
-
-// body .mb#{$i} {
-//     margin-bottom:calc(#{$i} * #{$space});
-// }
-
-// body .mr#{$i} {
-//     margin-right:calc(#{$i} * #{$space});
-// }
-
-// body .ml#{$i} {
-//     margin-left:calc(#{$i} * #{$space})
-// }
 }
 
 .overflow-h {
@@ -343,23 +260,15 @@ span {
 .clear {
     clear: both;
 }
-
-// Fonts
-.font-normal{
-    font-family: 'inter'; 
-    color: $letterscolor; 
+// fonts 
+.font-normal {
     font-size: 18.5px;
+    color: $letterscolor;
+    font-family: 'inter';
 }
-
-.font-title{
-    font-family: 'inter_bold'; 
-    font-size: 35px; 
-    color: $letterscolor; 
-}
-
 //shadows
 .modern-shadow{
-    box-shadow: -4px -4px 4px -1.5px rgb(255 255 255 / 14%), 6px 6px 4px -1.5px rgb(0 0 0 / 25%);
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%), -3px -3px 5px -2px rgb(255 255 255 / 20%);
 }
 
 .div-shadow {

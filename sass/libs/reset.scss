@@ -20,6 +20,7 @@ time, mark, audio, video{
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
 }
 
 article, aside, details, figcaption, figure, 
@@ -28,6 +29,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	width: 100%;
+	height: 100vh;
 }
 ol, ul {
 	list-style: none;
@@ -46,12 +49,10 @@ table {
 }
 
 a {
-	color: var(--letterscolor);
 	text-decoration: none;
 }
 
 a:visited {
-	color: var(--letterscolor);
 	text-decoration: none;
 }
 

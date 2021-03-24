@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body id="accueil" class="relative">
-<!-- Nav  -->       
-        <nav class="header flex relative">
+        <!-- Nav  -->       
+        <nav id="nav" class="flex relative">
             <ul class="header-nav">
                 <li class="header__home flex">
                     <a href="accueil.php">
@@ -18,7 +18,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="relative">
+                <li class="relative dropdown">
                     <a class="line" href="#">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                    viewBox="0 0 31.666 31.666" style="enable-background:new 0 0 31.666 31.666;"
@@ -37,10 +37,10 @@
                         <li class="invisible"></li>
                         <li><a href="#">Le personnel</a></li>
                         <li><a href="roi.php">R.O.I.</a></li>
-                        <li><a href="#">Nos projets</a></li>
+                        <li><a href="projetsecole.php">Nos projets</a></li>
                     </ul>
                 </li>
-                <li class="relative">
+                <li class="relative dropdown">
                     <a class="line line2" href="#">
                         <svg height="325pt" viewBox="0 0 325 325.37515" width="325pt" xmlns="http://www.w3.org/2000/svg"><path fill=currentColor d="m114.6875 284.675781-73.800781-73.800781 178.5-178.5 73.800781 73.800781zm-80.699219-60.800781 67.699219 67.699219-101.5 33.800781zm281.898438-140.300781-12.800781 12.800781-73.898438-73.898438 12.800781-12.800781c12.894531-12.902343 33.804688-12.902343 46.699219 0l27.199219 27.199219c12.800781 12.9375 12.800781 33.765625 0 46.699219zm0 0"/>
                         </svg>
@@ -48,11 +48,14 @@
                     </a>
                     <ul class="sous drop2">
                         <li class="invisible"></li>
-                        <li><a href="#">Communications</a></li>
+                        <li><a href="photos.php">photo/com</a></li>
                         <li><a href="#">Agenda</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Grille d'option</a></li>
+                        <li><a href="#">Menu du restaurant</a></li>
+                        <li><a href="g_options.php">Grille d'option</a></li>
                         <li><a href="coursenligne.php">Cours en ligne</a></li>
+                        <li><a href="accueil.php#insciptions-ecole-en-ligne">Inscriptions</a></li>
+                        <li><a href="accueil.php#insciptions-ecole-en-ligne">Ecole en ligne</a></li>
+                        <li><a href="#footer">Newsletter</a></li>
                     </ul>
                 </li>
                 <li class="relative">
@@ -62,7 +65,7 @@
                     Activités
                     </a>
                 </li>
-                <li class="relative">
+                <li class="relative dropdown">
                     <a class="line line3" href="#">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                        viewBox="0 0 484.027 484.027" style="enable-background:new 0 0 484.027 484.027;" xml:space="preserve">
@@ -80,9 +83,9 @@
                     </a>
                     <ul class="sous drop3">
                         <li class="invisible"></li>
-                        <li><a href="#">P.M.S</a></li>
+                        <li><a href="error404.php">P.M.S</a></li>
                         <li><a href="roi.php">L'aparu1</a></li>
-                        <li><a href="#">Les amis</a></li>
+                        <li><a href="les_amis.php">Les amis</a></li>
                     </ul>
                 </li>
                 <li class="relative">
@@ -105,27 +108,40 @@
         </nav>
         <!-- Upper -->
         <section class="upper-container flex">
-            <div class="video-show">
-                <h2 class="title_video"><span>Présentation</span> de notre école</h2>
-                <div class="ratio-video"><iframe width="810" height="499" class="video_iframe mt-1" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <div class="infos-upper">
-                <h2 class="title_infos">Infos importantes</h2>
-                <div class="infos_square mt-1 overflow-a ">
-                    <p>- L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
-                    <p>- Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
-                    <p>- <span class="alert">Urgent:</span> rendre les bulletins avant le 36/01/3021 ;)</p>
-                    <p>- Les réunions parents professeurs se feront le 29/02/21</p>
-                    <p>- Atelier déplacement de meuble avec Mr.Gigon ce mercredi</p>
-                    <p>- Ceci est un exemple</p>
-
+                <div class="video-show">
+                    <h1 class="title_video"><span>Présentation</span> de notre école</h1>
+                    <div class="ratio-video "><iframe width="810" height="499" class="video_iframe mt-1" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 </div>
-            </div>
-        
+                <div class="infos-upper">
+                    <h1 class="title_infos">Infos importantes</h1>
+                    <div class="infos_square mt-1 overflow-a ">
+                        <p>&bull; L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
+                        <p>&bull; Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
+                        <p>&bull; <span class="alert">Urgent:</span> rendre les bulletins avant le 36/01/3021 ;)</p>
+                        <p>&bull; Les réunions parents professeurs se feront le 29/02/21</p>
+                        <p>&bull; Atelier déplacement de meuble avec Mr.Gigon ce mercredi</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                        <p>&bull; Ceci est un exemple</p>
+                    </div> 
+                </div>   
         </section>
         <!-- Actu  -->
         <section class="actu">  
-            <h3 class="float-l mt-2">A la une</h3>
+            <h2 class="float-l mt-2">Fil d'actualité</h2>
             <svg class="scribe float-l m-2 mt-1" width="50" height="50"  version="1.1" baseProfile="tiny" id="Calque_1"
 	            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
 	            xml:space="preserve">
@@ -191,21 +207,20 @@
                     <div class="btn_more flex-center">
                         <img class="show-more-infos" src="/img/svg/plus.svg" alt="more-infos" width="20" height="20">
                     </div>
-                </div>  
+                </div>
             </div>     
         </section>
         <!-- Bottom  -->
-        <section class="bottom flex">
+        <section class="bottom flex" id="insciptions-ecole-en-ligne">
                 <div class="card-inscriptions flex">
-                    <h3>Inscriptions</h3>
+                    <h2>Inscriptions</h2>
                     <div class="img"></div>
                     <p>Les inscriptions de la 2ème à la 6ème secondaire se font uniquement sur rendez-vous.</p>
-                    
                     <p>Tel : <span>02 374 05 84</span></p>
                     <div class="hr"></div>
                 </div>
                 <div class="card-eel flex">
-                    <h3>Ecole en ligne</h3>
+                    <h2>Ecole en ligne</h2>
                     <div class="img"></div>
                     <p>Une plateforme pour que les elèves et les parents puissent 
                         voir les bulletins, documents etc... </p>
@@ -219,6 +234,7 @@
         <div class="triangle-bg"></div>
         <div class="square-bg"></div>           
 <!-- Scripts  -->
-    <script src="js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../alex.js"></script>
 </body>
 </html>
