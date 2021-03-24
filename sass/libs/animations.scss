@@ -1,0 +1,128 @@
+@keyframes opacity_0_to_100 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }   
+// cours en ligne 
+    @keyframes cloud-1 {
+       0% {
+        transform: translateX(0);
+        opacity: 0;
+       }
+       50% {
+           opacity: 1;
+       }
+       100% {
+        transform: translateX(110vw);
+        opacity: 0;
+       }
+    }
+
+    @keyframes cloud-2 {
+        0% {
+        transform: translateX(400px);
+        opacity: 0;
+        }
+        50% {
+        opacity: 1;
+        }
+        100% {
+            transform: translateX(0px);
+            opacity: 0;
+        }
+    }   
+
+    @keyframes cloud-3 {
+        0% {
+        transform: translateX(-500px);
+        opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 0;
+        }
+    } 
+    
+    @keyframes sun {
+        0% {
+        transform: translate(-275px, -275px);
+        opacity: 0;
+        }
+        35% {
+            transform: translate(25px, 25px) rotate(90deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(25px, 25px) rotate(90deg);
+            opacity: 1;
+        }
+    }
+
+    @keyframes container {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+// photos 
+    @keyframes monkeyShy {
+        0% {
+            transform: translateY(100%);
+        }   
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes monkey {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0) rotate(30deg);
+        }
+    }
+
+    @keyframes camera {
+        0% {
+            transform: rotate(0) translate(10px, 6px);
+        }
+        50% {
+            transform:rotate(-15deg) translate(10px, 6px); 
+        }
+        100% {
+            transform: rotate(0) translate(10px, 6px);
+        }
+    }
+
+    @keyframes h2 {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes p {
+        0% {
+            opacity: 0;
+            transform: translateY(-25px); 
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    

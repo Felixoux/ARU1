@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erreure 404</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
+<?php $pageTitle = "Erreure 404"; ?> 
+
+<?php require '../php/libs/header.php'; ?> 
 <body id="page404">
     <div class="page-wrapper">
         <main class="flex-center">
@@ -54,8 +48,8 @@
     </div>
     <script type="text/javascript">
         var background = document.getElementById('page404');
-var container = document.querySelector('#page404 main .container');
-    window.onmousemove = function(e) {
+        var container = document.querySelector('#page404 main .container');
+            window.onmousemove = function(e) {
                 var x = e.clientX/7,
                     y = e.clientY/7;
                     background.style.backgroundPositionX = x + 'px';

@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <link rel="shortcut icon" href="/img/svg/logo-aru1-morgane.svg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>R.O.I</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
+<?php $pageTitle = "R.O.I" ?>
+<!-- header  -->
+<?php require '../php/libs/header.php'; ?> 
 <body id="roi-page">
     <div class="page-wrapper">
         <div class="container">

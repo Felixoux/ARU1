@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potos</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
+<?php $pageTitle = "Albums photo" ?> 
+<!-- header  -->
+<?php require '../php/libs/header.php'; ?> 
 <body id="photos-page">
     <div class="page-wrapper">
         <div class="main">

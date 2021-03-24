@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <link rel="shortcut icon" href="/img/svg/logo-aru1-morgane.svg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ARU1 - Bêta</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
+<?php $pageTitle = "Accueil"; ?> 
+<!-- Header  -->
+<?php require '../php/libs/header.php'; ?> 
+<!-- Body -->
 <body id="accueil" class="relative">
         <!-- Nav  -->       
         <nav id="nav" class="flex relative">
@@ -235,6 +230,5 @@
         <div class="square-bg"></div>           
 <!-- Scripts  -->
     <script type="text/javascript" src="../js/app.js"></script>
-    <script type="text/javascript" src="../alex.js"></script>
 </body>
 </html>
