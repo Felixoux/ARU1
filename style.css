@@ -67,6 +67,10 @@ button, form, textarea, input {
   border: none;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 textarea {
   resize: none;
 }
@@ -119,11 +123,11 @@ textarea {
 }
 
 ::-webkit-scrollbar-corner {
-  background: #1b1e3d;
+  background: white;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1b1e3d;
+  background: white;
   padding: 1px;
 }
 
@@ -646,7 +650,7 @@ span {
   top: 20px;
   width: 230px;
   min-height: auto;
-  background-color: #1b1e3d;
+  background-color: white;
   border: 1px solid #2a2e5e;
   border-radius: 5px;
   transform: translate(-22px, -40px);
@@ -731,11 +735,11 @@ span {
   max-width: 505px;
   height: 200px;
   padding: 1.5em 2em;
-  background: #1b1e3d;
+  background: white;
   transition: all 0.2s ease-in;
 }
 #footer textarea:focus {
-  background: #161831;
+  background: #f6f6f6;
   border: 1px solid #5396e7;
   box-shadow: none;
 }
@@ -922,7 +926,7 @@ span {
   }
 }
 #index {
-  background-color: #1b1e3d;
+  background-color: white;
   width: 100%;
   height: 100vh;
 }
@@ -1044,7 +1048,7 @@ span {
   }
 }
 #accueil {
-  background-color: #1b1e3d;
+  background-color: white;
   width: 100%;
   height: 100vh;
 }
@@ -1113,7 +1117,7 @@ span {
   }
 }
 #accueil section.actu {
-  background: linear-gradient(to top, #1b1e3d, #1b1e3d) left bottom/100% 90px no-repeat #171933;
+  background: linear-gradient(to top, white, white) left bottom/100% 90px no-repeat #171933;
   height: 530px;
   margin: calc(150px / 2) 0;
 }
@@ -1322,7 +1326,7 @@ span {
   padding-bottom: 1em;
 }
 #roi-page .container .roi {
-  background-color: #1b1e3d;
+  background-color: white;
   border: 1px solid #2a2e5e;
   margin-bottom: 2rem;
 }
@@ -1352,7 +1356,7 @@ span {
 }
 #projetsecole .projets {
   margin: 8.5rem 0;
-  background: #1b1e3d;
+  background: white;
 }
 #projetsecole .projets h1, #projetsecole .projets h5, #projetsecole .projets h4, #projetsecole .projets p, #projetsecole .projets a {
   padding-left: 80px;
@@ -1543,7 +1547,7 @@ span {
 }
 
 #photos-page {
-  background: #1b1e3d;
+  background: white;
   width: 100%;
   height: 100vh;
 }
@@ -1648,7 +1652,7 @@ span {
 #les_amis main .container {
   align-items: flex-start;
   margin: calc(150px / 2) 0;
-  background: #1b1e3d;
+  background: white;
   border: 1px solid #2a2e5e;
   border-radius: 4px;
 }
@@ -1809,7 +1813,7 @@ span {
   z-index: 1;
   justify-content: flex-start;
   padding: 2rem;
-  background: #1b1e3d;
+  background: white;
   border: 1px solid #2a2e5e;
   border-radius: 25px;
 }
