@@ -61,6 +61,10 @@ button, form, textarea, input{
 	border: none;
 }
 
+button, a {
+	cursor: pointer;
+}
+
 textarea {
 	resize: none;
 }

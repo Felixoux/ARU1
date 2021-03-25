@@ -1,4 +1,4 @@
-<?php $pageTitle = "Erreure 404"; ?> 
+<?php $pageTitle = "Erreur 404"; ?> 
 
 <?php require '../php/libs/header.php'; ?> 
 <body id="page404">
@@ -35,9 +35,9 @@
                     <path d="m443.55 482.26c-1.821 16.855-15.95 29.741-32.903 29.741l-20.571 1e-3c-4.561 0-8.258-3.698-8.258-8.258v-8.258c0-9.122 7.394-16.516 16.516-16.516h8.258c1.339-11.92 1.94-22.875 1.991-33.032h37.353c-0.259 11.478-1.006 23.547-2.386 36.322z" fill="#F5DCB4"/>
                 </svg>
                 <div class="text">
-                    <h1 class="alert pt-2">Erreure 404</h1>
+                    <h1 class="alert pt-2">Erreur 404</h1>
                     <p>
-                        Oupsiii il semble y avoir une erreure, <br>
+                        Oupsiii il semble y avoir une erreur, <br>
                         la page peut avoir été supprimée ou deplacée... <br>
                         Vous pouvez reessayer plus tard ou <br>
                         <a href="accueil.php">cliquer ici pour retourner sur l’accueil</a>
@@ -50,8 +50,8 @@
         var background = document.getElementById('page404');
         var container = document.querySelector('#page404 main .container');
             window.onmousemove = function(e) {
-                var x = e.clientX/7,
-                    y = e.clientY/7;
+                var x = e.clientX/6,
+                    y = e.clientY/6;
                     background.style.backgroundPositionX = x + 'px';
                     background.style.backgroundPositionY = y + 'px';
             }

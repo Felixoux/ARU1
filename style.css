@@ -932,29 +932,69 @@ span {
   margin-bottom: 20px;
 }
 #index main > div {
-  margin-top: 20px;
+  margin: 20px auto 5rem auto;
+  max-width: 80vw;
 }
-#index main div {
-  margin-bottom: 5rem;
+#index main > div:last-child {
+  padding-bottom: 5rem;
 }
 #index main .container-overflow {
   overflow: hidden;
   border-radius: 15px;
 }
 #index main img {
-  cursor: pointer;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 #index main img:hover {
   transform: scale(1.1);
 }
+#index main .container-spoiler {
+  background: #171933;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+}
+#index main .container-spoiler .spoiler-content {
+  padding-top: 1rem;
+}
+#index main .container-spoiler p {
+  padding: 1rem;
+}
+#index main .container-spoiler button {
+  margin: 1rem 0;
+  border: 1px solid #22244D;
+  background: transparent;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  color: #D4DCFF;
+  font-size: 18.5px;
+  cursor: pointer;
+}
 
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+  #index main > div {
+    width: 70vw;
+  }
+}
 @media only screen and (min-width: 1100px) {
   #index main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 525px;
+    grid-template-rows: auto;
     gap: 60px;
+    margin-bottom: 3rem;
+  }
+  #index main > div {
+    margin-bottom: 0;
+  }
+  #index main > div:last-child {
+    padding-bottom: 0;
+  }
+  #index main .spoiler, #index main .spoiler-content {
+    display: none;
   }
   #index header img {
     width: 100%;
@@ -1759,7 +1799,7 @@ span {
   }
 }
 #page404 {
-  background: url(../img/bg404.png), #1b1e3d;
+  background: url(../img/bg404.png), #171933;
   backdrop-filter: blur(3px);
 }
 #page404 main {
@@ -1769,7 +1809,7 @@ span {
   z-index: 1;
   justify-content: flex-start;
   padding: 2rem;
-  background: #171933;
+  background: #1b1e3d;
   border: 1px solid #2a2e5e;
   border-radius: 25px;
 }

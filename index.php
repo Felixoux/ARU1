@@ -17,17 +17,58 @@
             <div class="container-overflow">
                 <a href="http://www.la-petite-ecole.be"><img  src="img/Fondamental-menu.jpg" alt="ecole fondamentale"></a>
             </div>
+            <div class="container-spoiler">
+                <div class="spoiler-content hidden">
+                    <p>
+                        La Petite Ecole dans la prairie EFA ARU1 <br>
+                        72, avenue Paul Stroobant <br>
+                        1180 - Uccle
+                    </p>
+                    <p>
+                        Téléphone: 02/374.95.52<br>
+                        Fax: 02/374.56.20
+                    </p>
+                </div>
+                <button class="spoiler">Afficher les contacts</button>
+            </div>
         </div>
         <div>
             <h3>Ecole secondaire</h3>
             <div class="container-overflow">
                 <a href="pages/accueil.php"><img src="img/Secondaire-menu.jpg" alt="ecole secondaire"></a>
             </div>
+            <div class="container-spoiler relative">
+                <div class="spoiler-content hidden">
+                    <p>
+                        Athénée royal Uccle 1 <br>
+                        87, avenue Houzeau <br>
+                        1180 Bruxelles
+                    </p>
+                    <p>Téléphone : 02/ 374 05 84 <br>
+                        Fax : 02/ 375 28 91 <br>
+                        <a href="mailto:secretariat@aru1.be">secretariat@aru1.be</a>
+                    </p>
+                </div>
+                <button class="spoiler">Afficher les contacts</button>
+            </div>
         </div>
         <div>
             <h3>Internat</h3>
             <div class="container-overflow">
                 <a href="pages/internat.php"> <img src="img/Internat-menu.jpg" alt="internat"></a>
+            </div>
+            <div class="container-spoiler">
+                <div class="spoiler-content hidden">
+                    <p>
+                        Internat annexé pour jeunes filles <br>
+                        66, Avenue du Vert Chasseur <br>
+                        1180 Uccle
+                    </p>
+                    <p>Téléphone : 02/ 374 51 07 <br>
+                        Fax : 02/ 372 38 42
+                    </p>
+                </div>
+                <button class="spoiler">Afficher les contacts</button>
             </div>
         </div>
     </main>
@@ -41,7 +82,8 @@
                     1180 - Uccle
                 </p>
                 <p>Téléphone: 02/374.95.52 <br>
-                    Fax: 02/374.56.20</p>
+                    Fax: 02/374.56.20
+                </p>
             </div>
             <div class="contact-2 modern-shadow pt-1">
                 <h4>Section Secondaire</h4>
@@ -67,5 +109,6 @@
                 </p>
             </div>
     </footer> 
+    <script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>

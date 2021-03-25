@@ -369,43 +369,86 @@
 	height: 100vh;
 
 	main {
-		h3 {
-			font-size: 29px;
-			text-align: center;
-			margin-bottom: 20px;
+			h3 {
+				font-size: 29px;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			> div {
+				margin: 20px auto 5rem auto;
+				max-width: 80vw;
+			&:last-child {
+				padding-bottom: 5rem;
+			}
 		}
 
-		> div {
-			margin-top: 20px;
-		}
-
-		div {
-			margin-bottom: 5rem;
-		}
 		.container-overflow {
 			overflow: hidden;
 			border-radius: 15px;
 		}
 
 		img {
-			cursor: pointer;
 			transition: transform .3s ease;
 			&:hover {
 			transform: scale(1.1);
 			}
+			cursor: pointer;
+		}
+
+		.container-spoiler {
+			background:$bgdark;
+			width:90%;
+			height: auto;
+			margin: 0 auto;
+			text-align: center;
+			border-radius: 15px;
+			.spoiler-content {
+				padding-top: 1rem;
+			}
+			p {
+				padding: 1rem;
+			}
+			button {
+				margin: 1rem 0 ;
+				border: 1px solid $bgcard;
+				background: transparent;
+				padding: .5rem 1.2rem;
+				border-radius: 25px;
+				color: $letterscolor;
+				font-size: 18.5px;
+				cursor: pointer;
+			}
 		}
 	}
-// ne pas enlever car fin index !!!
 }
-
 // == Media query index == 
- @media only screen and (min-width: 1100px) {
+@media only screen and (min-width:600px) and (max-width:1100px) {
+	#index {
+		main {
+			> div {
+				width:70vw;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 1100px) {
 	 #index {
 		main {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: 525px ;
+			grid-template-rows: auto ;
 			gap: 60px;
+			margin-bottom: 3rem;
+
+			> div {
+				margin-bottom: 0;
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+			
+			.spoiler, .spoiler-content {display: none;}
 		}
 
 		header img {
@@ -461,7 +504,7 @@
 			}
 		}
 	}
- }
+}
 	
 // == Accueil ==
 #accueil {
@@ -1333,7 +1376,7 @@ section.bottom{
  
 // Erreure 404 page 
 #page404 {
-	background: url(../img/bg404.png), $bglight ;
+	background: url(../img/bg404.png), $bgdark ;
 	backdrop-filter: blur(3px);
 	
 	main {
@@ -1344,7 +1387,7 @@ section.bottom{
 		z-index: 1;
 		justify-content: flex-start;
 		padding: 2rem;
-		background: $bgdark;
+		background: $bglight;
 		border: 1px solid $border;
 		border-radius: 25px;
 		
