@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="index">
-    <header class="mt-2"><img src="img/big-photo.jpg" alt="L'école">
+    <header class="mt-3"><img src="img/big-photo.jpg" alt="L'école">
     </header>
     <main>
         <div>
