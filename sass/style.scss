@@ -588,18 +588,28 @@
 	}	
 }
 
+.scroll-down__chevron {
+	width: 25px; 
+	height: 25px;
+	animation: scroll-down__chevron 4s .7s cubic-bezier(0.71, 0.76, 0.98, 1.23) infinite;
+	cursor: pointer;
+}
+
 // == section center == A la une == 
 section.actu{
+	padding:calc((#{$space-section} / 2) - 25px) 0 calc(#{$space-section} / 2)  0 ;
+}
+
+section.actu .container-carroussel {
 	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
 	height: 530px;
-	margin: calc(#{$space-section} / 2) 0;
 }
 
 h2 {
 	font-size: 32px;
 }
 
-.actu .container {
+.actu .container .container {
 	height: auto;
 	padding-top: 28px;
 }

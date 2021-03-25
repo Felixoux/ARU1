@@ -508,6 +508,26 @@ span {
     opacity: 1;
   }
 }
+@keyframes scroll-down__chevron {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(10%);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(10%);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes cloud-1 {
   0% {
     transform: translateX(0);
@@ -1116,15 +1136,23 @@ span {
     max-width: 725px;
   }
 }
+#accueil .scroll-down__chevron {
+  width: 25px;
+  height: 25px;
+  animation: scroll-down__chevron 4s 0.7s cubic-bezier(0.71, 0.76, 0.98, 1.23) infinite;
+  cursor: pointer;
+}
 #accueil section.actu {
+  padding: calc((150px / 2) - 25px) 0 calc(150px / 2) 0;
+}
+#accueil section.actu .container-carroussel {
   background: linear-gradient(to top, #1b1e3d, #1b1e3d) left bottom/100% 90px no-repeat #171933;
   height: 530px;
-  margin: calc(150px / 2) 0;
 }
 #accueil h2 {
   font-size: 32px;
 }
-#accueil .actu .container {
+#accueil .actu .container .container {
   height: auto;
   padding-top: 28px;
 }

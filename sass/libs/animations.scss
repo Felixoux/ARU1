@@ -5,7 +5,29 @@
     100% {
         opacity: 1;
     }
-    }   
+    }  
+// Accueil 
+    @keyframes scroll-down__chevron {
+        0% {
+            transform: translateY(0);
+        }
+        5% {
+            transform: translateY(10%);
+        }
+        10% {
+            transform: translateY(0);
+        }
+        15% {
+            transform: translateY(10%);
+        }
+        20% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
 // cours en ligne 
     @keyframes cloud-1 {
        0% {
@@ -72,6 +94,7 @@
             transform: translateY(0);
         }
     }
+
 // photos 
     @keyframes monkeyShy {
         0% {
@@ -124,5 +147,3 @@
             transform: translateY(0);
         }
     }
-
-    
