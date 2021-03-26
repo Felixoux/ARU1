@@ -1,3 +1,5 @@
+<?php $pageTitle = "Chargement" ?>
+
 <?php require '../php/libs/header.php'; ?> 
 <body id="loader-page">
     <div class="page-wrapper">
