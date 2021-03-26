@@ -845,7 +845,7 @@ section.bottom{
 		}
 	
 		.summary-roi {
-			background-color: $bgcard;
+			background-color: $bglight;
 			margin: $space-section 0 calc(#{$space-section} / 2) 0;
 			line-height: 1.5em;
 			h4 {
@@ -861,6 +861,16 @@ section.bottom{
 				padding-bottom: 1.5em;
 			}
 		}
+
+		.sloth {
+			position: absolute;
+			bottom: 10%;
+			right: -8%;
+			width: 12.5%;
+			transform: rotate(-22deg);
+		}
+
+		
 	}
 	
 }
@@ -871,6 +881,12 @@ section.bottom{
 			display: grid;
 			grid-template-columns: 1fr 2fr;
 			gap: calc(2.4 * #{$gap});
+			.sloth {
+				bottom: -38.5px;
+				left: 50px;
+				width: 350px;
+				transform: none;
+			}
 		}
 	
 		.summary-roi {
@@ -1023,8 +1039,11 @@ section.bottom{
 #g_options {
 	background: $bgdark;
 
-	h1 {
-		font-size: 30px;
+	header {
+		margin-top: $space-section / 2;
+		h1 {
+			font-size: 30px;
+		}
 	}
 
 	main, header {
@@ -1098,10 +1117,28 @@ section.bottom{
 				margin: 20px 0;
 			}
 		}
+
+		svg {
+			position: fixed;
+			top: 30px;
+			left: 75%;
+			z-index: -1;
+		}
 	}
 }
-
-// == Photos page
+// Media Qery g_options 
+@media only screen and (max-width:680px) {
+	#g_options {
+		header h1 {
+			padding: 0 1rem ;
+		}
+		.sloth {
+			right: 0;
+			transform: rotate(-15deg) translate(20px);
+		}
+	}
+}
+// == Photos page ==
 #photos-page {
 	background: $bglight;
 	width: 100%;
@@ -1172,14 +1209,14 @@ section.bottom{
 			z-index: -1;
 		}
 		.monkey-shy {
-			left: 20px;
+			left: 5%;
 			bottom:600px;
 			animation: monkeyShy 2s ease-out;
 		}
 
 		.chat-monkey {
 			position: absolute;
-			top: 440px;
+			top: 500px;
 			left: 10%;
 			width: 300px;
 			height: 145px;
@@ -1195,18 +1232,18 @@ section.bottom{
 }
 @media only screen and (min-width:1650px) {
 	#photos-page {
-		.monkey {
+		.sloth {
 			display: block;
 			position: absolute;
 			top: 250px;
-			right:2%;
+			right:4%;
 			z-index: -1;
-			animation:monkey 1.5s .1s cubic-bezier(0.15, 0.2, 0.13, 1.1) both;
+			animation:slothPhoto 1.5s .1s cubic-bezier(0.15, 0.2, 0.13, 1.1) both;
 		}
 	}
 }
 
-// Les amis Aru1
+// == Les amis Aru1 ==
 #les_amis {
 	background: $bgdark;
 	main {
@@ -1302,7 +1339,7 @@ section.bottom{
 	}
 }
 
-// loader page 
+// == loader page ==  
 #loader-page {
 	background: $bgdark;
 	// backdrop-filter: blur(10px);
@@ -1384,7 +1421,7 @@ section.bottom{
 	}
 }
  
-// Erreure 404 page 
+// == Erreure 404 page ==
 #page404 {
 	background: url(../img/bg404.png), $bgdark ;
 	backdrop-filter: blur(3px);
@@ -1415,14 +1452,14 @@ section.bottom{
 			}
 		}
 		.text {
-			margin:  0 0 -3rem 1rem;
+			margin:  0 0 -3rem 3rem;
 			word-break:keep-all;
 		}
 	}
 
 
 }
-// Media Query PAge404 
+// Media Query 404 page
 @media only screen and (max-width:980px) {
 	#page404 {
 		.container {

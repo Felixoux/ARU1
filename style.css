@@ -597,12 +597,12 @@ span {
     transform: translateY(0);
   }
 }
-@keyframes monkey {
+@keyframes slothPhoto {
   0% {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0) rotate(30deg);
+    transform: translateX(0) rotate(25deg);
   }
 }
 @keyframes camera {
@@ -1346,7 +1346,7 @@ span {
   color: #c257c2;
 }
 #roi-page .container .summary-roi {
-  background-color: #22244D;
+  background-color: #1b1e3d;
   margin: 150px 0 calc(150px / 2) 0;
   line-height: 1.5em;
 }
@@ -1361,12 +1361,25 @@ span {
 #roi-page .container .roi:last-child {
   padding-bottom: 1.5em;
 }
+#roi-page .container .sloth {
+  position: absolute;
+  bottom: 10%;
+  right: -8%;
+  width: 12.5%;
+  transform: rotate(-22deg);
+}
 
 @media only screen and (min-width: 1000px) {
   #roi-page .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: calc(2.4 * 25px);
+  }
+  #roi-page .container .sloth {
+    bottom: -38.5px;
+    left: 50px;
+    width: 350px;
+    transform: none;
   }
   #roi-page .summary-roi {
     height: 225px;
@@ -1498,7 +1511,10 @@ span {
 #g_options {
   background: #171933;
 }
-#g_options h1 {
+#g_options header {
+  margin-top: 75px;
+}
+#g_options header h1 {
   font-size: 30px;
 }
 #g_options main, #g_options header {
@@ -1573,7 +1589,22 @@ span {
   padding: 0.4rem 1rem;
   margin: 20px 0;
 }
+#g_options main svg, #g_options header svg {
+  position: fixed;
+  top: 30px;
+  left: 75%;
+  z-index: -1;
+}
 
+@media only screen and (max-width: 680px) {
+  #g_options header h1 {
+    padding: 0 1rem;
+  }
+  #g_options .sloth {
+    right: 0;
+    transform: rotate(-15deg) translate(20px);
+  }
+}
 #photos-page {
   background: #1b1e3d;
   width: 100%;
@@ -1641,13 +1672,13 @@ span {
     z-index: -1;
   }
   #photos-page .monkey-shy {
-    left: 20px;
+    left: 5%;
     bottom: 600px;
     animation: monkeyShy 2s ease-out;
   }
   #photos-page .chat-monkey {
     position: absolute;
-    top: 440px;
+    top: 500px;
     left: 10%;
     width: 300px;
     height: 145px;
@@ -1661,13 +1692,13 @@ span {
   }
 }
 @media only screen and (min-width: 1650px) {
-  #photos-page .monkey {
+  #photos-page .sloth {
     display: block;
     position: absolute;
     top: 250px;
-    right: 2%;
+    right: 4%;
     z-index: -1;
-    animation: monkey 1.5s 0.1s cubic-bezier(0.15, 0.2, 0.13, 1.1) both;
+    animation: slothPhoto 1.5s 0.1s cubic-bezier(0.15, 0.2, 0.13, 1.1) both;
   }
 }
 #les_amis {
@@ -1859,7 +1890,7 @@ span {
   color: #1d6ed0;
 }
 #page404 .container .text {
-  margin: 0 0 -3rem 1rem;
+  margin: 0 0 -3rem 3rem;
   word-break: keep-all;
 }
 
