@@ -95,7 +95,7 @@
                 <li>En pratique</li>
                 <li>&#x2F;&nbsp;&nbsp;&nbsp;Menu</li>
                 <li class="header__burger hidden">
-                    <button class="flex-center" id="js-burger">
+                    <button class="flex-center " id="js-burger">
                         <span>Afficher le menu</span>
                     </button>
                 </li>
@@ -173,7 +173,7 @@
                             </p>
                             <div class="line"></div>
                         </div>          
-                        <div class="btn_more flex-center">
+                        <div class="btn_more flex-center ">
                             <img class="show-more-infos" src="/img/svg/plus.svg" alt="more-infos" width="20" height="20">
                         </div>
                     </div>

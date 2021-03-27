@@ -391,9 +391,6 @@ header, section, main, footer, nav, .container, .header, .footer, .main {
   text-decoration: underline;
 }
 
-.text-danger {
-  color: #f25353;
-}
 
 .text-truncate {
   text-overflow: ellipsis;
