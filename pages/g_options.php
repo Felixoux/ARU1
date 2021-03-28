@@ -4,6 +4,7 @@
 <!-- body  -->
 <body id="g_options">
     <div class="page-wrapper">
+        <?php require '../php/libs/header-navbar.php'; ?>
         <header>
             <h1 class="mt-1 center-mg">Nos grilles d'options</h1>
         </header>
@@ -91,5 +92,6 @@
         </main>
         <?php require '../php/libs/footer.php'?>
     </div>
+    <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>

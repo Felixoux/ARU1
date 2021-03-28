@@ -124,8 +124,6 @@
         for (var i = 0; i < buttons.length; i++) {
             createSpoiler(buttons[i])
         }
-
-        createSpoilerparagraph(spoiler)
     </script>
 </body>
 </html>

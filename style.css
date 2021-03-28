@@ -732,6 +732,34 @@ span {
   display: none;
   margin-left: calc(1 * 8px);
 }
+#navbar .header__burger button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background: 0 0;
+}
+#navbar .header__burger button span {
+  font-size: 0;
+  text-indent: -3000px;
+}
+#navbar .header__burger span, #navbar .header__burger span::before, #navbar .header__burger span::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #D4DCFF;
+  position: relative;
+  transition: 0.3s;
+  transition-property: top, bottom, transform;
+}
+#navbar .header__burger span::after {
+  bottom: -4px;
+}
+#navbar .header__burger span::before {
+  top: -6px;
+}
 #navbar a {
   transition: color 0.2s ease;
 }
@@ -748,6 +776,55 @@ span {
 @media only screen and (max-width: 1000px) {
   #navbar .header-nav .dropdown, #navbar .header-nav .relative {
     display: none;
+  }
+  #navbar .header__home {
+    border: none;
+  }
+  #navbar .header__burger {
+    display: block;
+  }
+  #navbar .header-nav.mobile-active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: calc(4 * 8px) 0;
+    transition: opacity 0.3s;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  #navbar .header-nav.mobile-active .header__home, #navbar .header-nav.mobile-active .line::after, #navbar .header-nav.mobile-active .invisible {
+    display: none;
+  }
+  #navbar .header-nav.mobile-active .relative, #navbar .header-nav.mobile-active .sous {
+    display: block;
+  }
+  #navbar .header-nav.mobile-active .sous {
+    margin: 0.5rem 0;
+  }
+  #navbar .header-nav.mobile-active .sous li {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  #navbar .header-nav.mobile-active .relative {
+    width: 185px;
+    margin: 3rem auto;
+  }
+  #navbar .header-nav.mobile-active .relative > a {
+    font-family: "inter_bold";
+  }
+  #navbar .header-nav.mobile-active::-webkit-scrollbar {
+    width: 0;
+  }
+  #navbar .header-side.mobile-active {
+    position: fixed;
+    top: calc(3 * 8px);
+    right: calc(2 * 8px);
+    z-index: 999;
   }
 }
 #footer {

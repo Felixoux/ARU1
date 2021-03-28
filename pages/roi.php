@@ -3,6 +3,9 @@
 <?php require '../php/libs/header.php'; ?> 
 <body id="roi-page">
     <div class="page-wrapper">
+        <!-- header  -->
+        <?php require '../php/libs/header-navbar.php'; ?>
+        <!-- main  -->
         <div class="container relative">
             <div class="summary-roi">
                 <h2 class="pt-2 uppercase">r.o.i</h2>
@@ -264,8 +267,9 @@
                     c-4.4,0.2-9.6,4.2-8.1,9.9C4.9,71.7,29.7,77.2,43.4,78c9,0.5,23.4-0.4,31.1-6.7C78.1,68.3,77.6,65.7,75.6,63.6"/>
         </svg>
         </div>
-<!-- Footer -->
-<?php require '../php/libs/footer.php'; ?> 
+        <!-- Footer -->
+        <?php require '../php/libs/footer.php'; ?> 
     </div>
+    <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>
