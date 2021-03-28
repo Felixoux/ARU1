@@ -109,6 +109,23 @@
                 </p>
             </div>
     </footer> 
-    <script src="js/app.js" type="text/javascript"></script>
+    <script>
+        // Spoiler system
+        var buttons = document.querySelectorAll('#index main .spoiler')
+
+        var createSpoiler = function(button) {
+            button.addEventListener('click', function () {
+                button.previousElementSibling.classList.toggle('hidden');
+                button.classList.toggle('change-text');
+                button.innerHTML = (button.classList.contains("change-text") ? "Voir moins" : "Afficher les contacts" );
+            })
+        }
+
+        for (var i = 0; i < buttons.length; i++) {
+            createSpoiler(buttons[i])
+        }
+
+        createSpoilerparagraph(spoiler)
+    </script>
 </body>
 </html>

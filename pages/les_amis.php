@@ -41,6 +41,19 @@
         <!-- footer  -->
         <?php require '../php/libs/footer.php'; ?> 
     </div>
-    <script type="text/javascript" src="../js/app.js"></script>
+    <script>
+        // Spoiler system
+        var spoiler = document.querySelector("#les_amis main .see-more")
+
+        var createSpoilerparagraph = function(button) {
+            button.addEventListener('click', function() {
+                button.previousElementSibling.classList.toggle('hidden');
+                button.classList.toggle('change-text');
+                button.innerHTML = (button.classList.contains("change-text") ? "Retour à l'intro" :"Lire la suite" );
+            })
+        }
+
+        createSpoilerparagraph(spoiler)
+    </script>
 </body>
 </html>
