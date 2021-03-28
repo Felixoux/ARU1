@@ -391,6 +391,9 @@ header, section, main, footer, nav, .container, .header, .footer, .main {
   text-decoration: underline;
 }
 
+.text-danger {
+  color: #f25353;
+}
 
 .text-truncate {
   text-overflow: ellipsis;
@@ -1346,6 +1349,7 @@ span {
   background-color: #1b1e3d;
   margin: 150px 0 calc(150px / 2) 0;
   line-height: 1.5em;
+  border-radius: 8px;
 }
 #roi-page .container .summary-roi h4 {
   padding-bottom: 1em;
@@ -1395,6 +1399,7 @@ span {
 #projetsecole .projets {
   margin: 8.5rem 0;
   background: #1b1e3d;
+  border-radius: 8px;
 }
 #projetsecole .projets h1, #projetsecole .projets h5, #projetsecole .projets h4, #projetsecole .projets p, #projetsecole .projets a {
   padding-left: 80px;

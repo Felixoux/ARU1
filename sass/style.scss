@@ -848,6 +848,7 @@ section.bottom{
 			background-color: $bglight;
 			margin: $space-section 0 calc(#{$space-section} / 2) 0;
 			line-height: 1.5em;
+			border-radius: 8px;
 			h4 {
 				padding-bottom: 1em;
 			}
@@ -909,6 +910,7 @@ section.bottom{
 	.projets {
 		margin: 8.5rem 0;
 		background: $bglight;
+		border-radius: 8px;
 		h1, h5, h4, p, a {
 			padding-left: 80px;
 			padding-right:80px;
