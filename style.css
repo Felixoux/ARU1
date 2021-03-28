@@ -639,11 +639,11 @@ span {
 /*
 ../dart-sass/sass sass/style.scss style.css --watch
  */
-#nav {
+#navbar {
   padding-top: calc(6 * 8px);
   padding-bottom: calc(3 * 8px);
 }
-#nav::after {
+#navbar::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -652,18 +652,18 @@ span {
   height: 1px;
   z-index: -2;
 }
-#nav ul, #nav li {
+#navbar ul, #navbar li {
   display: flex;
   align-items: center;
 }
-#nav .header-nav > li a {
+#navbar .header-nav > li a {
   z-index: 2;
   font-family: "inter_medium";
 }
-#nav .sous {
+#navbar .sous {
   display: none;
 }
-#nav .dropdown:hover .sous {
+#navbar .sous.active {
   display: flex;
   flex-flow: column;
   position: absolute;
@@ -676,21 +676,21 @@ span {
   transform: translate(-22px, -40px);
   z-index: 0;
 }
-#nav .dropdown:hover .sous .invisible {
+#navbar .sous.active .invisible {
   padding-top: 3rem;
 }
-#nav .dropdown:hover .sous li {
+#navbar .sous.active li {
   padding: 1.2rem 0rem;
 }
-#nav .dropdown:hover .drop2 {
+#navbar .drop2.active {
   width: 185px;
   transform: translate(-34.5px, -40px);
 }
-#nav .dropdown:hover .drop3 {
+#navbar .drop3.active {
   width: 200px;
   transform: translate(-25px, -40px);
 }
-#nav .line::after {
+#navbar .line::after {
   content: "";
   position: absolute;
   width: 90%;
@@ -701,35 +701,35 @@ span {
   margin: 0 auto;
   height: 1px;
 }
-#nav .header__home {
+#navbar .header__home {
   justify-self: flex-start;
   margin: 5px calc(2 * 8px) 5px 0;
   padding-right: calc(1 * 8px);
   height: 16px;
   border-right: 1px solid #2a2e5e;
 }
-#nav .header-nav > * + * {
+#navbar .header-nav > * + * {
   margin-left: calc(6 * 8px);
 }
-#nav .header__home + li {
+#navbar .header__home + li {
   margin-left: 0px;
 }
-#nav .header-side {
+#navbar .header-side {
   margin: 0 calc(-2 * 8px);
   font-family: "inter_bold";
   color: #8491C7;
 }
-#nav .header-side > li {
+#navbar .header-side > li {
   margin-right: calc(2 * 8px);
 }
-#nav .header__burger {
+#navbar .header__burger {
   display: none;
   margin-left: calc(1 * 8px);
 }
-#nav a:hover, #nav button:hover {
+#navbar a:hover, #navbar button:hover {
   color: #5396e7;
 }
-#nav svg {
+#navbar svg {
   width: 16px;
   height: 16px;
   margin-right: calc(1 * 8px);
@@ -1033,6 +1033,7 @@ span {
     min-height: 350px;
     background: #171933;
     text-align: center;
+    border-top: 1px solid #2a2e5e;
   }
   #index footer h3 {
     font-size: 25px;

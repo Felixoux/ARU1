@@ -7,7 +7,7 @@
 ../dart-sass/sass sass/style.scss style.css --watch
  */
 //== Header-nav==
-#nav {
+#navbar {
 	padding-top: calc(6 * #{$space});
     padding-bottom: calc(3 * #{$space});
 	
@@ -35,7 +35,7 @@
 	
 	.sous {	display: none; }
 
-	.dropdown:hover .sous  {
+	.sous.active  {
 		display: flex;
 		flex-flow: column;
 		position: absolute;
@@ -55,12 +55,12 @@
 		}
 	}
 
-	.dropdown:hover .drop2 {
+	.drop2.active {
 		width: 185px;
 		transform: translate(-34.5px, -40px);
 	}
 
-	.dropdown:hover  .drop3 {
+	.drop3.active {
 		width: 200px;
 		transform: translate(-25px, -40px);
 	}
@@ -465,6 +465,7 @@
 			min-height: 350px;
 			background: $bgdark;
 			text-align: center;
+			border-top: 1px solid $border;
 			h3 {
 				font-size: 25px;
 				grid-area: 1 / 1 / span 1 / span 1;

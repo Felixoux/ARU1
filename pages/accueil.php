@@ -4,7 +4,7 @@
 <!-- Body -->
 <body id="accueil" class="relative">
         <!-- Nav  -->       
-        <nav id="nav" class="flex relative">
+        <nav id="navbar" class="flex relative">
             <ul class="header-nav">
                 <li class="header__home flex">
                     <a href="accueil.php">
