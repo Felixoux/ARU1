@@ -934,7 +934,7 @@ section.bottom{
 	#roi-page {
 		.container {
 			display: grid;
-			grid-template-columns: 1fr 2fr;
+			grid-template-columns: 425px 1fr;
 			gap: calc(2.4 * #{$gap});
 			.sloth {
 				bottom: -38.5px;

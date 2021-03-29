@@ -58,7 +58,7 @@
                     <ul class="sous drop3">
                         <li class="invisible"></li>
                         <li><a href="error404.php">P.M.S</a></li>
-                        <li><a href="roi.php">L'aparu1</a></li>
+                        <li><a href="http://www.aparu1.be/">L'aparu1</a></li>
                         <li><a href="les_amis.php">Les amis</a></li>
                     </ul>
                 </li>

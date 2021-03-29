@@ -1448,7 +1448,7 @@ span {
 @media only screen and (min-width: 1000px) {
   #roi-page .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 425px 1fr;
     gap: calc(2.4 * 25px);
   }
   #roi-page .container .sloth {
