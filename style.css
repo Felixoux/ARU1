@@ -1730,10 +1730,10 @@ span {
   color: #D68FD6;
 }
 
-@media only screen and (min-width: 1275px) {
+@media only screen and (min-width: 1000px) {
   #photos-page .main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 450px 1fr;
     padding-top: calc(150px / 2);
     padding-bottom: calc(150px / 2.75);
   }
