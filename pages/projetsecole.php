@@ -1,8 +1,10 @@
 <?php $pageTitle = "Projets d'établissement" ?>
 <!-- header  -->
 <?php require '../php/libs/header.php'; ?> 
-<!-- body  -->
 <body id="projetsecole">
+    <!-- header  -->
+    <?php require '../php/libs/header-navbar.php'; ?>
+    <!-- main  -->
     <div class="main">
         <div class="projets">
             <h1 class="pt-2">Projets d'établissement</h1>
@@ -13,6 +15,8 @@
             <a href="../docs/pdf/Projet_detablissement_2015-2018.pdf">Lire la suite : <img width="50" src="/img/svg/pdf-logo.svg" alt="projets d'établissement"></a>
         </div>
     </div>
+    <!-- footer  -->
     <?php require '../php/libs/footer.php'; ?>
+    <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>

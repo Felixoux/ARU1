@@ -13,7 +13,7 @@ for (var i = 0; i < dropDowns.length; i++) {
     dropDown.addEventListener('mouseover', navBarMouseOver)
     dropDown.addEventListener('mouseout', navBarMouseOut)
 }
-
+// button navbar 
 var headerNav = document.querySelector("#navbar .header-nav")
 var headerButton = document.querySelector("#navbar #js-burger")
 var headerSide = document.querySelector("#navbar .header-side")

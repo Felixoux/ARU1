@@ -3,6 +3,9 @@
 <?php require '../php/libs/header.php'; ?> 
 <body id="photos-page">
     <div class="page-wrapper">
+        <!-- header  -->
+        <?php require '../php/libs/header-navbar.php'; ?>
+        <!-- main  -->
         <div class="main">
             <h1 class="mt-1">Albums <span>photo</span> de l'école 
             <svg  width="52" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -149,5 +152,6 @@
         </svg>
         <?php require '../php/libs/footer.php' ?>
     </div>
+    <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>

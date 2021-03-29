@@ -4,6 +4,9 @@
 <!-- body  -->
 <body id="les_amis">
     <div class="page-wrapper">
+        <!-- header  -->
+        <?php require '../php/libs/header-navbar.php'; ?>
+        <!-- main  -->
         <main>
             <div class="container flex">
                 <img src="../img/les-amis/les-amis.jpg" alt="les_amis_aru1">
@@ -55,5 +58,6 @@
 
         createSpoilerparagraph(spoiler)
     </script>
+    <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
         <!-- Nav  -->       
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- Upper -->
-        <section class="upper-container flex">
+        <section class="upper-container ">
                 <div class="video-show">
                     <h1 class="title_video"><span>Présentation</span> de notre école</h1>
                     <div class="ratio-video "><iframe width="810" height="499" class="video_iframe mt-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>

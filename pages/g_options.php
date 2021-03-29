@@ -8,7 +8,7 @@
         <header>
             <h1 class="mt-1 center-mg">Nos grilles d'options</h1>
         </header>
-        <main class="mt-3">
+        <main class="mt-1">
             <div class="flex">
                 <div class="img">                  
                 </div>

@@ -5,7 +5,7 @@
 @import "libs/animations.scss";
 /*
 ../dart-sass/sass sass/style.scss style.css --watch
- */
+*/
 //== Header-nav==
 #navbar {
 	padding-top: calc(6 * #{$space});
@@ -42,12 +42,12 @@
 		flex-flow: column;
 		position: absolute;
 		top: 20px;
-		width: 230px;
+		width: 220px;
 		min-height: auto;
 		background-color: $bglight;
 		border: 1px solid $border;
 		border-radius: 5px;
-		transform: translate(-22px, -40px);
+		transform: translate(-17px, -40px);
 		.invisible {
 			padding-top: 3rem;
 		}
@@ -171,7 +171,7 @@
 			bottom: 0;
 			padding: calc(4 * #{$space}) 0;
 			transition: opacity .3s;
-			backdrop-filter: blur(10px);
+			backdrop-filter: blur(20px);
 			z-index: 999;
 			overflow: auto;
 			.header__home, .line::after, .invisible {display: none;}
@@ -190,7 +190,7 @@
 			.relative {
 				width: 185px; 
 				margin: 3rem auto;
-				> a {font-family: 'inter_bold';}
+				> a {font-family: 'inter_bold'; font-size: 20px;}
 			}
 			
 			white-space: nowrap;
@@ -203,6 +203,8 @@
 			right: calc(2 * #{$space});
 			z-index: 999;
 		}
+
+		.sous li {font-size: 18.5px;}
 	}
 }
 	
@@ -601,12 +603,11 @@
 	height: 100vh; 
 
 // == section upper == presentation video et infos importante ==
-
 .upper-container {
-	justify-content: space-between;
-	align-items: flex-start;
-	padding-top:  ($space-section / 1.2);
-	padding-bottom: ($space-section / 2);
+	display: grid;
+	grid-template-columns: 810px 1fr;
+	gap: 5 * $gap;
+	padding:  ($space-section / 1.2) calc(50% - var(--container-width) / 2) ($space-section / 2) calc(50% - var(--container-width) / 2);
 	h1 {
 		font-size: 35px;
 	}
@@ -614,10 +615,6 @@
 
 .video_iframe{ 
 	border-radius: 0 25px 25px  25px;
-}
-
-.infos-upper {
-	margin-left: 5 * $gap;
 }
 
 .infos_square{
@@ -637,43 +634,6 @@
 			text-decoration: underline;
 		}
 	}
-}
-
-@media only screen and (max-width:1360px){
-		
-	.upper-container {
-		flex-flow: nowrap column;
-		align-items: center;
-		h1 {
-			text-align: center;	
-		}
-		.title_video {
-			padding: 0 10vw;
-		}
-		
-		.ratio-video {
-			width: 100%;
-			height: 0;
-			position: relative;
-			padding-bottom: 56.25%;
-		}
-		
-		.video_iframe{
-			position: absolute;
-			width: 100%;
-			height: 100%; 
-		}
-
-		.infos-upper {
-			margin-top: calc(#{$space-section} / 1.2);
-			margin-left: 0;
-		}
-
-		.infos_square {
-			max-height: 250px;
-			max-width: 725px;
-		}
-	}	
 }
 
 .scroll-down__chevron {
@@ -794,7 +754,7 @@ section.bottom{
 .card-inscriptions, .card-eel {
 	flex-flow: nowrap column;
 	justify-content: flex-start;
-	width: 533px;
+	max-width: 533px;
 	line-height: 1.5em;
 	h2 {
 		font-size: 32px;
@@ -835,35 +795,6 @@ section.bottom{
 	cursor: pointer;
 }
 
-// media query section.bottom
-@media only screen and (max-width:1250px) {
-	.card-eel{
-		margin-top: ($space-section / 2);
-	}
-
-	section.bottom {
-		min-width: 200px;
-		flex-flow: nowrap column;
-	}
-
-	.card-eel .hr {
-		display: none;
-	}
-
-	.card-inscriptions, .card-eel {
-		.img {
-			border-radius: 25px;
-		}
-	}
-}
-
-
-@media only screen and (max-width:600px) {
-	.card-inscriptions, .card-eel {
-		width: 90%;
-	}
-}
-
 // == forms ==
 .triangle-bg, .square-bg, .square-form-invoid, .paralleleograme {
 	position: absolute;
@@ -892,6 +823,41 @@ section.bottom{
 	transform: rotate(20deg);
 }
 // == NE SURTOUT PAS ENLEVER LE CROCHET EN DESSOUS == // == fin de Acceuil !!!
+}
+// @media query accueil upper section
+@media only screen and (max-width:1360px) {
+	#accueil .upper-container {
+		grid-template-columns: 1fr;
+
+		.infos_square {
+			max-height: 250px;
+		}
+
+		.ratio-video {
+			width: 100%;
+			height: 0;
+			position: relative;
+			padding-bottom: 56.25%;
+		}
+		
+		.video_iframe{
+			position: absolute;
+			width: 100%;
+			height: 100%; 
+		}
+	}
+}
+// @media query accueil bottom section
+@media only screen and (max-width:1250px) {
+	section.bottom {
+		flex-flow: nowrap column;
+		.card-eel{
+			margin-top: ($space-section / 2);
+			.hr {
+				display: none;
+			}
+		}
+	}
 }
 
 //R.O.I
@@ -930,11 +896,11 @@ section.bottom{
 			a:hover {
 				color: darken($pink, 15%);
 			}
+			margin-top:calc(#{$space-section} / 2);
 		}
 	
 		.summary-roi {
 			background-color: $bglight;
-			margin: $space-section 0 calc(#{$space-section} / 2) 0;
 			line-height: 1.5em;
 			border-radius: 8px;
 			h4 {
@@ -983,7 +949,6 @@ section.bottom{
 		}
 	
 		.roi {
-			margin: $space-section 0 calc(#{$space-section} / 2) 0;
 			max-height: 750px;
 			overflow: auto;
 		}
@@ -1052,7 +1017,7 @@ section.bottom{
 	position: relative;
 
 	.coursenligne  {
-		margin: calc(#{$space-section * 2}) auto;
+		margin: calc(#{$space-section * 1.8}) auto calc(#{$space-section * 2.5}) auto;
 		background-color: $bgcard;
 		border: 1px solid $border;
 		border-radius: 4px;
@@ -1130,11 +1095,12 @@ section.bottom{
 	background: $bgdark;
 
 	header {
-		margin-top: $space-section / 2;
+		margin-top: calc(#{$space-section} / 3.5);
 		h1 {
 			font-size: 30px;
 		}
 	}
+	main {margin-bottom:calc(#{$space-section} / 2);}
 
 	main, header {
 		display: grid;
@@ -1289,7 +1255,7 @@ section.bottom{
 			padding: 5rem 3rem 0 0;
 		}
 		.container-photos {
-			max-height: 800px;
+			max-height: 725px;
 			margin: 0;
 			padding: 0 0 1rem 2rem;
 		}
@@ -1598,8 +1564,3 @@ section.bottom{
 }
 @media only screen and (max-width:1200px) {
 }
-
-
-
-
-
