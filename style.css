@@ -1362,6 +1362,7 @@ span {
 @media only screen and (max-width: 1360px) {
   #accueil .upper-container {
     grid-template-columns: 1fr;
+    padding-top: 75px;
   }
   #accueil .upper-container .infos_square {
     max-height: 250px;
