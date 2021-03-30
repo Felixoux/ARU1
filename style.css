@@ -1454,7 +1454,7 @@ span {
     height: 225px;
   }
   #roi-page .roi {
-    max-height: 750px;
+    max-height: 80vh;
     overflow: auto;
   }
 }
@@ -2006,4 +2006,3 @@ span {
 }
 
 /*# sourceMappingURL=style.css.map */
-
