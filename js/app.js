@@ -24,4 +24,9 @@ headerButton.addEventListener('click', function(){
 
 
 
+// Sticky navbar 
+
+
+
+
 

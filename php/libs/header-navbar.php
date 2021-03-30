@@ -1,6 +1,6 @@
 <nav id="navbar" class="flex relative">
             <ul class="header-nav">
-                <li class="header__home flex">
+                <li class="header__home">
                     <a href="accueil.php">
                         <svg>
                             <use xlink:href="../img/svg/svg-header-nav/sprite.svg#home"></use>

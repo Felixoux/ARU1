@@ -142,7 +142,7 @@
 		transition: color .2s ease;
 	}
 
-	a:hover, button:hover{
+	a:hover, button:hover, a:active{
 		color: $contrast;
 	}
 	
@@ -594,7 +594,7 @@
 }
 
 .video_iframe{ 
-	border-radius: 0 25px 25px  25px;
+	border-radius: 10px 25px 25px 25px;
 }
 
 .infos_square{
@@ -619,7 +619,7 @@
 .scroll-down__chevron {
 	width: 25px; 
 	height: 25px;
-	animation: scroll-down__chevron 4s .7s cubic-bezier(0.71, 0.76, 0.98, 1.23) infinite;
+	animation: scrollDown__chevron 4s .7s cubic-bezier(0.71, 0.76, 0.98, 1.23) infinite;
 	cursor: pointer;
 }
 
@@ -1544,4 +1544,22 @@ section.bottom{
 	#page404 main svg {display: none;}
 }
 @media only screen and (max-width:1200px) {
+}
+
+// test-onglets 
+#test-onglets {
+	background: $bglight;
+	color: $letterscolor;
+
+	.tab-content {
+		display: none;
+	}
+
+	.tab-content.active {
+		display: block;
+	}
+
+	.tabs .active a {
+		color: $contrast;
+	}
 }
