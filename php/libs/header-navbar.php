@@ -17,7 +17,7 @@
                     <ul class="sous">
                         <li class="invisible"></li>
                         <li><a href="#">Le personnel</a></li>
-                        <li><a href="roi.php">R.O.I.</a></li>
+                        <li><a href="roi.php">R.O.I</a></li>
                         <li><a href="projetsecole.php">Nos projets</a></li>
                     </ul>
                 </li>

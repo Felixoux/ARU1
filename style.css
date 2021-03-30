@@ -1581,7 +1581,7 @@ span {
   background: #171933;
 }
 #g_options header {
-  margin-top: calc(150px / 3.5);
+  margin-top: 42.8571428571px;
 }
 #g_options header h1 {
   font-size: 30px;
@@ -1592,7 +1592,7 @@ span {
 #g_options main, #g_options header {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
-  grid-template-rows: auto;
+  grid-auto-rows: auto;
   gap: 40px;
   justify-items: center;
   justify-content: center;
@@ -1668,15 +1668,6 @@ span {
   z-index: -1;
 }
 
-@media only screen and (max-width: 680px) {
-  #g_options header h1 {
-    padding: 0 1rem;
-  }
-  #g_options .sloth {
-    right: 0;
-    transform: rotate(-15deg) translate(20px);
-  }
-}
 #photos-page {
   background: #1b1e3d;
   width: 100%;
@@ -2016,6 +2007,10 @@ span {
 }
 #test-onglets .tabs .active a {
   color: #5396e7;
+}
+
+:fullscreen a {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
