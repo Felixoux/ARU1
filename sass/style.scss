@@ -252,6 +252,7 @@
 			max-width: 600px;
 			padding: 1.5em 2em;
 			background:$bgcard;
+			border-radius: 8px;
 			box-shadow: 0 2px 4px $shadow;
 			transition: all .2s ease-in;
 			&:focus {
@@ -676,6 +677,8 @@ section.bottom{
 		&__hr {
 			justify-self: flex-end;
 			width: 60%;
+			height: 1px;
+			background-color: $textnavbar25;
 		}
 
 		span {

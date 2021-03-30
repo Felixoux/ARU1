@@ -871,6 +871,7 @@ span {
   max-width: 600px;
   padding: 1.5em 2em;
   background: #22244D;
+  border-radius: 8px;
   box-shadow: 0 2px 4px #00000033;
   transition: all 0.2s ease-in;
 }
@@ -1241,6 +1242,8 @@ span {
 #accueil section.bottom .card__hr {
   justify-self: flex-end;
   width: 60%;
+  height: 1px;
+  background-color: #8491C7;
 }
 #accueil section.bottom .card span {
   color: #41cf7c;
