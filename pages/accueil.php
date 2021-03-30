@@ -6,14 +6,14 @@
         <!-- Nav  -->       
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- Upper -->
-        <section class="upper-container ">
-                <div class="video-show">
-                    <h1 class="title_video"><span>Présentation</span> de notre école</h1>
-                    <div class="ratio-video "><iframe width="810" height="499" class="video_iframe mt-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <section class="upper-container">
+                <div class="video">
+                    <h1 class="video__title"><span>Présentation</span> de notre école</h1>
+                    <div class="video__ratio"><iframe width="810" height="499" class="video__iframe mt-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 </div>
-                <div class="infos-upper">
-                    <h1 class="title_infos">Infos importantes</h1>
-                    <div class="infos_square mt-2 overflow-a ">
+                <div class="news">
+                    <h1 class="news__title">Infos importantes</h1>
+                    <div class="news__content mt-2 overflow-a">
                         <p>&bull; L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
                         <p>&bull; Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
                         <p>&bull; <span class="alert">Urgent:</span> rendre les bulletins avant le 36/01/3021 ;)</p>
@@ -116,20 +116,20 @@
         </section>
         <!-- Bottom  -->
         <section class="bottom flex" id="insciptions-ecole-en-ligne">
-                <div class="card-inscriptions flex">
-                    <h2>Inscriptions</h2>
-                    <div class="img"></div>
-                    <p>Les inscriptions de la 2ème à la 6ème secondaire se font uniquement sur rendez-vous.</p>
-                    <p>Tel : <span>02 374 05 84</span></p>
-                    <div class="hr"></div>
+                <div class="card flex">
+                    <h2 class="card__title">Inscriptions</h2>
+                    <div class="card__img"></div>
+                    <p class="card__p">Les inscriptions de la 2ème à la 6ème secondaire se font uniquement sur rendez-vous.</p>
+                    <p class="card__p">Tel : <span>02 374 05 84</span></p>
+                    <div class="card__hr"></div>
                 </div>
-                <div class="card-eel flex">
-                    <h2>Ecole en ligne</h2>
-                    <div class="img"></div>
-                    <p>Une plateforme pour que les elèves et les parents puissent 
+                <div class="card flex">
+                    <h2 class="card__title">Ecole en ligne</h2>
+                    <div class="card__img"></div>
+                    <p class="card__p">Une plateforme pour que les elèves et les parents puissent 
                         voir les bulletins, documents etc... </p>
-                    <p>Aller sur le site de l’école en ligne en <a href="https://aru1.ecoleenligne.be" target="_blank">cliquant ici</a></p>
-                    <div class="hr"></div>
+                    <p class="card__p">Aller sur le site de l’école en ligne en <a href="https://aru1.ecoleenligne.be" target="_blank">cliquant ici</a></p>
+                    <div class="card__hr"></div>
                 </div>
          </section>
         <!-- Footer -->
@@ -139,6 +139,5 @@
         <div class="square-bg"></div>           
 <!-- Scripts  -->
     <script type="text/javascript" src="../js/app.js"></script>
-    <script src="../js/uncss.js"></script>
 </body>
 </html>
