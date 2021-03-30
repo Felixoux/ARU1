@@ -834,7 +834,7 @@ span {
 #footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 10vw;
+  gap: 200px;
   row-gap: 100px;
   justify-content: space-between;
   padding-top: 75px;
@@ -853,6 +853,7 @@ span {
 }
 #footer > div .goldBook__buttons, #footer > div .newsletter__buttons {
   align-items: flex-start;
+  flex-direction: column;
 }
 #footer h3 {
   font-size: 29px;
@@ -956,6 +957,16 @@ span {
   transform: scale(1.08);
 }
 
+@media only screen and (min-width: 450px) {
+  #footer > div .goldBook__buttons, #footer > div .newsletter__buttons {
+    align-items: center;
+    flex-direction: row;
+  }
+  #footer > div .goldBook__buttons .btn--cancel, #footer > div .newsletter__buttons .btn--cancel {
+    margin-right: 1.5rem;
+    order: 0;
+  }
+}
 #index {
   background-color: #1b1e3d;
   width: 100%;

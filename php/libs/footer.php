@@ -3,7 +3,7 @@
                 <h3 class="goldBook__title">Laissez un avis sur le site, cela nous permettera de l’améliorer</h3>
                 <form class="goldBook__form goldBook__form--column flex" action="accueil.php" method="post">
                     <textarea class="goldBook__content font-normal" name="gold-book__text" cols="70" rows="10" placeholder="Votre avis sur le site..."></textarea>
-                    <div class="goldBook__buttons  flex">
+                    <div class="goldBook__buttons mt-1 flex">
                         <button class="btn btn--cancel font-normal" type="reset" value="cancel">Annuler</button>
                         <button class="btn btn--submit mt-1 font-normal btn-hover__effect" type="submit" value="send">Envoyer      </button>
                     </div>
@@ -17,7 +17,7 @@
                 <p class="newsletter__p ex-mail">Entrez votre e-mail </p>
                 <form class="newsletter__form newsletter__form--column flex" action="accueil.php" method="post">
                     <div class="newsletter__mail"><input class="font-normal newsletter__mail__input" type="text" placeholder="pierre.durand@gmail.com"></div>
-                    <div class="newsletter__buttons flex mt-2">
+                    <div class="newsletter__buttons mt-1 flex ">
                         <button class="btn btn--cancel font-normal" type="reset" value="cancel">Annuler</button>
                         <button class="btn btn--subscribe mt-1 font-normal btn-hover__effect" type="submit" value="subscribe">S'inscrire</button>
                     </div>
@@ -32,5 +32,4 @@
                     <h5 class="mt-1">Notre Réseau</h5>
                     <a href="http://www.wallonie-bruxelles-enseignement.be/" target="_blank"><img width="95" height="76" src="/img/logo-federation.jpg" alt="Logo-Federation"></a>
                 </div>   
-            <div class="square-form-invoid"></div> 
         </footer>
