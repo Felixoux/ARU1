@@ -833,12 +833,11 @@ span {
 }
 #footer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 200px;
+  grid-template-rows: min-content;
   row-gap: 100px;
-  justify-content: space-between;
   padding-top: 75px;
   padding-bottom: 75px;
+  height: 1400px;
   background-color: #171933;
   border-top: 2px solid #4869ee3f;
   overflow: hidden;
@@ -894,7 +893,7 @@ span {
   padding: calc(1.5 * 8px) calc(1 * 8px);
   background: #171933;
   border: 1px solid #2a2e5e;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 16px;
 }
 #footer .newsletter__mail__input:focus {
@@ -951,7 +950,7 @@ span {
   border-radius: 4px;
 }
 #footer img {
-  transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in;
   cursor: pointer;
 }
 #footer img:hover {
@@ -959,6 +958,11 @@ span {
 }
 
 @media only screen and (min-width: 450px) {
+  #footer {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    column-gap: 150px;
+    justify-content: space-between;
+  }
   #footer > div .goldBook__buttons, #footer > div .newsletter__buttons {
     align-items: center;
     flex-direction: row;
@@ -966,6 +970,11 @@ span {
   #footer > div .goldBook__buttons .btn--cancel, #footer > div .newsletter__buttons .btn--cancel {
     margin-right: 1.5rem;
     order: 0;
+  }
+}
+@media only screen and (min-width: 1014px) {
+  #footer {
+    height: 623px;
   }
 }
 #index {
@@ -1529,7 +1538,10 @@ span {
   justify-items: center;
   justify-content: center;
 }
-#g_options main div, #g_options header div {
+#g_options main .card, #g_options header .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   background: #22244D;
   border-radius: 5px;
@@ -1540,38 +1552,17 @@ span {
   box-shadow: 0 2px 4px #00000033;
   overflow: hidden;
 }
-#g_options main div .img, #g_options header div .img {
+#g_options main .card__img, #g_options header .card__img {
   background: no-repeat center/cover url(../img/grilles-options/1e.jpg);
   width: 300px;
   height: 165px;
   border-radius: 5px;
 }
-#g_options main div:nth-child(3) .img, #g_options header div:nth-child(3) .img {
-  background: no-repeat center/cover url(../img/grilles-options/1e-immersion.jpg);
-}
-#g_options main div:nth-child(4) .img, #g_options header div:nth-child(4) .img {
-  background: no-repeat center/cover url(../img/grilles-options/2e.jpg);
-}
-#g_options main div:nth-child(5) .img, #g_options header div:nth-child(5) .img {
-  background: no-repeat center/cover url(../img/grilles-options/2ecomplementaire.jpg);
-}
-#g_options main div:nth-child(6) .img, #g_options header div:nth-child(6) .img {
-  background: no-repeat center/cover url(../img/grilles-options/3e.jpg);
-}
-#g_options main div:nth-child(7) .img, #g_options header div:nth-child(7) .img {
-  background: no-repeat center/cover url(../img/grilles-options/4e.jpg);
-}
-#g_options main div:nth-child(8) .img, #g_options header div:nth-child(8) .img {
-  background: no-repeat center/cover url(../img/grilles-options/5e.jpg);
-}
-#g_options main div:nth-child(9) .img, #g_options header div:nth-child(9) .img {
-  background: no-repeat center/cover url(../img/grilles-options/6e.jpg);
-}
-#g_options main div h4, #g_options header div h4 {
+#g_options main .card__title, #g_options header .card__title {
   font-size: 20px;
   position: relative;
 }
-#g_options main div h4::after, #g_options header div h4::after {
+#g_options main .card__title::after, #g_options header .card__title::after {
   content: "";
   margin: 0 auto;
   position: absolute;
@@ -1583,22 +1574,37 @@ span {
   height: 1px;
   background: #D4DCFF;
 }
-#g_options main div .line::after, #g_options header div .line::after {
+#g_options main .card .line::after, #g_options header .card .line::after {
   top: 50px;
 }
-#g_options main div button, #g_options header div button {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -3px -3px 5px -2px rgba(255, 255, 255, 0.2);
+#g_options main .card__btn, #g_options header .card__btn {
+  padding: 0.4rem 1rem;
+  margin: 20px 0;
   font-size: 16px;
   background: #22244D;
   border-radius: 5px;
-  padding: 0.4rem 1rem;
-  margin: 20px 0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -3px -3px 5px -2px rgba(255, 255, 255, 0.2);
 }
-#g_options main svg, #g_options header svg {
-  position: fixed;
-  top: 30px;
-  left: 75%;
-  z-index: -1;
+#g_options main :nth-child(2) .card__img, #g_options header :nth-child(2) .card__img {
+  background: no-repeat center/cover url(../img/grilles-options/1e-immersion.jpg);
+}
+#g_options main :nth-child(3) .card__img, #g_options header :nth-child(3) .card__img {
+  background: no-repeat center/cover url(../img/grilles-options/2e.jpg);
+}
+#g_options main :nth-child(4) .card__img, #g_options header :nth-child(4) .card__img {
+  background: no-repeat center/cover url(../img/grilles-options/2ecomplementaire.jpg);
+}
+#g_options main :nth-child(5) .card__img, #g_options header :nth-child(5) .card__img {
+  background: no-repeat center/cover url(../img/grilles-options/3e.jpg);
+}
+#g_options main :nth-child(6) .card__img, #g_options header :nth-child(6) .card__img {
+  background: no-repeat center/cover url(../img/grilles-options/4e.jpg);
+}
+#g_options main :nth-child(7) .card__img, #g_options header :nth-child(7) .card__img {
+  background: no-repeat center/cover url(../img/grilles-options/5e.jpg);
+}
+#g_options main :nth-child(8) .card__img, #g_options header :nth-child(8) .card__img {
+  background: no-repeat center/cover url(../img/grilles-options/6e.jpg);
 }
 
 #photos-page {
@@ -1860,72 +1866,72 @@ span {
 }
 #page404 {
   background: url(../img/bg404.png), #171933;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
 }
 #page404 main {
   height: 100vh;
 }
-#page404 .container {
-  z-index: 1;
+#page404 main .container {
   justify-content: flex-start;
   padding: 2rem;
   background: #22244D;
   border: 1px solid #2a2e5e;
   border-radius: 25px;
+  z-index: 1;
 }
-#page404 .container h1 {
-  font-size: 52px;
-}
-#page404 .container p {
-  font-size: 25px;
-  line-height: 1.9em;
-}
-#page404 .container a {
-  color: #5396e7;
-}
-#page404 .container a:hover {
-  color: #1d6ed0;
-}
-#page404 .container .text {
-  margin: 0 0 -3rem 3rem;
+#page404 main .container__content {
+  margin-left: 2rem;
   word-break: keep-all;
 }
+#page404 main .container__content__title {
+  font-size: 52px;
+}
+#page404 main .container__content__paragraph {
+  font-size: 25px;
+  line-height: 1.5em;
+}
+#page404 main .container__content a {
+  color: #5396e7;
+}
+#page404 main .container__content a:hover {
+  color: #1d6ed0;
+}
 
-@media only screen and (max-width: 980px) {
-  #page404 .container h1 {
+@media only screen and (max-width: 1010px) {
+  #page404 .container__content {
+    margin-bottom: 0;
+  }
+  #page404 .container__content__title {
     font-size: 35px;
   }
-  #page404 .container p {
+  #page404 .container__content__paragraph {
     font-size: 22.5px;
-    line-height: 1.5em;
-  }
-  #page404 .container .text {
-    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 750px) {
-  #page404 .container {
+  #page404 main .container {
     flex-flow: column;
     align-items: center;
     padding: 1rem;
   }
-  #page404 .container h1 {
-    padding-top: 1rem;
-    font-size: 29px;
+  #page404 main .container__svg {
+    width: 60vw;
   }
-  #page404 .container p {
-    font-size: 16px;
-  }
-  #page404 .container .text {
+  #page404 main .container__content {
     margin: 0;
     text-align: center;
   }
-  #page404 .container svg {
-    width: 60vw;
+  #page404 main .container__content__title {
+    padding-top: 1rem;
+    font-size: 29px;
+  }
+  #page404 main .container__content__paragraph {
+    font-size: 16px;
+    line-height: 1.5em;
   }
 }
 @media only screen and (max-height: 460px) {
-  #page404 main svg {
+  #page404 main .container__svg {
     display: none;
   }
 }

@@ -211,12 +211,11 @@
 // == Footer == 
 #footer {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	gap: 200px;
+	grid-template-rows: min-content;
 	row-gap: 100px;
-	justify-content:space-between;
 	padding-top: ($space-section / 2);
 	padding-bottom: ($space-section / 2);
+	height: 1400px;
 	background-color: $bgdark;
 	border-top: 2px solid $contrast25;
 	overflow: hidden;
@@ -278,7 +277,7 @@
 			padding: calc(1.5 * #{$space}) calc(1 * #{$space});
 			background: $bgdark;
 			border: 1px solid $border;
-			border-radius: 3px;
+			border-radius: 4px;
 			font-size: 16px;
 			&:focus {
 				border-color: $contrast;
@@ -344,7 +343,7 @@
 	}
 
 	img{
-		transition: all .25s ease-in-out;
+		transition: all .25s ease-in;
 		cursor: pointer;
 		&:hover {
 			transform: scale(1.08);
@@ -356,6 +355,9 @@
 // media query footer 
 @media only screen and (min-width:450px) {
 	#footer {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		column-gap: 150px;
+		justify-content:space-between;
 		>div {
 			.goldBook__buttons, .newsletter__buttons {
 				align-items: center;
@@ -366,6 +368,11 @@
 				}
 			}
 		}
+	}
+}
+@media only screen and (min-width:1014px) {
+	#footer {
+		height: 623px;
 	}
 }
 
@@ -1014,7 +1021,11 @@ section.bottom{
 		gap: 40px;
 		justify-items: center;
 		justify-content: center;
-		div {
+		
+		.card {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 			flex-direction: column;
 			background: $bgcard;
 			border-radius: 5px;
@@ -1024,67 +1035,65 @@ section.bottom{
 			line-height: 1.5em;
 			box-shadow: 0 2px 4px $shadow;
 			overflow: hidden;
-			.img {
+
+			&__img {
 				background:no-repeat center / cover url(../img/grilles-options/1e.jpg);
 				width: 300px;
 				height: 165px;
 				border-radius: 5px;
 			}
-		&:nth-child(3) .img{
-			background: no-repeat center / cover url(../img/grilles-options/1e-immersion.jpg);
-		}
-		&:nth-child(4) .img{
-			background: no-repeat center / cover url(../img/grilles-options/2e.jpg);
-		}
-		&:nth-child(5) .img{
-			background: no-repeat center / cover url(../img/grilles-options/2ecomplementaire.jpg);
-		}
-		&:nth-child(6) .img{
-			background: no-repeat center / cover url(../img/grilles-options/3e.jpg);
-		}
-		&:nth-child(7) .img{
-			background: no-repeat center / cover url(../img/grilles-options/4e.jpg);
-		}
-		&:nth-child(8) .img{
-			background: no-repeat center / cover url(../img/grilles-options/5e.jpg);
-		}
-		&:nth-child(9) .img{
-			background: no-repeat center / cover url(../img/grilles-options/6e.jpg);
-		}
-			h4 {
+
+			&__title {
 				font-size: 20px;
 				position: relative;
+				&::after {
+					content: '';
+					margin: 0 auto;
+					position: absolute;
+					top: 42.5px;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					width: 80%;
+					height: 1px;
+					background: $letterscolor;
+				}
 			}
-			h4::after {
-				content: '';
-				margin: 0 auto;
-				position: absolute;
-				top: 42.5px;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				width: 80%;
-				height: 1px;
-				background: $letterscolor;
-			}
+
 			.line::after {
-				top: 50px;
+				top: 50px; // ligne exception 2ème complementaire
 			}
-			button {
-				box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -3px -3px 5px -2px rgba(255, 255, 255, 0.2);
+
+			&__btn {
+				padding: 0.4rem 1rem;
+				margin: 20px 0;
 				font-size: 16px;
 				background:$bgcard ;
 				border-radius:5px ;
-				padding: 0.4rem 1rem;
-				margin: 20px 0;
+				box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -3px -3px 5px -2px rgba(255, 255, 255, 0.2);
 			}
 		}
 
-		svg {
-			position: fixed;
-			top: 30px;
-			left: 75%;
-			z-index: -1;
+		:nth-child(2) .card__img{
+			background: no-repeat center / cover url(../img/grilles-options/1e-immersion.jpg);
+		}
+		:nth-child(3) .card__img{
+			background: no-repeat center / cover url(../img/grilles-options/2e.jpg);
+		}
+		:nth-child(4) .card__img{
+			background: no-repeat center / cover url(../img/grilles-options/2ecomplementaire.jpg);
+		}
+		:nth-child(5) .card__img{
+			background: no-repeat center / cover url(../img/grilles-options/3e.jpg);
+		}
+		:nth-child(6) .card__img{
+			background: no-repeat center / cover url(../img/grilles-options/4e.jpg);
+		}
+		:nth-child(7) .card__img{
+			background: no-repeat center / cover url(../img/grilles-options/5e.jpg);
+		}
+		:nth-child(8) .card__img{
+			background: no-repeat center / cover url(../img/grilles-options/6e.jpg);
 		}
 	}
 }
@@ -1376,89 +1385,88 @@ section.bottom{
 // == Erreure 404 page ==
 #page404 {
 	background: url(../img/bg404.png), $bgdark ;
-	backdrop-filter: blur(3px);
+	backdrop-filter: blur(4px);
 	
 	main {
 		height: 100vh;
-	}
 
-	.container {
-		z-index: 1;
-		justify-content: flex-start;
-		padding: 2rem;
-		background: $bgcard;
-		border: 1px solid $border;
-		border-radius: 25px;
-		
-		h1 {
-			font-size: 52px;
-		}
-		p {
-			font-size: 25px;
-			line-height: 1.9em;
-		}
-		a {
-			color: $contrast;
-			&:hover {
-				color: darken($contrast, 15%);
+		.container {
+			justify-content: flex-start;
+			padding: 2rem;
+			background: $bgcard;
+			border: 1px solid $border;
+			border-radius: 25px;
+			z-index: 1;
+	
+			&__content {
+				margin-left: 2rem;
+				word-break:keep-all;
+	
+				&__title {
+					font-size: 52px;
+				}
+	
+				&__paragraph {
+					font-size: 25px;
+					line-height: 1.5em;
+				}
+	
+				a {
+					color: $contrast;
+					&:hover {
+						color: darken($contrast, 15%);
+					}
+				}
 			}
 		}
-		.text {
-			margin:  0 0 -3rem 3rem;
-			word-break:keep-all;
-		}
 	}
+
+	
 
 
 }
 // Media Query 404 page
-@media only screen and (max-width:980px) {
-	#page404 {
-		.container {
-			h1 {
-				font-size: 35px;
-			}
+@media only screen and (max-width:1010px) {
+	#page404 .container__content{
+		margin-bottom: 0;
 
-			p {
-				font-size: 22.5px;
-				line-height: 1.5em;
-			}
-			.text {
-				margin-bottom: 0;
-			}
+		&__title {
+			font-size: 35px;
+		}
+
+		&__paragraph {
+			font-size: 22.5px;
 		}
 	}
 }
 @media only screen and (max-width:750px) {
-	#page404 {
-		.container {
-			flex-flow: column;
-			align-items: center;
-			padding: 1rem;
+	#page404 main .container {
+		flex-flow: column;
+		align-items: center;
+		padding: 1rem;
 
-			h1 {
+		&__svg {
+			width: 60vw;
+		}
+
+		&__content {
+			margin: 0;
+			text-align: center;
+
+			&__title {
 				padding-top: 1rem;
 				font-size: 29px
 			}
 
-			p {
+			&__paragraph {
 				font-size: 16px;
-			}
-
-			.text {
-				margin: 0;
-				text-align: center;
-			}
-			svg {
-				width: 60vw;
+				line-height: 1.5em;
 			}
 		}
 	}
 }
 @media only screen and (max-height:460px) {
-	#page404 main svg {display: none;}
-}
-@media only screen and (max-width:1200px) {
+	#page404 main .container__svg {display: none;}
 }
 
 // test-onglets 

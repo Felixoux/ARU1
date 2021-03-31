@@ -5,7 +5,7 @@
     <div class="page-wrapper">
         <main class="flex-center">
             <div class="container flex">
-                <svg width="512" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="container__svg" width="512" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 145 118.1" style="enable-background:new 0 0 145 118.1;" xml:space="preserve">
                     <style type="text/css">
                         .st0{fill:#40332C;}
@@ -50,9 +50,9 @@
                         l1.5-1c-3.5-1.6-19.4-1.6-22.9,0l1.5,1c0,0-9.4,2.6-13.4,7.6l2.2-0.4c0,0-7.7,5-11.8,12.9l1.5-0.5c0,0,0,0.2,0.1,0.4
                         c-8.6,13.6-13.9,31.2-13.9,46.3c0,29.4,20.2,45.7,45.2,45.7c25,0,45.2-16.4,45.2-45.7C117.9,53.5,112.6,36,104.1,22.5"/>
                 </svg>
-                <div class="text">
-                    <h1 class="alert pt-2">Erreur 404</h1>
-                    <p>
+                <div class="container__content">
+                    <h1 class="container__content__title alert pt-2">Erreur 404</h1>
+                    <p class="container__content__paragraph">
                         Oupsiii il semble y avoir une erreur, <br>
                         la page peut avoir été supprimée ou deplacée... <br>
                         Vous pouvez reessayer plus tard ou <br>
