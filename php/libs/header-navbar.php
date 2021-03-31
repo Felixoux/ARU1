@@ -1,6 +1,6 @@
 <nav id="navbar" class="flex relative">
             <ul class="header-nav">
-                <li class="header__home">
+                <li class="header__home <?php if($_SERVER['SCRIPT_NAME'] === '/pages/accueil.php') : ?>active<?php endif?>">
                     <a href="accueil.php">
                         <svg>
                             <use xlink:href="../img/svg/svg-header-nav/sprite.svg#home"></use>

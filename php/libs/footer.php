@@ -15,8 +15,8 @@
                     </svg>
                 </h3>
                 <p class="newsletter__p ex-mail">Entrez votre e-mail </p>
-                <form class="newsletter__form newsletter__form--column flex" action="accueil.php" method="post">
-                    <div class="newsletter__mail"><input class="font-normal newsletter__mail__input" type="text" placeholder="pierre.durand@gmail.com"></div>
+                <form class="newsletter__form newsletter__form--column flex" action="/pages/accueil.php" method="post">
+                    <div class="newsletter__mail"><input class="font-normal newsletter__mail__input" type="email" placeholder="pierre.durand@gmail.com" required></div>
                     <div class="newsletter__buttons mt-1 flex ">
                         <button class="btn btn--cancel font-normal" type="reset" value="cancel">Annuler</button>
                         <button class="btn btn--subscribe mt-1 font-normal btn-hover__effect" type="submit" value="subscribe">S'inscrire</button>

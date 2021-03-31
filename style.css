@@ -56,6 +56,8 @@ table {
 
 a {
   text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
 }
 
 a:visited {
@@ -223,12 +225,6 @@ textarea {
 
 img {
   max-width: 100%;
-}
-
-a {
-  transition: color 0.3s;
-  color: #D4DCFF;
-  font-family: "inter";
 }
 
 .hr {
@@ -642,6 +638,7 @@ span {
 #navbar {
   padding-top: calc(6 * 8px);
   padding-bottom: calc(3 * 8px);
+  color: #D4DCFF;
 }
 #navbar::after {
   content: "";
@@ -751,8 +748,6 @@ span {
   height: 2px;
   background: #D4DCFF;
   position: relative;
-  transition: 0.3s;
-  transition-property: top, bottom, transform;
 }
 #navbar .header__burger span::after {
   bottom: -4px;
@@ -760,10 +755,7 @@ span {
 #navbar .header__burger span::before {
   top: -6px;
 }
-#navbar a {
-  transition: color 0.2s ease;
-}
-#navbar a:hover, #navbar button:hover, #navbar a:active {
+#navbar a:hover, #navbar button:hover, #navbar li.active a {
   color: #5396e7;
 }
 #navbar svg {
@@ -1136,18 +1128,20 @@ span {
   box-shadow: 0 2px 4px #00000033;
 }
 #accueil .news__square p {
-  padding: 1rem;
+  padding: 1rem 0;
   font-size: 16px;
 }
 #accueil .news__square p a {
   color: #D68FD6;
   text-decoration: underline;
 }
+#accueil .news__square__content {
+  padding: 16px;
+}
 #accueil .news__square__time {
+  padding: 16px;
   background: #1b1e3d;
   border-left: 1px solid #2a2e5e;
-}
-#accueil .news__square__time p {
   color: #8491C7;
 }
 #accueil .news__square__time :nth-child(2) {
