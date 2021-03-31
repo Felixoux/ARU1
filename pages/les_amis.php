@@ -9,11 +9,10 @@
         <!-- main  -->
         <main>
             <div class="container flex">
-                <img src="../img/les-amis/les-amis.jpg" alt="les_amis_aru1">
-                <div>
-                    <h1>Les Amis en quelques mots...</h1>
-                    <h5>Les “Amis de l’Athénée Royal d’Uccle 1” </h4>
-                    <p>L’Association <span class="italic">« Les Amis de l’Athénée Royal  d’Uccle 1 »</span> a été créée <br> en 1932</p>
+                <div class="container__content">
+                    <h1 class="container__content__title">Les Amis en quelques mots...</h1>
+                    <h5 class="container__content__subtitle">Les “Amis de l’Athénée Royal d’Uccle 1” </h4>
+                    <p class="container_content__citation">L’Association <span class="italic">« Les Amis de l’Athénée Royal  d’Uccle 1 »</span> a été créée <br> en 1932</p>
                     <p>
                         Son conseil d’administration est composé d’anciens professeurs,
                         d’anciens élèves, de parents d’élèves, de professeurs en fonction et de la Direction de l’Athénée souhaitant tous continuer à contribuer et à participer au bon fonctionnement de l’école.
@@ -37,7 +36,7 @@
                             Retrouvez-nous aussi sur Facebook : <a href="https://www.facebook.com/pages/category/Nonprofit-Organization/Les-Amis-de-LAru1-104390721107594/" target="_blank" rel="noopener noreferrer">Les Amis de L'Aru1 </a>
                         </p>
                     </div>
-                    <p class="see-more">Lire la suite</p>
+                    <p class="container__content__spoiler btn--spoiler">Lire la suite</p>
                 </div>
             </div>
         </main>
@@ -46,7 +45,7 @@
     </div>
     <script>
         // Spoiler system
-        var spoiler = document.querySelector("#les_amis main .see-more")
+        var spoiler = document.querySelector("#les_amis main .btn--spoiler")
 
         var createSpoilerparagraph = function(button) {
             button.addEventListener('click', function() {
