@@ -9,32 +9,41 @@
         <section class="upper-container">
                 <div class="video">
                     <h1 class="video__title"><span>Présentation</span> de notre école</h1>
-                    <div class="video__ratio"><iframe width="810" height="499" class="video__iframe mt-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video__ratio ratio"><iframe class="video__iframe mt-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 </div>
                 <div class="news">
                     <h1 class="news__title">Infos importantes</h1>
-                    <div class="news__content mt-2 overflow-a">
-                        <p>&bull; L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
-                        <p>&bull; Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
-                        <p>&bull; <span class="alert">Urgent:</span> rendre les bulletins avant le 36/01/3021 ;)</p>
-                        <p>&bull; Les réunions parents professeurs se feront le 29/02/21</p>
-                        <p>&bull; Atelier déplacement de meuble avec Mr.Gigon ce mercredi</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
-                        <p>&bull; Ceci est un exemple</p>
+                    <div class="news__square mt-2 overflow-a">
+                        <div class="news__square__content">
+                            <p>&bull; L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
+                            <p>&bull; Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
+                            <p>&bull; <span class="alert">Urgent:</span> rendre les bulletins avant le 36/01/3021 ;)</p>
+                            <p>&bull; Les réunions parents professeurs se feront le 29/02/21</p>
+                            <p>&bull; Atelier déplacement de meuble avec Mr.Gigon ce mercredi</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                            <p>&bull; Ceci est un exemple</p>
+                        </div>
+                        <div class="news__square__time">
+                            <p>19/01</p>
+                            <p>13/02</p>
+                            <p>04/08</p>
+                            <p>01/04</p>
+                            <p>04/12</p>
+                        </div>
                     </div> 
                 </div>   
         </section>

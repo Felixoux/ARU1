@@ -1114,8 +1114,8 @@ span {
 }
 #accueil .upper-container {
   display: grid;
-  grid-template-columns: 810px 1fr;
-  gap: 125px;
+  grid-template-columns: 790px 1fr;
+  gap: 100px;
   padding: 125px calc(50% - var(--container-width) / 2) 75px calc(50% - var(--container-width) / 2);
 }
 #accueil .upper-container h1 {
@@ -1124,23 +1124,41 @@ span {
 #accueil .video__iframe {
   border-radius: 10px 25px 25px 25px;
 }
-#accueil .news__content {
+#accueil .news__square {
+  display: grid;
+  grid-template-columns: 1fr 75px;
   min-height: 223px;
   max-height: 499px;
-  padding: 1em 1em 0 2em;
   border: 1px solid #2a2e5e;
   border-radius: 4px;
   background: #22244D;
   line-height: 1.4em;
   box-shadow: 0 2px 4px #00000033;
 }
-#accueil .news__content p {
+#accueil .news__square p {
+  padding: 1rem;
   font-size: 16px;
-  margin-bottom: 1em;
 }
-#accueil .news__content p a {
+#accueil .news__square p a {
   color: #D68FD6;
   text-decoration: underline;
+}
+#accueil .news__square__time {
+  background: #1b1e3d;
+  border-left: 1px solid #2a2e5e;
+}
+#accueil .news__square__time p {
+  color: #8491C7;
+}
+#accueil .news__square__time :nth-child(2) {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+#accueil .news__square__time :nth-child(3) {
+  padding-bottom: 2.5rem;
+}
+#accueil .news__square__time :nth-child(4) {
+  padding-bottom: 2.5rem;
 }
 #accueil .scroll-down__chevron {
   width: 25px;
@@ -1306,24 +1324,21 @@ span {
   transform: rotate(20deg);
 }
 
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1260px) {
   #accueil .upper-container {
     grid-template-columns: 1fr;
     padding-top: 75px;
   }
-  #accueil .upper-container .news__content {
+  #accueil .upper-container .video {
+    width: 80%;
+  }
+  #accueil .upper-container .news__square {
     max-height: 250px;
   }
-  #accueil .upper-container .video__ratio {
+}
+@media only screen and (max-width: 750px) {
+  #accueil .upper-container .video {
     width: 100%;
-    height: 0;
-    position: relative;
-    padding-bottom: 56.25%;
-  }
-  #accueil .upper-container .video__iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
   }
 }
 @media only screen and (max-width: 1250px) {
