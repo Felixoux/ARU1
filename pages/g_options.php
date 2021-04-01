@@ -25,7 +25,7 @@
                 <h4 class="card_title pt-1">1ère année immersion</h4>
                 <button class="card__btn">
                     <a href="../docs/pdf/Grilles_1e_immersion.pdf">
-                        Lire la suite
+                        <p>Lire la suite</p>
                     </a>
                 </button>
             </div>
