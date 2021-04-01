@@ -8,11 +8,12 @@
         <!-- main  -->
         <div class="container relative">
             <div class="summary-roi">
-                <h2 class="pt-2 uppercase">r.o.i</h2>
-                <h4 class="pt-1">Le reglement peut être lu ici même sur le site ou sous forme de pdf en <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h4>
+                <h2 class="uppercase">r.o.i</h2>
+                <h4>Le reglement peut être lu ici même sur le site ou sous forme de pdf en <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h4>
             </div>
             <div class="roi">
-                <h2 class="pt-2 uppercase">reglement d'ordre <span>interieur</span></h2>
+                <img src="../img/svg/logo-aru1.svg" alt="">
+                <h2 class="uppercase">reglement d'ordre <span>interieur</span></h2>
                 <h4 class="uppercase">preliminaire</h4>
                 <p>Pour que l'école puisse accomplir sa mission d'enseignement et assurer à tous des chances égales d'accéder à la
                 citoyenneté sans être confronté à l'insulte, à la peur, aux conflits ou à toute violence verbale ou physique, il faut
@@ -195,7 +196,7 @@
                 classe de 4e, 5e et 6e et leurs cahiers de 5e et 6e, sous paquets ficelés et munis d’une étiquette indiquant leurs nom,
                 prénom et classe.</p>
             </div>
-            <svg class="sloth" width="350" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="sloth hidden" width="350" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 94.1 127.4" xml:space="preserve">
                 <style type="text/css">
                     .st0{fill:#40332C;}

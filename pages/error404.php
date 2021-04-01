@@ -4,7 +4,7 @@
 <body id="page404">
     <div class="page-wrapper">
         <main class="flex-center">
-            <div class="container flex">
+            <div class="container">
                 <svg class="container__svg" width="512" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 145 118.1" style="enable-background:new 0 0 145 118.1;" xml:space="preserve">
                     <style type="text/css">
@@ -51,7 +51,7 @@
                         c-8.6,13.6-13.9,31.2-13.9,46.3c0,29.4,20.2,45.7,45.2,45.7c25,0,45.2-16.4,45.2-45.7C117.9,53.5,112.6,36,104.1,22.5"/>
                 </svg>
                 <div class="container__content">
-                    <h1 class="container__content__title alert pt-2">Erreur 404</h1>
+                    <h1 class="container__content__title alert">Erreur 404</h1>
                     <p class="container__content__paragraph">
                         Oupsiii il semble y avoir une erreur, <br>
                         la page peut avoir été supprimée ou deplacée... <br>
@@ -62,7 +62,7 @@
             </div>
         </main>
     </div>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var background = document.getElementById('page404');
         var container = document.querySelector('#page404 main .container');
             window.onmousemove = function(e) {
@@ -71,6 +71,6 @@
                     background.style.backgroundPositionX = x + 'px';
                     background.style.backgroundPositionY = y + 'px';
             }
-    </script>
+    </script> -->
 </body>
 </html>

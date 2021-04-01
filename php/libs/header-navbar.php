@@ -1,5 +1,5 @@
 <nav id="navbar" class="flex relative">
-            <ul class="header-nav">
+    <ul class="header-nav">
                 <li class="header__home <?php if($_SERVER['SCRIPT_NAME'] === '/pages/accueil.php') : ?>active<?php endif?>">
                     <a href="accueil.php">
                         <svg>
@@ -70,8 +70,8 @@
                     Contacts
                     </a>
                 </li>
-            </ul>
-            <ul class="header-side">
+    </ul>
+    <ul class="header-side">
                 <li>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" id="search">
@@ -84,5 +84,5 @@
                         <span>Afficher le menu</span>
                     </button>
                 </li>
-            </ul>
-        </nav>
+    </ul>
+</nav>

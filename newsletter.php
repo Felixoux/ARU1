@@ -44,6 +44,5 @@ $success = null;
         <button class="btn btn--subscribe mt-1 font-normal btn-hover__effect" type="submit">S'inscrire</button>
     </form> 
 
-
 </body>
 </html>
