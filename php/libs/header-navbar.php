@@ -32,7 +32,7 @@
                         <li class="invisible"></li>
                         <li><a href="photos.php">photo/com</a></li>
                         <li><a href="#">Agenda</a></li>
-                        <li><a href="#">Menu du restaurant</a></li>
+                        <li><a href="menu.php">Menu du restaurant</a></li>
                         <li><a href="g_options.php">Grille d'option</a></li>
                         <li><a href="coursenligne.php">Cours en ligne</a></li>
                         <li><a href="accueil.php#insciptions-ecole-en-ligne">Inscriptions</a></li>

@@ -1664,6 +1664,56 @@ span {
     animation: slothPhoto 1.5s 0.1s cubic-bezier(0.15, 0.2, 0.13, 1.1) both;
   }
 }
+#menu {
+  background: #171933;
+}
+#menu section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+#menu section .Title {
+  font-size: 35px;
+  margin: 5rem 0;
+}
+#menu .menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 75px repeat(3, 153px);
+  grid-template-areas: "none time time time time" "topic meal meal meal meal " "topic meal meal meal meal " "topic meal meal meal meal ";
+  overflow-x: auto;
+  min-width: 1330px;
+  text-align: center;
+}
+#menu .menu__time {
+  grid-area: time;
+  font-size: 18.5px;
+  justify-content: space-around;
+  background: #1b1e3d;
+  border-radius: 15px 15px 0 0;
+}
+#menu .menu__topic {
+  grid-area: topic;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #1b1e3d;
+  border-radius: 15px 0 0 15px;
+}
+#menu .menu__meal {
+  grid-area: meal;
+  background: #22244D;
+  border-radius: 0 0 15px 0;
+}
+#menu .menu__meal div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 16px;
+  border-right: 2px solid #2a2e5e;
+}
+#menu .menu__meal :last-child {
+  border: none;
+}
+
 #g_options {
   background: #171933;
 }

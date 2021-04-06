@@ -1110,6 +1110,64 @@ section.bottom{
 	}
 }
 
+// Menu du restaurant
+#menu {
+	background: $bgdark;
+
+	section {
+		.Title {font-size: 35px; margin: 5rem 0;}
+		padding-top: $space-section;
+		padding-bottom: $space-section;
+	}
+
+	.menu {
+		display: grid;
+		grid-template-columns:repeat(5, 1fr) ;
+		grid-template-rows: 75px repeat(3, 153px);
+		grid-template-areas: 
+		"none time time time time"
+		"topic meal meal meal meal "
+		"topic meal meal meal meal "
+		"topic meal meal meal meal ";
+		overflow-x: auto;
+		min-width: 1330px;
+		text-align:center;
+
+		&__time {
+			grid-area: time;
+			font-size: 18.5px;
+			justify-content: space-around;
+			background: $bglight;
+			border-radius: 15px 15px 0 0;
+		}
+
+		&__topic {
+			grid-area: topic;
+			flex-direction: column;
+			justify-content: space-around;
+			background: $bglight;
+			border-radius: 15px 0 0 15px;
+		}
+
+		&__meal {
+			grid-area: meal;
+			background: $bgcard;
+			border-radius: 0 0 15px 0;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				padding: $card-padding;
+				border-right: 2px solid $border;
+			} 
+
+			:last-child {border: none;}
+		}
+
+	}
+}
+
 // == Gille d'option ==
 #g_options {
 	background: $bgdark;
