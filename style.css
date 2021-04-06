@@ -844,7 +844,8 @@ span {
     bottom: 0;
     padding: calc(4 * 8px) 0;
     transition: opacity 0.3s;
-    backdrop-filter: blur(20px);
+    background: #171933D8;
+    backdrop-filter: blur(10px);
     z-index: 999;
     overflow: auto;
     white-space: nowrap;

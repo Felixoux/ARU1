@@ -168,7 +168,8 @@
 			bottom: 0;
 			padding: calc(4 * #{$space}) 0;
 			transition: opacity .3s;
-			backdrop-filter: blur(20px);
+			background: #171933D8;
+			backdrop-filter: blur(10px);
 			z-index: 999;
 			overflow: auto;
 			.header__home, .line::after, .invisible {display: none;}
