@@ -147,3 +147,63 @@
             transform: translateY(0);
         }
     }
+
+
+
+
+    // Welcome mascott 
+    @keyframes welcomMascotMouth {
+        0% {
+            transform:  scale(1);
+        }
+        100% {
+                transform: scale(1.1) ;
+            }
+    }
+
+    @keyframes welcomMascotArmLeft {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(12.5deg);
+        }
+    }
+
+    @keyframes welcomMascotArmRight {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(-12.5deg);
+        }
+        
+    }
+
+    @keyframes welcomMascotHandLeft {
+        0% {
+            transform: rotate(10.5deg) translate(1px,1px);
+        }
+        100% {
+            transform: rotate(15deg) translate(5px, -15px);
+        }
+    }
+
+    @keyframes welcomMascotHandRight {
+        0% {
+            transform: rotate(10.5deg) translate(1px,1px);
+        }
+        100% {
+            transform: rotate(-15deg) translate(-5px, -15px);
+        }
+    }
+
+    @keyframes welcomMascotBody {
+        0% {
+            transform: scale(1) rotate(0);
+        }
+        100% {
+            transform: scale(1.025) rotate(.5deg);
+        }
+    }
+

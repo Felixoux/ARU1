@@ -644,6 +644,54 @@ span {
     transform: translateY(0);
   }
 }
+@keyframes welcomMascotMouth {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes welcomMascotArmLeft {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(12.5deg);
+  }
+}
+@keyframes welcomMascotArmRight {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-12.5deg);
+  }
+}
+@keyframes welcomMascotHandLeft {
+  0% {
+    transform: rotate(10.5deg) translate(1px, 1px);
+  }
+  100% {
+    transform: rotate(15deg) translate(5px, -15px);
+  }
+}
+@keyframes welcomMascotHandRight {
+  0% {
+    transform: rotate(10.5deg) translate(1px, 1px);
+  }
+  100% {
+    transform: rotate(-15deg) translate(-5px, -15px);
+  }
+}
+@keyframes welcomMascotBody {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  100% {
+    transform: scale(1.025) rotate(0.5deg);
+  }
+}
 /*
 ../dart-sass/sass sass/style.scss style.css --watch
 */
@@ -1107,15 +1155,55 @@ span {
 }
 #accueil .upper-container {
   display: grid;
-  grid-template-columns: 790px 1fr;
-  gap: 100px;
+  grid-template-columns: 1.9fr 1fr;
+  gap: 70px;
   padding: 125px calc(50% - var(--container-width) / 2) 75px calc(50% - var(--container-width) / 2);
 }
 #accueil .upper-container h1 {
   font-size: 35px;
 }
+#accueil .video__svg {
+  position: absolute;
+  left: -150px;
+  z-index: -1;
+  overflow: visible;
+}
+#accueil .video__svg .mouth {
+  animation: welcomMascotMouth 2s ease-in-out infinite alternate;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+#accueil .video__svg .arm-left {
+  animation: welcomMascotArmLeft 2s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center right;
+}
+#accueil .video__svg .arm-right {
+  animation: welcomMascotArmRight 2s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center left;
+}
+#accueil .video__svg .hand-left {
+  animation: welcomMascotHandLeft 2s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center left;
+}
+#accueil .video__svg .hand-right {
+  animation: welcomMascotHandRight 2s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center left;
+}
+#accueil .video__svg .body {
+  animation: welcomMascotBody 2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
 #accueil .video__iframe {
   border-radius: 10px 25px 25px 25px;
+}
+@media only screen and (max-width: 1260px) {
+  #accueil .video .mascott-mobile-hidden {
+    display: none;
+  }
 }
 #accueil .news__square {
   display: grid;
