@@ -1115,23 +1115,22 @@ section.bottom{
 	background: $bgdark;
 
 	section {
-		.Title {font-size: 35px; margin: 5rem 0;}
-		padding-top: $space-section;
-		padding-bottom: $space-section;
+		.title {font-size: 35px; margin-bottom: 4rem ;}
+		padding-top: $space-section / 2;
+		padding-bottom: $space-section ;
 	}
-
+																				
 	.menu {
 		display: grid;
 		grid-template-columns:repeat(5, 1fr) ;
 		grid-template-rows: 75px repeat(3, 153px);
 		grid-template-areas: 
 		"none time time time time"
-		"topic meal meal meal meal "
-		"topic meal meal meal meal "
-		"topic meal meal meal meal ";
-		overflow-x: auto;
-		min-width: 1330px;
-		text-align:center;
+		"topic meal meal meal meal"
+		"topic meal meal meal meal"
+		"topic meal meal meal meal";
+		text-align: center;
+		min-width: 650px;
 
 		&__time {
 			grid-area: time;
@@ -1144,27 +1143,38 @@ section.bottom{
 		&__topic {
 			grid-area: topic;
 			flex-direction: column;
-			justify-content: space-around;
 			background: $bglight;
 			border-radius: 15px 0 0 15px;
+			div {height: 100%;}
 		}
-
+			
 		&__meal {
 			grid-area: meal;
 			background: $bgcard;
 			border-radius: 0 0 15px 0;
-
-			div {
+			
+			> div {
+				
 				display: flex;
 				flex-direction: column;
-				justify-content: space-around;
-				padding: $card-padding;
 				border-right: 2px solid $border;
+				padding: $card-padding;
+				div {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					max-width: 250px;
+					height: 100%;
+					border-bottom: 2px solid $border;
+					font-size: 14.5px;
+					line-height: 1.2em;
+					word-break: break-word;
+				}
+				> :last-child {border: none;}
 			} 
 
-			:last-child {border: none;}
+			> :last-child {border: none;}
 		}
-
 	}
 }
 

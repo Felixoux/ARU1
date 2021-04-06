@@ -1668,21 +1668,20 @@ span {
   background: #171933;
 }
 #menu section {
-  padding-top: 150px;
+  padding-top: 75px;
   padding-bottom: 150px;
 }
-#menu section .Title {
+#menu section .title {
   font-size: 35px;
-  margin: 5rem 0;
+  margin-bottom: 4rem;
 }
 #menu .menu {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 75px repeat(3, 153px);
-  grid-template-areas: "none time time time time" "topic meal meal meal meal " "topic meal meal meal meal " "topic meal meal meal meal ";
-  overflow-x: auto;
-  min-width: 1330px;
+  grid-template-areas: "none time time time time" "topic meal meal meal meal" "topic meal meal meal meal" "topic meal meal meal meal";
   text-align: center;
+  min-width: 650px;
 }
 #menu .menu__time {
   grid-area: time;
@@ -1694,23 +1693,38 @@ span {
 #menu .menu__topic {
   grid-area: topic;
   flex-direction: column;
-  justify-content: space-around;
   background: #1b1e3d;
   border-radius: 15px 0 0 15px;
+}
+#menu .menu__topic div {
+  height: 100%;
 }
 #menu .menu__meal {
   grid-area: meal;
   background: #22244D;
   border-radius: 0 0 15px 0;
 }
-#menu .menu__meal div {
+#menu .menu__meal > div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 16px;
   border-right: 2px solid #2a2e5e;
+  padding: 16px;
 }
-#menu .menu__meal :last-child {
+#menu .menu__meal > div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  height: 100%;
+  border-bottom: 2px solid #2a2e5e;
+  font-size: 14.5px;
+  line-height: 1.2em;
+  word-break: break-word;
+}
+#menu .menu__meal > div > :last-child {
+  border: none;
+}
+#menu .menu__meal > :last-child {
   border: none;
 }
 
