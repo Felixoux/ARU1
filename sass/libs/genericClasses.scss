@@ -68,6 +68,12 @@ img {
     position: relative;
 }
 
+.card {
+    background: $bgcard;
+    box-shadow: $card-shadow;
+    border-radius: 8px;
+}
+
 header, section, main, footer, nav, .container, .header, .footer, .main {
     box-sizing: border-box;
     width: 100%;

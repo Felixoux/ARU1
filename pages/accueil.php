@@ -126,20 +126,20 @@
         </section>
         <!-- Bottom  -->
         <section class="bottom flex" id="insciptions-ecole-en-ligne">
-                <div class="card flex">
-                    <h2 class="card__title">Inscriptions</h2>
-                    <div class="card__img"></div>
-                    <p class="card__p">Les inscriptions de la 2ème à la 6ème secondaire se font uniquement sur rendez-vous.</p>
-                    <p class="card__p">Tel : <span>02 374 05 84</span></p>
-                    <div class="card__hr"></div>
+                <div class="reference flex">
+                    <h2 class="reference__title">Inscriptions</h2>
+                    <div class="reference__img"></div>
+                    <p class="reference__p">Les inscriptions de la 2ème à la 6ème secondaire se font uniquement sur rendez-vous.</p>
+                    <p class="reference__p">Tel : <span>02 374 05 84</span></p>
+                    <div class="reference__hr"></div>
                 </div>
-                <div class="card flex">
-                    <h2 class="card__title">Ecole en ligne</h2>
-                    <div class="card__img"></div>
-                    <p class="card__p">Une plateforme pour que les elèves et les parents puissent 
+                <div class="reference flex">
+                    <h2 class="reference__title">Ecole en ligne</h2>
+                    <div class="reference__img"></div>
+                    <p class="reference__p">Une plateforme pour que les elèves et les parents puissent 
                         voir les bulletins, documents etc... </p>
-                    <p class="card__p">Aller sur le site de l’école en ligne en <a href="https://aru1.ecoleenligne.be" target="_blank">cliquant ici</a></p>
-                    <div class="card__hr"></div>
+                    <p class="reference__p">Aller sur le site de l’école en ligne en <a href="https://aru1.ecoleenligne.be" target="_blank">cliquant ici</a></p>
+                    <div class="reference__hr"></div>
                 </div>
          </section>
         <!-- Footer -->

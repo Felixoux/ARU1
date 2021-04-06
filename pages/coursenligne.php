@@ -6,7 +6,7 @@
         <!-- header   -->
         <?php require '../php/libs/header-navbar.php'; ?>
         <div class="container">
-            <div class="coursenligne">
+            <div class="coursenligne card">
                 <h1 class="pt-2 uppercase">Cours en ligne</h>
                 <h2>Cours proposés par des professeurs de l'Athénée consultables en ligne</h2>
                 <p>&bull; Site du cours de mathématique de Mr Droesbeke : <a target="_blank" href="http://www.artemath.com/">http://www.artemath.com/</a></p>

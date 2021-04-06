@@ -9,27 +9,29 @@
             <h1 class="mt-1 center-mg">Nos grilles d'options</h1>
         </header>
         <main class="mt-1">
-            <div class="card">
+            <div class="card flex">
                 <div class="card__img">                  
                 </div>
-                <h4 class="card__title pt-1">1ère année</h4>
-                <button class="card__btn">
-                    <a href="../docs/pdf/Grilles_1e.pdf">
-                        <p>Lire la suite</p>
-                    </a>
-                </button>
+                <div class="second">
+                    <h4 class="card__title pt-1">1ère année</h4>
+                    <button class="card__btn">
+                        <a href="../docs/pdf/Grilles_1e.pdf">
+                            <p>Lire la suite</p>
+                        </a>
+                    </button>
+                </div>
             </div>
-            <div class="card">
+            <div class="card flex">
                 <div class="card__img">                  
                 </div>
-                <h4 class="card_title pt-1">1ère année immersion</h4>
+                <h4 class="card__title pt-1">1ère année immersion</h4>
                 <button class="card__btn">
                     <a href="../docs/pdf/Grilles_1e_immersion.pdf">
                         <p>Lire la suite</p>
                     </a>
                 </button>
             </div>
-            <div class="card">
+            <div class="card flex">
                 <div class="card__img">                  
                 </div>
                 <h4 class="card__title pt-1">2ème année</h4>
@@ -39,7 +41,7 @@
                     </a>
                 </button>
             </div>
-            <div class="card">
+            <div class="card flex">
                 <div class="card__img">                  
                 </div>
                 <h4 class="card__title line">2ème année<br>complémentaire</h4>
@@ -49,7 +51,7 @@
                     </a>
                 </button>
             </div>
-            <div class="card">
+            <div class="card flex">
                 <div class="card__img">                  
                 </div>
                 <h4 class="card__title pt-1">3ème année</h4>
@@ -59,7 +61,7 @@
                     </a>
                 </button>
             </div>
-            <div class="card">
+            <div class="card flex">
                 <div class="card__img">                  
                 </div>
                 <h4 class="card__title pt-1">4ème année</h4>
@@ -69,7 +71,7 @@
                     </a>
                 </button>
             </div>
-            <div class="card">
+            <div class="card flex">
                 <div class="card__img">                  
                 </div>
                 <h4 class="card__title pt-1">5ème année</h4>
@@ -79,7 +81,7 @@
                 </a>
                 </button>
             </div>
-            <div class="card">
+            <div class="card flex">
                 <div class="card__img">                  
                 </div>
                 <h4 class="card__title pt-1">6ème année</h4>

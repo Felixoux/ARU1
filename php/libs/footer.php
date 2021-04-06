@@ -1,9 +1,9 @@
 <footer id="footer" class="relative footer">
             <div class="goldBook">
                 <h3 class="goldBook__title">Laissez un avis sur le site, cela nous permettera de l’améliorer</h3>
-                <form class="goldBook__form goldBook__form--column flex" action="accueil.php" method="post">
+                <form class="goldBook__form goldBook__form--column" action="accueil.php" method="post">
                     <textarea class="goldBook__content font-normal" name="gold-book__text" cols="70" rows="10" placeholder="Votre avis sur le site..."></textarea>
-                    <div class="goldBook__buttons mt-1 flex">
+                    <div class="goldBook__buttons mt-1">
                         <button class="btn btn--cancel font-normal" type="reset" value="cancel">Annuler</button>
                         <button class="btn btn--submit mt-1 font-normal btn-hover__effect" type="submit" value="send">Envoyer      </button>
                     </div>
@@ -15,9 +15,9 @@
                     </svg>
                 </h3>
                 <p class="newsletter__p ex-mail">Entrez votre e-mail </p>
-                <form class="newsletter__form newsletter__form--column flex" action="/pages/accueil.php" method="post">
+                <form class="newsletter__form newsletter__form--column" action="/pages/accueil.php" method="post">
                     <div class="newsletter__mail"><input class="font-normal newsletter__mail__input" type="email" placeholder="pierre.durand@gmail.com" required></div>
-                    <div class="newsletter__buttons mt-1 flex ">
+                    <div class="newsletter__buttons mt-1">
                         <button class="btn btn--cancel font-normal" type="reset" value="cancel">Annuler</button>
                         <button class="btn btn--subscribe mt-1 font-normal btn-hover__effect" type="submit" value="subscribe">S'inscrire</button>
                     </div>
