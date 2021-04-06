@@ -11,7 +11,7 @@
                     <h1 class="video__title"><span>Présentation</span> de notre école</h1>
                     <div class="video__ratio ratio"><iframe class="video__iframe mt-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <svg class="video__svg mascott-mobile-hidden" width="500" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 171.1 141.5" style="enable-background:new 0 0 171.1 141.5;" xml:space="preserve">
+                                viewBox="0 0 171.1 141.5" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:#40332C;}
                                 .st1{fill:#766458;}
@@ -127,7 +127,7 @@
                     </div> 
                 </div>   
         </section>
-        <div class="scroll-down__chevron center-mg">
+        <div class="scroll-down__chevron flex-center">
             <a href="#actu"><svg class="scroll-down__chevron" width='25' height='25' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill="#8491C7" d='M100 5.5c0 1.3-.5 2.6-1.5 3.5L50 57.5 1.5 9c-2-2-2-5.1 0-7.1s5.1-2 7.1 0L50 43.4 91.5 1.9c2-2 5.1-2 7.1 0 .9 1 1.4 2.3 1.4 3.6z'/></svg></a>
         </div>
         <!-- Actu  -->

@@ -134,11 +134,6 @@ textarea {
   background: #2a2e5e;
 }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-  padding: 1px;
-}
-
 ::selection {
   background: #5396e7;
   color: #fff;
@@ -280,6 +275,11 @@ img {
   background: #22244D;
   box-shadow: 0 2px 4px #00000033;
   border-radius: 8px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
 }
 
 header, section, main, footer, nav, .container, .header, .footer, .main {
@@ -1155,7 +1155,7 @@ span {
   }
 }
 #accueil {
-  background-color: #1b1e3d;
+  background-color: #171933;
   width: 100%;
   height: 100vh;
 }
@@ -1164,9 +1164,14 @@ span {
   grid-template-columns: 1.9fr 1fr;
   gap: 70px;
   padding: 125px calc(50% - var(--container-width) / 2) 75px calc(50% - var(--container-width) / 2);
+  background: #171933;
+  background: linear-gradient(180deg, #171933 -3%, #1b1e3d 100%);
 }
 #accueil .upper-container h1 {
   font-size: 35px;
+}
+#accueil .video {
+  z-index: 10;
 }
 #accueil .video__svg {
   position: absolute;
@@ -1250,17 +1255,25 @@ span {
   padding-bottom: 2.5rem;
 }
 #accueil .scroll-down__chevron {
+  background: #1b1e3d;
+  background: #1b1e3d;
+}
+#accueil .scroll-down__chevron svg {
   width: 25px;
   height: 25px;
+  margin: 0 auto;
   animation: scrollDown__chevron 4s 0.7s cubic-bezier(0.71, 0.76, 0.98, 1.23) infinite;
   cursor: pointer;
 }
 #accueil section.actu {
   padding: calc((150px / 2) - 25px) 0 calc(150px / 2) 0;
+  background: #1b1e3d;
+  z-index: -1;
 }
 #accueil section.actu .container-carroussel {
   background: linear-gradient(to top, #1b1e3d, #1b1e3d) left bottom/100% 90px no-repeat #171933;
   height: 530px;
+  z-index: 10;
 }
 #accueil h2 {
   font-size: 32px;
@@ -1346,6 +1359,8 @@ span {
 #accueil section.bottom {
   padding-top: 75px;
   padding-bottom: 75px;
+  background: #171933;
+  background: linear-gradient(0deg, #171933 -45%, #1b1e3d 100%);
 }
 #accueil section.bottom .reference {
   flex-flow: nowrap column;

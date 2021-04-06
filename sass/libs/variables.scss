@@ -57,11 +57,6 @@ $header-height:137px;
     }
 }
 
-
-
-
-
-
     // === scrollBar === 
    ::-webkit-scrollbar{
        width: 13.5px;
@@ -82,9 +77,7 @@ $header-height:137px;
     ::-webkit-resizer {
         background:$border ;
     }
-
-   
-   ::-webkit-scrollbar-track {background:transparent; padding: 1px;}
+    
     // == selection for fonts
    ::selection { 
        background:$contrast; 
