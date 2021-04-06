@@ -91,3 +91,9 @@ $header-height:137px;
        color: #fff;
     }
 
+    html {
+        scrollbar-width: 8px;
+        scrollbar-color: $border transparent;
+    }
+    
+

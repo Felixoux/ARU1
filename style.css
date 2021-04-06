@@ -144,6 +144,11 @@ textarea {
   color: #fff;
 }
 
+html {
+  scrollbar-width: 8px;
+  scrollbar-color: #2a2e5e transparent;
+}
+
 .m-1 {
   margin-left: 1rem;
   margin-right: 1rem;
