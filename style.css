@@ -1155,7 +1155,7 @@ span {
   }
 }
 #accueil {
-  background-color: #171933;
+  background-color: #1b1e3d;
   width: 100%;
   height: 100vh;
 }
@@ -1164,18 +1164,13 @@ span {
   grid-template-columns: 1.9fr 1fr;
   gap: 70px;
   padding: 125px calc(50% - var(--container-width) / 2) 75px calc(50% - var(--container-width) / 2);
-  background: #171933;
-  background: linear-gradient(180deg, #171933 -3%, #1b1e3d 100%);
 }
 #accueil .upper-container h1 {
   font-size: 35px;
 }
-#accueil .video {
-  z-index: 10;
-}
 #accueil .video__svg {
   position: absolute;
-  left: -150px;
+  left: -180px;
   z-index: -1;
   overflow: visible;
 }
@@ -1255,25 +1250,17 @@ span {
   padding-bottom: 2.5rem;
 }
 #accueil .scroll-down__chevron {
-  background: #1b1e3d;
-  background: #1b1e3d;
-}
-#accueil .scroll-down__chevron svg {
   width: 25px;
   height: 25px;
-  margin: 0 auto;
   animation: scrollDown__chevron 4s 0.7s cubic-bezier(0.71, 0.76, 0.98, 1.23) infinite;
   cursor: pointer;
 }
 #accueil section.actu {
   padding: calc((150px / 2) - 25px) 0 calc(150px / 2) 0;
-  background: #1b1e3d;
-  z-index: -1;
 }
 #accueil section.actu .container-carroussel {
   background: linear-gradient(to top, #1b1e3d, #1b1e3d) left bottom/100% 90px no-repeat #171933;
   height: 530px;
-  z-index: 10;
 }
 #accueil h2 {
   font-size: 32px;
@@ -1359,8 +1346,6 @@ span {
 #accueil section.bottom {
   padding-top: 75px;
   padding-bottom: 75px;
-  background: #171933;
-  background: linear-gradient(0deg, #171933 -45%, #1b1e3d 100%);
 }
 #accueil section.bottom .reference {
   flex-flow: nowrap column;
@@ -1815,28 +1800,21 @@ span {
   position: relative;
 }
 #coursenligne_page .coursenligne {
-  margin: calc(270px) auto calc(375px) auto;
+  margin: calc(270px) 0 calc(375px) 0;
   border: 1px solid #2a2e5e;
   animation: container 0.8s cubic-bezier(0.8, 0.5, 0.6, 1.3);
-}
-#coursenligne_page .coursenligne h1, #coursenligne_page .coursenligne h2, #coursenligne_page .coursenligne p {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 32px 48px;
 }
 #coursenligne_page .coursenligne h1 {
   font-size: 32px;
 }
 #coursenligne_page .coursenligne h2 {
   font-size: 25px;
+  padding: 1.5rem 0;
 }
 #coursenligne_page .coursenligne p {
   font-size: 18px;
-}
-#coursenligne_page .coursenligne :nth-child(3) {
-  margin: 1.3em 0 0.5em;
-}
-#coursenligne_page .coursenligne :last-child {
-  margin-bottom: 2em;
+  padding-bottom: 0;
 }
 #coursenligne_page .coursenligne a {
   color: #D68FD6;
@@ -1872,9 +1850,8 @@ span {
 }
 
 @media only screen and (max-width: 400px) {
-  #coursenligne_page.coursenligne h1, #coursenligne_page.coursenligne h2, #coursenligne_page.coursenligne h3, #coursenligne_page.coursenligne p {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  #coursenligne_page .coursenligne {
+    padding: 32px 16px;
   }
 }
 #les_amis {
