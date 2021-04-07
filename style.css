@@ -1681,6 +1681,7 @@ span {
   background: #1b1e3d;
   border-radius: 15px 0 0 15px;
   font-size: 18.5px;
+  padding: 16px;
 }
 #menu .menu__topic :last-child {
   border: none;

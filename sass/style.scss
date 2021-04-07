@@ -1133,6 +1133,7 @@ section.bottom{
 			background: $bglight;
 			border-radius: 15px 0 0 15px;
 			font-size: 18.5px;
+			padding: $card-padding;
 			:last-child {border: none;}
 			div {height: 100%;border-bottom: 2px solid $border; width: 100%; text-align: center;}
 		}
