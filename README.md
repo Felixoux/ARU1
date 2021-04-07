@@ -1,6 +1,14 @@
 # ARU1
- Mon 1er site avec Eliott
+
+Voici le site d'ARU1
+
+Fait entre 2020 et 2021
+
+Adresse Github du projet : https://github.com/Felixoux/ARU1
  
- ==> felixoux.alwaysdata.net
+Adresse du site : http://felixoux.alwaysdata.net
+
+
+Colaborateurs pour le projet : De Beock Eliot, Georgeault Felix
  
- Ceci est un test
+
