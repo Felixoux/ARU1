@@ -1133,6 +1133,8 @@ section.bottom{
 			background: $bglight;
 			border-radius: 15px 0 0 15px;
 			font-size: 18.5px;
+			border-bottom: 2px solid $border;
+			:last-child {border: none;}
 			div {height: 100%;}
 		}
 			
@@ -1142,7 +1144,6 @@ section.bottom{
 			border-radius: 0 0 15px 0;
 			
 			> div {
-				
 				display: flex;
 				flex-direction: column;
 				border-right: 2px solid $border;
