@@ -1681,13 +1681,13 @@ span {
   background: #1b1e3d;
   border-radius: 15px 0 0 15px;
   font-size: 18.5px;
-  border-bottom: 2px solid #2a2e5e;
 }
 #menu .menu__topic :last-child {
   border: none;
 }
 #menu .menu__topic div {
   height: 100%;
+  border-bottom: 2px solid #2a2e5e;
 }
 #menu .menu__meal {
   grid-area: meal;

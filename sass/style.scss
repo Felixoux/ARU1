@@ -1133,9 +1133,8 @@ section.bottom{
 			background: $bglight;
 			border-radius: 15px 0 0 15px;
 			font-size: 18.5px;
-			border-bottom: 2px solid $border;
 			:last-child {border: none;}
-			div {height: 100%;}
+			div {height: 100%;border-bottom: 2px solid $border;}
 		}
 			
 		&__meal {
