@@ -9,7 +9,7 @@
         <div class="container relative">
             <div class="summary-roi">
                 <h2 class="uppercase">r.o.i</h2>
-                <h4>Le reglement peut être lu ici même sur le site ou sous forme de pdf en <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h4>
+                <h4>Le reglement peut être lu ici même sur le site ou peut être télécharger en pdf <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h4>
             </div>
             <div class="roi">
                 <img src="../img/svg/logo-aru1.svg" alt="">
