@@ -1688,6 +1688,8 @@ span {
 #menu .menu__topic div {
   height: 100%;
   border-bottom: 2px solid #2a2e5e;
+  width: 100%;
+  text-align: center;
 }
 #menu .menu__meal {
   grid-area: meal;

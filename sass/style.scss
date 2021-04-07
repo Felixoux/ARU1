@@ -1134,7 +1134,7 @@ section.bottom{
 			border-radius: 15px 0 0 15px;
 			font-size: 18.5px;
 			:last-child {border: none;}
-			div {height: 100%;border-bottom: 2px solid $border;}
+			div {height: 100%;border-bottom: 2px solid $border; width: 100%; text-align: center;}
 		}
 			
 		&__meal {
