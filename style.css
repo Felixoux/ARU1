@@ -238,10 +238,11 @@ img {
   max-width: 100%;
 }
 
-.hr {
+hr {
   width: 100%;
-  height: 0.1px;
-  background-color: #D4DCFF;
+  height: 1px;
+  background-color: #2a2e5e;
+  border: none;
   border-radius: 5px;
 }
 
@@ -1442,72 +1443,76 @@ span {
   }
 }
 #roi-page {
-  background-color: #171933;
-}
-#roi-page .container {
-  display: grid;
-  gap: 62.5px;
-  margin-top: 50px;
-}
-#roi-page .container h2 {
-  font-size: 35px;
-}
-#roi-page .container h4 {
-  font-size: 22px;
-}
-#roi-page .container h5 {
-  font-size: 18.5px;
-}
-#roi-page .container p {
-  line-height: 1.3em;
-}
-#roi-page .container .summary-roi, #roi-page .container .roi {
-  display: grid;
-  padding: 32px;
   background-color: #1b1e3d;
-  box-shadow: 0 2px 4px #00000033;
 }
-#roi-page .container .summary-roi a, #roi-page .container .roi a {
-  color: #D68FD6;
+#roi-page h1 {
+  font-size: 40px;
+  padding: 50px 0;
 }
-#roi-page .container .summary-roi a:hover, #roi-page .container .roi a:hover {
-  color: #c257c2;
-}
-#roi-page .container .summary-roi {
-  row-gap: 20.8333333333px;
-  line-height: 1.5em;
-  border-radius: 8px;
-}
-#roi-page .container .roi {
-  row-gap: 25px;
-  margin-bottom: 2rem;
-  border: 1px solid #2a2e5e;
-}
-#roi-page .container .roi :last-child {
-  padding-bottom: 32px;
-}
-#roi-page .container .roi img {
+#roi-page img {
   width: fit-content;
 }
+#roi-page main {
+  background: #171933;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid #2a2e5e;
+}
+#roi-page main .summary-roi {
+  padding: 16px 0;
+}
+#roi-page main .summary-roi h3 {
+  margin: 0;
+}
+#roi-page main .pre {
+  margin: calc(8px* 5) 0 calc(8px* 5) 0;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 22px 100px;
+  column-gap: 37.5px;
+  row-gap: 12.5px;
+}
+#roi-page main .pre h3, #roi-page main .pre p {
+  height: fit-content;
+  margin: 0;
+}
+#roi-page main .pre h3 {
+  grid-area: 1/2/span 1/span 1;
+}
+#roi-page main .pre p {
+  grid-area: 2/2/span 1/span 1;
+  font-size: 18px;
+}
+#roi-page main h2 {
+  font-size: 35px;
+  margin-top: 40px 0 2px 0;
+  color: #f0f3ff;
+}
+#roi-page main h3 {
+  margin: 24px 0 10px 0;
+  font-size: 22px;
+  color: #f0f3ff;
+}
+#roi-page main h5 {
+  font-size: 18.5px;
+  margin: 1rem 0 -0.5rem 0;
+}
+#roi-page main p {
+  line-height: 1.3em;
+  margin: 1rem 0 30px 0;
+}
 
-@media only screen and (min-width: 1000px) {
-  #roi-page .container {
-    grid-template-columns: 425px 1fr;
-  }
-  #roi-page .container .sloth {
+@media only screen and (max-width: 1000px) {
+  #roi-page main .pre {
     display: block;
-    position: absolute;
-    bottom: -38.5px;
-    left: 50px;
-    width: 350px;
-    transform: none;
   }
-  #roi-page .container .summary-roi {
-    height: 225px;
+  #roi-page main .pre h3, #roi-page main .pre p {
+    margin-top: 1rem;
   }
-  #roi-page .container .roi {
-    max-height: 80vh;
-    overflow: auto;
+}
+@media only screen and (max-width: 600px) {
+  #roi-page section h1 {
+    font-size: 32px;
   }
 }
 #projetsecole {

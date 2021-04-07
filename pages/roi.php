@@ -6,20 +6,26 @@
         <!-- header  -->
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- main  -->
-        <div class="container relative">
+        <section>
+            <h1>Reglement <span>d'ordre</span> interieur</h1>
+        </section>
+        <main class="relative">
             <div class="summary-roi">
-                <h2 class="uppercase">r.o.i</h2>
-                <h4>Le reglement peut être lu ici même sur le site ou peut être télécharger en pdf <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h4>
+                <h3>Le reglement peut être lu ici même sur le site ou peut être télécharger en pdf <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h3>
             </div>
+            <hr>
             <div class="roi">
-                <img src="../img/svg/logo-aru1.svg" alt="">
-                <h2 class="uppercase">reglement d'ordre <span>interieur</span></h2>
-                <h4 class="uppercase">preliminaire</h4>
-                <p>Pour que l'école puisse accomplir sa mission d'enseignement et assurer à tous des chances égales d'accéder à la
-                citoyenneté sans être confronté à l'insulte, à la peur, aux conflits ou à toute violence verbale ou physique, il faut
-                que des règles claires codifient le comportement de tous et que des sanctions soient fixées pour tout manquement à
-                ces règles.</p>
-                <h4>Art. 1 – Mise en application</h4>
+                <div class="pre">
+                    <img src="../img/svg/logo-aru1.svg" alt="">
+                    <h3 class="uppercase">preliminaire</h3>
+                    <p>Pour que l'école puisse accomplir sa mission d'enseignement et assurer à tous des chances égales d'accéder à la
+                    citoyenneté sans être confronté à l'insulte, à la peur, aux conflits ou à toute violence verbale ou physique, il faut
+                    que des règles claires codifient le comportement de tous et que des sanctions soient fixées pour tout manquement à
+                    ces règles.
+                    </p>
+                </div>
+                <hr>
+                <h3>Art. 1 – Mise en application</h3>
                 <p>Le présent règlement d'ordre intérieur est pris en application des textes suivants qu’il complète et précise (ces
                 documents sont remis lors de l’inscription et doivent être conservés pendant toute la durée de la scolarité dans
                 l’établissement): <br>
@@ -30,7 +36,8 @@
                 Il ne dispense pas les élèves et leurs parents, s’ils sont mineurs, de se conformer aux textes légaux, règlements et
                 instructions administratives diffusés par le Ministère de la Communauté française, ainsi qu’à toute note interne ou
                 recommandation émanant de l’établissement.</p>
-                <h4>Art. 2 - Du comportement général.</h4>
+                <hr>
+                <h3>Art. 2 - Du comportement général.</h3>
                 <p>
                 - Les élèves auront une tenue et un comportement corrects en toutes circonstances tant à l'intérieur qu'à
                 l'extérieur de l'établissement. <br>
@@ -51,7 +58,7 @@
                 avoir reçu l’accord préalable du Chef d’établissement (affichages, pétitions, ...) <br>
                 - Tout usage abusif du système d’alarme sera sanctionné.
                 </p>
-                <h4 class="uppercase">prevention des assuetudes</h4>
+                <h3 class="uppercase">prevention des assuetudes</h3>
                 <p>- L’usage du tabac est interdit en tous lieux dans les bâtiments, en ce compris les cours, le préau et les abords
                 immédiats de l'établissement, sous peine de sanction immédiate de retenue qui peut s’accompagner de travaux
                 d’intérêt général (nettoyage,...). <br>
@@ -59,10 +66,11 @@
                 comportement de façon telle qu’elle perturbe la relation pédagogique est strictement interdite du début à la
                 fin de la journée scolaire, en ce compris les récréations et la pause de midi. <br>
                 - Toute détention de ces substances dans l’école est également prohibée.</p>
-                <h4 class="uppercase">vandalisme</h4>
+                <h3 class="uppercase">vandalisme</h3>
                 <p>Toute dégradation volontaire du matériel, du bâtiment ou du cadre de vie sera réparée par le responsable ou à ses
                 frais et sanctionnée.</p>
-                <h4>Art. 3 - De l’accès aux bâtiments et des consignes de sécurité</h4>
+                <hr>
+                <h3>Art. 3 - De l’accès aux bâtiments et des consignes de sécurité</h3>
                 <p>Les élèves seront présents dans la cour dès la 1ère sonnerie. <br>
                 Ils entreront le matin et au début de l’après-midi par la grande grille. <br>
                 Ils sortiront par la grande grille à 12h35 et 15h50. <br>
@@ -74,7 +82,8 @@
                 Ils quitteront le garage immédiatement après avoir remisé leur engin. <br>
                 N.B. Le garage à vélos est une facilité offerte aux élèves, il n'y sera organisé aucune surveillance ce qui, en cas de
                 vol ou de détérioration, exclut toute responsabilité de l'école, et donc de la Communauté française de Belgique.</p>
-                <h4>Art. 4 - Du déplacement des élèves dans les bâtiments</h4>
+                <hr>
+                <h3>Art. 4 - Du déplacement des élèves dans les bâtiments</h3>
                 <p>- Au début des cours (le matin, l'après-midi et après la récréation), les élèves se rangent dans la cour et attendent
                 leur professeur. <br>
                 - Au changement de cours, les élèves gagnent le nouveau local sans s'attarder dans les couloirs, la cour ou le
@@ -82,20 +91,23 @@
                 - A la fin des cours, les élèves quittent immédiatement l'établissement. Ils ont l’obligation de rentrer directement
                 chez eux. <br>
                 - Les élèves ne stationnent pas aux abords de l’école.</p>
-                <h4>Art. 5 – Des retards.</h4>
+                <hr>
+                <h3>Art. 5 – Des retards.</h3>
                 <p>
                 - Tout élève en retard ne peut se présenter en classe sans avoir fait viser son journal de classe à l’entrée ou au
                 local photocopie (ou à l'étude si ce dernier est fermé). Le professeur appréciera l'opportunité de l’admettre au cours
                 ou de le renvoyer à l'étude avec une note au journal de classe. <br>
                 - Tout retard de plus d’une demi-heure est considéré comme une heure d’absence.
                 </p>
-                <h4>Art. 6 – Des licenciements.</h4>
+                <hr>
+                <h3>Art. 6 – Des licenciements.</h3>
                 <p>- Les élèves peuvent être licenciés conformément aux autorisations données par leurs parents en début d'année
                 scolaire. <br>
                 - Les licenciements sont indiqués au journal de classe et visés par les parents des élèves mineurs. <br>
                 - Les élèves inscrits au repas ne peuvent être licenciés en fin de matinée ou début d'après-midi sauf dans des
                 circonstances exceptionnelles justifiées par un mot des parents.</p>
-                <h4>Art. 7 – Des absences</h4>
+                <hr>
+                <h3>Art. 7 – Des absences</h3>
                 <h5>Fréquentation scolaire.</h5>
                 <p> 
                 Aucune absence n'est tolérée si elle n'est pas dûment motivée et appuyée de pièces justificatives fournies dans
@@ -155,7 +167,8 @@
                 Les parents qui s'absentent pour une période déterminée doivent communiquer à l'école AVANT LEUR
                 DEPART le nom, l'adresse et le n° de téléphone de la personne à laquelle ils confient la responsabilité de leur
                 enfant ainsi que les dates exactes de leur absence.</p>
-                <h4>Art. 8 – Des sanctions disciplinaires.</h4>
+                <hr>
+                <h3>Art. 8 – Des sanctions disciplinaires.</h3>
                 <p>- Tout acte, comportement ou abstention répréhensibles commis non seulement dans l'enceinte de l'école, mais
                 aussi hors de l'établissement si les faits reprochés ont une incidence directe sur la bonne marche de l'établissement,
                 peut être sanctionné. <br>
@@ -172,7 +185,8 @@
                 recours contre l’exclusion définitive peut être introduit auprès du ministre. <br>
                 Ces sanctions sont appliquées conformément aux articles 30 à 48 du Règlement d’ordre intérieur des
                 établissements d’enseignement secondaire de la Communauté française (voir art. 1).</p>
-                <h4>Art. 9 - Des documents scolaires et de la validation</h4>
+                <hr>
+                <h3>Art. 9 - Des documents scolaires et de la validation</h3>
                 <p>Tout changement survenant dans la situation familiale ou administrative de l’élève ou de ses parents doit
                 être communiqué immédiatement au secrétariat: déménagement, changement de numéro de téléphone
                 (domicile ou travail), séparation, garde de l’enfant,... <br>
@@ -266,8 +280,8 @@
                 <path class="st0" d="M75.2,69.3c0,0,3.7,7.6,8.6,7.6c0,0,1,0.1,0.6-0.7c-0.4-0.8-5.2-4.5-7.4-10.4C77,65.8,75,66.9,75.2,69.3"/>
                 <path class="st10" d="M75.6,63.6c-2.5-2.6-7.4-4.5-9.9-5.1c-7.9-2-16-1.1-24-2.3c-6.8-1-13-3.6-19.2-6.9c-4.3-2.3-9.1-6.2-14.1-5.9
                     c-4.4,0.2-9.6,4.2-8.1,9.9C4.9,71.7,29.7,77.2,43.4,78c9,0.5,23.4-0.4,31.1-6.7C78.1,68.3,77.6,65.7,75.6,63.6"/>
-        </svg>
-        </div>
+            </svg>
+        </main>
         <!-- Footer -->
         <?php require '../php/libs/footer.php'; ?> 
     </div>

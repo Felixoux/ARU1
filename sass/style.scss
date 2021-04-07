@@ -854,85 +854,72 @@ section.bottom{
 // ========== Notre etablissement =============
 //R.O.I
 #roi-page{
-	background-color: $bgdark; 
-	.container {
-		display: grid;
-		gap: $gap * 2.5;
-		margin-top: $gap * 2;
-		h2 {
-			font-size: 35px;
+	background-color: $bglight;
+
+	h1 {
+		font-size: 40px; 
+		padding: $space-section / 3 0;
+	}
+
+	img {width: fit-content;}
+
+	main {
+		background: $bgdark;
+		padding-top:$space * 4 ;
+		padding-bottom:$space * 4 ;
+		border-top: 1px solid $border;
+		.summary-roi { 
+			h3 {
+				margin: 0;
+			}
+			padding: $card-padding  0
 		}
 
-		h4 {
+		.pre {
+			margin: calc(#{$space}* 5) 0 calc(#{$space}* 5) 0;
+			display: grid;
+			grid-template-columns: 150px 1fr;
+			grid-template-rows: 22px 100px;
+			column-gap: $gap * 1.5;
+			row-gap: $gap /2;
+			h3, p {height: fit-content; margin: 0;}
+			h3 {grid-area: 1 / 2 / span 1 / span 1;}
+			p {grid-area: 2 / 2 / span 1 / span 1; font-size: 18px;}
+		}
+
+		h2 {
+			font-size: 35px; 
+			margin-top: $space * 5 0 2px 0;
+			color: $color-dark;
+		}
+
+		h3 {
+			margin: $space * 3 0 10px 0;
 			font-size: 22px;
+			color: $color-dark;
 		}
 	
 		h5 {
 			font-size: 18.5px;
+			margin: 1rem 0 -.5rem 0;
 		}
 	
 		p {
 			line-height: 1.3em;
-		}
-	
-		.summary-roi, .roi {
-			display: grid;
-			padding: $card-padding * 2;
-			background-color: $bglight;
-			box-shadow: 0 2px 4px $shadow;
-			a {
-				color: $pink;
-			}
-			a:hover {
-				color: darken($pink, 15%);
-			}
-			
-		}
-	
-		.summary-roi {
-			row-gap: $gap / 1.2;
-			line-height: 1.5em;
-			border-radius: 8px;
-		}
-	
-		.roi {
-			row-gap: $gap;
-			margin-bottom: 2rem;
-			border: 1px solid $border;
-			:last-child {
-				padding-bottom: $card-padding * 2;
-			}
-
-			img {
-				width: fit-content;
-			}
+			margin: 1rem 0 30px 0;
 		}
 	}
 }
-// == media query R.O.I == 
-@media only screen and (min-width:1000px) {
-	#roi-page .container {
-		
-		grid-template-columns: 425px 1fr;
-
-		.sloth {
-			display: block;
-			position: absolute;
-			bottom: -38.5px;
-			left: 50px;
-			width: 350px;
-			transform: none;
-		}
-	
-
-	.summary-roi {
-		height: 225px;
-		}
-
-	.roi {
-		max-height: 80vh;
-		overflow: auto;
-		}
+// Media query ROI 
+@media only screen and (max-width:1000px) {
+	#roi-page main .pre {
+		display: block;
+		h3, p {margin-top: 1rem ;}
+	}
+}
+@media only screen and (max-width:600px) {
+	#roi-page section h1 {
+		font-size: 32px;
 	}
 }
 		
