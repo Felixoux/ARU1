@@ -134,6 +134,11 @@ textarea {
   background: #2a2e5e;
 }
 
+::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 1px;
+}
+
 ::selection {
   background: #5396e7;
   color: #fff;
@@ -275,11 +280,6 @@ img {
   background: #22244D;
   box-shadow: 0 2px 4px #00000033;
   border-radius: 8px;
-}
-
-body {
-  height: 100vh;
-  width: 100%;
 }
 
 header, section, main, footer, nav, .container, .header, .footer, .main {
