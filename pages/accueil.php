@@ -1,5 +1,5 @@
 <?php $pageTitle = "Accueil"; ?> 
-<!-- Header  -->
+<!-- Head  -->
 <?php require '../php/libs/header.php'; ?> 
 <!-- Body -->
 <body id="accueil" class="relative">
