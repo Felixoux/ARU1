@@ -1484,21 +1484,28 @@ span {
 #staff main .container ul.tabs :last-child {
   border: none;
 }
-#staff main .container .tabs-content section.direction {
+#staff main .container .tabs-content section {
   padding: 32px;
   background-color: #1b1e3d;
   border-radius: 0 8px 8px 8px;
 }
-#staff main .container .tabs-content section.direction ul {
-  padding: 12px 0;
+#staff main .container .tabs-content section ul {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   column-gap: 25px;
+  padding: 12px 0;
   color: #D4DCFF;
 }
-#staff main .container .tabs-content section.direction ul.title {
+#staff main .container .tabs-content section a {
+  color: #D68FD6;
+}
+#staff main .container .tabs-content section a:hover {
+  color: #c257c2;
+}
+#staff main .container .tabs-content section ul.title {
   font-size: 18px;
   color: #f0f3ff;
+  padding-bottom: 24px;
 }
 
 #roi-page {

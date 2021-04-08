@@ -864,7 +864,7 @@ section.bottom{
 		background: $bgdark;
 		border-top: 1px solid $border;
 		font-family: 'inter';
-
+		
 		.tab-content {
 			display: none;
 		}
@@ -899,21 +899,28 @@ section.bottom{
 			}
 
 			.tabs-content {
-				section.direction {
+				section {
 					padding: $card-padding * 2;
 					background-color: $bglight;
 					border-radius: 0 8px 8px 8px;
+
 					ul {
-						padding: $space * 1.5 0;
 						display: grid;
 						grid-template-columns: 1fr 2fr 2fr;
 						column-gap: $gap;
+						padding: $space * 1.5 0;
 						color: $letterscolor;
+					}
+
+					a {
+						color: $pink;
+						&:hover {color: darken($pink, 15%);}
 					}
 
 					ul.title {
 						font-size: 18px;
 						color: $color-dark;
+						padding-bottom: $space * 3;
 					}
 				}
 			}
