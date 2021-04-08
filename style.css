@@ -1476,6 +1476,10 @@ span {
   background: #22244D;
   border-right: 1px solid #2a2e5e;
   font-size: 18px;
+  transition: background 0.3s;
+}
+#staff main .container ul.tabs li:hover {
+  background: #1a1c3b;
 }
 #staff main .container ul.tabs :last-child {
   border: none;
@@ -1483,6 +1487,7 @@ span {
 #staff main .container .tabs-content section.direction {
   padding: 32px;
   background-color: #1b1e3d;
+  border-radius: 0 8px 8px 8px;
 }
 #staff main .container .tabs-content section.direction ul {
   padding: 12px 0;
