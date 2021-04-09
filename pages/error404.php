@@ -62,7 +62,7 @@
             </div>
         </main>
     </div>
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         var background = document.getElementById('page404');
         var container = document.querySelector('#page404 main .container');
             window.onmousemove = function(e) {
@@ -71,6 +71,6 @@
                     background.style.backgroundPositionX = x + 'px';
                     background.style.backgroundPositionY = y + 'px';
             }
-    </script> -->
+    </script>
 </body>
 </html>

@@ -14,9 +14,9 @@
                 <li class="active"><a href="#direction">La direction</a></li>
                 <li><a href="#adminStaff">Personnel administratif</a></li>
                 <li><a href="#educators">Educateurs</a></li>
-                <li><a href="#teachers">Les enseignants</a></li>
+                <li class="border-clear"><a href="#teachers">Les enseignants</a></li>
             </ul>
-            <div class="tabs-content">
+            <div id="linkSearch" class="tabs-content linkSearch">
                 <section class="direction tab-content active" id="direction">
                     <ul class="title">
                         <li>Nom</li>
@@ -58,7 +58,7 @@
                     <ul>
                         <li>Si Mohamed Remont</li>
                         <li>Econome/Comptable</li>
-                        <li><a href="mailto:economat@aru1.be">economat@aru1.be</a></li>
+                        <li><a class="pink" href="mailto:economat@aru1.be">economat@aru1.be</a></li>
                     </ul>
                     <ul>
                         <li>Anne De Witte</li>
@@ -131,5 +131,18 @@
     <!-- script  -->
     <script type="text/javascript" src="../js/app.js"></script>
     <script src="../js/tabs.js"></script>
+    <!-- linkPink  -->
+    <script>
+        (function() {
+            var linkPink = function(dom) {
+            var links = document.querySelectorAll(dom);
+            for(var i = 0; i < links.length; i++) {
+            links[i].classList.add('pink');
+                }
+            }
+
+            linkPink(".linkSearch a")
+        })()
+    </script>
 </body>
 </html>

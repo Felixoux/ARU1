@@ -283,6 +283,10 @@ hr {
   border-radius: 8px;
 }
 
+.border-clear {
+  border: none !important;
+}
+
 header, section, main, footer, nav, .container, .header, .footer, .main {
   box-sizing: border-box;
   width: 100%;
@@ -431,6 +435,20 @@ h5, p {
 
 span {
   color: #5396e7;
+}
+
+a {
+  color: #f0f3ff;
+}
+a:hover {
+  color: #5396e7;
+}
+
+a.pink {
+  color: #D68FD6;
+}
+a.pink:hover {
+  color: #c257c2;
 }
 
 .alert {
@@ -1481,9 +1499,6 @@ span {
 #staff main .container ul.tabs li:hover {
   background: #1a1c3b;
 }
-#staff main .container ul.tabs :last-child {
-  border: none;
-}
 #staff main .container .tabs-content section {
   padding: 32px;
   background-color: #1b1e3d;
@@ -1495,12 +1510,6 @@ span {
   column-gap: 25px;
   padding: 12px 0;
   color: #D4DCFF;
-}
-#staff main .container .tabs-content section a {
-  color: #D68FD6;
-}
-#staff main .container .tabs-content section a:hover {
-  color: #c257c2;
 }
 #staff main .container .tabs-content section ul.title {
   font-size: 18px;
@@ -1577,7 +1586,7 @@ span {
   }
 }
 @media only screen and (max-width: 600px) {
-  #roi-page section h1 {
+  #roi-page header h1 {
     font-size: 32px;
   }
 }
@@ -1739,23 +1748,20 @@ span {
   text-align: center;
   min-width: 650px;
 }
+#menu .menu__time, #menu .menu__topic {
+  background: #1b1e3d;
+  font-size: 18.5px;
+}
 #menu .menu__time {
   grid-area: time;
-  font-size: 18.5px;
   justify-content: space-around;
-  background: #1b1e3d;
   border-radius: 15px 15px 0 0;
 }
 #menu .menu__topic {
   grid-area: topic;
   flex-direction: column;
-  background: #1b1e3d;
   border-radius: 15px 0 0 15px;
-  font-size: 18.5px;
   padding: 16px;
-}
-#menu .menu__topic :last-child {
-  border: none;
 }
 #menu .menu__topic div {
   height: 100%;
@@ -1784,12 +1790,6 @@ span {
   font-size: 14.5px;
   line-height: 1.2em;
   word-break: break-word;
-}
-#menu .menu__meal > div > :last-child {
-  border: none;
-}
-#menu .menu__meal > :last-child {
-  border: none;
 }
 
 #g_options {
@@ -1941,10 +1941,7 @@ span {
 }
 #les_amis main .container {
   align-items: flex-start;
-  background: #22244D;
   border: 1px solid #2a2e5e;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px #00000033;
 }
 #les_amis main .container__content {
   padding: 0 2rem;
@@ -1969,12 +1966,6 @@ span {
 }
 #les_amis main .container__content ul p {
   padding: 0.5rem 0;
-}
-#les_amis main .container__content a {
-  color: #5396e7;
-}
-#les_amis main .container__content a:hover {
-  color: #1d6ed0;
 }
 #les_amis main .container__content__spoiler {
   display: inline-block;
@@ -2154,19 +2145,6 @@ span {
   #page404 svg {
     display: none;
   }
-}
-#test-onglets {
-  background: #1b1e3d;
-  color: #D4DCFF;
-}
-#test-onglets .tab-content {
-  display: none;
-}
-#test-onglets .tab-content.active {
-  display: block;
-}
-#test-onglets .tabs .active a {
-  color: #5396e7;
 }
 
 /*# sourceMappingURL=style.css.map */

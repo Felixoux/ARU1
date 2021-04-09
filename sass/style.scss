@@ -895,7 +895,6 @@ section.bottom{
 						background: darken($bgcard, 5%);
 					}
 				}
-				:last-child{border: none;}
 			}
 
 			.tabs-content {
@@ -912,11 +911,6 @@ section.bottom{
 						color: $letterscolor;
 					}
 
-					a {
-						color: $pink;
-						&:hover {color: darken($pink, 15%);}
-					}
-
 					ul.title {
 						font-size: 18px;
 						color: $color-dark;
@@ -927,7 +921,6 @@ section.bottom{
 		}
 	}
 }
-
 
 //R.O.I
 #roi-page{
@@ -995,7 +988,7 @@ section.bottom{
 	}
 }
 @media only screen and (max-width:600px) {
-	#roi-page section h1 {
+	#roi-page header h1 {
 		font-size: 32px;
 	}
 }
@@ -1183,23 +1176,29 @@ section.bottom{
 		text-align: center;
 		min-width: 650px;
 
+		&__time, &__topic {
+			background: $bglight;
+			font-size: 18.5px;
+
+		}
+
 		&__time {
 			grid-area: time;
-			font-size: 18.5px;
 			justify-content: space-around;
-			background: $bglight;
 			border-radius: 15px 15px 0 0;
 		}
 
 		&__topic {
 			grid-area: topic;
 			flex-direction: column;
-			background: $bglight;
 			border-radius: 15px 0 0 15px;
-			font-size: 18.5px;
 			padding: $card-padding;
-			:last-child {border: none;}
-			div {height: 100%;border-bottom: 2px solid $border; width: 100%; text-align: center;}
+			div {
+				height: 100%;
+				border-bottom: 2px solid $border; 
+				width: 100%; 
+				text-align: center;
+			}
 		}
 			
 		&__meal {
@@ -1223,10 +1222,8 @@ section.bottom{
 					line-height: 1.2em;
 					word-break: break-word;
 				}
-				> :last-child {border: none;}
 			} 
 
-			> :last-child {border: none;}
 		}
 	}
 }
@@ -1394,12 +1391,10 @@ section.bottom{
 
 	main {
 		padding: calc(#{$space-section} / 2) calc(50% - var(--container-width) / 2);
+
 		.container {
 			align-items: flex-start;
-			background: $bgcard; 
 			border: 1px solid $border;
-			border-radius: 8px;
-			box-shadow: 0 2px 4px $shadow;
 
 			&__content {
 				padding: 0 2rem;
@@ -1427,13 +1422,6 @@ section.bottom{
 					
 					p {
 						padding: 0.5rem 0;
-					}
-				}
-
-				a {
-					color: $contrast;
-					&:hover {
-						color: darken($contrast, 15%);
 					}
 				}
 
@@ -1634,24 +1622,4 @@ section.bottom{
 }
 @media only screen and (max-height:460px) {
 	#page404 svg {display: none;}
-}
-
-// ============== Tests javascript ================
-
-// test-onglets 
-#test-onglets {
-	background: $bglight;
-	color: $letterscolor;
-
-	.tab-content {
-		display: none;
-	}
-
-	.tab-content.active {
-		display: block;
-	}
-
-	.tabs .active a {
-		color: $contrast;
-	}
 }

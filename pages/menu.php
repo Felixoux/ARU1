@@ -18,28 +18,28 @@
                 <div class="menu__topic flex">
                     <div class="flex-center"><h3>Potage</h3></div>
                     <div class="flex-center"><h3>Plat principal</h3></div>
-                    <div class="flex-center"><h3>Dessert</h3></div>
+                    <div class="flex-center border-clear"><h3>Dessert</h3></div>
                 </div>
                 <div class="menu__meal flex stretch">
                     <div>
                         <div><p>Chocolat chaud bien servi avec amour</p></div>
                         <div><p>Chocolat chaud bien servi avec amour</p></div>
-                        <div><p>Chocolat chaud bien servi avec amour</p></div>
+                        <div class="border-clear"><p>Chocolat chaud bien servi avec amour</p></div>
                     </div>
                     <div>
                         <div><p>Chocolat chaud bien servi avec amour</p></div>
                         <div><p>Chocolat chaud bien servi avec amour</p></div>
-                        <div><p>Chocolat chaud bien servi avec amour</p></div>
+                        <div class="border-clear"><p>Chocolat chaud bien servi avec amour</p></div>
                     </div>
                     <div>
                         <div><p>Chocolat chaud bien servi avec amour</p></div>
                         <div><p>Chocolat chaud bien servi avec amour</p></div>
-                        <div><p>Chocolat chaud bien servi avec amour</p></div>
+                        <div class="border-clear"><p>Chocolat chaud bien servi avec amour</p></div>
                     </div>
-                    <div>
+                    <div class="border-clear">
                         <div><p>Chocolat chaud bien servi avec amour</p></div>
                         <div><p>Chocolat chaud bien servi avec amour</p></div>
-                        <div><p>Chocolat chaud bien servi avec amour</p></div>
+                        <div class="border-clear"><p>Chocolat chaud bien servi avec amour</p></div>
                     </div>
                 </div>
             </article>

@@ -8,7 +8,7 @@
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- main  -->
         <main>
-            <div class="container flex">
+            <div class="container flex card">
                 <div class="container__content">
                     <h1 class="container__content__title">Les Amis en quelques mots...</h1>
                     <h5 class="container__content__subtitle">Les “Amis de l’Athénée Royal d’Uccle 1” </h4>
