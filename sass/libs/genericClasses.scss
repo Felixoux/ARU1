@@ -237,7 +237,7 @@ a {
     }
 }
 
-a.pink {
+.pink a {
     color: $pink;
     &:hover {
         color:darken($pink, 15%);

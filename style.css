@@ -444,10 +444,10 @@ a:hover {
   color: #5396e7;
 }
 
-a.pink {
+.pink a {
   color: #D68FD6;
 }
-a.pink:hover {
+.pink a:hover {
   color: #c257c2;
 }
 
@@ -1466,6 +1466,15 @@ a.pink:hover {
 #staff h1 {
   font-size: 40px;
 }
+#staff .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 30px;
+  left: 2%;
+}
 #staff main {
   background: #171933;
   border-top: 1px solid #2a2e5e;
@@ -1662,10 +1671,18 @@ a.pink:hover {
   opacity: 0;
   animation: p 0.6s 0.5s ease-in-out forwards;
 }
-#photos-page main p a {
-  color: #D68FD6;
+#photos-page main svg {
+  width: 25%;
+  position: fixed;
+  bottom: 0;
+  right: 7%;
 }
 
+@media only screen and (max-width: 900px) {
+  #photos-page main svg {
+    display: none;
+  }
+}
 @media only screen and (max-width: 600px) {
   #photos-page header h1 {
     font-size: 32px;

@@ -860,6 +860,16 @@ section.bottom{
 		font-size: 40px;
 	}
 
+	.circle {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background: white;
+		position: absolute;
+		top: 30px;
+		left: 2%;
+	}
+
 	main {
 		background: $bgdark;
 		border-top: 1px solid $border;
@@ -1080,18 +1090,28 @@ section.bottom{
 			word-break: break-word;
 			opacity: 0;
 			animation:p .6s .5s ease-in-out forwards;
-			a {
-				color: $pink;
-			}
+		}
+
+		svg {
+			width: 25%;
+			position: fixed;
+			bottom: 0;
+			right: 7%;
 		}
 	}
 }
 // media query Photo 
+@media only screen and (max-width:900px) {
+	#photos-page main svg {
+		display: none;
+	}
+}
 @media only screen and (max-width:600px) {
 	#photos-page header h1{
 		font-size: 32px;
 	}
 }
+
 // Menu du restaurant
 #menu {
 	background: $bgdark;
