@@ -1055,40 +1055,29 @@ section.bottom{
 	width: 100%;
 	height: 100vh;
 
-	h1 {
-		font-size:52px ;
-		line-height: 1.2em;
+	header h1 {
+		padding: 2.5rem 0;
+		font-size:40px ;
 		svg {
 			transform: translate(10px, 6px);
 			animation:camera 1s 1s cubic-bezier(0.51, 0.89, 0.56, 0.72) ;
 		}
 	}
 
-	.container-photos {
+	main {
+		padding: $card-padding * 2 calc(50% - var(--container-width) / 2);
 		background:$bgdark;
-		min-height: 300px;
-		border: 1px solid $border ;
-		border-radius: 5px;
+		border-top: 1px solid $border ;
+
 		h2 {
 			font-size: 29px;
-			padding-left: 15px;
-			padding-right: 15px;
 			opacity: 0;
 			animation: h2 .5s ease-out forwards;
 		}
-		h2::after {
-			content: '';
-			position:absolute;
-			top: 90%;
-			left: 15px;
-			margin: 0 auto;
-			width: 90%;
-			height: 1px;
-			background: $border;
-		}
+
 		p {
+			padding: .9rem 0;
 			word-break: break-word;
-			padding-left: 1rem;
 			opacity: 0;
 			animation:p .6s .5s ease-in-out forwards;
 			a {
@@ -1097,63 +1086,12 @@ section.bottom{
 		}
 	}
 }
-// Media Query photos 
-@media only screen and (min-width:1000px) {
-	#photos-page {
-		.main {
-			display: grid;
-			grid-template-columns:450px 1fr ;
-			padding-top: calc(#{$space-section} / 2);
-			padding-bottom: calc(#{$space-section} / 2.75);
-		}
-		.main h1 {
-			padding: 5rem 3rem 0 0;
-		}
-		.container-photos {
-			max-height: 725px;
-			margin: 0;
-			padding: 0 0 1rem 2rem;
-		}
-		.monkey-shy, .chat-monkey {
-			display: block;
-			position: absolute;
-			z-index: -1;
-		}
-		.monkey-shy {
-			left: 5%;
-			bottom:600px;
-			animation: monkeyShy 2s ease-out;
-		}
-
-		.chat-monkey {
-			position: absolute;
-			top: 500px;
-			left: 10%;
-			width: 300px;
-			height: 145px;
-			background: $bgdark;
-			clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 49% 100%, 50% 75%, 0% 75%);
-			padding: 1.35rem 1rem;		
-			font-size: 29px;
-			line-height: 1.2em;
-			opacity: 0;
-			animation: opacity_0_to_100 .2s 2s ease-in both;
-		}
+// media query Photo 
+@media only screen and (max-width:600px) {
+	#photos-page header h1{
+		font-size: 32px;
 	}
 }
-@media only screen and (min-width:1650px) {
-	#photos-page {
-		.sloth {
-			display: block;
-			position: absolute;
-			top: 250px;
-			right:4%;
-			z-index: -1;
-			animation:slothPhoto 1.5s .1s cubic-bezier(0.15, 0.2, 0.13, 1.1) both;
-		}
-	}
-}
-
 // Menu du restaurant
 #menu {
 	background: $bgdark;
@@ -1193,12 +1131,12 @@ section.bottom{
 			flex-direction: column;
 			border-radius: 15px 0 0 15px;
 			padding: $card-padding;
-			div {
-				height: 100%;
-				border-bottom: 2px solid $border; 
-				width: 100%; 
-				text-align: center;
-			}
+				div {
+					height: 100%;
+					border-bottom: 2px solid $border; 
+					width: 100%; 
+					text-align: center;
+				}
 		}
 			
 		&__meal {
