@@ -56,7 +56,7 @@
                         Oupsiii il semble y avoir une erreur, <br>
                         la page peut avoir été supprimée ou deplacée... <br>
                         Vous pouvez reessayer plus tard ou <br>
-                        <a href="accueil.php">cliquer ici pour retourner sur l’accueil</a>
+                        <a href="home.php">cliquer ici pour retourner sur l’accueil</a>
                     </p>
                 </div>
             </div>

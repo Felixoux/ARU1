@@ -1,15 +1,11 @@
-	header h1 {
-		padding: 2.5rem 0;
-		svg {
-			transform: translate(10px, 6px);
-			animation:camera 1s 1s cubic-bezier(0.51, 0.89, 0.56, 0.72) ;
-		}
+	.pictures-header svg {
+		transform: translate(10px, 6px);
+		animation:camera 1s 1s cubic-bezier(0.51, 0.89, 0.56, 0.72) ;
 	}
 
-	main {
+	.pictures-main {
+		@extend %big-main;
 		padding: $card-padding * 2 calc(50% - var(--container-width) / 2);
-		background:$bgdark;
-		border-top: 1px solid $border ;
 
 		h2 {
 			font-size: 29px;
@@ -18,23 +14,9 @@
 		}
 
 		p {
-			padding: .9rem 0;
+			padding: .6rem 0;
 			word-break: break-word;
 			opacity: 0;
 			animation:p .6s .5s ease-in-out forwards;
 		}
-
-		svg {
-			width: 25%;
-			position: fixed;
-			bottom: 0;
-			right: 7%;
-		}
 	}
-
-// media query Photo 
-@media only screen and (max-width:900px) {
-	main svg {
-		display: none;
-	}
-}

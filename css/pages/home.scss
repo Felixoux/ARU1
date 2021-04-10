@@ -1,5 +1,5 @@
 // == section upper == presentation video et infos importante ==
-.upper-container {
+.home-upper {
 	display: grid;
 	grid-template-columns: 1.9fr 1fr;
 	gap: 2.8 * $gap;
@@ -58,17 +58,12 @@
 }
 
 .news__square{
-	@extend .card;
 	display: grid;
 	grid-template-columns: 1fr 75px;
 	min-height: 223px; 
 	max-height: 499px;
-	border: 1px solid $border; 
-	border-radius: 4px;  
-	background: $bgcard;
-	line-height: 1.4em; 
-	box-shadow: 0 2px 4px $shadow; 
 	overflow: auto;
+	@extend .card;
 
 	p {
 		padding: 1rem 0;
@@ -102,16 +97,16 @@
 }
 
 // == section center == A la une == 
-section.actu{
+.home-actu{
 	padding:calc((#{$space-section} / 2) - 25px) 0 calc(#{$space-section} / 2)  0 ;
 }
 
-section.actu .container-carroussel {
+.home-actu .container-carroussel {
 	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
 	height: 530px;
 }
 
-.actu .container .container {
+.home-actu .container .container {
 	height: auto;
 	padding-top: 28px;
 }
@@ -183,7 +178,7 @@ section.actu .container-carroussel {
 
 // Media query A la une 
 @media only screen and (max-width:1100px) {
-	.actu .container {
+	.home-actu .container {
 		justify-content: space-around;
 		.card-actu.item2 {
 			display: none;
@@ -192,7 +187,7 @@ section.actu .container-carroussel {
 }
 
 @media only screen and (max-width:750px) {
-	.actu {
+	.home-actu {
 		.card-actu.item3 {
 			display: none;
 		}
@@ -200,7 +195,7 @@ section.actu .container-carroussel {
 }
 
 // == section bottom ==
-section.bottom{
+.home-bottom{
 	padding-top: ($space-section / 2);
 	padding-bottom: ($space-section / 2);
 
@@ -252,36 +247,9 @@ section.bottom{
 	}
 }
 
-// == forms ==
-.triangle-bg, .square-bg, .square-form-invoid, .paralleleograme {
-	position: absolute;
-	width: 280px;
-	height: 280px;
-	background-color: $bgdark;
-	z-index: -10;
-}
-
-.triangle-bg {
-	right:0px;
-	top: 504.64px;
-	clip-path: polygon(94% 14%, 100% 25%, 100% 81%, 61% 90%);	
-}
-
-.square-bg {
-	clip-path: polygon(0 20%, 14% 21%, 35% 75%, 0 99%);
-	left: 0;
-	top: 250px;
-}
-
-.square-form-invoid {
-	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-	left: -140px;
-	bottom: 550px;
-	transform: rotate(20deg);
-}
 // @media query accueil upper section
 @media only screen and (max-width:1260px) {
-	#accueil .upper-container {
+	.home-upper {
 		grid-template-columns: 1fr;
 		padding-top: $space-section / 2;
 
@@ -295,21 +263,15 @@ section.bottom{
 	}
 }
 @media only screen and (max-width:750px) {
-	#accueil .upper-container {
+	.home-upper {
 		.video {
 			width:100%;
 		}
 	}
 }
-// @media only screen and (max-width:600px) {
-// 	#accueil h1 {
-// 		font-size: 32px;
-// 		text-align: center;
-// 	}
-// }
 // @media query accueil bottom section
 @media only screen and (max-width:1250px) {
-	#accueil .bottom {
+	.home-bottom {
 		flex-flow: nowrap column;
 		:last-child{
 			margin-top: ($space-section / 2);

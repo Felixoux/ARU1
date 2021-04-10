@@ -2,6 +2,7 @@
 $font: 'inter';
 $font-medium: 'Inter_medium';
 $font-bold: 'Inter_bold';
+
 @font-face {
     font-family: $font;
     src: url('../fonts/Inter-Regular.eot');
@@ -38,11 +39,6 @@ $font-bold: 'Inter_bold';
     font-display:swap;
 }
 
-h1, h2, h3, h4, h5, p, a {
-    color: $letterscolor;
-    font-family: $font;
-}
-
 h1, h2 {
     font-family: $font-bold;
 }
@@ -64,8 +60,21 @@ h5, p {
     }
 }
 
+.h1-medium {
+  font-size: 35px;
+}
+@include down(600) {
+  .h1-medium {
+    font-size: 29px;
+  }
+}
+
 .h2-section {
     font-size: 32px;
+}
+
+strong {
+  color: $contrast;
 }
 
 // Alignements
@@ -112,6 +121,5 @@ a.underline:hover {
 }
 .link:hover {
   color: $contrast;
-  text-decoration: underline;
 }
 

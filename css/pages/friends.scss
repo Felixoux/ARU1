@@ -1,26 +1,17 @@
-	main {
-		padding: calc(#{$space-section} / 2) calc(50% - var(--container-width) / 2);
+		.friends-container {
+			@extend .card;
+			@extend %container-margin;
+			margin: $space-section/2 auto;
+			padding: $card-padding * 2;
 
-		.container {
-			align-items: flex-start;
-			border: 1px solid $border;
+			.content {
+				@extend %grid-text-vertical;
 
-			&__content {
-				padding: 0 2rem;
-
-				&__title {
-					font-size: 35px;
-					padding: 2rem 0;
-				}
-
-				&__subtitle {
+				.subtitle {
 					font-size: 22.5px;
-					padding: 1rem 0 ;
 				}
 
 				p {
-					line-height: 1.2em;
-					padding:1rem 0;
 					font-size: 18.5px;
 				}
 
@@ -34,28 +25,26 @@
 					}
 				}
 
-				&__spoiler {
-					display: inline-block;
+				.quote {
+					font-style: italic;
+				}
+
+				.btn--spoiler {
+					padding-top: .5rem ;
 					color: $pink ;
 					cursor: pointer;
-					padding: 1rem 4rem 4rem 2rem;
 					&:hover {
 						color: darken($pink, 15%);
 					}
 				}
 			}
 		}
-	}
+	
 
-// Media Query Les amis Aru1 
 @media only screen and (max-width:500px) {
-	#les_amis main .container{
-		&__content {
-			padding: 0 .5rem 0 1rem;
-			&__subtitle {font-size: 22.5px;}
-			:nth-child(3) {font-size: 18.5px;}
-		}
-		h1 {font-size: 29px;}
+	.friends-container{
+		padding: $card-padding 1rem;
+		:nth-child(3) {font-size: 18.5px;}
 		p {font-size: 16px;}
 	}
 }

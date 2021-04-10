@@ -1,11 +1,11 @@
 <?php $pageTitle = "Chargement" ?>
 
 <?php require '../php/libs/header.php'; ?> 
-<body id="loader-page">
+<body>
     <div class="page-wrapper">
-        <main class="flex-center relative">
+        <main class="loader-main flex-center relative">
             <span class="loader"></span>
-            <h1>Chargement</h1>
+            <h1 class="h1-medium ml5">Chargement</h1>
         </main>
     </div>    
 </body>

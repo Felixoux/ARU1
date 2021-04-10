@@ -1,11 +1,10 @@
-// Menu du restaurant
-	section {
+	.menu {
 		.title {font-size: 35px; margin-bottom: 4rem ;}
 		padding-top: $space-section / 2;
 		padding-bottom: $space-section ;
 	}
 																				
-	.menu {
+	.menu-grid {
 		display: grid;
 		grid-template-columns:repeat(5, 1fr) ;
 		grid-template-rows: 75px repeat(3, 153px);

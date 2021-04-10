@@ -6,10 +6,10 @@
         <!-- Nav  -->       
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- Upper -->
-        <section class="upper-container">
+        <section class="home-upper">
                 <div class="video relative">
-                    <h1 class="video__title bigTitle"><span>Présentation</span> de notre école</h1>
-                    <div class="video__ratio ratio"><iframe class="video__iframe mt-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <h1 class="video__title bigTitle"><strong>Présentation</strong> de notre école</h1>
+                    <div class="video__ratio ratio"><iframe class="video__iframe my-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <svg class="video__svg mascott-mobile-hidden" width="500" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 171.1 141.5" style="enable-background:new 0 0 171.1 141.5;" xml:space="preserve">
                             <style type="text/css">
@@ -93,7 +93,7 @@
                 </div>
                 <div class="news">
                     <h2 class="news__title">Infos importantes</h2>
-                    <div class="news__square mt-2 overflow-a">
+                    <div class="news__square overflow-a">
                         <div class="news__square__content pink">
                             <p>&bull; L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
                             <p>&bull; Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
@@ -131,7 +131,7 @@
             <a href="#actu"><svg class="scroll-down__chevron" width='25' height='25' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill="#8491C7" d='M100 5.5c0 1.3-.5 2.6-1.5 3.5L50 57.5 1.5 9c-2-2-2-5.1 0-7.1s5.1-2 7.1 0L50 43.4 91.5 1.9c2-2 5.1-2 7.1 0 .9 1 1.4 2.3 1.4 3.6z'/></svg></a>
         </div>
         <!-- Actu  -->
-        <section class="actu relative" id="actu">  
+        <section class="home-actu relative" id="actu">  
             
             <div class="container-carroussel container">
                 <h2 class="float-l mt-2">Fil d'actualité</h2>
@@ -205,7 +205,7 @@
             </div>    
         </section>
         <!-- Bottom  -->
-        <section class="bottom flex" id="insciptions-ecole-en-ligne">
+        <section class=".hom-bottom flex" id="insciptions-ecole-en-ligne">
                 <div class="reference flex">
                     <h2 class="reference__title">Inscriptions</h2>
                     <div class="reference__img"></div>
@@ -224,9 +224,6 @@
          </section>
         <!-- Footer -->
         <?php require '../php/libs/footer.php'; ?>
-        <!-- Forms  -->
-        <div class="triangle-bg"></div>
-        <div class="square-bg"></div>           
 <!-- Scripts  -->
     <script type="text/javascript" src="../js/app.js"></script>
 </body>

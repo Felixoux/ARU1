@@ -1,7 +1,7 @@
-<nav id="navbar" class="flex relative">
+<nav class="header flex relative">
     <ul class="header-nav">
                 <li class="header__home <?php if($_SERVER['SCRIPT_NAME'] === '/pages/accueil.php') : ?>active<?php endif?>">
-                    <a href="accueil.php">
+                    <a href="home.php">
                         <svg>
                             <use xlink:href="../img/svg/svg-header-nav/sprite.svg#home"></use>
                         </svg>
@@ -16,9 +16,9 @@
                     </a>
                     <ul class="sous">
                         <li class="invisible"></li>
-                        <li><a href="lepersonnel.php">Le personnel</a></li>
+                        <li><a href="staff.php">Le personnel</a></li>
                         <li><a href="roi.php">R.O.I</a></li>
-                        <li><a href="projetsecole.php">Nos projets</a></li>
+                        <li><a href="projects.php">Nos projets</a></li>
                     </ul>
                 </li>
                 <li class="relative dropdown">
@@ -30,18 +30,18 @@
                     </a>
                     <ul class="sous drop2">
                         <li class="invisible"></li>
-                        <li><a href="photos.php">photo/com</a></li>
+                        <li><a href="pictures.php">photo/com</a></li>
                         <li><a href="#">Agenda</a></li>
                         <li><a href="menu.php">Menu du restaurant</a></li>
-                        <li><a href="g_options.php">Grille d'option</a></li>
-                        <li><a href="coursenligne.php">Cours en ligne</a></li>
-                        <li><a href="accueil.php#insciptions-ecole-en-ligne">Inscriptions</a></li>
-                        <li><a href="accueil.php#insciptions-ecole-en-ligne">Ecole en ligne</a></li>
+                        <li><a href="options.php">Grille d'option</a></li>
+                        <li><a href="online-course.php">Cours en ligne</a></li>
+                        <li><a href="home.php#insciptions-ecole-en-ligne">Inscriptions</a></li>
+                        <li><a href="home.php#insciptions-ecole-en-ligne">Ecole en ligne</a></li>
                         <li><a href="#footer">Newsletter</a></li>
                     </ul>
                 </li>
                 <li class="relative">
-                    <a class="avtivity" href="#">
+                    <a class="activity" href="#">
                         <svg>
                             <use xlink:href="../img/svg/svg-header-nav/sprite.svg#happy"></use>
                         </svg>
@@ -59,7 +59,7 @@
                         <li class="invisible"></li>
                         <li><a href="error404.php">P.M.S</a></li>
                         <li><a href="http://www.aparu1.be/">L'aparu1</a></li>
-                        <li><a href="les_amis.php">Les amis</a></li>
+                        <li><a href="friends.php">Les amis</a></li>
                     </ul>
                 </li>
                 <li class="relative">

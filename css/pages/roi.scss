@@ -1,40 +1,36 @@
-	h1 {
-		font-size: 40px; 
-		padding: $space-section / 3 0;
+	.roi-main {
+		@extend %big-main;
 	}
 
-	img {width: fit-content;}
-
-	main {
-		background: $bgdark;
-		padding-top:$space * 4 ;
-		padding-bottom:$space * 4 ;
-		border-top: 1px solid $border;
-		.summary-roi { 
-			h3 {
-				margin: 0;
-			}
-			padding: $card-padding  0
+	.summary-roi { 
+		padding: $card-padding  0
+		h3 {
+			margin: 0;
 		}
+	}
 
-		.pre {
-			margin: calc(#{$space}* 5) 0 calc(#{$space}* 5) 0;
-			display: grid;
-			grid-template-columns: 150px 1fr;
-			grid-template-rows: 22px 100px;
-			column-gap: $gap * 1.5;
-			row-gap: $gap /2;
-			h3, p {height: fit-content; margin: 0;}
-			h3 {grid-area: 1 / 2 / span 1 / span 1;}
-			p {grid-area: 2 / 2 / span 1 / span 1; font-size: 18px;}
+	.roi .pre {
+		margin: calc(#{$space}* 5) 0 calc(#{$space}* 5) 0;
+		display: grid;
+		grid-template-columns: 150px 1fr;
+		grid-template-rows: 22px 100px;
+		column-gap: $gap * 1.5;
+		row-gap: $gap /2;
+		h3, p {height: fit-content; margin: 0;}
+		h3 {grid-area: 1 / 2 / span 1 / span 1;}
+		p {grid-area: 2 / 2 / span 1 / span 1; font-size: 18px;}
+		img {
+			width: fit-content;
 		}
+	}
 
+	.summary-roi, .roi {
 		h2 {
 			font-size: 35px; 
 			margin-top: $space * 5 0 2px 0;
 			color: $color-dark;
 		}
-
+	
 		h3 {
 			margin: $space * 3 0 10px 0;
 			font-size: 22px;
@@ -47,14 +43,11 @@
 		}
 	
 		p {
-			line-height: 1.3em;
 			margin: 1rem 0 30px 0;
 		}
 	}
-
-// Media query ROI 
-@media only screen and (max-width:1000px) {
-	main .pre {
+@include down(1000) {
+	.rpi .pre {
 		display: block;
 		h3, p {margin-top: 1rem ;}
 	}

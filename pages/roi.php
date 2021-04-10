@@ -1,15 +1,15 @@
 <?php $pageTitle = "R.O.I" ?>
 <!-- header  -->
 <?php require '../php/libs/header.php'; ?> 
-<body id="roi-page">
+<body id="roi-page" class=light>
     <div class="page-wrapper">
         <!-- header  -->
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- main  -->
-        <header>
-            <h1>Reglement <span>d'ordre</span> interieur</h1>
+        <header class="roi-header">
+            <h1 class="h1-big py3">Reglement <span>d'ordre</span> interieur</h1>
         </header>
-        <main class="relative">
+        <main class="roi-main relative">
             <div class="summary-roi">
                 <h3 class="pink">Le reglement peut être lu ici même sur le site ou peut être télécharger en pdf <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h3>
             </div>

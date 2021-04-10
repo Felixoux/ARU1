@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="index">
-    <header class="mt-3"><img src="img/big-photo.jpg" alt="L'école">
+    <header class="index-header mt-3"><img src="img/big-photo.jpg" alt="L'école">
     </header>
-    <main>
+    <main class="index-main">
         <div>
             <h3>Ecole fondamentale</h3>
             <div class="container-overflow">
@@ -35,7 +35,7 @@
         <div>
             <h3>Ecole secondaire</h3>
             <div class="container-overflow">
-                <a href="pages/accueil.php"><img src="img/Secondaire-menu.jpg" alt="ecole secondaire"></a>
+                <a href="pages/home.php"><img src="img/Secondaire-menu.jpg" alt="ecole secondaire"></a>
             </div>
             <div class="container-spoiler relative">
                 <div class="spoiler-content hidden">
@@ -72,7 +72,7 @@
             </div>
         </div>
     </main>
-    <footer class="hidden">
+    <footer class="index-footer hidden text-center">
             <h3 >Contacts</h3>
             <div class="contact-1 modern-shadow pt-1">
                 <h4>Section fondamentale</h4>

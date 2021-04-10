@@ -7,17 +7,16 @@
         <!-- header  -->
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- main  -->
-        <main>
-            <div class="container flex card">
-                <div class="container__content">
-                    <h1 class="container__content__title">Les Amis en quelques mots...</h1>
-                    <h5 class="container__content__subtitle">Les “Amis de l’Athénée Royal d’Uccle 1” </h4>
-                    <p class="container_content__citation">L’Association <span class="italic">« Les Amis de l’Athénée Royal  d’Uccle 1 »</span> a été créée <br> en 1932</p>
+            <div class="friends-container">
+                <div class="content">
+                    <h1 class="h1-medium">Les Amis en quelques mots...</h1>
+                    <h5 class="subtitle">Les “Amis de l’Athénée Royal d’Uccle 1” </h4>
+                    <p>L’Association <strong class="quote">« Les Amis de l’Athénée Royal  d’Uccle 1 »</strong> a été créée en 1932</p>
                     <p>
                         Son conseil d’administration est composé d’anciens professeurs,
                         d’anciens élèves, de parents d’élèves, de professeurs en fonction et de la Direction de l’Athénée souhaitant tous continuer à contribuer et à participer au bon fonctionnement de l’école.
                     </p>
-                    <p>Actuellement elle est présidée par <strong class="bold">Christine Vanhessen</strong>. </p>
+                    <p>Actuellement elle est présidée par <strong>Christine Vanhessen</strong>. </p>
                     <div class="hidden spoiler-text">
                         <p>Les objectifs poursuivis par les Amis sont multiples :
                         </p>
@@ -39,13 +38,12 @@
                     <p class="container__content__spoiler btn--spoiler">Lire la suite</p>
                 </div>
             </div>
-        </main>
         <!-- footer  -->
         <?php require '../php/libs/footer.php'; ?> 
     </div>
     <script>
         // Spoiler system
-        var spoiler = document.querySelector("#les_amis main .btn--spoiler")
+        var spoiler = document.querySelector(".btn--spoiler")
 
         var createSpoilerparagraph = function(button) {
             button.addEventListener('click', function() {

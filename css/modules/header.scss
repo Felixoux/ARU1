@@ -1,149 +1,146 @@
-#navbar {
-	padding-top: calc(6 * #{$space});
-    padding-bottom: calc(3 * #{$space});
-	color: $letterscolor;
+	.header {
+		padding-top: calc(6 * #{$space});
+		padding-bottom: calc(3 * #{$space});
 
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		width: var(--container-width);
-		background-color: $border;
-		height: 1px;
-		z-index: -2;
-	}
-
-	ul, li  {
-		display: flex;
-		align-items: center;
-	}
-
-	.header-nav {
-		> li a {
-			z-index: 50;
-			font-family: 'inter_medium';
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: var(--container-width);
+			background-color: $border;
+			height: 1px;
+			z-index: -2;
 		}
-		margin-top: -5px;
-		margin-bottom: -5px;
-	}
-	
-	.sous {	display: none; }
 
-	.sous.active  {
-		display: flex;
-		flex-flow: column;
-		position: absolute;
-		top: 20px;
-		width: 220px;
-		min-height: auto;
-		background-color: $bglight;
-		border: 1px solid $border;
-		border-radius: 5px;
-		transform: translate(-17px, -40px);
-		.invisible {
-			padding-top: 3rem;
+		a, button {
+			@extend .link;
 		}
-		li {
-			padding: 1.2rem 0rem; 
-		}
-	}
 
-	.drop2.active {
-		width: 185px;
-		transform: translate(-34.5px, -40px);
-	}
-
-	.drop3.active {
-		width: 200px;
-		transform: translate(-25px, -40px);
-	}
-
-	.sous, .drop2, .drop3 {
-		z-index: 30;
-	}
-
-	.line::after {
-		content: '';
-		position: absolute;
-		width: 90%;
-		top: 41px;
-		left: 0;
-		right: 0;
-		background-color: $border;
-		margin: 0 auto;
-		height: 1px;
-	}
-
-	.header__home {
-		justify-self: flex-start;
-		margin: 5px calc(2 * #{$space}) 5px 0;
-		padding-right: calc(1 * #{$space});
-		height: 16px;
-		border-right: 1px solid $border;
-	}
-
-	.header-nav>*+* {
-		margin-left: calc(6 * #{$space});
-	}
-
-	.header__home+li {
-		margin-left: 0px;
-	}
-
-	.header-side {
-		margin: 0 calc(-2 * #{$space});
-		font-family: 'inter_bold';
-		color: $textnavbar25;
-	}
-
-	.header-side>li {
-		margin-right: calc(2 * #{$space});
-	}
-
-	.header__burger {
-		display: none;
-		margin-left: calc(1 * #{$space});
-		button {
+		ul, li  {
 			display: flex;
 			align-items: center;
-			justify-content: center;
-			height: 18px;
-			width: 18px;
-			background: 0 0;
-			span {
-				font-size: 0;
-    			text-indent: -3000px;
+		}
+
+		.header-nav {
+			> li a {
+				z-index: 50;
+				font-family: 'inter_medium';
+			}
+			margin-top: -5px;
+			margin-bottom: -5px;
+		}
+		
+		.sous {	display: none; }
+	
+		.sous.active  {
+			display: flex;
+			flex-flow: column;
+			position: absolute;
+			top: 20px;
+			width: 220px;
+			min-height: auto;
+			background-color: $bglight;
+			border: 1px solid $border;
+			border-radius: 5px;
+			transform: translate(-17px, -40px);
+			.invisible {
+				padding-top: 3rem;
+			}
+			li {
+				padding: 1.2rem 0rem; 
 			}
 		}
+	
+		.drop2.active {
+			width: 185px;
+			transform: translate(-34.5px, -40px);
+		}
+	
+		.drop3.active {
+			width: 200px;
+			transform: translate(-25px, -40px);
+		}
+	
+		.sous, .drop2, .drop3 {
+			z-index: 30;
+		}
+	
+		.line::after {
+			content: '';
+			position: absolute;
+			width: 90%;
+			top: 41px;
+			left: 0;
+			right: 0;
+			background-color: $border;
+			margin: 0 auto;
+			height: 1px;
+		}
+	
+		.header__home {
+			justify-self: flex-start;
+			margin: 5px calc(2 * #{$space}) 5px 0;
+			padding-right: calc(1 * #{$space});
+			height: 16px;
+			border-right: 1px solid $border;
+		}
+	
+		.header-nav>*+* {
+			margin-left: calc(6 * #{$space});
+		}
+	
+		.header__home+li {
+			margin-left: 0px;
+		}
+	
+		.header-side {
+			margin: 0 calc(-2 * #{$space});
+			font-family: 'inter_bold';
+			color: $textnavbar25;
+		}
+	
+		.header-side>li {
+			margin-right: calc(2 * #{$space});
+		}
+	
+		.header__burger {
+			display: none;
+			margin-left: calc(1 * #{$space});
+			button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 18px;
+				width: 18px;
+				background: 0 0;
+				span {
+					font-size: 0;
+					text-indent: -3000px;
+				}
+			}
+		}
+		
+		.header__burger span, .header__burger span::before, .header__burger span::after {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 2px;
+			background: $letterscolor;
+			position: relative;
+		}
+		
+		.header__burger span::after {bottom: -4px;}
+		.header__burger span::before {top: -6px;}
+		
+		svg {
+			width: 16px;
+			height: 16px;
+			margin-right: calc(1 * #{$space});
+		}
 	}
-	
-	.header__burger span, .header__burger span::before, .header__burger span::after {
-		content: "";
-		display: block;
-		width: 16px;
-		height: 2px;
-		background: $letterscolor;
-		position: relative;
-	}
-	
-	.header__burger span::after {bottom: -4px;}
-	.header__burger span::before {top: -6px;}
-	
-	a:hover, button:hover, li.active a{
-		color: $contrast;
-	}
-	
-	svg {
-		width: 16px;
-		height: 16px;
-		margin-right: calc(1 * #{$space});
-		cursor: pointer;
-	}
-	
-}
 // Media query navbar 
-@media only screen and (max-width:1000px) {
-	#navbar {
+@include down(1000) {
+	.header {
 		.header-nav .dropdown, .header-nav .relative{
 			display: none;
 		}

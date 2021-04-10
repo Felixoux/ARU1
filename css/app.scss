@@ -1,11 +1,54 @@
 /* 
 ../dart-sass/sass css/app.scss css/style.css --watch
 */
+// == les bakcground-color ==
+$bglight: #1b1e3d;
+$bgdark: #171933; 
+$bgdark25: #171933D8;
+$bgnavbar: #2C316F;
+$bgbutton:#2C316F;
+$bgcard:#22244D;
+$turquoise : #22789C;
+$color-transparent:rgba(18, 28, 66, 0);
+$shadow:#00000033;
+// == les color pour fonts ==
+$color-dark:#f0f3ff;
+$letterscolor: #D4DCFF;
+$textnavbar: #E7F8FF;
+$textnavbar25:#8491C7;
+$contrast: #5396e7;
+$contrast25:#4869ee3f;
+$red: #f25353;
+$red25:#f253533f;
+$green:#41cf7c;
+$green25:#41cf7c3f;
+$yellow:#feb32b;
+$yellow25:#feb32b3f;
+
+// == couleurs cosmetiques
+$pink: #D68FD6;
+$border: #2a2e5e;
+$arrow:#BBCCE0;
+$linedark:#161E3B;
+$card-shadow: 0 2px 4px $shadow;
+
+// == Spaces ==
+$gap:25px;
+$space:8px;
+$space-section:150px;
+$card-padding:16px;
+$header-height:137px;
+// === scrollBar === 
+::-webkit-scrollbar{width: 13.5px;}
+::-webkit-scrollbar-thumb{height: 7px;background: $border;border: 3px solid transparent;border-radius: 8px;background-clip: content-box;}
+::-webkit-scrollbar-corner {background: $bglight ;}
+::-webkit-resizer {background:$border ;}
+::-webkit-scrollbar-track {background:transparent; padding: 1px;}
+html {scrollbar-width: 8px;scrollbar-color: $border transparent;}
 
 // Tools 
 // =====================================
 @import "tools/reset.scss";
-@import "tools/variables.scss";
 @import "tools/mixins.scss";
 @import "tools/fonts.scss";
 @import "tools/layout.scss";
@@ -23,14 +66,14 @@ body {
 	word-break: break-word;
   }
   
-  body.light {
+body.light {
 	background:$bglight;
 	&::after {
-	  display: none;
+		display: none;
 	}
-  }
+}
   
-  body::after {
+body::after {
 	display: none;
 	content: '';
 	position: absolute;
@@ -45,18 +88,20 @@ body {
 	@include up(700) {
 	  display: block;
 	}
-  }
+}
   
-  ::selection {
+	::selection {
 	background: $contrast;
 	color: #fff;
-  }
+  	}
 // Modules 
 // ====================================
+@import "modules/card.scss";
 @import "modules/header.scss";
 @import "modules/footer.scss";
 @import "modules/loader.scss";
 @import "modules/404.scss";
+
 
 // Pages 
 // ===================================

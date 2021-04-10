@@ -1,23 +1,20 @@
-	header {
+	.options-header {
 		margin-top: $space-section / 3.5;
-		h1 {
-			font-size: 30px;
-		}
+		white-space: pre;
 	}
-	main {margin-bottom:calc(#{$space-section} / 2);}
+	.options-main {margin-bottom:calc(#{$space-section} / 2);}
 
-	main, header {
+	.options-main, .options-header {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, 300px);
 		gap: 40px;
 		justify-content: center;
 		
-		.card {
+		.card-options {
+			@extend .card;
 			flex-direction: column;
 			width: 300px;
 			height: 310px;
-			text-align: center;
-			line-height: 1.5em;
 
 			&__img {
 				background:no-repeat center / cover url(../img/grilles-options/1e.jpg);

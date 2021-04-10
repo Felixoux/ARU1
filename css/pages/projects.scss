@@ -1,50 +1,37 @@
+.projets {
+	@extend %container-margin;
+	@extend %grid-text-vertical;
+	margin: $space-section / 2 auto;
+	padding: $card-padding * 2;
+	background: $bglight;
+	border-radius: 8px; 
+	gap: $gap / 1.5;
+	
+	h4 {
+		margin-top: -.5rem;
+		font-size:20px ;
+		color: $yellow;
+	}
 
-	.projets {
-		display: grid;
-		gap: $gap ;
-		margin: 8.5rem 0;
-		padding: $card-padding * 2 $card-padding * 3;
-		background: $bglight;
-		border-radius: 8px;
-		
+	h5 {
+		font-size:18.5px ;
+	}
 
-
-		h1 {
-			font-size: 35px;
+	a {
+		color: $red;
+		&:hover {
+			color: darken($red, 20%);
 		}
-
-		h5 {
-			margin-top: -.5rem;
-			font-size:20px ;
-			color: $yellow;
-		}
-
-		h4 {
-			font-size:18.5px ;
-		}
-
-		p {
-			line-height:1.1;
-		}
-
-		a {
-			color: $red;
-			font-family: 'inter';
-			&:hover {
-				color: darken($red, 20%);
-			}
-
-			img {
-				transform:translateY(35%);
-				margin-left:10px ;
-			}
+		img {
+			transform:translateY(35%);
+			margin-left:10px ;
 		}
 	}
+}
 
 // == Media Query projets d'établissement == 
 @media only screen and (max-width:650px) {
 	.projets {
 		padding: $card-padding * 2 $card-padding;
-		word-break: break-word;
 	}
 }
