@@ -216,6 +216,14 @@ h1, h2 {
     color:$letterscolor;
 }
 
+.bigTitle {
+    font-size: 40px;
+}
+// media query bigTitle
+@media only screen and (max-width: 600px) {
+    .bigTitle {font-size: 32px;}
+}
+
 h3, h4 {
     font-family: 'inter_medium';
     color:$letterscolor;

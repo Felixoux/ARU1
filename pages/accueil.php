@@ -8,7 +8,7 @@
         <!-- Upper -->
         <section class="upper-container">
                 <div class="video relative">
-                    <h1 class="video__title"><span>Présentation</span> de notre école</h1>
+                    <h1 class="video__title bigTitle"><span>Présentation</span> de notre école</h1>
                     <div class="video__ratio ratio"><iframe class="video__iframe mt-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <svg class="video__svg mascott-mobile-hidden" width="500" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 171.1 141.5" style="enable-background:new 0 0 171.1 141.5;" xml:space="preserve">
@@ -92,9 +92,9 @@
                         </svg>
                 </div>
                 <div class="news">
-                    <h1 class="news__title">Infos importantes</h1>
+                    <h2 class="news__title">Infos importantes</h2>
                     <div class="news__square mt-2 overflow-a">
-                        <div class="news__square__content">
+                        <div class="news__square__content pink">
                             <p>&bull; L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>
                             <p>&bull; Important: évaluations pour cette année scolaire (lettre d'information) <a href="http://www.aru1.be/images/docs_2020-2021/Lettre-priode-examens.pdf" target="_blank" >à lire ici</a></p>
                             <p>&bull; <span class="alert">Urgent:</span> rendre les bulletins avant le 36/01/3021 ;)</p>

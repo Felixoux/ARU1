@@ -11,7 +11,7 @@
         </header>
         <main class="relative">
             <div class="summary-roi">
-                <h3>Le reglement peut être lu ici même sur le site ou peut être télécharger en pdf <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h3>
+                <h3 class="pink">Le reglement peut être lu ici même sur le site ou peut être télécharger en pdf <a href="../docs/pdf/ROI.pdf">cliquant ici</a></h3>
             </div>
             <hr>
             <div class="roi">

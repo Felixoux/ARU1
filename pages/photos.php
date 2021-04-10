@@ -6,7 +6,7 @@
         <!-- nav  -->
         <?php require '../php/libs/header-navbar.php'; ?>
         <header>
-            <h1>Albums <span>photo</span> de l'école 
+            <h1 class="bigTitle">Albums <span>photo</span> de l'école 
                 <svg  width="52" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 420.8 420.8"  xml:space="preserve">
                     <g>

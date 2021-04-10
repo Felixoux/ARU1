@@ -423,6 +423,15 @@ h1, h2 {
   color: #D4DCFF;
 }
 
+.bigTitle {
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bigTitle {
+    font-size: 32px;
+  }
+}
 h3, h4 {
   font-family: "inter_medium";
   color: #D4DCFF;
@@ -936,10 +945,8 @@ a:hover {
 #footer h3, #footer p {
   height: fit-content;
 }
-#footer .goldBook {
+#footer .goldBook, #footer .newsletter, #footer form {
   display: grid;
-  grid-template-columns: 1fr;
-  height: fit-content;
   gap: 25px;
 }
 #footer .goldBook__content {
@@ -956,9 +963,6 @@ a:hover {
   box-shadow: none;
 }
 #footer .newsletter {
-  display: grid;
-  gap: 25px;
-  grid-template-columns: 1fr;
   height: fit-content;
 }
 #footer .newsletter__mail {
@@ -1025,7 +1029,7 @@ a:hover {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  flex-flow: column nowrap;
+  text-align: center;
 }
 #footer .network img {
   border-radius: 4px;
@@ -1056,6 +1060,19 @@ a:hover {
 @media only screen and (min-width: 1014px) {
   #footer {
     height: 623px;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  #footer::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background: url(img/svg/logo-aru1-bg.svg) no-repeat;
+    width: 250%;
+    height: 250%;
+    transform: rotate(10deg);
+    z-index: -1;
   }
 }
 #index {
@@ -1178,14 +1195,14 @@ a:hover {
   width: 100%;
   height: 100vh;
 }
+#accueil h2 {
+  font-size: 29px;
+}
 #accueil .upper-container {
   display: grid;
   grid-template-columns: 1.9fr 1fr;
   gap: 70px;
   padding: 125px calc(50% - var(--container-width) / 2) 75px calc(50% - var(--container-width) / 2);
-}
-#accueil .upper-container h1 {
-  font-size: 35px;
 }
 #accueil .video__svg {
   position: absolute;
@@ -1243,10 +1260,8 @@ a:hover {
 }
 #accueil .news__square p {
   padding: 1rem 0;
-  font-size: 16px;
 }
-#accueil .news__square p a {
-  color: #D68FD6;
+#accueil .news__square a {
   text-decoration: underline;
 }
 #accueil .news__square__content {
@@ -1280,9 +1295,6 @@ a:hover {
 #accueil section.actu .container-carroussel {
   background: linear-gradient(to top, #1b1e3d, #1b1e3d) left bottom/100% 90px no-repeat #171933;
   height: 530px;
-}
-#accueil h2 {
-  font-size: 32px;
 }
 #accueil .actu .container .container {
   height: auto;
@@ -1372,9 +1384,6 @@ a:hover {
   max-width: 533px;
   line-height: 1.5em;
 }
-#accueil section.bottom .reference__title {
-  font-size: 30px;
-}
 #accueil section.bottom .reference__img {
   width: 100%;
   height: 0;
@@ -1462,9 +1471,6 @@ a:hover {
 }
 #staff {
   background: #1b1e3d;
-}
-#staff h1 {
-  font-size: 40px;
 }
 #staff .circle {
   width: 150px;
@@ -1649,7 +1655,6 @@ a:hover {
 }
 #photos-page header h1 {
   padding: 2.5rem 0;
-  font-size: 40px;
 }
 #photos-page header h1 svg {
   transform: translate(10px, 6px);
@@ -1681,11 +1686,6 @@ a:hover {
 @media only screen and (max-width: 900px) {
   #photos-page main svg {
     display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #photos-page header h1 {
-    font-size: 32px;
   }
 }
 #menu {

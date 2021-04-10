@@ -3,9 +3,9 @@
                 <h3 class="goldBook__title">Laissez un avis sur le site, cela nous permettera de l’améliorer</h3>
                 <form class="goldBook__form goldBook__form--column" action="accueil.php" method="post">
                     <textarea class="goldBook__content font-normal" name="gold-book__text" cols="70" rows="10" placeholder="Votre avis sur le site..."></textarea>
-                    <div class="goldBook__buttons mt-1">
+                    <div class="goldBook__buttons">
                         <button class="btn btn--cancel font-normal" type="reset" value="cancel">Annuler</button>
-                        <button class="btn btn--submit mt-1 font-normal btn-hover__effect" type="submit" value="send">Envoyer      </button>
+                        <button class="btn btn--submit font-normal btn-hover__effect" type="submit" value="send">Envoyer      </button>
                     </div>
                 </form>
             </div>
@@ -17,9 +17,9 @@
                 <p class="newsletter__p ex-mail">Entrez votre e-mail </p>
                 <form class="newsletter__form newsletter__form--column" action="/pages/accueil.php" method="post">
                     <div class="newsletter__mail"><input class="font-normal newsletter__mail__input" type="email" placeholder="pierre.durand@gmail.com" required></div>
-                    <div class="newsletter__buttons mt-1">
+                    <div class="newsletter__buttons">
                         <button class="btn btn--cancel font-normal" type="reset" value="cancel">Annuler</button>
-                        <button class="btn btn--subscribe mt-1 font-normal btn-hover__effect" type="submit" value="subscribe">S'inscrire</button>
+                        <button class="btn btn--subscribe font-normal btn-hover__effect" type="submit" value="subscribe">S'inscrire</button>
                     </div>
                 </form>  
                 <div class="social-media">
@@ -28,7 +28,7 @@
                     <a href="https://www.facebook.com/pages/category/Nonprofit-Organization/Les-Amis-de-LAru1-104390721107594/" target="_blank"><img class="m-2" width="60" height="60" src="/img/svg/facebook.svg" alt="Logo-facebook"></a>      
                 </div>
             </div>  
-            <div class="network flex">
+            <div class="network">
                     <h5 class="mt-1">Notre Réseau</h5>
                     <a href="http://www.wallonie-bruxelles-enseignement.be/" target="_blank"><img width="95" height="76" src="/img/logo-federation.jpg" alt="Logo-Federation"></a>
                 </div>   

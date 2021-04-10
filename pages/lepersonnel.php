@@ -111,7 +111,7 @@
         </svg>
     </div>
     <header>
-        <h1 class="pt-3">Le personnel</h1>
+        <h1 class="pt-3 bigTitle">Le personnel</h1>
     </header>
     <main>
         <div class="container">
