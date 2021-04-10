@@ -1,0 +1,89 @@
+// == Erreure 404 page ==
+#page404 {
+	background: url(../img/bg404.png), $bgdark ;
+	backdrop-filter: blur(4px);
+	
+	main {
+		height: 100vh;
+
+		.container {
+			grid-template-columns: 1fr 5fr;
+			align-items: center;
+			padding: $card-padding;
+			background: $bgcard;
+			border: 1px solid $border;
+			border-radius: 25px;
+			z-index: 1;
+	
+			&__content {
+				word-break:break-word;
+	
+				&__title {
+					font-size: 52px;
+				}
+	
+				&__paragraph {
+					font-size: 25px;
+					line-height: 1.5em;
+				}
+	
+				a {
+					color: $contrast;
+					&:hover {
+						color: darken($contrast, 15%);
+					}
+				}
+			}
+		}
+
+		.container, .container__content {
+			display: grid;
+			gap: $gap;
+		}
+	}
+
+	
+
+
+}
+// Media Query 404 page
+@media only screen and (max-width:1010px) {
+	#page404 .container__content{
+
+		&__title {
+			font-size: 35px;
+		}
+
+		&__paragraph {
+			font-size: 22.5px;
+		}
+	}
+}
+@media only screen and (max-width:900px) {
+	#page404 main .container {
+		grid-template-columns: 1fr;
+		gap: $gap * 1.5;
+		justify-items: center;
+
+		&__svg {
+			width: 50vw;
+		}
+
+		&__content {
+			gap: $gap / 1.2;
+			text-align: center;
+
+			&__title {
+				font-size: 29px
+			}
+
+			&__paragraph {
+				font-size: 16px;
+				line-height: 1.5em;
+			}
+		}
+	}
+}
+@media only screen and (max-height:460px) {
+	#page404 svg {display: none;}
+}

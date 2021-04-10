@@ -2,7 +2,7 @@
 <!-- Head  -->
 <?php require '../php/libs/header.php'; ?> 
 <!-- Body -->
-<body id="accueil" class="relative">
+<body id="accueil" class="relative light">
         <!-- Nav  -->       
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- Upper -->

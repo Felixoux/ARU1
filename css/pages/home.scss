@@ -1,0 +1,321 @@
+// == section upper == presentation video et infos importante ==
+.upper-container {
+	display: grid;
+	grid-template-columns: 1.9fr 1fr;
+	gap: 2.8 * $gap;
+	padding:  ($space-section / 1.2) calc(50% - var(--container-width) / 2) ($space-section / 2) calc(50% - var(--container-width) / 2);
+}
+
+.video {
+	&__svg {
+		position: absolute;
+		left: -180px;
+		z-index: -1;
+		overflow: visible;
+
+		.mouth {
+			animation: welcomMascotMouth 2s ease-in-out infinite alternate;
+			transform-origin: center center;
+			transform-box: fill-box;
+		}
+
+		.arm-left {
+			animation: welcomMascotArmLeft 2s ease-in-out infinite alternate;
+			transform-box: fill-box;
+			transform-origin: center right;
+		}
+		.arm-right {
+			animation: welcomMascotArmRight 2s ease-in-out infinite alternate;
+			transform-box: fill-box;
+			transform-origin: center left;
+		}
+
+		.hand-left {
+			animation: welcomMascotHandLeft 2s ease-in-out infinite alternate;
+			transform-box: fill-box;
+			transform-origin: center left;
+		}
+
+		.hand-right {
+			animation: welcomMascotHandRight 2s ease-in-out infinite alternate;
+			transform-box: fill-box;
+			transform-origin: center left;
+		}
+
+		.body {
+			animation: welcomMascotBody 2s ease-in-out infinite alternate;
+			transform-origin: center ;
+		}
+	}
+
+	&__iframe{ 
+		border-radius: 10px 25px 25px 25px;
+	}
+
+	@media only screen and (max-width:1260px) {
+		.mascott-mobile-hidden {display: none;}
+	}
+}
+
+.news__square{
+	@extend .card;
+	display: grid;
+	grid-template-columns: 1fr 75px;
+	min-height: 223px; 
+	max-height: 499px;
+	border: 1px solid $border; 
+	border-radius: 4px;  
+	background: $bgcard;
+	line-height: 1.4em; 
+	box-shadow: 0 2px 4px $shadow; 
+	overflow: auto;
+
+	p {
+		padding: 1rem 0;
+	}
+
+	a {
+		text-decoration: underline;
+	} 
+
+	&__content {
+		padding: $card-padding;
+	}
+	
+
+	&__time {
+		padding: $card-padding;
+		background: $bglight;
+		border-left: 1px solid $border;
+		color: $textnavbar25;
+		:nth-child(2) {padding-top: 5rem;padding-bottom: 2.5rem;}
+		:nth-child(3) {padding-bottom: 2.5rem;}
+		:nth-child(4) {padding-bottom: 2.5rem;}
+	}
+}
+
+.scroll-down__chevron {
+	width: 25px; 
+	height: 25px;
+	animation: scrollDown__chevron 4s .7s cubic-bezier(0.71, 0.76, 0.98, 1.23) infinite;
+	cursor: pointer;
+}
+
+// == section center == A la une == 
+section.actu{
+	padding:calc((#{$space-section} / 2) - 25px) 0 calc(#{$space-section} / 2)  0 ;
+}
+
+section.actu .container-carroussel {
+	background:linear-gradient(to top, $bglight, $bglight) left bottom/100% 90px no-repeat $bgdark; 
+	height: 530px;
+}
+
+.actu .container .container {
+	height: auto;
+	padding-top: 28px;
+}
+
+.card-actu{
+	align-self: flex-end;
+	flex-direction: column;
+	width:330px;
+	height: 407px;
+	.img-card{
+		flex-shrink: 0;
+		width: 100%;
+		height: 192px !important;
+		background-image: url(img/card-test.jpg);
+		background-size: cover;
+		border-radius: 25px;
+		z-index: 10;
+		
+	}
+	.text-bg_card{
+		flex-flow: column;
+		flex-shrink: 0;
+		transform: translateY(-25px);
+		margin: 0 0.55em;
+		height: 232px;
+		justify-self: center;
+		background-color: $bgcard;
+		border: 1px solid $border;
+		border-radius: 25px;
+		box-shadow: 0 2px 4px $shadow;
+		font-size: 18.5px;
+	}
+	.text-bg_card p {
+		align-self: flex-start;
+		padding: 50px 2% 0 8.5%;
+	}
+	.line {
+		align-self: center;
+		margin-bottom: 0.35em;
+		width: 125px;
+		border: 1px solid $linedark;
+		border-radius: 25px;
+	}
+	.btn_more{
+		flex-shrink: 0;
+		align-self: flex-end;
+		justify-self: flex-end;	
+		transform: translateY(-65px);
+		width: 45px;
+		height: 45px;
+		background: $bgcard;
+		border: 1px solid $border;
+		box-shadow: 0 2px 4px $shadow;
+		border-radius: 50px;
+		z-index: 10;
+	}
+}
+
+.show-more-infos{
+	cursor:pointer;
+}
+
+.arrow_next{
+	grid-area: 2 / 10 / span 1 / span 1;
+	transform: rotate(180deg);
+	align-self: flex-end;
+	justify-self: flex-start;
+}
+
+// Media query A la une 
+@media only screen and (max-width:1100px) {
+	.actu .container {
+		justify-content: space-around;
+		.card-actu.item2 {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width:750px) {
+	.actu {
+		.card-actu.item3 {
+			display: none;
+		}
+	}
+}
+
+// == section bottom ==
+section.bottom{
+	padding-top: ($space-section / 2);
+	padding-bottom: ($space-section / 2);
+
+	.reference {
+		flex-flow: nowrap column;
+		justify-content: flex-start;
+		max-width: 533px;
+		line-height: 1.5em;
+
+		&__img {
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+			margin: 2em 0;
+			border-radius: 50px ;
+		}
+
+		&__p {
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 19px;
+			align-self: center;
+			padding: 0 16px ;
+		}
+
+		&__hr {
+			justify-self: flex-end;
+			width: 60%;
+			height: 1px;
+			background-color: $textnavbar25;
+		}
+
+		span {
+			color:$green;
+		}
+
+		a{
+			color: $pink;
+			cursor: pointer;
+		}
+	}
+
+	:first-child .reference__img {
+		background:center / cover no-repeat url(img/inscriptions.jpg);
+	}
+
+	:last-child .reference__img {
+		background: center / cover no-repeat url(img/online_school.jpg);
+	}
+}
+
+// == forms ==
+.triangle-bg, .square-bg, .square-form-invoid, .paralleleograme {
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	background-color: $bgdark;
+	z-index: -10;
+}
+
+.triangle-bg {
+	right:0px;
+	top: 504.64px;
+	clip-path: polygon(94% 14%, 100% 25%, 100% 81%, 61% 90%);	
+}
+
+.square-bg {
+	clip-path: polygon(0 20%, 14% 21%, 35% 75%, 0 99%);
+	left: 0;
+	top: 250px;
+}
+
+.square-form-invoid {
+	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+	left: -140px;
+	bottom: 550px;
+	transform: rotate(20deg);
+}
+// @media query accueil upper section
+@media only screen and (max-width:1260px) {
+	#accueil .upper-container {
+		grid-template-columns: 1fr;
+		padding-top: $space-section / 2;
+
+		.video {
+			width:80%;
+		}
+
+		.news__square {
+			max-height: 250px;
+		}
+	}
+}
+@media only screen and (max-width:750px) {
+	#accueil .upper-container {
+		.video {
+			width:100%;
+		}
+	}
+}
+// @media only screen and (max-width:600px) {
+// 	#accueil h1 {
+// 		font-size: 32px;
+// 		text-align: center;
+// 	}
+// }
+// @media query accueil bottom section
+@media only screen and (max-width:1250px) {
+	#accueil .bottom {
+		flex-flow: nowrap column;
+		:last-child{
+			margin-top: ($space-section / 2);
+			.card__hr {
+				display: none;
+			}
+		}
+	}
+}

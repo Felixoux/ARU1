@@ -1,0 +1,70 @@
+// Menu du restaurant
+	section {
+		.title {font-size: 35px; margin-bottom: 4rem ;}
+		padding-top: $space-section / 2;
+		padding-bottom: $space-section ;
+	}
+																				
+	.menu {
+		display: grid;
+		grid-template-columns:repeat(5, 1fr) ;
+		grid-template-rows: 75px repeat(3, 153px);
+		grid-template-areas: 
+		"none time time time time"
+		"topic meal meal meal meal"
+		"topic meal meal meal meal"
+		"topic meal meal meal meal";
+		text-align: center;
+		min-width: 650px;
+
+		&__time, &__topic {
+			background: $bglight;
+			font-size: 18.5px;
+
+		}
+
+		&__time {
+			grid-area: time;
+			justify-content: space-around;
+			border-radius: 15px 15px 0 0;
+		}
+
+		&__topic {
+			grid-area: topic;
+			flex-direction: column;
+			border-radius: 15px 0 0 15px;
+			padding: $card-padding;
+				div {
+					height: 100%;
+					border-bottom: 2px solid $border; 
+					width: 100%; 
+					text-align: center;
+				}
+		}
+			
+		&__meal {
+			grid-area: meal;
+			background: $bgcard;
+			border-radius: 0 0 15px 0;
+			
+			> div {
+				display: flex;
+				flex-direction: column;
+				border-right: 2px solid $border;
+				padding: $card-padding;
+				div {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					max-width: 250px;
+					height: 100%;
+					border-bottom: 2px solid $border;
+					font-size: 14.5px;
+					line-height: 1.2em;
+					word-break: break-word;
+				}
+			} 
+
+		}
+	}
+

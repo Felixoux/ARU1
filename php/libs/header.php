@@ -5,5 +5,5 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php if (isset($pageTitle)) {echo $pageTitle;} else {echo 'Aru1';} ?> | Aru1</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>

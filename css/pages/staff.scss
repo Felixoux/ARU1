@@ -1,0 +1,70 @@
+	.circle {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background: white;
+		position: absolute;
+		top: 30px;
+		left: 2%;
+	}
+
+	main {
+		background: $bgdark;
+		border-top: 1px solid $border;
+		font-family: 'inter';
+		
+		.tab-content {
+			display: none;
+		}
+
+		.tab-content.active {
+			display: block;
+		}
+
+		.tabs a {
+			color: $letterscolor;
+		}
+	
+		.tabs .active a, .tabs a:hover {
+			color: $contrast;
+		}
+
+		.container {
+			padding: $space-section 0;
+			ul.tabs {
+				display: flex;
+				li {
+					padding: 1rem;
+					background:$bgcard ;
+					border-right: 1px solid $border;
+					font-size: 18px;
+					transition: background .3s ;
+					&:hover {
+						background: darken($bgcard, 5%);
+					}
+				}
+			}
+
+			.tabs-content {
+				section {
+					padding: $card-padding * 2;
+					background-color: $bglight;
+					border-radius: 0 8px 8px 8px;
+
+					ul {
+						display: grid;
+						grid-template-columns: 1fr 2fr 2fr;
+						column-gap: $gap;
+						padding: $space * 1.5 0;
+						color: $letterscolor;
+					}
+
+					ul.title {
+						font-size: 18px;
+						color: $color-dark;
+						padding-bottom: $space * 3;
+					}
+				}
+			}
+		}
+	}
