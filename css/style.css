@@ -419,6 +419,7 @@ a.underline:hover {
   overflow: hidden;
 }
 
+#page404 .container-404,
 header, section, main, footer, nav, .container, .header, .footer, .main {
   box-sizing: border-box;
   width: 100%;
@@ -495,7 +496,7 @@ header, section, main, footer, nav, .container, .header, .footer, .main {
   width: 100%;
 }
 
-.projets, .friends-container,
+.projets, .friends-container, #page404 .container-404,
 .grid-text-vertical,
 .index-footer > div,
 .goldBook form,
@@ -1000,7 +1001,7 @@ body::after {
   color: #fff;
 }
 
-.card, .projets, .options-main .card-options, .options-header .card-options, .online-course, .news__square, .friends-container, .newsletter__mail, #navbar .sous.active {
+.card, .projets, .options-main .card-options, .options-header .card-options, .online-course, .news__square, .friends-container, #page404 .container-404, .newsletter__mail, #navbar .sous.active {
   background: #22244c;
   border: 1px solid #2a2e5e;
   box-shadow: 0 2px 4px #00000033;
@@ -1393,71 +1394,31 @@ form button[type=reset]:hover {
   background: url(../img/bg404.png), #171933;
   backdrop-filter: blur(4px);
 }
-#page404 main {
+#page404 main.error404 {
   height: 100vh;
 }
-#page404 main .container {
-  grid-template-columns: 1fr 5fr;
-  align-items: center;
+#page404 .container-404 {
+  max-width: 1100px;
   padding: 16px;
-  background: #22244c;
-  border: 1px solid #2a2e5e;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
   border-radius: 25px;
-  z-index: 1;
 }
-#page404 main .container__content {
-  word-break: break-word;
-}
-#page404 main .container__content__title {
-  font-size: 52px;
-}
-#page404 main .container__content__paragraph {
-  font-size: 25px;
-  line-height: 1.5em;
-}
-#page404 main .container__content a {
+#page404 a {
   color: #5295e6;
 }
-#page404 main .container__content a:hover {
+#page404 a:hover {
   color: #1e6dce;
 }
-#page404 main .container, #page404 main .container__content {
-  display: grid;
-  gap: 25px;
-}
 
-@media only screen and (max-width: 1010px) {
-  #page404 .container__content__title {
-    font-size: 35px;
-  }
-  #page404 .container__content__paragraph {
-    font-size: 22.5px;
-  }
-}
-@media only screen and (max-width: 900px) {
-  #page404 main .container {
+@media (max-width: 850px) {
+  #page404 .container-404 {
     grid-template-columns: 1fr;
-    gap: 37.5px;
     justify-items: center;
-  }
-  #page404 main .container__svg {
-    width: 50vw;
-  }
-  #page404 main .container__content {
-    gap: 20.8333333333px;
     text-align: center;
   }
-  #page404 main .container__content__title {
-    font-size: 29px;
-  }
-  #page404 main .container__content__paragraph {
-    font-size: 16px;
-    line-height: 1.5em;
-  }
-}
-@media only screen and (max-height: 460px) {
-  #page404 svg {
-    display: none;
+  #page404 .container-404 svg {
+    width: 50vw;
   }
 }
 .friends-container {
@@ -1770,11 +1731,6 @@ form button[type=reset]:hover {
   border-radius: 15px;
 }
 
-@media (min-width: 600px) and (max-width: 1100px) {
-  .index-main main > div {
-    width: 70vw;
-  }
-}
 .menu {
   padding-top: 75px;
   padding-bottom: 150px;
