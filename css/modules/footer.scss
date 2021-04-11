@@ -1,180 +1,59 @@
-#footer {
-	display: grid;
-	grid-template-rows: min-content;
-	row-gap: 100px;
-	padding-top: ($space-section / 2);
-	padding-bottom: ($space-section / 2);
-	height: 1400px;
-	background-color: $bgdark;
-	border-top: 2px solid $contrast25;
-	overflow: hidden;
-	z-index: 1;
-	
-
-	> div {
-		max-width: 528px;
-	}
-
-	h3 {
-		font-size: 29px;
-
-		svg {
-			width: 1.5em;
-			height: 1.5em;
-			top: -70%;
-			left: 65%;
-			transform: rotate(10deg);
-		}
-	}
-
-	h3, p {
-		height: fit-content;
-	}
-
-	.goldBook, .newsletter, form {
+	#footer {
+		@extend %big-main;
+		border-top: 2px solid $contrast25;
+		z-index: 1;
 		display: grid;
-		gap: $gap;
+		grid-template-columns: repeat(2, 1fr) ;
+		gap: $gap * 5;
+		padding-top: $space-section / 2;
+		padding-bottom: $space-section / 2;
+
+		textarea {
+			background: $bgcard;
+		}
+
 	}
 
-	.goldBook {
-		&__content {
-			width: 100%;
-			padding: 1.5em 2em;
-			background:$bgcard;
-			border-radius: 8px;
-			box-shadow: 0 2px 4px $shadow;
-			transition: all .2s ease-in;
-			&:focus {
-				background:darken($bgcard, 3.5%);
-				border: 1px solid $contrast;
-				box-shadow: none;
-			}
-		}
+	.goldBook form , .newsletter form, .goldBook, .newsletter {
+		@extend .grid-text-vertical;
 	}
 
 	.newsletter {
 		height: fit-content;
-		&__mail {
-		width: 100%;
-		background: $bgcard;
-		border: 1px solid $border;
-		border-radius: 4px;
-		padding: 15px;
-
-		&__input {
-			width: 100%;
-			min-height: 44px;
-			padding: calc(1.5 * #{$space}) calc(1 * #{$space});
-			background: $bgdark;
-			border: 1px solid $border;
-			border-radius: 4px;
-			font-size: 16px;
-			&:focus {
-				border-color: $contrast;
-				box-shadow: 0 0 0 3px $contrast25;
-				}
-			}
-		}
-
-		&__copyright {
-			margin-top: 7.5rem;
-			transform: translateY(50px);
-		}
 	}
 
-	.btn {
-		font-size: 22px;
-		border-radius: 25px;
-		padding: 0.24em 2.2em;
-		color: white;
-		transition: all .3s;
-		cursor:pointer;
-
-		&--submit {
-			background-color: $contrast;
-			&:after, &:before {
-				background-color:$contrast;
-			}
-			&:before {
-				background-color: darken($contrast, 15%);
-			}
-		}
-
-		&--cancel {
-			order: 2;
-			background-color: $red;
-			&:hover {
-				background-color: $red25;
-			}
-			&:active {
-				background-color: $red;
-			}
-		}
-
-		&--subscribe {
-			background-color: $green;
-			&:after, &:before {
-				background-color:$green;
-			}
-			&:before {
-				background-color: darken($green, 15%);
-			}
-		}
+	.newsletter__mail{
+		@extend .card;
 	}
 
-	.network {
+	.network-footer {
 		position: absolute;
 		bottom:20px;
 		right: 20px;
-		text-align: center;
 		img {
 			border-radius: 4px;
-		}
-	}
-
-	img{
-		transition: all .25s ease-in;
-		cursor: pointer;
-		&:hover {
-			transform: scale(1.08);
+			transition: all .25s ease-in;
+			&:hover {
+				transform: scale(1.08);
+			}
 		}
 	}
 
 	
-}
-// media query footer 
-@media only screen and (min-width:450px) {
-	#footer {
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-		column-gap: 150px;
-		justify-content:space-between;
-		>div {
-			.goldBook__buttons, .newsletter__buttons {
-				align-items: center;
-				flex-direction: row;
-				.btn--cancel {
-					margin-right: 1.5rem;
-					order: 0;
-				}
-			}
-		}
-	}
-}
-@media only screen and (min-width:1014px) {
-	#footer {
-		height: 623px;
-	}
-}
-@media only screen and (min-width:1360px) {
-	#footer::after {
-		content: "";
-		position: absolute;
-		top: 30px;
-		left: 50px;
-		background: url(img/svg/logo-aru1-bg.svg) no-repeat;
-		width: 250%;
-		height: 250%;
-		transform: rotate(10deg);
-    	z-index: -1;
-	}
-}
+
+
+// Logo Aru1 
+// =======================
+// @media only screen and (min-width:1360px) {
+// 	#footer::after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 30px;
+// 		left: 50px;
+// 		background: url(img/svg/logo-aru1-bg.svg) no-repeat;
+// 		width: 250%;
+// 		height: 250%;
+// 		transform: rotate(10deg);
+//     	z-index: -1;
+// 	}
+// }

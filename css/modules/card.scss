@@ -5,3 +5,9 @@
     border-radius: 4px;
     transition: 0.3s;
 }
+
+.card-modern {
+    box-shadow:$modern-ext-shadow;
+    border-radius: 15px;
+    padding: $card-padding $card-padding * 2;
+}

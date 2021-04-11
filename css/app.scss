@@ -7,7 +7,7 @@ $bgdark: #171933;
 $bgdark25: #171933D8;
 $bgnavbar: #2C316F;
 $bgbutton:#2C316F;
-$bgcard:#22244D;
+$bgcard:#22244c;
 $turquoise : #22789C;
 $color-transparent:rgba(18, 28, 66, 0);
 $shadow:#00000033;
@@ -16,14 +16,14 @@ $color-dark:#f0f3ff;
 $letterscolor: #D4DCFF;
 $textnavbar: #E7F8FF;
 $textnavbar25:#8491C7;
-$contrast: #5396e7;
+$contrast: #5295e6;
 $contrast25:#4869ee3f;
-$red: #f25353;
-$red25:#f253533f;
-$green:#41cf7c;
-$green25:#41cf7c3f;
-$yellow:#feb32b;
-$yellow25:#feb32b3f;
+$red: #f05252;
+$red25:#f052523f;
+$green:#42cf7d;
+$green25:#42cf7d3f;
+$yellow:#fdb52e;
+$yellow25:#fdb52e3f;
 
 // == couleurs cosmetiques
 $pink: #D68FD6;
@@ -31,6 +31,7 @@ $border: #2a2e5e;
 $arrow:#BBCCE0;
 $linedark:#161E3B;
 $card-shadow: 0 2px 4px $shadow;
+$modern-ext-shadow:4px 4px 4px rgb(0 0 0 / 25%), -3px -3px 5px -2px rgb(255 255 255 / 20%);
 
 // == Spaces ==
 $gap:25px;
@@ -97,6 +98,9 @@ body::after {
 // Modules 
 // ====================================
 @import "modules/card.scss";
+@import "modules/form.scss";
+@import "modules/btn.scss";
+@import "modules/shadows.scss";
 @import "modules/header.scss";
 @import "modules/footer.scss";
 @import "modules/loader.scss";

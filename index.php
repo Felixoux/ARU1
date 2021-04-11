@@ -8,12 +8,12 @@
     <title>Index</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="index">
-    <header class="index-header mt-3"><img src="img/big-photo.jpg" alt="L'école">
+<body class="light">
+    <header class="index-header my5"><img class="w100" src="img/big-photo.jpg" alt="L'école">
     </header>
-    <main class="index-main">
+    <main class="index-main mb5">
         <div>
-            <h3>Ecole fondamentale</h3>
+            <h3 class="h3-medium mb2 text-center">Ecole fondamentale</h3>
             <div class="container-overflow">
                 <a href="http://www.la-petite-ecole.be"><img  src="img/Fondamental-menu.jpg" alt="ecole fondamentale"></a>
             </div>
@@ -29,11 +29,11 @@
                         Fax: 02/374.56.20
                     </p>
                 </div>
-                <button class="spoiler">Afficher les contacts</button>
+                <button class="spoiler hidden">Afficher les contacts</button>
             </div>
         </div>
         <div>
-            <h3>Ecole secondaire</h3>
+            <h3 class="h3-medium mb2 text-center">Ecole secondaire</h3>
             <div class="container-overflow">
                 <a href="pages/home.php"><img src="img/Secondaire-menu.jpg" alt="ecole secondaire"></a>
             </div>
@@ -49,11 +49,11 @@
                         <a href="mailto:secretariat@aru1.be">secretariat@aru1.be</a>
                     </p>
                 </div>
-                <button class="spoiler">Afficher les contacts</button>
+                <button class="spoiler hidden">Afficher les contacts</button>
             </div>
         </div>
         <div>
-            <h3>Internat</h3>
+            <h3 class="h3-medium mb2 text-center">Internat</h3>
             <div class="container-overflow">
                 <a href="pages/internat.php"> <img src="img/Internat-menu.jpg" alt="internat"></a>
             </div>
@@ -68,13 +68,13 @@
                         Fax : 02/ 372 38 42
                     </p>
                 </div>
-                <button class="spoiler">Afficher les contacts</button>
+                <button class="spoiler hidden">Afficher les contacts</button>
             </div>
         </div>
     </main>
     <footer class="index-footer hidden text-center">
-            <h3 >Contacts</h3>
-            <div class="contact-1 modern-shadow pt-1">
+            <h3 class="h3-medium">Contacts</h3>
+            <div class="contact-1 py1">
                 <h4>Section fondamentale</h4>
                 <p>
                     La Petite Ecole dans la prairie EFA ARU1 <br>
@@ -85,7 +85,7 @@
                     Fax: 02/374.56.20
                 </p>
             </div>
-            <div class="contact-2 modern-shadow pt-1">
+            <div class="contact-2 py1">
                 <h4>Section Secondaire</h4>
                 <p>
                     Athénée royal Uccle 1 <br>
@@ -94,10 +94,10 @@
                 </p>
                 <p>Téléphone : 02/ 374 05 84 <br>
                     Fax : 02/ 375 28 91 <br>
-                    <a href="mailto:secretariat@aru1.be">secretariat@aru1.be</a>
+                    <a class="mail" href="mailto:secretariat@aru1.be">secretariat@aru1.be</a>
                 </p>
             </div>
-            <div class="contact-3 modern-shadow pt-1">
+            <div class="contact-3 py1">
                 <h4>Internat</h4>
                 <p>
                     Internat annexé pour jeunes filles <br>

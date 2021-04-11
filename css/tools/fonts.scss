@@ -39,6 +39,14 @@ $font-bold: 'Inter_bold';
     font-display:swap;
 }
 
+strong {
+  color: $contrast;
+}
+
+.danger, .alert {
+  color: $red;
+}
+
 h1, h2 {
     font-family: $font-bold;
 }
@@ -73,9 +81,42 @@ h5, p {
     font-size: 32px;
 }
 
-strong {
-  color: $contrast;
+.h3-medium {
+  font-size: 29px;
 }
+
+.h4-medium {
+  font-size: 20px;
+}
+
+a {
+  color: $letterscolor;
+  &:hover {
+    color: $contrast;
+  }
+}
+
+a.mail, .mail a {
+  color: $pink;
+  &:hover {
+    color: darken($pink, 15%);
+  }
+}
+
+// PLaceholder
+// ====================
+::placeholder { // Chrome, Firefox, Opera, Safari
+  color: $textnavbar25;  opacity: 1; // Opacity for firefox !
+}
+
+:-ms-input-placeholder { // Internet explorer
+  color: $textnavbar25;
+}
+
+::-ms-input-placeholder { // Edge
+  color: $textnavbar25;
+}
+
 
 // Alignements
 // ==================

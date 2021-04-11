@@ -1,4 +1,4 @@
-<nav class="header flex relative">
+<nav id="navbar" class="header flex relative">
     <ul class="header-nav">
                 <li class="header__home <?php if($_SERVER['SCRIPT_NAME'] === '/pages/accueil.php') : ?>active<?php endif?>">
                     <a href="home.php">
