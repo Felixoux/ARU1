@@ -58,7 +58,7 @@ h3, h4 {
 h5, p {
     font-family: $font;
 }
-
+%h1-big,
 .h1-big {
     font-size: 40px;
 }
@@ -67,7 +67,7 @@ h5, p {
         font-size: 32px;
     }
 }
-
+%h1-medium,
 .h1-medium {
   font-size: 35px;
 }
@@ -76,22 +76,27 @@ h5, p {
     font-size: 29px;
   }
 }
-
+%h2-section,
 .h2-section {
     font-size: 32px;
 }
-
+%h3-medium, 
 .h3-medium {
   font-size: 29px;
 }
-
+%h4-medium, 
 .h4-medium {
   font-size: 20px;
+}
+%h5-medium, 
+.h5-medium {
+  font-size: 18.5px;
 }
 
 a {
   color: $letterscolor;
-  &:hover {
+  cursor: pointer;
+  &:hover, a.active {
     color: $contrast;
   }
 }
@@ -156,11 +161,5 @@ a.underline:hover {
 }
 .text-big {
   font-size: 1.1em;
-}
-.link {
-  transition: color .3s;
-}
-.link:hover {
-  color: $contrast;
 }
 

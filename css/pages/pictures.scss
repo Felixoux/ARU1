@@ -8,14 +8,12 @@
 		padding: $card-padding * 2 calc(50% - var(--container-width) / 2);
 
 		h2 {
-			font-size: 29px;
 			opacity: 0;
 			animation: h2 .5s ease-out forwards;
 		}
 
 		p {
-			padding: .6rem 0;
-			word-break: break-word;
+			margin: 1.5rem 0;
 			opacity: 0;
 			animation:p .6s .5s ease-in-out forwards;
 		}

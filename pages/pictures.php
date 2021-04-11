@@ -27,10 +27,10 @@
             </h1>
         </header>
         <!-- main  -->
-        <main class="pictures-main relative pink">
-            <h2 class="py1 relative">Accedez aux albums via ces differents liens</h2>
+        <main class="pictures-main relative mail">
+            <h2 class="py2 h3-medium relative">Accedez aux albums via ces differents liens</h2>
             <hr>
-            <p>Palmarès 2019-2020 : <a href="#">https://lien/idée/exemple/jesaispas.lien</a></p>
+            <p class="mt3">Palmarès 2019-2020 : <a href="#">https://lien/idée/exemple/jesaispas.lien</a></p>
             <p>Proclamation des réthos - juin 2020  :<a href="#">https://lien/idée/exemple/jesaispas.lien</a></p>
             <p>Proclamation des réthos - juin 2020  :<a href="#">https://lien/idée/exemple/jesaispas.lien</a></p>
             <p>Proclamation des réthos - juin 2020  :<a href="#">https://lien/idée/exemple/jesaispas.lien</a></p>

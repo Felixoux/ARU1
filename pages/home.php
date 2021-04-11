@@ -8,7 +8,7 @@
         <!-- Upper -->
         <section class="home-upper">
                 <div class="video relative">
-                    <h1 class="video__title bigTitle"><strong>Présentation</strong> de notre école</h1>
+                    <h1 class="video__title h1-big"><strong>Présentation</strong> de notre école</h1>
                     <div class="video__ratio ratio"><iframe class="video__iframe my-2" src="https://www.youtube.com/embed/uubVrpPzLU4?autoplay=0&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         <svg class="video__svg mascott-mobile-hidden" width="500" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 171.1 141.5" style="enable-background:new 0 0 171.1 141.5;" xml:space="preserve">
@@ -92,7 +92,7 @@
                         </svg>
                 </div>
                 <div class="news">
-                    <h2 class="news__title">Infos importantes</h2>
+                    <h2 class="news__title h1-medium">Infos importantes</h2>
                     <div class="news__square overflow-a">
                         <div class="news__square__content pink">
                             <p>&bull; L' inscription des futurs élèves en première année : La 1e phase de la période des inscriptions commencera le 1e février et durera quatre semaines (jusqu’au vendredi 5 mars)</p>

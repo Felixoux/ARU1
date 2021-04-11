@@ -1,50 +1,18 @@
-		.friends-container {
-			@extend .card;
-			@extend %container-margin;
-			margin: $space-section/2 auto;
-			padding: $card-padding * 2;
-
-			.content {
-				@extend %grid-text-vertical;
-
-				.subtitle {
-					font-size: 22.5px;
-				}
-
-				p {
-					font-size: 18.5px;
-				}
-
-				ul {
-					list-style:disc ;
-					color: $bgbutton;
-					padding:1rem 1rem;
-					
-					p {
-						padding: 0.5rem 0;
-					}
-				}
-
-				.quote {
-					font-style: italic;
-				}
-
-				.btn--spoiler {
-					padding-top: .5rem ;
-					color: $pink ;
-					cursor: pointer;
-					&:hover {
-						color: darken($pink, 15%);
-					}
-				}
+	.friends-container {
+		@extend %container-margin;
+		@extend .card;
+		@extend %grid-text-vertical;
+		margin: $space-section/2 auto;
+		padding: $card-padding * 2;
+		ul {
+			list-style:disc ;
+			margin:1.3rem 1rem;
+			p {
+				margin: .8rem 0;
 			}
 		}
-	
-
-@media only screen and (max-width:500px) {
-	.friends-container{
-		padding: $card-padding 1rem;
-		:nth-child(3) {font-size: 18.5px;}
-		p {font-size: 16px;}
+		.quote {
+			font-style: italic;
+		}
 	}
-}
+	

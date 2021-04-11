@@ -69,28 +69,26 @@ body {
   
 body.light {
 	background:$bglight;
-	&::after {
-		display: none;
-	}
+}
+body.light, #page404, #internat {
+	&::after {display: none;}
 }
   
 body::after {
-	display: none;
+	@extend .mobile-hidden;
 	content: '';
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 580px;
-	height: 506px;
+	top: -50px;
+	left: -85px;
+	width: 500px;
+	height: 500px;
 	z-index: -1;
 	pointer-events: none;
 	background: url(../img/svg/logo-aru1-bg.svg) top left / 100% 100% no-repeat;
-  
 	@include up(700) {
 	  display: block;
 	}
 }
-  
 	::selection {
 	background: $contrast;
 	color: #fff;
@@ -101,6 +99,7 @@ body::after {
 @import "modules/form.scss";
 @import "modules/btn.scss";
 @import "modules/shadows.scss";
+@import "modules/footer-contact.scss";
 @import "modules/header.scss";
 @import "modules/footer.scss";
 @import "modules/loader.scss";

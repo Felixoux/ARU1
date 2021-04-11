@@ -7,7 +7,7 @@
         <?php require '../php/libs/header-navbar.php'; ?>
         <!-- main  -->
         <header class="roi-header">
-            <h1 class="h1-big py3">Reglement <span>d'ordre</span> interieur</h1>
+            <h1 class="h1-big py3">Reglement <strong>d'ordre</strong> interieur</h1>
         </header>
         <main class="roi-main relative">
             <div class="summary-roi">

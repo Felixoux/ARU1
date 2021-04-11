@@ -1,5 +1,4 @@
 	.menu {
-		.title {font-size: 35px; margin-bottom: 4rem ;}
 		padding-top: $space-section / 2;
 		padding-bottom: $space-section ;
 	}
@@ -9,7 +8,7 @@
 		grid-template-columns:repeat(5, 1fr) ;
 		grid-template-rows: 75px repeat(3, 153px);
 		grid-template-areas: 
-		"none time time time time"
+		"clear time time time time"
 		"topic meal meal meal meal"
 		"topic meal meal meal meal"
 		"topic meal meal meal meal";
@@ -18,8 +17,6 @@
 
 		&__time, &__topic {
 			background: $bglight;
-			font-size: 18.5px;
-
 		}
 
 		&__time {
@@ -65,5 +62,10 @@
 			} 
 
 		}
+	}
+
+
+	.menu-grid__topic div:last-child, .menu-grid__meal div:last-child   {
+		border: none!important;
 	}
 

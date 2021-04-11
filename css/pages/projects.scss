@@ -1,37 +1,17 @@
 .projets {
 	@extend %container-margin;
 	@extend %grid-text-vertical;
+	@extend .card;
 	margin: $space-section / 2 auto;
 	padding: $card-padding * 2;
-	background: $bglight;
-	border-radius: 8px; 
 	gap: $gap / 1.5;
 	
 	h4 {
-		margin-top: -.5rem;
-		font-size:20px ;
 		color: $yellow;
 	}
 
-	h5 {
-		font-size:18.5px ;
-	}
-
-	a {
-		color: $red;
-		&:hover {
-			color: darken($red, 20%);
-		}
-		img {
-			transform:translateY(35%);
-			margin-left:10px ;
-		}
-	}
-}
-
-// == Media Query projets d'établissement == 
-@media only screen and (max-width:650px) {
-	.projets {
-		padding: $card-padding * 2 $card-padding;
+	img.pdf {
+		transform:translateY(35%);
+		margin-left:10px ;
 	}
 }

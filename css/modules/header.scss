@@ -1,6 +1,7 @@
-	.header {
+	#navbar {
 		padding-top: calc(6 * #{$space});
 		padding-bottom: calc(3 * #{$space});
+		line-height: 1;
 
 		&::after {
 			content: "";
@@ -10,10 +11,6 @@
 			background-color: $border;
 			height: 1px;
 			z-index: -2;
-		}
-
-		a, button {
-			@extend .link;
 		}
 
 		ul, li  {
@@ -31,21 +28,24 @@
 		}
 		
 		.sous {	display: none; }
-	
+		
+		
 		.sous.active  {
+			@extend .card;
 			display: flex;
 			flex-flow: column;
 			position: absolute;
 			top: 20px;
 			width: 220px;
 			min-height: auto;
-			background-color: $bglight;
-			border: 1px solid $border;
-			border-radius: 5px;
+			background: $bglight;
+			border-radius: 8px;
 			transform: translate(-17px, -40px);
+
 			.invisible {
 				padding-top: 3rem;
 			}
+
 			li {
 				padding: 1.2rem 0rem; 
 			}
@@ -94,7 +94,8 @@
 		}
 	
 		.header-side {
-			margin: 0 calc(-2 * #{$space});
+			margin-right: $space * -1.5;
+			margin-left: 2 * $space;
 			font-family: 'inter_bold';
 			color: $textnavbar25;
 		}
@@ -140,7 +141,7 @@
 	}
 // Media query navbar 
 @include down(1000) {
-	.header {
+	#navbar {
 		.header-nav .dropdown, .header-nav .relative{
 			display: none;
 		}
