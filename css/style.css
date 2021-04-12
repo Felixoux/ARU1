@@ -294,6 +294,7 @@ h5, p {
 
 .index-footer .index-footer__container > div h4,
 .h5-medium,
+.main-options > div h4,
 .slider-wrapper .slider-container > div :first-child {
   font-size: 18.5px;
 }
@@ -502,7 +503,7 @@ header, section, main, footer, nav, .container, .header, .footer, .main {
   width: 100%;
 }
 
-.projets, .friends-container, #page404 .container-404, .slider-wrapper .slider-container > div,
+.projets, .main-options > div, .friends-container, #page404 .container-404, .slider-wrapper .slider-container > div,
 .grid-text-vertical,
 .goldBook form,
 .newsletter form,
@@ -519,7 +520,7 @@ header, section, main, footer, nav, .container, .header, .footer, .main {
   grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
 }
 
-.slider-wrapper .slider-container,
+.main-options, .slider-wrapper .slider-container,
 .grid-fill {
   display: grid;
   gap: 50px;
@@ -1020,7 +1021,7 @@ body::after {
   color: #fff;
 }
 
-.card, .projets, .options-main .card-options, .options-header .card-options, .online-course, .news__square, .friends-container, #page404 .container-404, .newsletter__mail, #navbar .sous.active, .slider-wrapper .slider-container > div {
+.card, .projets, .main-options > div, .online-course, .news__square, .friends-container, #page404 .container-404, .newsletter__mail, #navbar .sous.active, .slider-wrapper .slider-container > div {
   padding: 16px;
   background: #22244c;
   border: 1px solid #2a2e5e;
@@ -1846,79 +1847,26 @@ form button[type=reset]:hover {
     padding: 32px 16px;
   }
 }
-.options-header {
-  margin-top: 42.8571428571px;
-  white-space: pre;
+.main-options > div {
+  padding: 0 0 16px 0;
 }
-
-.options-main {
-  margin-bottom: calc(150px / 2);
+.main-options > div img {
+  border-radius: 4px;
 }
-
-.options-main, .options-header {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  gap: 40px;
-  justify-content: center;
-}
-.options-main .card-options, .options-header .card-options {
-  flex-direction: column;
-  width: 300px;
-  height: 310px;
-}
-.options-main .card-options__img, .options-header .card-options__img {
-  background: no-repeat center/cover url(../img/grilles-options/1e.jpg);
-  width: 300px;
-  height: 165px;
-  border-radius: 5px;
-}
-.options-main .card-options__title, .options-header .card-options__title {
-  font-size: 20px;
+.main-options > div h4 {
+  text-align: center;
   position: relative;
 }
-.options-main .card-options__title::after, .options-header .card-options__title::after {
+.main-options > div h4::after {
   content: "";
   margin: 0 auto;
   position: absolute;
-  top: 42.5px;
   left: 0;
   bottom: 0;
   right: 0;
-  width: 80%;
+  width: 40%;
   height: 1px;
-  background: #D4DCFF;
-}
-.options-main .card-options .line::after, .options-header .card-options .line::after {
-  top: 50px;
-}
-.options-main .card-options__btn, .options-header .card-options__btn {
-  padding: 0.4rem 1rem;
-  margin: 20px 0;
-  font-size: 16px;
-  background: #22244c;
-  border-radius: 5px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -3px -3px 5px -2px rgba(255, 255, 255, 0.2);
-}
-.options-main :nth-child(2) .card__img, .options-header :nth-child(2) .card__img {
-  background: no-repeat center/cover url(../img/grilles-options/1e-immersion.jpg);
-}
-.options-main :nth-child(3) .card__img, .options-header :nth-child(3) .card__img {
-  background: no-repeat center/cover url(../img/grilles-options/2e.jpg);
-}
-.options-main :nth-child(4) .card__img, .options-header :nth-child(4) .card__img {
-  background: no-repeat center/cover url(../img/grilles-options/2ecomplementaire.jpg);
-}
-.options-main :nth-child(5) .card__img, .options-header :nth-child(5) .card__img {
-  background: no-repeat center/cover url(../img/grilles-options/3e.jpg);
-}
-.options-main :nth-child(6) .card__img, .options-header :nth-child(6) .card__img {
-  background: no-repeat center/cover url(../img/grilles-options/4e.jpg);
-}
-.options-main :nth-child(7) .card__img, .options-header :nth-child(7) .card__img {
-  background: no-repeat center/cover url(../img/grilles-options/5e.jpg);
-}
-.options-main :nth-child(8) .card__img, .options-header :nth-child(8) .card__img {
-  background: no-repeat center/cover url(../img/grilles-options/6e.jpg);
+  background: #2a2e5e;
 }
 
 .pictures-header svg {
