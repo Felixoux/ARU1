@@ -8,6 +8,7 @@
             @extend %grid-text-vertical;
             @extend .card;
             grid-template-rows:25px 165px auto;
+            padding: $card-padding;
             :first-child {
                 @extend .h5-medium
             } 

@@ -1037,6 +1037,7 @@ body::after {
 
 .slider-wrapper .slider-container > div {
   grid-template-rows: 25px 165px auto;
+  padding: 16px;
 }
 .slider-wrapper .slider-container > div p {
   color: #808fca;
