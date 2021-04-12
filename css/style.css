@@ -1022,7 +1022,6 @@ body::after {
 }
 
 .card, .projets, .main-options > div, .online-course, .news__square, .friends-container, #page404 .container-404, .newsletter__mail, #navbar .sous.active, .slider-wrapper .slider-container > div {
-  padding: 16px;
   background: #22244c;
   border: 1px solid #2a2e5e;
   box-shadow: 0 2px 4px #00000033;
@@ -1848,7 +1847,7 @@ form button[type=reset]:hover {
   }
 }
 .main-options > div {
-  padding: 0 0 16px 0;
+  padding-bottom: 16px;
 }
 .main-options > div img {
   border-radius: 4px;

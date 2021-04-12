@@ -3,7 +3,8 @@
 	> div {
 		@extend %grid-text-vertical;
 		@extend .card;
-		padding:   0 0$card-padding 0;
+		padding-bottom: $card-padding;
+		
 		img {
 			border-radius: 4px;
 		}
