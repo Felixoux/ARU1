@@ -71,6 +71,31 @@
                 <button class="spoiler hidden">Afficher les contacts</button>
             </div>
         </div>
+        <div class="slider-infos">
+            <h2 class="h3-medium mb3">Infos générale</h2>
+            <div class="slide-container">
+                <div>
+                    <h5>Ecole fondamentale</h5>
+                    <p>Les photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbz</p>
+                    <a href="#">Aller vers le site</a>
+                </div>
+                <div>
+                    <h5>Ecole Secondaire</h5>
+                    <p>
+                        Les photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbzLes photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbzLes photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbzLes photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbzLes photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbzLes photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbzLes photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbzLes photos de classes ont été développée, cliquer ici pour acceder au site et voir plus d’information a ce propos je mange du caca auadfbsjbqbzdjbhqbdhjqbjzbdhbzjhqsbdjqbz
+                    </p>
+                    <a href="#">Aller vers le site</a>
+                </div>
+                <div>
+                    <h5>Internat</h5>
+                    <p>
+                    Les photos ont bien été prises, voir la têtes de vos enfantsLes photos ont bien été prises, voir la têtes de vos enfantsLes photos ont bien été prises, voir la têtes de vos enfantsLes photos ont bien été prises, voir la têtes de vos enfants
+                    </p>
+                    <a href="#">Aller vers le site</a>
+                </div>
+                <div></div>
+            </div>
+        </div>
     </main>
     <footer class="index-footer hidden text-center">
             <h3 class="h3-medium">Contacts</h3>

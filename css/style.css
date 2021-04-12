@@ -293,7 +293,8 @@ h5, p {
   font-size: 20px;
 }
 
-.h5-medium {
+.h5-medium,
+.slider-infos .slide-container div h5 {
   font-size: 18.5px;
 }
 
@@ -1001,7 +1002,7 @@ body::after {
   color: #fff;
 }
 
-.card, .projets, .options-main .card-options, .options-header .card-options, .online-course, .news__square, .friends-container, #page404 .container-404, .newsletter__mail, #navbar .sous.active {
+.card, .projets, .options-main .card-options, .options-header .card-options, .online-course, .slider-infos .slide-container div, .news__square, .friends-container, #page404 .container-404, .newsletter__mail, #navbar .sous.active {
   background: #22244c;
   border: 1px solid #2a2e5e;
   box-shadow: 0 2px 4px #00000033;
@@ -1701,6 +1702,30 @@ form button[type=reset]:hover {
 }
 .index-main img:hover, .index-footer img:hover {
   transform: scale(1.15);
+}
+
+.slider-infos {
+  grid-column: 1/4;
+}
+.slider-infos .slide-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 48px;
+}
+.slider-infos .slide-container div {
+  display: grid;
+  grid-template-rows: 25px 165px auto;
+  gap: 25px;
+  padding: 16px;
+  height: 300px;
+}
+.slider-infos .slide-container div p {
+  overflow: auto;
+  color: #8491c7;
+}
+.slider-infos .slide-container div a {
+  color: #5295e6;
+  display: inline-block;
 }
 
 .index-footer {
