@@ -1,0 +1,23 @@
+.slider-wrapper {
+    @extend %container-margin;
+
+    .slider-container {
+        @extend %grid-fill;
+
+        > div {
+            @extend %grid-text-vertical;
+            @extend .card;
+            grid-template-rows:25px 165px auto;
+            :first-child {
+                @extend .h5-medium
+            } 
+            p {
+                color: $color-light;
+                overflow: auto;
+            }
+            a {
+                display: inline-block;
+            }
+        }
+    }
+}

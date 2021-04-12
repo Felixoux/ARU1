@@ -13,10 +13,8 @@ $color-transparent:rgba(18, 28, 66, 0);
 $shadow:#00000033;
 // == les color pour fonts ==
 $color-dark:#f0f3ff;
-$color-light:#8491c7;
+$color-light:#808fca;
 $letterscolor: #D4DCFF;
-$textnavbar: #E7F8FF;
-$textnavbar25:#8491C7;
 $contrast: #5295e6;
 $contrast25:#4869ee3f;
 $red: #f05252;
@@ -39,7 +37,6 @@ $gap:25px;
 $space:8px;
 $space-section:150px;
 $card-padding:16px;
-$header-height:137px;
 // === scrollBar === 
 ::-webkit-scrollbar{width: 13.5px;}
 ::-webkit-scrollbar-thumb{height: 7px;background: $border;border: 3px solid transparent;border-radius: 8px;background-clip: content-box;}
@@ -97,6 +94,7 @@ body::after {
 // Modules 
 // ====================================
 @import "modules/card.scss";
+@import "modules/slider.scss";
 @import "modules/form.scss";
 @import "modules/btn.scss";
 @import "modules/shadows.scss";

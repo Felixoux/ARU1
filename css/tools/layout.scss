@@ -129,6 +129,11 @@
   .hidden {
     display: none;
   }
+
+  .container-overflow {
+    overflow: hidden;
+    border-radius: 15px;
+  }
   
   // Largeur
   // =============
@@ -136,11 +141,26 @@
     width: 100%;
   }
 
-  // grid 
+  // grilles 
+  // ========================
   %grid-text-vertical,
   .grid-text-vertical {
     display: grid;
     gap: $gap;
+  }
+
+  %grid-fit,
+  .grid-fit {
+    display: grid;
+    gap: $gap * 2;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  }
+
+  %grid-fill,
+  .grid-fill {
+    display: grid;
+    gap: $gap * 2;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
   }
   
   // Spaces

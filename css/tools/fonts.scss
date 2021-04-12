@@ -111,15 +111,15 @@ a.mail, .mail a {
 // PLaceholder
 // ====================
 ::placeholder { // Chrome, Firefox, Opera, Safari
-  color: $textnavbar25;  opacity: 1; // Opacity for firefox !
+  color: $color-light;  opacity: 1; // Opacity for firefox !
 }
 
 :-ms-input-placeholder { // Internet explorer
-  color: $textnavbar25;
+  color: $color-light;
 }
 
 ::-ms-input-placeholder { // Edge
-  color: $textnavbar25;
+  color: $color-light;
 }
 
 

@@ -1,8 +1,5 @@
-.index-main, .index-footer  {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: $gap * 2.5;
-
+.index-main, .index-footer__container {
+	@extend %grid-fit;
 	img {
 		transition: transform .3s ease;
 		transform: scale(1.1);
@@ -12,72 +9,20 @@
 	}
 }
 
-.slider-infos {
-	grid-column: 1 / 4;
-	.slide-container {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-		gap: $space * 6;
-		div {
-			display: grid;
-			grid-template-rows: 25px 165px auto;
-			gap: $gap;
-			@extend .card;
-			padding: $card-padding;
-			height: 300px;
-
-			h5 {
-				@extend .h5-medium;
-			}
-
-			p {
-				overflow: auto;
-				color: $color-light;
-			}
-
-			a {
-				color: $contrast;
-				display: inline-block;
-			}
-		}
-	}
-}
-
 .index-footer {
 	@extend %big-main;
-	row-gap: $gap;
-	padding-top: $card-padding * 2;
-	padding-bottom: $card-padding * 2;
 
-	h3 {
-		grid-area: 1/1/span 1/span 1;
-		align-self: center;
-		justify-self: flex-start;
+	h4 {
+		margin-bottom: .7rem
 	}
 
-	> div {
-		@extend .card-modern;
-		@extend .grid-text-vertical;
-		gap: $gap / 3;
-		h4 {
-			@extend .h4-medium;
+	.index-footer__container {
+		> div {
+			@extend .card-modern;
+			h4 {
+				@extend %h5-medium;
+			}
 		}
 	}
-
-	.contact-1 {
-		grid-area: 2 / 1 / span 1 / span 1;
-	}
-
-	.contact-2 {
-		grid-area: 2 / 2 / span 1 / span 1;
-	}
-
-	.contact-3 {
-		grid-area: 2 / 3 / span 1 / span 1;
-	}
 }
 
-.container-overflow {
-	overflow: hidden;
-	border-radius: 15px;
-}

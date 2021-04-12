@@ -1,4 +1,5 @@
 .card {
+    padding: $card-padding;
     background: $bgcard;
     border: 1px solid $border;
     box-shadow: 0 2px 4px $shadow;
@@ -9,5 +10,5 @@
 .card-modern {
     box-shadow:$modern-ext-shadow;
     border-radius: 15px;
-    padding: $card-padding $card-padding * 2;
+    padding: $card-padding;
 }
