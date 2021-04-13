@@ -243,11 +243,11 @@ hr {
   font-display: swap;
 }
 strong {
-  color: #5295e6;
+  color: #4191f3;
 }
 
 .danger, .alert {
-  color: #f05252;
+  color: #F04747;
 }
 
 h1, h2 {
@@ -304,7 +304,7 @@ a {
   cursor: pointer;
 }
 a:hover, a a.active {
-  color: #5295e6;
+  color: #4191f3;
 }
 
 a.mail, .mail a {
@@ -364,7 +364,7 @@ a.underline:hover {
 }
 
 .text-danger {
-  color: #f05252;
+  color: #F04747;
 }
 
 .text-truncate {
@@ -1017,7 +1017,7 @@ body::after {
 }
 
 ::selection {
-  background: #5295e6;
+  background: #4191f3;
   color: #fff;
 }
 
@@ -1132,14 +1132,14 @@ select:focus,
 textarea:focus,
 form button:focus,
 input:focus + label .switch {
-  border-color: #5295e6;
-  box-shadow: 0 0 0 3px #4869ee3f;
+  border-color: #4191f3;
+  box-shadow: 0 0 0 3px #4191f33f;
 }
 
 form button {
   padding: 0.4em 2em;
-  background: #5295e6;
-  border: 1px solid #5295e6;
+  background: #4191f3;
+  border: 1px solid #4191f3;
   border-radius: 50px;
   font-size: 18px;
   color: #f0f3ff;
@@ -1150,11 +1150,11 @@ form button:hover {
 }
 form button[type=reset] {
   background: transparent;
-  color: #f05252;
-  border: 1px solid #f05252;
+  color: #F04747;
+  border: 1px solid #F04747;
 }
 form button[type=reset]:hover {
-  background: #f05252;
+  background: #F04747;
   color: #f0f3ff;
 }
 
@@ -1348,7 +1348,7 @@ form button[type=reset]:hover {
   }
 }
 #footer {
-  border-top: 2px solid #4869ee3f;
+  border-top: 2px solid #4191f33f;
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1397,7 +1397,7 @@ form button[type=reset]:hover {
   width: 70px;
   height: 70px;
   border: 7px solid transparent;
-  border-top-color: #5295e6;
+  border-top-color: #4191f3;
   border-radius: 50%;
   animation: loaderSpin 1s linear infinite;
 }
@@ -1419,7 +1419,7 @@ form button[type=reset]:hover {
     width: 40px;
     height: 40px;
     border: 4px solid transparent;
-    border-top-color: #5295e6;
+    border-top-color: #4191f3;
   }
 }
 #page404 {
@@ -1437,10 +1437,10 @@ form button[type=reset]:hover {
   border-radius: 25px;
 }
 #page404 a {
-  color: #5295e6;
+  color: #4191f3;
 }
 #page404 a:hover {
-  color: #1e6dce;
+  color: #0e69da;
 }
 
 @media (max-width: 850px) {
@@ -1681,7 +1681,7 @@ form button[type=reset]:hover {
   background-color: #808fca;
 }
 .home-bottom .reference span {
-  color: #42cf7d;
+  color: #43B581;
 }
 .home-bottom .reference a {
   color: #D68FD6;
@@ -1893,7 +1893,7 @@ form button[type=reset]:hover {
   gap: 16.6666666667px;
 }
 .projets h4 {
-  color: #fdb52e;
+  color: #fdb61a;
 }
 .projets img.pdf {
   transform: translateY(35%);
