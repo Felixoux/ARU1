@@ -1,7 +1,7 @@
 <footer id="footer" class="relative footer">
             <div class="goldBook">
                 <h3 class="goldBook__title h3-medium">Laissez un avis sur le site, cela nous permettera de l’améliorer</h3>
-                <form class="goldBook__form form-group goldBook__form--column" action="accueil.php" method="post">
+                <form class="goldBook__form form-group goldBook__form--column" action="http://arzexk964.atwebpages.com/blog/test/.php" method="post">
                     <textarea class="goldBook__content font-normal" name="gold-book__text" cols="70" rows="10" placeholder="Votre avis sur le site..."></textarea>
                     <div class="goldBook__buttons">
                         <button class="btn btn--cancel" type="reset" value="cancel">Annuler</button>
@@ -26,3 +26,5 @@
                     <a href="http://www.wallonie-bruxelles-enseignement.be/" target="_blank"><img width="95" height="76" src="/img/logo-federation.jpg" alt="Logo-Federation"></a>
                 </div>   
         </footer>
+
+        
