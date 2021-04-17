@@ -1186,7 +1186,6 @@ form button[type=reset]:hover {
 }
 #navbar .header-nav > li a {
   z-index: 50;
-  font-family: "inter_medium";
 }
 #navbar .sous {
   display: none;
