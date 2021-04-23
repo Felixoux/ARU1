@@ -13,7 +13,7 @@ $nav = [
     'Contact' => []
 ];
 
-dump($_SERVER);
+
 ?>
 
 <nav id="navbar" class="header flex relative">

@@ -35,7 +35,6 @@ HTML;
     <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>
-
 <!-- string $imgTitle, string $cardTitle, -->
 
 <!-- return <<<HTML
